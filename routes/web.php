@@ -19,9 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/atencion', 'HomeController@atencionRecienNacido');
-Route::get('/atencion/exportarpdf', 'HomeController@exportarpdf');
 
-Route::get('/getDistrito', 'HomeController@getDistrito');
 
-Route::get('/getRecienNacido', 'HomeController@getRecienNacido');
+Route::get('/AtencionRecienNacido', 'AtencionRecienNacido@index');
+Route::get('/getRecienNacido', 'AtencionRecienNacido@getRecienNacido');
+Route::get('/atencionRecienNacido/exportarpdf', 'AtencionRecienNacido@exportarpdf');
+
+Route::get('/getDistrito', 'AtencionRecienNacido@getDistrito');
+Route::get('/getMicroRed', 'AtencionRecienNacido@getMicroRed');

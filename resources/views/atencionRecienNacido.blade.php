@@ -55,107 +55,7 @@
 @section('content')
 <section class="section">
   <div class="container">
-	    <h1 class="title">
-	      DIRESA
-	    </h1>
-    	<p class="subtitle">ATENCIÓN DEL RECIÉN NACIDO</p>
-
-	    <form id="form-recien-nacido" method="GET" action="getRecienNacido">
-
-	    <div class="field is-horizontal">
-	      <!-- <div class="field-label is-normal">
-	        <label class="label">Seleccionar</label>
-	      </div> -->
-	      <div class="field-body">
-	        <div class="field">
-	          <p class="control is-expanded has-icons-left">
-	            <span class="select">
-	              <select disabled>
-	                <option selected>APURIMAC</option>
-	              </select>
-	            </span>
-	            <span class="icon is-small is-left">
-	              <i class="fas fa-globe"></i>
-	            </span>
-	          </p>
-	        </div>
-	        <div class="field">
-	          <p class="control is-expanded has-icons-left">
-	            <span class="select">
-	              <select id="cmb_provincia" name="txtProvincia">
-	                  <option value="" selected>Selecciona Provincia</option>
-	                @foreach ($provincias as $provincia)
-	                  <option value="{{ $provincia->cod_prov }}">{{ $provincia->desc_prov }}</option>
-	                @endforeach
-	              </select>
-	            </span>
-	            <span class="icon is-small is-left">
-	              <i class="fas fa-globe"></i>
-	            </span>
-	          </p>
-	        </div>
-	        <div class="field">
-	          <p class="control is-expanded has-icons-left">
-	            <span class="select">
-	              <select id="cmb_distrito" name="txtDistrito">
-	                <option selected>Selecciona Distrito</option>
-	              </select>
-	            </span>
-	            <span class="icon is-small is-left">
-	              <i class="fas fa-globe"></i>
-	            </span>
-	          </p>
-	        </div>
-
-	      </div>
-	    </div>
-
-	    <div class="field is-horizontal">
-	      <!-- <div class="field-label"></div> -->
-	      <div class="field-body">
-	        <div class="field">
-	          <p class="control is-expanded has-icons-left">
-	            <input class="input" name="startDate" type="date" placeholder="Fecha Inicio">
-	            <span class="icon is-small is-left">
-	              <i class="far fa-calendar-alt"></i>
-	            </span>
-	          </p>
-	        </div>
-	        <div class="field">
-	          <p class="control is-expanded has-icons-left has-icons-right">
-	            <input class="input" name="endDate" type="date" placeholder="Fecha Fin">
-	            <span class="icon is-small is-left">
-	              <i class="far fa-calendar-alt"></i>
-	            </span>
-	          </p>
-	        </div>
-	      </div>
-	    </div>
-
-	    <div class="field is-horizontal">
-	      <!-- <div class="field-label">
-
-	      </div> -->
-	      <div class="field-body">
-	        <div class="field">
-	          <div class="control">
-	            <button class="button is-primary" type="submit">
-								<span class="icon">
-									<i class="fas fa-filter"></i>
-								</span>
-								<span>Filtrar</span>
-	            </button>
-							<a class="button is-danger" href="atencion/exportarpdf">
-						    <span class="icon">
-						      <i class="fas fa-file-pdf"></i>
-						    </span>
-						    <span>Exportar</span>
-						  </a>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </form>
+		@include('form.main')
   	<br>
 		<div class="columns">
 		  <div class="column">
@@ -416,6 +316,7 @@
 <script type="text/javascript">
 
   $(document).ready(function() {
+
     $("#cmb_provincia").change(function () {
 
       var val = $(this).val();
@@ -425,7 +326,7 @@
         url: "getDistrito?cod_prov="+val,
         async: false,
         success: function(result){
-					prov_html += "<option value='' selected>Selecciona Distrito</option>";
+					prov_html += "<option value='' selected>Todos los Distritos</option>";
           for (var i = 0; i < result.length; i++) {
             prov_html += "<option value='"+result[i].cod_dist+"'>"+result[i].desc_dist+"</option>";
           }
@@ -434,7 +335,46 @@
 
       $("#cmb_distrito").html(prov_html);
 
+			if (!val) {
+				document.getElementById("cmb_red").disabled=false;
+				document.getElementById("cmb_mred").disabled=false;
+
+			} else {
+				document.getElementById("cmb_red").disabled=true;
+				document.getElementById("cmb_mred").disabled=true;
+			}
+
     });
+
+		$("#cmb_red").change(function () {
+
+      var val = $(this).val();
+      var prov_html = "";
+
+      $.ajax({
+        url: "getMicroRed?cod_red="+val,
+        async: false,
+        success: function(result){
+					prov_html += "<option value='' selected>Todas las Micro Redes</option>";
+          for (var i = 0; i < result.length; i++) {
+            prov_html += "<option value='"+result[i].cod_mic+"'>"+result[i].desc_micro+"</option>";
+          }
+        }
+      });
+
+      $("#cmb_mred").html(prov_html);
+
+			if (!val) {
+				document.getElementById("cmb_provincia").disabled=false;
+				document.getElementById("cmb_distrito").disabled=false;
+
+			} else {
+				document.getElementById("cmb_provincia").disabled=true;
+				document.getElementById("cmb_distrito").disabled=true;
+			}
+
+    });
+
   });
 
   $(function() {
@@ -462,57 +402,59 @@
                 data: formData
             }).done(function(response) {
 
-							var nino = [];
+							console.log(response);
 
-							for (var i = 1; i <= 37; i++) {
-								nino[i] = 0;
-							}
-
-							response.forEach(function (response, index) {
-									nino[1] += parseInt(response.NINO1);
-									nino[2] += parseInt(response.NINO2);
-									nino[3] += parseInt(response.NINO3);
-									nino[4] += parseInt(response.NINO4);
-									nino[5] += parseInt(response.NINO5);
-									nino[6] += parseInt(response.NINO6);
-									nino[7] += parseInt(response.NINO7);
-									nino[8] += parseInt(response.NINO8);
-									nino[9] += parseInt(response.NINO9);
-									nino[10] += parseInt(response.NINO10);
-									nino[11] += parseInt(response.NINO11);
-									nino[12] += parseInt(response.NINO12);
-									nino[13] += parseInt(response.NINO13);
-									nino[14] += parseInt(response.NINO14);
-									nino[15] += parseInt(response.NINO15);
-									nino[16] += parseInt(response.NINO16);
-									nino[17] += parseInt(response.NINO17);
-									nino[18] += parseInt(response.NINO18);
-									nino[19] += parseInt(response.NINO19);
-									nino[20] += parseInt(response.NINO20);
-									nino[21] += parseInt(response.NINO21);
-									nino[22] += parseInt(response.NINO22);
-									nino[23] += parseInt(response.NINO23);
-									nino[24] += parseInt(response.NINO24);
-									nino[25] += parseInt(response.NINO25);
-									nino[26] += parseInt(response.NINO26);
-									nino[27] += parseInt(response.NINO27);
-									nino[28] += parseInt(response.NINO28);
-									nino[29] += parseInt(response.NINO29);
-									nino[30] += parseInt(response.NINO30);
-									nino[31] += parseInt(response.NINO31);
-									nino[32] += parseInt(response.NINO32);
-									nino[33] += parseInt(response.NINO33);
-									nino[34] += parseInt(response.NINO34);
-									nino[35] += parseInt(response.NINO35);
-									nino[36] += parseInt(response.NINO36);
-									nino[37] += parseInt(response.NINO37);
-
-									console.log(nino[1]);
-							});
-
-							for (var i = 1; i <= 37; i++) {
-								$("#nino"+i).html(nino[i]);
-							}
+							// var nino = [];
+							//
+							// for (var i = 1; i <= 37; i++) {
+							// 	nino[i] = 0;
+							// }
+							//
+							// response.forEach(function (response, index) {
+							// 		nino[1] += parseInt(response.NINO1);
+							// 		nino[2] += parseInt(response.NINO2);
+							// 		nino[3] += parseInt(response.NINO3);
+							// 		nino[4] += parseInt(response.NINO4);
+							// 		nino[5] += parseInt(response.NINO5);
+							// 		nino[6] += parseInt(response.NINO6);
+							// 		nino[7] += parseInt(response.NINO7);
+							// 		nino[8] += parseInt(response.NINO8);
+							// 		nino[9] += parseInt(response.NINO9);
+							// 		nino[10] += parseInt(response.NINO10);
+							// 		nino[11] += parseInt(response.NINO11);
+							// 		nino[12] += parseInt(response.NINO12);
+							// 		nino[13] += parseInt(response.NINO13);
+							// 		nino[14] += parseInt(response.NINO14);
+							// 		nino[15] += parseInt(response.NINO15);
+							// 		nino[16] += parseInt(response.NINO16);
+							// 		nino[17] += parseInt(response.NINO17);
+							// 		nino[18] += parseInt(response.NINO18);
+							// 		nino[19] += parseInt(response.NINO19);
+							// 		nino[20] += parseInt(response.NINO20);
+							// 		nino[21] += parseInt(response.NINO21);
+							// 		nino[22] += parseInt(response.NINO22);
+							// 		nino[23] += parseInt(response.NINO23);
+							// 		nino[24] += parseInt(response.NINO24);
+							// 		nino[25] += parseInt(response.NINO25);
+							// 		nino[26] += parseInt(response.NINO26);
+							// 		nino[27] += parseInt(response.NINO27);
+							// 		nino[28] += parseInt(response.NINO28);
+							// 		nino[29] += parseInt(response.NINO29);
+							// 		nino[30] += parseInt(response.NINO30);
+							// 		nino[31] += parseInt(response.NINO31);
+							// 		nino[32] += parseInt(response.NINO32);
+							// 		nino[33] += parseInt(response.NINO33);
+							// 		nino[34] += parseInt(response.NINO34);
+							// 		nino[35] += parseInt(response.NINO35);
+							// 		nino[36] += parseInt(response.NINO36);
+							// 		nino[37] += parseInt(response.NINO37);
+							//
+							// 		console.log(nino[1]);
+							// });
+							//
+							// for (var i = 1; i <= 37; i++) {
+							// 	$("#nino"+i).html(nino[i]);
+							// }
 
             }).fail(function(data) {
                 alert("ERROR");
