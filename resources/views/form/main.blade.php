@@ -3,21 +3,24 @@
 </h1>
 <p class="subtitle">ATENCIÓN DEL RECIÉN NACIDO</p>
 
+<div id="app">
+
 <form id="form-recien-nacido" method="GET" action="getRecienNacido">
 
 <div class="field is-horizontal">
   <div class="field-label is-normal">
-    <label class="label">Seleccionar por Redes: </label>
+    <label class="label">
+      Seleccionar por Redes:
+      <input type="radio" id="one" name="picked" value="one" v-model="picked" v-on:change="selectQuery">
+    </label>
   </div>
   <div class="field-body">
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select id="cmb_red" name="txtRed">
+          <select v-model="selectedRed" v-on:change="microRedes" v-bind:disabled="cmbRedes">
               <option value="" selected>Todas las Redes</option>
-            @foreach ($red as $red)
-              <option value="{{ $red->cod_red }}">{{ $red->desc_red }}</option>
-            @endforeach
+              <option v-for="red in redes" v-bind:value="red.cod_red">@{{red.desc_red}}</option>
           </select>
         </span>
         <span class="icon is-small is-left">
@@ -28,8 +31,9 @@
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select id="cmb_mred" name="txtMred">
+          <select v-model="selectedMred" v-bind:disabled="cmbMredes">
               <option value="" selected>Todas las Micro Redes</option>
+              <option v-for="mred in mredes" v-bind:value="mred.cod_mic">@{{mred.desc_micro}}</option>
           </select>
         </span>
         <span class="icon is-small is-left">
@@ -42,17 +46,18 @@
 
 <div class="field is-horizontal">
   <div class="field-label is-normal">
-    <label class="label">Seleccionar por Provincias: </label>
+    <label class="label">
+      Seleccionar por Provincias:
+      <input type="radio" id="two" name="picked" value="two" v-model="picked" v-on:change="selectQuery">
+    </label>
   </div>
   <div class="field-body">
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select id="cmb_provincia" name="txtProvincia">
+          <select v-model="selectedProvincia" v-on:change="distrito" v-bind:disabled="cmbProvincias">
               <option value="" selected>Todas las Provincias</option>
-            @foreach ($provincias as $provincia)
-              <option value="{{ $provincia->cod_prov }}">{{ $provincia->desc_prov }}</option>
-            @endforeach
+              <option v-for="provincia in provincias" v-bind:value="provincia.cod_prov">@{{provincia.desc_prov}}</option>
           </select>
         </span>
         <span class="icon is-small is-left">
@@ -63,8 +68,9 @@
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select id="cmb_distrito" name="txtDistrito">
+          <select v-model="selectedDistrito" v-bind:disabled="cmbDistritos">
             <option value="" selected>Todas las Provincias</option>
+            <option v-for="distrito in distritos" v-bind:value="distrito.cod_dist" v-text="distrito.desc_dist"></option>
           </select>
         </span>
         <span class="icon is-small is-left">
@@ -126,3 +132,5 @@
 </div>
 
 </form>
+
+</div>

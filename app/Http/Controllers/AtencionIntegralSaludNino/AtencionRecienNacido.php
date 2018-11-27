@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\AtencionIntegralSaludNino;
 
 use Illuminate\Http\Request;
 use DB;
 use PDF;
+
+use App\Http\Controllers\Controller;
+
 class AtencionRecienNacido extends Controller
 {
     /**
@@ -22,22 +25,6 @@ class AtencionRecienNacido extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
-     public function getDistrito()
-     {
-       $cod_prov = $_GET['cod_prov'];
-       $distritos = DB::select('select * from distrito where cod_prov = ?',[$cod_prov]);
-
-       return $distritos;
-     }
-
-     public function getMicroRed()
-     {
-       $cod_red = $_GET['cod_red'];
-       $mred = DB::select('select * from mred where cod_red = ?',[$cod_red]);
-
-       return $mred;
-     }
 
      public function index()
      {
@@ -69,7 +56,9 @@ class AtencionRecienNacido extends Controller
                $end_date = strip_tags(trim($_GET["endDate"]));
 
                $result = DB::select('exec dbo.atencionInmediataNacido ?,?,?,?,?,?',[$red, $microred, $txtProvincia, $txtDistrito, $start_date, $end_date]);
+               // $json = json_encode($result);
                // $this->exportarpdf($result);
+
                return $result;
            } else {
                // Not a POST request, set a 403 (forbidden) response code.

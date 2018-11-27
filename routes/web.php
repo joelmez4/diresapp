@@ -21,9 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::get('/AtencionRecienNacido', 'AtencionRecienNacido@index');
-Route::get('/getRecienNacido', 'AtencionRecienNacido@getRecienNacido');
-Route::get('/atencionRecienNacido/exportarpdf', 'AtencionRecienNacido@exportarpdf');
+Route::get('/AtencionIntegralSaludNino', 'AtencionIntegralSaludNino\AtencionRecienNacido@index');
+Route::get('/getRecienNacido', 'AtencionIntegralSaludNino\AtencionRecienNacido@getRecienNacido');
+Route::get('/atencionRecienNacido/exportarpdf', 'AtencionIntegralSaludNino\AtencionRecienNacido@exportarpdf');
 
-Route::get('/getDistrito', 'AtencionRecienNacido@getDistrito');
-Route::get('/getMicroRed', 'AtencionRecienNacido@getMicroRed');
+Route::get('/redes', 'HomeController@getRedes');
+Route::get('/provincias', 'HomeController@getProvincias');
+Route::get('/getDistrito', 'HomeController@getDistrito');
+Route::get('/getMicroRed', 'HomeController@getMicroRed');

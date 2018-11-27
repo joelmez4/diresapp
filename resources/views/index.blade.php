@@ -7,7 +7,7 @@
         DIRESA
       </h1>
       <br>
-      <a href="AtencionRecienNacido">REPORTE MENSUAL DE ACTIVIDADES  ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
+      <a href="AtencionIntegralSaludNino">REPORTE MENSUAL DE ACTIVIDADES  ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
     </div>
   </section>
 @endsection
