@@ -68,27 +68,27 @@
 					<tbody>
 						<tr>
 							<td>Atención Inmediata</td>
-							<td id="nino1"></td>
+							<td>@{{atencion_recien_nacido.atencion_inmediata}}</td>
 						</tr>
 						<tr>
 							<td>Tamizaje Neonatal (Enfermed. Metabólicas)</td>
-							<td id="nino2"></td>
+							<td>@{{atencion_recien_nacido.tamizaje_neonatal}}</td>
 						</tr>
 						<tr>
 							<td>Tamizaje Visual y Auditivo</td>
-							<td id="nino3"></td>
+							<td>@{{atencion_recien_nacido.tamizaje_va}}</td>
 						</tr>
 						<tr>
 							<td>Contacto Piel a Piel con la madre</td>
-							<td id="nino4"></td>
+							<td>@{{atencion_recien_nacido.contacto_piel_madre}}</td>
 						</tr>
 						<tr>
 							<td>Alojamiento Conjunto</td>
-							<td id="nino5"></td>
+							<td>@{{atencion_recien_nacido.alojamiento_conjunto}}</td>
 						</tr>
 						<tr>
 							<td>Lactancia Materna en la 1º Hora</td>
-							<td id="nino6"></td>
+							<td>@{{atencion_recien_nacido.lactancia_materna_hora}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -103,31 +103,31 @@
 					<tbody>
 						<tr>
 							<td>Hipotiroidismo Congénito</td>
-							<td id="nino7"></td>
+							<td>@{{atencion_recien_nacido.hipotiroidismo_congenito}}</td>
 						</tr>
 						<tr>
 							<td>Fenilcetonuria</td>
-							<td id="nino8"></td>
+							<td>@{{atencion_recien_nacido.fenilcetonuria}}</td>
 						</tr>
 						<tr>
 							<td>Galactosemia</td>
-							<td id="nino9"></td>
+							<td>@{{atencion_recien_nacido.galactosemia}}</td>
 						</tr>
 						<tr>
 							<td>Hiperplasia Suprarrenal Congénita</td>
-							<td id="nino10"></td>
+							<td>@{{atencion_recien_nacido.hiperplasia_suprarrenal_congenita}}</td>
 						</tr>
 						<tr>
 							<td>Fibrosis Quística</td>
-							<td id="nino11"></td>
+							<td>@{{atencion_recien_nacido.fibrosis_quistica}}</td>
 						</tr>
 						<tr>
 							<td>Catarata Congénita</td>
-							<td id="nino12"></td>
+							<td>@{{atencion_recien_nacido.catarata_congenita}}</td>
 						</tr>
 						<tr>
 							<td>Hipoacusia (todas las clasificaciones)</td>
-							<td id="nino13"></td>
+							<td>@{{atencion_recien_nacido.hipoacusia}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -149,21 +149,21 @@
 					<tbody>
 						<tr>
 							<td>RN Normal</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>RN Deprimido </td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>Prematuro</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 					</tbody>
 				</table>
@@ -180,39 +180,39 @@
 					<tbody>
 						<tr>
 							<td>Síndrome de Dristres Respiratorio</td>
-							<td id="nino14"></td>
+							<td>@{{atencion_recien_nacido.sindrome_dristres_respiratorio}}</td>
 						</tr>
 						<tr>
 							<td>Síndromes de Aspiración Neonatal</td>
-							<td id="nino15"></td>
+							<td>@{{atencion_recien_nacido.sindromes_aspiracion_neonatal}}</td>
 						</tr>
 						<tr>
 							<td>Asfixia Neonatal</td>
-							<td id="nino16"></td>
+							<td>@{{atencion_recien_nacido.asfixia_neonatal}}</td>
 						</tr>
 						<tr>
 							<td>Sepsis Neonatal</td>
-							<td id="nino17"></td>
+							<td>@{{atencion_recien_nacido.sepsis_neonatal}}</td>
 						</tr>
 						<tr>
 							<td>Ictericia</td>
-							<td id="nino18"></td>
+							<td>@{{atencion_recien_nacido.ictericia}}</td>
 						</tr>
 						<tr>
 							<td>Hipoglucemia</td>
-							<td id="nino19"></td>
+							<td>@{{atencion_recien_nacido.hipoglucemia}}</td>
 						</tr>
 						<tr>
 							<td>Sífilis Congénita</td>
-							<td id="nino20"></td>
+							<td>@{{atencion_recien_nacido.sifilis_congenita}}</td>
 						</tr>
 						<tr>
 							<td>VIH Expuesto</td>
-							<td id="nino21"></td>
+							<td>@{{atencion_recien_nacido.vih_expuesto}}</td>
 						</tr>
 						<tr>
 							<td>Retinopatía de la Prematuridad</td>
-							<td id="nino22"></td>
+							<td>@{{atencion_recien_nacido.retinopatia_prematuridad}}</td>
 						</tr>
 					</tbody>
 		    </table>
@@ -470,3 +470,5 @@
 
 
 @endsection
+
+</div>

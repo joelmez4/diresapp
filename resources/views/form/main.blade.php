@@ -5,7 +5,7 @@
 
 <div id="app">
 
-<form id="form-recien-nacido" method="GET" action="getRecienNacido">
+<form id="form-recien-nacido" v-on:submit.prevent="processForm">
 
 <div class="field is-horizontal">
   <div class="field-label is-normal">
@@ -69,7 +69,7 @@
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
           <select v-model="selectedDistrito" v-bind:disabled="cmbDistritos">
-            <option value="" selected>Todas las Provincias</option>
+            <option value="" selected>Todos los Distritos</option>
             <option v-for="distrito in distritos" v-bind:value="distrito.cod_dist" v-text="distrito.desc_dist"></option>
           </select>
         </span>
@@ -90,7 +90,7 @@
   <div class="field-body">
     <div class="field">
       <p class="control is-expanded has-icons-left">
-        <input class="input" name="startDate" type="date" placeholder="Fecha Inicio" required>
+        <input class="input" name="startDate" v-model="startDate" type="date" placeholder="Fecha Inicio" required>
         <span class="icon is-small is-left">
           <i class="far fa-calendar-alt"></i>
         </span>
@@ -98,7 +98,7 @@
     </div>
     <div class="field">
       <p class="control is-expanded has-icons-left has-icons-right">
-        <input class="input" name="endDate" type="date" placeholder="Fecha Fin" required>
+        <input class="input" name="endDate" v-model="endDate" type="date" placeholder="Fecha Fin" required>
         <span class="icon is-small is-left">
           <i class="far fa-calendar-alt"></i>
         </span>
@@ -114,7 +114,7 @@
   <div class="field-body">
     <div class="field">
       <div class="control">
-        <button class="button is-primary" type="submit">
+        <button class="button is-primary" type="submit" v-on:click="">
           <span>Buscar</span>
           <span class="icon">
             <i class="fas fa-search"></i>
@@ -132,5 +132,3 @@
 </div>
 
 </form>
-
-</div>

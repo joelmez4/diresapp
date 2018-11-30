@@ -1,12 +1,19 @@
-new Vue({
+const app = new Vue({
   el: '#app',
 
   data: {
+    //Get query Atencion Recien Nacido
+    atencion_recien_nacido: '',
+
+    //Data Send
+    startDate: '',
+    endDate: '',
+
+    //Form query
     picked: 'one',
 
     selectedRed: '',
     selectedMred: '',
-
     selectedProvincia: '',
     selectedDistrito: '',
 
@@ -34,6 +41,12 @@ new Vue({
   },
 
   methods: {
+
+    processForm: function (event) {
+
+      axios.get('getAtencionRecienNacido?red='+this.selectedRed+'&mred='+this.selectedMred+'&provincia='+this.selectedProvincia+'&distrito='+this.selectedDistrito+'&startDate='+this.startDate+"&endDate="+this.endDate).then(response => this.atencion_recien_nacido = response.data);
+
+    },
 
     microRedes: function (event) {
 
