@@ -49,18 +49,49 @@
 	#turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
 }
 
+/* custom */
+
+.notification.is-info {
+    background-color: #209cee;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0.5px;
+    border-radius: 0%;
+}
+
 </style>
 @endsection
 
 @section('content')
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+        <li><a href="../">Bulma</a></li>
+        <li><a href="../">Templates</a></li>
+        <li><a href="../">Examples</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
+    </ul>
+</nav>
+<section class="hero is-info welcome is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                ATENCIÓN INTEGRAL DE SALUD DEL NIÑO
+            </h1>
+            <h2 class="subtitle">
+                Consultas por redes y provincias.
+            </h2>
+        </div>
+    </div>
+</section>
+
 <section class="section">
-  <div class="container">
 		@include('form.main')
-  	<br>
+		<br>
 		<div class="columns">
-		  <div class="column">
-		    <p class="notification is-info">A) Atención Inmediata</p>
-				<table class="table is-bordered" width="100%">
+			<div class="column">
+				<p class="notification is-info">A) Atención Inmediata</p>
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>ACTIVIDADES</th>
 						<th>Nº</th>
@@ -92,10 +123,10 @@
 						</tr>
 					</tbody>
 				</table>
-		  </div>
+			</div>
 			<div class="column">
-		    <p class="notification is-info">B) Resultados del Tamizaje Neonatal</p>
-				<table class="table is-bordered" width="100%">
+				<p class="notification is-info">B) Resultados del Tamizaje Neonatal</p>
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>DIAGNÓSTICOS</th>
 						<th>Nº</th>
@@ -131,10 +162,10 @@
 						</tr>
 					</tbody>
 				</table>
-		  </div>
+			</div>
 			<div class="column">
-		    <p class="notification is-info">C) Condición al Nacimiento</p>
-				<table class="table is-bordered" width="100%">
+				<p class="notification is-info">C) Condición al Nacimiento</p>
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<tr>
 							<th rowspan="2">CONDICIÓN</th>
@@ -167,12 +198,12 @@
 						</tr>
 					</tbody>
 				</table>
-		  </div>
+			</div>
 		</div>
 		<div class="columns">
-		  <div class="column">
-		    <p class="notification is-info">D) Morbilidad Neonatal</p>
-				<table class="table is-bordered" style="width: 100%;">
+			<div class="column">
+				<p class="notification is-info">D) Morbilidad Neonatal</p>
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>CAUSAS DE MORBILIDAD</th>
 						<th>Nº</th>
@@ -215,11 +246,11 @@
 							<td>@{{atencion_recien_nacido.retinopatia_prematuridad}}</td>
 						</tr>
 					</tbody>
-		    </table>
-		  </div>
+				</table>
+			</div>
 			<div class="column">
-		    <p class="notification is-info">E) Mortalidad Neonatal</p>
-				<table width="100%" class="table is-bordered" >
+				<p class="notification is-info">E) Mortalidad Neonatal</p>
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>PESO AL NACER</th>
 						<th>Nº</th>
@@ -251,7 +282,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<table width="100%" class="table is-bordered" >
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>TIEMPO DE VIDA</th>
 						<th>Nº</th>
@@ -275,7 +306,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<table width="100%" class="table is-bordered" >
+				<table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<th>Causas Defunción</th>
 						<th>Nº</th>
@@ -303,172 +334,10 @@
 						</tr>
 					</tbody>
 				</table>
-		  </div>
+			</div>
 		</div>
-  </div>
+
 </section>
-
-<!-- <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-
-<script src="{{ url('/public/js/app.js') }}"></script>
-
-<!-- <script type="text/javascript">
-
-  $(document).ready(function() {
-
-    $("#cmb_provincia").change(function () {
-
-      var val = $(this).val();
-      var prov_html = "";
-
-      $.ajax({
-        url: "getDistrito?cod_prov="+val,
-        async: false,
-        success: function(result){
-					prov_html += "<option value='' selected>Todos los Distritos</option>";
-          for (var i = 0; i < result.length; i++) {
-            prov_html += "<option value='"+result[i].cod_dist+"'>"+result[i].desc_dist+"</option>";
-          }
-        }
-      });
-
-      $("#cmb_distrito").html(prov_html);
-
-			if (!val) {
-				document.getElementById("cmb_red").disabled=false;
-				document.getElementById("cmb_mred").disabled=false;
-
-			} else {
-				document.getElementById("cmb_red").disabled=true;
-				document.getElementById("cmb_mred").disabled=true;
-			}
-
-    });
-
-		$("#cmb_red").change(function () {
-
-      var val = $(this).val();
-      var prov_html = "";
-
-      $.ajax({
-        url: "getMicroRed?cod_red="+val,
-        async: false,
-        success: function(result){
-					prov_html += "<option value='' selected>Todas las Micro Redes</option>";
-          for (var i = 0; i < result.length; i++) {
-            prov_html += "<option value='"+result[i].cod_mic+"'>"+result[i].desc_micro+"</option>";
-          }
-        }
-      });
-
-      $("#cmb_mred").html(prov_html);
-
-			if (!val) {
-				document.getElementById("cmb_provincia").disabled=false;
-				document.getElementById("cmb_distrito").disabled=false;
-
-			} else {
-				document.getElementById("cmb_provincia").disabled=true;
-				document.getElementById("cmb_distrito").disabled=true;
-			}
-
-    });
-
-  });
-
-  $(function() {
-        // Get the form.
-        var form = $('#form-recien-nacido');
-
-        // Get the messages div.
-        var formMessages = $('#form-messages');
-
-        // TODO: The rest of the code will go here...
-        // Set up an event listener for the contact form.
-        $(form).submit(function(event) {
-            // Stop the browser from submitting the form.
-            event.preventDefault();
-
-            // TODO
-
-            // Serialize the form data.
-            var formData = $(form).serialize();
-
-            // Submit the form using AJAX.
-            $.ajax({
-                type: 'GET',
-                url: $(form).attr('action'),
-                data: formData
-            }).done(function(response) {
-
-							console.log(response);
-
-							// var nino = [];
-							//
-							// for (var i = 1; i <= 37; i++) {
-							// 	nino[i] = 0;
-							// }
-							//
-							// response.forEach(function (response, index) {
-							// 		nino[1] += parseInt(response.NINO1);
-							// 		nino[2] += parseInt(response.NINO2);
-							// 		nino[3] += parseInt(response.NINO3);
-							// 		nino[4] += parseInt(response.NINO4);
-							// 		nino[5] += parseInt(response.NINO5);
-							// 		nino[6] += parseInt(response.NINO6);
-							// 		nino[7] += parseInt(response.NINO7);
-							// 		nino[8] += parseInt(response.NINO8);
-							// 		nino[9] += parseInt(response.NINO9);
-							// 		nino[10] += parseInt(response.NINO10);
-							// 		nino[11] += parseInt(response.NINO11);
-							// 		nino[12] += parseInt(response.NINO12);
-							// 		nino[13] += parseInt(response.NINO13);
-							// 		nino[14] += parseInt(response.NINO14);
-							// 		nino[15] += parseInt(response.NINO15);
-							// 		nino[16] += parseInt(response.NINO16);
-							// 		nino[17] += parseInt(response.NINO17);
-							// 		nino[18] += parseInt(response.NINO18);
-							// 		nino[19] += parseInt(response.NINO19);
-							// 		nino[20] += parseInt(response.NINO20);
-							// 		nino[21] += parseInt(response.NINO21);
-							// 		nino[22] += parseInt(response.NINO22);
-							// 		nino[23] += parseInt(response.NINO23);
-							// 		nino[24] += parseInt(response.NINO24);
-							// 		nino[25] += parseInt(response.NINO25);
-							// 		nino[26] += parseInt(response.NINO26);
-							// 		nino[27] += parseInt(response.NINO27);
-							// 		nino[28] += parseInt(response.NINO28);
-							// 		nino[29] += parseInt(response.NINO29);
-							// 		nino[30] += parseInt(response.NINO30);
-							// 		nino[31] += parseInt(response.NINO31);
-							// 		nino[32] += parseInt(response.NINO32);
-							// 		nino[33] += parseInt(response.NINO33);
-							// 		nino[34] += parseInt(response.NINO34);
-							// 		nino[35] += parseInt(response.NINO35);
-							// 		nino[36] += parseInt(response.NINO36);
-							// 		nino[37] += parseInt(response.NINO37);
-							//
-							// 		console.log(nino[1]);
-							// });
-							//
-							// for (var i = 1; i <= 37; i++) {
-							// 	$("#nino"+i).html(nino[i]);
-							// }
-
-            }).fail(function(data) {
-                alert("ERROR");
-            });
-        });
-    });
-
-</script> -->
 
 
 @endsection
-
-</div>

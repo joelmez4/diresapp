@@ -1,16 +1,16 @@
-<h1 class="title">
+<!-- <h1 class="title">
   DIRESA
 </h1>
 <p class="subtitle">ATENCIÓN DEL RECIÉN NACIDO</p>
 
-<div id="app">
+<div id="app"> -->
 
 <form id="form-recien-nacido" v-on:submit.prevent="processForm">
 
 <div class="field is-horizontal">
   <div class="field-label is-normal">
     <label class="label">
-      Seleccionar por Redes:
+      Redes:
       <input type="radio" id="one" name="picked" value="one" v-model="picked" v-on:change="selectQuery">
     </label>
   </div>
@@ -47,7 +47,7 @@
 <div class="field is-horizontal">
   <div class="field-label is-normal">
     <label class="label">
-      Seleccionar por Provincias:
+      Provincias:
       <input type="radio" id="two" name="picked" value="two" v-model="picked" v-on:change="selectQuery">
     </label>
   </div>
