@@ -1,5 +1,61 @@
 @extends('layouts.app')
 
+@section('custom-css')
+<script src="{{ asset('public/highchart/js/jquery-1.10.2.min.js') }}"></script>
+<script src="{{ asset('public/highchart/js/highmaps.js') }}"></script>
+<script src="{{ asset('public/highchart/js/highcharts.js') }} "></script>
+<script src="{{ asset('public/highchart/js/exporting.js') }} "></script>
+<script src="{{ asset('public/highchart/js/modulos/exporting.js') }}"></script>
+<script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
+<script src="{{ asset('public/highchart/js/mapa.js') }}"></script>
+<script src="{{ asset('public/highchart/js/drilldown.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" />
+
+<!--ARCHIVOS UTILIZADOS EN LA TABLA -->
+
+<link href="{{ asset('public/highchart/tb/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('public/highchart/tb/estilos.css') }}" rel="stylesheet" />
+<style type="text/css">
+    body,td,th {
+        font-size: 10px;
+    }
+    #datos *{
+        position: absolute;
+        width: 154px;
+        height: 416px;
+        z-index: 2;
+        left: 515px;
+        top: 95px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 5px 0 0 0;
+        border-left: 1px solid silver;
+    }
+    #apDiv4 {
+      position: absolute;
+      width: 324px;
+      height: 512px;
+      z-index: 99;
+      left: 365px;
+      top: 152px;
+      visibility: visible;
+    }
+    #tabla2 {
+      position: absolute;
+      width: 685px;
+      height: 51px;
+      z-index: 100;
+      left: 2px;
+      top: 93px;
+    }
+</style>
+<!--<script src="tb/jquery-latest.min.js"></script> -->
+<script src="{{ asset('public/highchart/tb/responsive.js') }}"></script>
+<script src="{{ asset('public/highchart/tb/bootstrap.min.js') }}"></script>
+@endsection
+
 @section('content')
 <nav class="breadcrumb" aria-label="breadcrumbs">
     <ul>
@@ -13,7 +69,7 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Hello, Admin.
+                Hola, Admin.
             </h1>
             <h2 class="subtitle">
                 I hope you are having a great day!
@@ -64,55 +120,8 @@
             </header>
             <div class="card-table">
                 <div class="content">
-                    <table class="table is-fullwidth is-striped">
-                        <tbody>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                            <tr>
-                                <td width="5%"><i class="fa fa-bell-o"></i></td>
-                                <td>Lorum ipsum dolem aire</td>
-                                <td><a class="button is-small is-primary" href="#">Action</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                  <!-- draw maps (Perú) -->
+                  <div id="container"></div>
                 </div>
             </div>
             <footer class="card-footer">
@@ -182,4 +191,14 @@
   <a href="AtencionIntegralSaludNino">REPORTE MENSUAL DE ACTIVIDADES  ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
 </div>
 </section> -->
+@endsection
+
+@section('custom-js')
+<script>
+Highcharts.setOptions({
+  lang: {
+    drillUpText: '◄ Regresar'
+  }
+});
+</script>
 @endsection

@@ -1,0 +1,32 @@
+#container {
+	height: 500px;
+	min-width: 350px;
+	max-width: 500px;
+	margin: 10px 0px 0px 0px;
+	float: left;
+}
+#apDiv1 {
+	position: absolute;
+	width: 690px;
+	height: 707px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	width: 690px;
+	height: 98px;
+	z-index: 2;
+}
+#apDiv3 {
+	position: absolute;
+	width: 381px;
+	height: 456px;
+	z-index: 1;
+	left: -9px;
+	top: 152px;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}

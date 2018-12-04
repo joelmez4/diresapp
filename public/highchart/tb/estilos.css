@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#info {
+	float: left;
+	width: 270px;
+	padding-left: 20px;
+	margin: 100px 0 0 0;
+	border-left: 1px solid silver;
+}

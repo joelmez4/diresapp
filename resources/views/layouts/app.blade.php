@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-  <!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'DIRESA') }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    @yield('custom-css')
-  </head> -->
 
   <head>
       <meta charset="utf-8">
@@ -22,7 +13,9 @@
       <link rel="stylesheet" type="text/css" href="{{ asset('public/css/admin.css') }}">
 
       <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
       @yield('custom-css')
+
   </head>
 
   <body>
@@ -284,7 +277,7 @@
     @yield('custom-js')
 
     <!-- <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
