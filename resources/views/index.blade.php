@@ -14,57 +14,22 @@
 
 <!--ARCHIVOS UTILIZADOS EN LA TABLA -->
 
-<link href="{{ asset('public/highchart/tb/bootstrap.min.css') }}" rel="stylesheet" />
-<link href="{{ asset('public/highchart/tb/estilos.css') }}" rel="stylesheet" />
-<style type="text/css">
-    body,td,th {
-        font-size: 10px;
-    }
-    #datos *{
-        position: absolute;
-        width: 154px;
-        height: 416px;
-        z-index: 2;
-        left: 515px;
-        top: 95px;
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin: 5px 0 0 0;
-        border-left: 1px solid silver;
-    }
-    #apDiv4 {
-      position: absolute;
-      width: 324px;
-      height: 512px;
-      z-index: 99;
-      left: 365px;
-      top: 152px;
-      visibility: visible;
-    }
-    #tabla2 {
-      position: absolute;
-      width: 685px;
-      height: 51px;
-      z-index: 100;
-      left: 2px;
-      top: 93px;
-    }
-</style>
+<!-- <link href="{{ asset('public/highchart/tb/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('public/highchart/tb/estilos.css') }}" rel="stylesheet" /> -->
+
 <!--<script src="tb/jquery-latest.min.js"></script> -->
-<script src="{{ asset('public/highchart/tb/responsive.js') }}"></script>
-<script src="{{ asset('public/highchart/tb/bootstrap.min.js') }}"></script>
+<!-- <script src="{{ asset('public/highchart/tb/responsive.js') }}"></script>
+<script src="{{ asset('public/highchart/tb/bootstrap.min.js') }}"></script> -->
+
+<style media="screen">
+.events-card .card-table {
+  max-height: none;
+}
+</style>
+
 @endsection
 
 @section('content')
-<nav class="breadcrumb" aria-label="breadcrumbs">
-    <ul>
-        <li><a href="../">Bulma</a></li>
-        <li><a href="../">Templates</a></li>
-        <li><a href="../">Examples</a></li>
-        <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
-    </ul>
-</nav>
 <section class="hero is-info welcome is-small">
     <div class="hero-body">
         <div class="container">
@@ -106,17 +71,12 @@
     </div>
 </section>
 <div class="columns">
-    <div class="column is-6">
+    <div class="column is-7">
         <div class="card events-card">
             <header class="card-header">
                 <p class="card-header-title">
-                    Events
+                    Mapa
                 </p>
-                <a href="#" class="card-header-icon" aria-label="more options">
-                  <span class="icon">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
             </header>
             <div class="card-table">
                 <div class="content">
@@ -125,11 +85,11 @@
                 </div>
             </div>
             <footer class="card-footer">
-                <a href="#" class="card-footer-item">View All</a>
+                <a href="#" class="card-footer-item">Ver más</a>
             </footer>
         </div>
     </div>
-    <div class="column is-6">
+    <div class="column is-5">
         <div class="card">
             <header class="card-header">
                 <p class="card-header-title">
@@ -197,7 +157,7 @@
 <script>
 Highcharts.setOptions({
   lang: {
-    drillUpText: '◄ Regresar'
+    drillUpText: '⬅️ Regresar'
   }
 });
 </script>

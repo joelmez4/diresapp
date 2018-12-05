@@ -1186,6 +1186,8 @@ Highcharts.setOptions({
 // INCIALIZADO EL MAPA
 mapa = $('#container').highcharts('Map', {
                   chart: {
+                    width: 450,
+                    height: 500,
                       events: {
                          // EVENTO AGRAGADO ANTES DE FUNCIONAR
                                                            drillup: function(e){
