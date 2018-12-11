@@ -88,7 +88,7 @@
 			@include('template_at_rn.control_cd')
 		</div>
 		<div v-else-if="selectedAtencionRN === '3'">
-		  C
+		  @include('template_at_rn.tamizaje')
 		</div>
 		<div v-else>
 		  Not A/B/C
