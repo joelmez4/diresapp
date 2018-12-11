@@ -16,6 +16,7 @@ const app = new Vue({
     selectedMred: '',
     selectedProvincia: '',
     selectedDistrito: '',
+    selectedAtencionRN: null,
 
     redes: [],
     mredes: [],
@@ -25,7 +26,8 @@ const app = new Vue({
     cmbRedes: false,
     cmbMredes: false,
     cmbProvincias: true,
-    cmbDistritos: true
+    cmbDistritos: true,
+
   },
 
   mounted () {

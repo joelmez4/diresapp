@@ -108,6 +108,43 @@
 </div>
 
 <div class="field is-horizontal">
+  <!-- <div class="field-label"></div> -->
+  <div class="field-label is-normal">
+    <label class="label">Seleccionar: </label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <span class="select is-fullwidth">
+          <select v-model="selectedAtencionRN">
+              <option value="1">I. ATENCIÓN DEL RECIÉN NACIDO</option>
+              <option value="2">II. CONTROL DE CRECIMIENTO Y DESARROLLO</option>
+              <option value="3">III. TAMIZAJE</option>
+              <option value="4">IV. ADMINISTRACIÓN DE PROFILAXIS ANTIPARASITARIA</option>
+              <option value="5">V. ADMINISTRACION DE MICRONUTRIENTES</option>
+              <option value="6">VI. LACTANCIA MATERNA EXCLUSIVA</option>
+              <option value="7">VII. ALIMENTACIÓN COMPLEMENTARIA</option>
+              <option value="8">VIII. EVALUACION DEL ESTADO NUTRICIONAL</option>
+              <option value="9">IX. EVALUACION DEL DESARROLLO</option>
+              <option value="10">X. PLAN DE ATENCION INTEGRAL</option>
+              <option value="11">XI. CONSEJERÍA</option>
+              <option value="12">XII. VISITA DOMICILIARIA</option>
+              <option value="13">XIII. ESTIMULACION TEMPRANA</option>
+              <option value="14">XIV. ACTIVIDADES EXTRAMURALES, MASIVAS Y DE GESTIÓN</option>
+              <option value="15">XV.  ATENCION DE LAS ENFERMEDADES PREVALENTES DE LA INFANCIA</option>
+              <option value="16">XVI. DEFUNCIONES</option>
+              <option value="17">XVII. VIGILANCIA DEL CONSUMO DE SAL YODADA</option>
+          </select>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="field is-horizontal">
   <div class="field-label">
     <!-- Left empty for spacing -->
   </div>
