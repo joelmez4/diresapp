@@ -96,6 +96,9 @@
 		<div v-else-if="selectedAtencionRN === '5'">
 		  @include('template_at_rn.admin_micro_n')
 		</div>
+		<div v-else-if="selectedAtencionRN === '6'">
+		  @include('template_at_rn.lactancia_materna_e')
+		</div>
 		<div v-else>
 		  Not A/B/C
 		</div>
