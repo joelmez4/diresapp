@@ -102,6 +102,37 @@
 		<div v-else-if="selectedAtencionRN === '7'">
 		  @include('template_at_rn.alimentacion_comp')
 		</div>
+
+		<div v-else-if="selectedAtencionRN === '8'">
+		  @include('template_at_rn.evaluacion_est_nut')
+		</div>
+		<div v-else-if="selectedAtencionRN === '9'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '10'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '11'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '12'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '13'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '14'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '15'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '16'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
+		<div v-else-if="selectedAtencionRN === '17'">
+		  <!-- @include('template_at_rn.alimentacion_comp') -->
+		</div>
 		<div v-else>
 		  Not A/B/C
 		</div>
