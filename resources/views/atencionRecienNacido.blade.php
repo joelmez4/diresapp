@@ -90,6 +90,9 @@
 		<div v-else-if="selectedAtencionRN === '3'">
 		  @include('template_at_rn.tamizaje')
 		</div>
+		<div v-else-if="selectedAtencionRN === '4'">
+		  @include('template_at_rn.admin_prof_anti')
+		</div>
 		<div v-else>
 		  Not A/B/C
 		</div>
