@@ -61,7 +61,9 @@
   </div>
 </div>
 
-<p class="subtitle is-5">Evaluación del Estado Nutricional  Antropométricas (Por personal técnico)</p>
+<div class="columns">
+  <p>Evaluación del Estado Nutricional  Antropométricas (Por personal técnico)</p>
+</div>
 
 <div class="columns">
   <div class="column">

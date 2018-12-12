@@ -246,3 +246,21 @@
     </table>
   </div>
 </div>
+<div class="columns">
+  <div class="column">
+    <p>La información del presente reporte debe ser complementada con fuentes externas (Libro de Atenciones, Reporte de Egresos, Certificado de Defunción, etc.)</p>
+  </div>
+  <div class="column">
+    <p>Fuentes Externas</p>
+    <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable">
+      <tr>
+        <td>&ensp;&ensp;&ensp;&ensp; </td>
+        <td>Libro de Atenciones y Reporte de Egresos</td>
+      </tr>
+      <tr>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>Certificado de Defunción</td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -31,3 +31,6 @@
     </table>
   </div>
 </div>
+<div class="columns">
+  <p>* Prematuros y Bajo Peso al Nacer.</p>
+</div>
