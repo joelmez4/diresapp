@@ -74,7 +74,7 @@ class AtencionRecienNacido extends Controller
            if ($_SERVER["REQUEST_METHOD"] == "GET") {
                // Get the form fields and remove whitespace.
 
-               $red = isset($_GET["red"]) ? strip_tags(trim($_GET["mred"])) : '';
+               $red = isset($_GET["red"]) ? strip_tags(trim($_GET["red"])) : '';
                $mred =  isset($_GET["mred"]) ? strip_tags(trim($_GET["mred"])) : '';
                $provincia = isset($_GET["provincia"]) ? strip_tags(trim($_GET["provincia"])) : '';
                $distrito = isset($_GET["distrito"]) ? strip_tags(trim($_GET["distrito"])) : '';
