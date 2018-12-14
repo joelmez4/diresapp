@@ -246,7 +246,7 @@
                   </p>
                   <ul class="menu-list">
                       <li>
-                          <a href="{{ url('AtencionIntegralSaludNino') }}">ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
+                          <a href="{{ url('atencion-integral-salud-nino') }}">ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
                           <ul>
                               <li><a>Indicadores</a></li>
                               <li><a>Metas</a></li>

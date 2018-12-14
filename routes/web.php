@@ -19,9 +19,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 
-
-
-Route::get('/AtencionIntegralSaludNino', 'AtencionIntegralSaludNino\AtencionRecienNacido@index');
+Route::get('/atencion-integral-salud-nino', 'AtencionIntegralSaludNino\AtencionRecienNacido@index');
 Route::get('/getAtencionRecienNacido', 'AtencionIntegralSaludNino\AtencionRecienNacido@getAtencionRecienNacido');
 Route::get('/atencionRecienNacido/exportarpdf', 'AtencionIntegralSaludNino\AtencionRecienNacido@exportarpdf');
 
