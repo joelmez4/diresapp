@@ -39,7 +39,7 @@ class AtencionRecienNacido extends Controller
        // var_dump($provincias[0]->desc_prov);
        // echo "</pre>";
 
-       return view('atencionRecienNacido')->with('provincias', $provincias)->with('red', $red);
+       return view('at_recien_nacido')->with('provincias', $provincias)->with('red', $red);
      }
 
      public function getAtencionRecienNacido()

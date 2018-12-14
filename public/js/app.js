@@ -16,7 +16,6 @@ const app = new Vue({
     selectedMred: '',
     selectedProvincia: '',
     selectedDistrito: '',
-    selectedAtencionRN: '',
 
     redes: [],
     mredes: [],
