@@ -21,6 +21,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/atencion-integral-salud-nino', 'AtencionIntegralSaludNino\AtencionRecienNacido@index');
 Route::get('/getAtencionRecienNacido', 'AtencionIntegralSaludNino\AtencionRecienNacido@getAtencionRecienNacido');
+Route::get('/atencion-integral-salud-nino/reporte', 'AtencionIntegralSaludNino\AtencionRecienNacido@reporte');
+
 Route::get('/atencionRecienNacido/exportarpdf', 'AtencionIntegralSaludNino\AtencionRecienNacido@exportarpdf');
 
 Route::get('/redes', 'HomeController@getRedes');

@@ -123,10 +123,18 @@ class AtencionRecienNacido extends Controller
            }
      }
 
+     public function reporte()
+     {
+       return view('reportes/estrategia_nino');
+     }
+
      public function exportarpdf()
      {
        $data = ["hi", "there"];
-       $pdf = PDF::loadView('exportarRN', $data);
+
+       $pdf = PDF::loadView('reportes/estrategia_nino', $data);
+       // (Optional) Setup the paper size and orientation
+       $pdf->setPaper('A4', 'landscape');
        return $pdf->download('exportarRN.pdf');
      }
 

@@ -45,7 +45,12 @@ const app = new Vue({
 
     processForm: function (event) {
 
-      axios.get('getAtencionRecienNacido?red='+this.selectedRed+'&mred='+this.selectedMred+'&provincia='+this.selectedProvincia+'&distrito='+this.selectedDistrito+'&startDate='+this.startDate+"&endDate="+this.endDate).then(response => this.atencion_recien_nacido = response.data);
+      axios
+      .get('getAtencionRecienNacido?red='+this.selectedRed+'&mred='+this.selectedMred+'&provincia='+this.selectedProvincia+'&distrito='+this.selectedDistrito+'&startDate='+this.startDate+"&endDate="+this.endDate)
+      .then(
+        response => this.atencion_recien_nacido = response.data
+      );
+      // window.open('http://localhost/kpi-watay/atencion-integral-salud-nino/reporte', '_blank');
 
     },
 

@@ -78,7 +78,11 @@
 </section>
 
 <section class="section">
-	@include('form.main')
+		@include('form.main')
+		<br>
+
+		<p>@{{atencion_recien_nacido}}</p>
+
 </section>
 
 @endsection
