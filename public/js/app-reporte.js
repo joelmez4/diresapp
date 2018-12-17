@@ -2,13 +2,27 @@ const reporte = new Vue({
   el: '#reporte',
 
   data: {
-    atencion_recien_nacido: null,
+    atIntegralSaludNino: '',
+    startDate: '',
+    endDate: '',
+
+    selectedRed: '',
+    selectedMred: '',
+    selectedProvincia: '',
+    selectedDistrito: ''
+
   },
 
   mounted () {
 
-    //this.atencion_recien_nacido = "Joe cool"
-    this.atencion_recien_nacido = atencion_recien_nacido;
+    //this.atIntegralSaludNino = "Joe cool"
+    this.atIntegralSaludNino = atIntegralSaludNino.data;
+    this.startDate = atIntegralSaludNino.startDate;
+    this.endDate = atIntegralSaludNino.endDate;
+    this.selectedRed = atIntegralSaludNino.selectedRed;
+    this.selectedMred = atIntegralSaludNino.selectedMred;
+    this.selectedProvincia = atIntegralSaludNino.selectedProvincia;
+    this.selectedDistrito = atIntegralSaludNino.selectedDistrito;
 
   },
 

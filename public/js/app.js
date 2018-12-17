@@ -2,8 +2,9 @@ const app = new Vue({
   el: '#app',
 
   data: {
-    //Get query Atencion Recien Nacido
-    atencion_recien_nacido: '',
+    //Get query ATENCIÓN INTEGRAL DE SALUD DEL NIÑO
+
+    atIntegralSaludNino: '',
     flag: false,
 
     //Data Send
@@ -53,22 +54,27 @@ const app = new Vue({
         if (response.status == 200) {
           this.flag = true;
         }
-        return this.atencion_recien_nacido = response.data
+        return this.atIntegralSaludNino = response.data
       });
-
-      // window.open('http://localhost/kpi-watay/atencion-integral-salud-nino/reporte', '_blank');
 
     },
 
     shareData: function (event) {
-      console.log(this.atencion_recien_nacido);
-      // var data = "";
-      // myWindow = window.open("http://localhost/kpi-watay/atencion-integral-salud-nino/reporte" + encodeURIComponent(data), "_blank");
-      // myWindow.focus();
+      console.log(this.atIntegralSaludNino);
 
-      var thisIsAnObject = this.atencion_recien_nacido;
-      var w = window.open("http://localhost/kpi-watay/atencion-integral-salud-nino/reporte");
-      w.atencion_recien_nacido = thisIsAnObject;
+      var thisIsAnObject = {
+        data: this.atIntegralSaludNino,
+        startDate: this.startDate,
+        endDate: this.endDate,
+        selectedRed: this.selectedRed,
+        selectedMred: this.selectedMred,
+        selectedProvincia: this.selectedProvincia,
+        selectedDistrito: this.selectedDistrito
+      };
+
+      var w = window.open(base_url+"/atencion-integral-salud-nino/reporte");
+      w.atIntegralSaludNino = thisIsAnObject;
+
     },
 
     microRedes: function (event) {

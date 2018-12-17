@@ -30,9 +30,9 @@ tags will be replaced.-->
 <!----------------------------->
 
 <div id="reporte" align=center x:publishsource="Excel">
-  <pre>
-@{{atencion_recien_nacido}}
-</pre>
+  <!-- <pre>
+    @{{atIntegralSaludNino}}
+  </pre> -->
 <table border=0 cellpadding=0 cellspacing=0 width=1261 class=xl668777
  style='border-collapse:collapse;table-layout:fixed;width:941pt'>
  <col class=xl668777 width=39 style='mso-width-source:userset;mso-width-alt:
@@ -91,14 +91,14 @@ tags will be replaced.-->
   <td height=28 class=xl698777 style='height:21.0pt'></td>
   <td colspan=2 class=xl2868777>DIRESA / RED / MR / EESS :</td>
   <td class=xl1168777 colspan=3>I-4<span style='mso-spacerun:yes'>   </span>-
-  00002552 - ANTABAMBA</td>
+  @{{selectedRed}} @{{selectedProvincia}} - @{{selectedMred}} @{{selectedDistrito}}</td>
   <td class=xl1168777>&nbsp;</td>
   <td class=xl1168777>&nbsp;</td>
   <td class=xl1168777>&nbsp;</td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl1158777>Periodo :<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl1168777 colspan=2>01-31 ENERO 2018</td>
+  <td class=xl1168777 colspan=2>@{{startDate}} - @{{endDate}}</td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl698777></td>
@@ -207,13 +207,13 @@ tags will be replaced.-->
   <td class=xl1628777 colspan=2>Atención Inmediata</td>
   <td class=xl1198777 style='border-top:none'>&nbsp;</td>
   <td class=xl1198777 style='border-top:none'>&nbsp;</td>
-  <td class=xl778777 align=right style='border-top:none'>2</td>
+  <td class=xl778777 align=right style='border-top:none'>@{{atIntegralSaludNino.atencion_inmediata}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1738777 colspan=4 style='border-right:.5pt solid #4F81BD'>Síndrome
   de Dristres Respiratorio</td>
-  <td class=xl2318777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2318777 align=right style='border-top:none;border-left:none'>@{{atIntegralSaludNino.sindrome_dristres_respiratorio}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -224,13 +224,13 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1638777 colspan=4>Tamizaje Neonatal (Enfermed. Metabólicas)</td>
-  <td class=xl1278777 align=right style='border-top:none'>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{atIntegralSaludNino.tamizaje_neonatal}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1748777 colspan=4 style='border-right:.5pt solid #4F81BD'>Síndromes
   de Aspiración Neonatal</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.sindromes_aspiracion_neonatal}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -242,14 +242,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=3>Tamizaje Visual y Auditivo</td>
   <td class=xl1248777 style='border-top:none'>&nbsp;</td>
-  <td class=xl798777 align=right style='border-top:none'>0</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{atIntegralSaludNino.tamizaje_va}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1748777 colspan=2>Asfixia Neonatal</td>
   <td class=xl948777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.asfixia_neonatal}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -261,14 +261,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1628777 colspan=3>Contacto Piel a Piel con la madre</td>
   <td class=xl1198777 style='border-top:none'>&nbsp;</td>
-  <td class=xl778777 align=right style='border-top:none'>1</td>
+  <td class=xl778777 align=right style='border-top:none'>@{{atIntegralSaludNino.contacto_piel_madre}}</td>
   <td class=xl718777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1748777 colspan=2>Sepsis Neonatal</td>
   <td class=xl948777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.sepsis_neonatal}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -281,14 +281,14 @@ tags will be replaced.-->
   <td class=xl1978777 colspan=2>Alojamiento Conjunto</td>
   <td class=xl1258777>&nbsp;</td>
   <td class=xl1258777>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>1</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{atIntegralSaludNino.alojamiento_conjunto}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1748777 colspan=2>Ictericia</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.ictericia}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -300,14 +300,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1188777 colspan=3>Lactancia Materna en la 1º Hora</td>
   <td class=xl788777>&nbsp;</td>
-  <td class=xl798777 align=right style='border-top:none'>1</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{atIntegralSaludNino.lactancia_materna_hora}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl1748777 colspan=2>Hipoglucemia</td>
   <td class=xl948777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.hipoglucemia}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -328,7 +328,7 @@ tags will be replaced.-->
   <td class=xl1748777 colspan=2>Sífilis Congénita</td>
   <td class=xl948777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.sifilis_congenita}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -346,7 +346,7 @@ tags will be replaced.-->
   <td class=xl1748777 colspan=2>VIH Expuesto</td>
   <td class=xl938777 style='border-top:none'>&nbsp;</td>
   <td class=xl958777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2348777 align=right style='border-left:none'>0</td>
+  <td class=xl2348777 align=right style='border-left:none'>@{{atIntegralSaludNino.vih_expuesto}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -363,7 +363,7 @@ tags will be replaced.-->
   <td class=xl698777></td>
   <td class=xl1758777 colspan=4 style='border-right:.5pt solid #4F81BD'>Retinopatía
   de la Prematuridad</td>
-  <td class=xl2338777 align=right style='border-left:none'>0</td>
+  <td class=xl2338777 align=right style='border-left:none'>@{{atIntegralSaludNino.retinopatia_prematuridad}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -375,7 +375,7 @@ tags will be replaced.-->
   <td height=24 class=xl718777 style='height:18.0pt'></td>
   <td class=xl1628777 colspan=3>Hipotiroidismo Congénito</td>
   <td class=xl1198777 style='border-top:none'>&nbsp;</td>
-  <td class=xl778777 align=right style='border-top:none'>0</td>
+  <td class=xl778777 align=right style='border-top:none'>@{{atIntegralSaludNino.hipotiroidismo_congenito}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -396,7 +396,7 @@ tags will be replaced.-->
   <td class=xl1638777 colspan=2>Fenilcetonuria</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{atIntegralSaludNino.fenilcetonuria}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -415,7 +415,7 @@ tags will be replaced.-->
   <td class=xl1638777 colspan=2>Galactosemia</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{atIntegralSaludNino.galactosemia}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -430,7 +430,7 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1638777 colspan=4>Hiperplasia Suprarrenal Congénita</td>
-  <td class=xl1278777 align=right style='border-top:none'>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{atIntegralSaludNino.hiperplasia_sup_cong}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -448,7 +448,7 @@ tags will be replaced.-->
   <td class=xl1658777 colspan=2>Fibrosis Quística</td>
   <td class=xl1248777 style='border-top:none'>&nbsp;</td>
   <td class=xl1248777 style='border-top:none'>&nbsp;</td>
-  <td class=xl798777 align=right style='border-top:none'>0</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{atIntegralSaludNino.fibrosis_quistica}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -466,7 +466,7 @@ tags will be replaced.-->
   <td class=xl1978777 colspan=2>Catarata Congénita</td>
   <td class=xl1258777>&nbsp;</td>
   <td class=xl1258777>&nbsp;</td>
-  <td class=xl968777 align=right>0</td>
+  <td class=xl968777 align=right>@{{atIntegralSaludNino.catarata_congenita}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -482,7 +482,7 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl718777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=4>Hipoacusia (todas las clasificaciones)</td>
-  <td class=xl798777 align=right style='border-top:none'>0</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{atIntegralSaludNino.hipoacusia}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>

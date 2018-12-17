@@ -19,7 +19,9 @@
   </head>
 
   <body>
-
+    <script type="text/javascript">
+    var base_url = "{{ URL::to('/') }}"
+    </script>
     <!-- START NAV -->
     <nav class="navbar is-white">
         <div class="container">
@@ -95,7 +97,7 @@
         </div>
     </nav>
     <!-- END NAV -->
-    
+
     <div class="container">
         <div class="columns">
 
