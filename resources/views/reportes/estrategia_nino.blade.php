@@ -29,8 +29,10 @@ tags will be replaced.-->
 <!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
 <!----------------------------->
 
-<div id="Reporte_ESTRETEGIA Niño_2018_8777" align=center x:publishsource="Excel">
-
+<div id="reporte" align=center x:publishsource="Excel">
+  <pre>
+@{{atencion_recien_nacido}}
+</pre>
 <table border=0 cellpadding=0 cellspacing=0 width=1261 class=xl668777
  style='border-collapse:collapse;table-layout:fixed;width:941pt'>
  <col class=xl668777 width=39 style='mso-width-source:userset;mso-width-alt:
@@ -5736,6 +5738,12 @@ tags will be replaced.-->
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+  <script src="{{ url('/public/js/app-reporte.js') }}"></script>
+
 </body>
 
 </html>

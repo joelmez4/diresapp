@@ -60,6 +60,17 @@ const app = new Vue({
 
     },
 
+    shareData: function (event) {
+      console.log(this.atencion_recien_nacido);
+      // var data = "";
+      // myWindow = window.open("http://localhost/kpi-watay/atencion-integral-salud-nino/reporte" + encodeURIComponent(data), "_blank");
+      // myWindow.focus();
+
+      var thisIsAnObject = this.atencion_recien_nacido;
+      var w = window.open("http://localhost/kpi-watay/atencion-integral-salud-nino/reporte");
+      w.atencion_recien_nacido = thisIsAnObject;
+    },
+
     microRedes: function (event) {
 
       axios.get('getMicroRed?cod_red='+this.selectedRed).then(response => this.mredes = response.data);

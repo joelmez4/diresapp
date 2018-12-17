@@ -80,10 +80,11 @@
 <section class="section">
 		@include('form.main')
 		<br>
-
+		<p>@{{atencion_recien_nacido}}</p>
 		<div v-if="flag == true" class="field is-grouped is-grouped-centered">
 		  <p class="control">
-		    <a class="button is-primary" href="{{ URL::to('/atencion-integral-salud-nino/reporte') }}" target="_blank">
+		    <!-- <a class="button is-primary" href="{{ URL::to('/atencion-integral-salud-nino/reporte') }}" target="_blank"> -->
+				<a class="button is-primary" v-on:click="shareData">
 		      Ver
 		    </a>
 		  </p>
@@ -96,9 +97,6 @@
         </a>
 		  </p>
 		</div>
-
-
-		<!-- <p>@{{atencion_recien_nacido}}</p> -->
 
 </section>
 
