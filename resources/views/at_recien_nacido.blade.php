@@ -81,7 +81,24 @@
 		@include('form.main')
 		<br>
 
-		<p>@{{atencion_recien_nacido}}</p>
+		<div v-if="flag == true" class="field is-grouped is-grouped-centered">
+		  <p class="control">
+		    <a class="button is-primary">
+		      Ver
+		    </a>
+		  </p>
+		  <p class="control">
+				<a class="button is-info" href="atencionRecienNacido/exportarpdf">
+          <span>Descargar</span>
+          <span class="icon">
+            <i class="fas fa-file-pdf"></i>
+          </span>
+        </a>
+		  </p>
+		</div>
+
+
+		<!-- <p>@{{atencion_recien_nacido}}</p> -->
 
 </section>
 

@@ -4,6 +4,7 @@ const app = new Vue({
   data: {
     //Get query Atencion Recien Nacido
     atencion_recien_nacido: '',
+    flag: false,
 
     //Data Send
     startDate: '',
@@ -44,12 +45,17 @@ const app = new Vue({
   methods: {
 
     processForm: function (event) {
-
+      this.flag = false;
       axios
       .get('getAtencionRecienNacido?red='+this.selectedRed+'&mred='+this.selectedMred+'&provincia='+this.selectedProvincia+'&distrito='+this.selectedDistrito+'&startDate='+this.startDate+"&endDate="+this.endDate)
-      .then(
-        response => this.atencion_recien_nacido = response.data
-      );
+      .then( response => {
+
+        if (response.status == 200) {
+          this.flag = true;
+        }
+        return this.atencion_recien_nacido = response.data
+      });
+
       // window.open('http://localhost/kpi-watay/atencion-integral-salud-nino/reporte', '_blank');
 
     },

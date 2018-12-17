@@ -120,12 +120,6 @@
             <i class="fas fa-search"></i>
           </span>
         </button>
-        <a class="button is-danger" href="atencionRecienNacido/exportarpdf">
-          <span>Exportar</span>
-          <span class="icon">
-            <i class="fas fa-file-pdf"></i>
-          </span>
-        </a>
       </div>
     </div>
   </div>
