@@ -82,39 +82,44 @@ class AtencionRecienNacido extends Controller
                $end_date = strip_tags(trim($_GET["endDate"]));
 
                $results = DB::select('exec dbo.atencionInmediataNacido ?,?,?,?,?,?',[$red, $mred, $provincia, $distrito, $start_date, $end_date]);
-               // $json = json_encode($result);
-               // $this->exportarpdf($result);
-               foreach ($results as $result) {
-                 $atencion_recien_nacido["atencion_inmediata"] += (int)$result->atc_rn;
-                 $atencion_recien_nacido["tamizaje_neonatal"] += (int)$result->tamizaje_neonatal;
-                 $atencion_recien_nacido["tamizaje_va"] += (int)$result->tamizaje_visual_auditivo;
-                 $atencion_recien_nacido["contacto_piel_madre"] += (int)$result->contacto_piel_madre;
-                 $atencion_recien_nacido["alojamiento_conjunto"] += (int)$result->alojamiento_conjunto;
-                 $atencion_recien_nacido["lactancia_materna_hora"] += (int)$result->lactancia_materna_una_hora;
 
-                 $atencion_recien_nacido["hipotiroidismo_congenito"] += (int)$result->hipotiroidismo_congenito;
-                 $atencion_recien_nacido["fenilcetonuria"] += (int)$result->fenilcetonuria;
-                 $atencion_recien_nacido["galactosemia"] += (int)$result->galactosemia;
-                 $atencion_recien_nacido["hiperplasia_sup_cong"] += (int)$result->hiperplasia_suprarrenal_congenita;
-                 $atencion_recien_nacido["fibrosis_quistica"] += (int)$result->fibrosis_quistica;
-                 $atencion_recien_nacido["catarata_congenita"] += (int)$result->catarata_congenita;
-                 $atencion_recien_nacido["hipoacusia"] += (int)$result->hipoacusia;
+               echo "<pre>";
+               echo var_dump($results);
+               echo "</pre>";
 
-                 $atencion_recien_nacido["sindrome_dristres_respiratorio"] += (int)$result->sindrome_dristres_respiratorio;
-                 $atencion_recien_nacido["sindromes_aspiracion_neonatal"] += (int)$result->sindromes_aspiracion_neonatal;
-                 $atencion_recien_nacido["asfixia_neonatal"] += (int)$result->asfixia_neonatal;
-                 $atencion_recien_nacido["sepsis_neonatal"] += (int)$result->sepsis_neonatal;
-                 $atencion_recien_nacido["ictericia"] += (int)$result->ictericia;
-                 $atencion_recien_nacido["hipoglucemia"] += (int)$result->hipoglucemia;
-                 $atencion_recien_nacido["sifilis_congenita"] += (int)$result->sifilis_congenita;
-                 $atencion_recien_nacido["vih_expuesto"] += (int)$result->vih_expuesto;
-                 $atencion_recien_nacido["retinopatia_prematuridad"] += (int)$result->retinopatia_prematuridad;
-
-               }
-               // echo "<pre>";
-               // echo var_dump($atencion_recien_nacido);
-               // echo "</pre>";
-               return $atencion_recien_nacido;
+               // // $json = json_encode($result);
+               // // $this->exportarpdf($result);
+               // foreach ($results as $result) {
+               //   $atencion_recien_nacido["atencion_inmediata"] += (int)$result->atc_rn;
+               //   $atencion_recien_nacido["tamizaje_neonatal"] += (int)$result->tamizaje_neonatal;
+               //   $atencion_recien_nacido["tamizaje_va"] += (int)$result->tamizaje_visual_auditivo;
+               //   $atencion_recien_nacido["contacto_piel_madre"] += (int)$result->contacto_piel_madre;
+               //   $atencion_recien_nacido["alojamiento_conjunto"] += (int)$result->alojamiento_conjunto;
+               //   $atencion_recien_nacido["lactancia_materna_hora"] += (int)$result->lactancia_materna_una_hora;
+               //
+               //   $atencion_recien_nacido["hipotiroidismo_congenito"] += (int)$result->hipotiroidismo_congenito;
+               //   $atencion_recien_nacido["fenilcetonuria"] += (int)$result->fenilcetonuria;
+               //   $atencion_recien_nacido["galactosemia"] += (int)$result->galactosemia;
+               //   $atencion_recien_nacido["hiperplasia_sup_cong"] += (int)$result->hiperplasia_suprarrenal_congenita;
+               //   $atencion_recien_nacido["fibrosis_quistica"] += (int)$result->fibrosis_quistica;
+               //   $atencion_recien_nacido["catarata_congenita"] += (int)$result->catarata_congenita;
+               //   $atencion_recien_nacido["hipoacusia"] += (int)$result->hipoacusia;
+               //
+               //   $atencion_recien_nacido["sindrome_dristres_respiratorio"] += (int)$result->sindrome_dristres_respiratorio;
+               //   $atencion_recien_nacido["sindromes_aspiracion_neonatal"] += (int)$result->sindromes_aspiracion_neonatal;
+               //   $atencion_recien_nacido["asfixia_neonatal"] += (int)$result->asfixia_neonatal;
+               //   $atencion_recien_nacido["sepsis_neonatal"] += (int)$result->sepsis_neonatal;
+               //   $atencion_recien_nacido["ictericia"] += (int)$result->ictericia;
+               //   $atencion_recien_nacido["hipoglucemia"] += (int)$result->hipoglucemia;
+               //   $atencion_recien_nacido["sifilis_congenita"] += (int)$result->sifilis_congenita;
+               //   $atencion_recien_nacido["vih_expuesto"] += (int)$result->vih_expuesto;
+               //   $atencion_recien_nacido["retinopatia_prematuridad"] += (int)$result->retinopatia_prematuridad;
+               //
+               // }
+               // // echo "<pre>";
+               // // echo var_dump($atencion_recien_nacido);
+               // // echo "</pre>";
+               // return $atencion_recien_nacido;
 
            } else {
                // Not a POST request, set a 403 (forbidden) response code.
