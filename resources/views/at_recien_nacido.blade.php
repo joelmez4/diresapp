@@ -83,7 +83,7 @@
 
 		<div v-if="flag == true" class="field is-grouped is-grouped-centered">
 		  <p class="control">
-		    <a class="button is-primary">
+		    <a class="button is-primary" href="{{ URL::to('/atencion-integral-salud-nino/reporte') }}" target="_blank">
 		      Ver
 		    </a>
 		  </p>
