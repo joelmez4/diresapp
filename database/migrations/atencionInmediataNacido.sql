@@ -5910,7 +5910,7 @@ SUM( CASE WHEN EDAD BETWEEN 105 AND 111 AND
  (codigo4='R571' AND diagnost4='P') OR
  (codigo5='R571' AND diagnost5='P') OR
  (codigo6='R571' AND diagnost6='P'))
-THEN 1 ELSE 0 END) AS 'e_sospechoso_de_colera_c_deshidratación_c_shock_5a_11a',--e. Sospechoso de cólera c/deshidratación c/shock
+THEN 1 ELSE 0 END) AS 'e_sospechoso_de_colera_c_deshidratacion_c_shock_5a_11a',--e. Sospechoso de cólera c/deshidratación c/shock
 
 ---f. Disenteria c/deshidratación c/shock
 ---TD= D + (DX= A099 + R571)
