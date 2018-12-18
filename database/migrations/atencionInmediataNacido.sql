@@ -3863,7 +3863,7 @@ SUM( CASE WHEN EDAD between 105 AND 111 and
 (codigo4='99403' AND LABCONF4='MN ' AND diagnost4='D') OR
 (codigo5='99403' AND LABCONF5='MN ' AND diagnost5='D') OR
 (codigo6='99403' AND LABCONF6='MN ' AND diagnost6='D'))
-THEN 1 else 0 end) AS 'nutricional_por_suplementación_5a_11a',--
+THEN 1 else 0 end) AS 'nutricional_por_suplementacion_5a_11a',--
 
 -----Nutricional por Eval. PE, TP, TE, IMC------------------------ CORREGIR
 ----(TD= D + DX= 99403 + LAB= 1, 2… 11) + LAB= PE, TP, TE, IMC
@@ -5577,7 +5577,7 @@ SUM( CASE WHEN EDAD BETWEEN 105 AND 111 AND
 (CODIGO4 IN ('A010','A011','A012','A013','A014','A020','A050','A051','A052','A053','A054','A058','A059','A070','A071','A072','A073','A078','A079','A080','A082','A083','A084','A090') AND DIAGNOST4='D') OR
 (CODIGO5 IN ('A010','A011','A012','A013','A014','A020','A050','A051','A052','A053','A054','A058','A059','A070','A071','A072','A073','A078','A079','A080','A082','A083','A084','A090') AND DIAGNOST5='D') OR
 (CODIGO6 IN ('A010','A011','A012','A013','A014','A020','A050','A051','A052','A053','A054','A058','A059','A070','A071','A072','A073','A078','A079','A080','A082','A083','A084','A090') AND DIAGNOST6='D'))
-THEN 1 ELSE 0 END) AS 'a_acuosa_aguda_s_deshidratación_5a_11a',--a. Acuosa Aguda s/deshidratación
+THEN 1 ELSE 0 END) AS 'a_acuosa_aguda_s_deshidratacion_5a_11a',--a. Acuosa Aguda s/deshidratación
 
 ----b. Sospechoso de cólera s/deshidratación
 ----TD= P + DX= ('A000','A001','A009')
