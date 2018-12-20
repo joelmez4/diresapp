@@ -41,6 +41,18 @@
         </span>
       </p>
     </div>
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <span class="select is-fullwidth">
+          <select v-model="selectedMred" v-bind:disabled="cmbMredes">
+              <option value="" selected>Todos los Establecimientos</option>
+          </select>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </p>
+    </div>
   </div>
 </div>
 
@@ -78,7 +90,6 @@
         </span>
       </p>
     </div>
-
   </div>
 </div>
 
