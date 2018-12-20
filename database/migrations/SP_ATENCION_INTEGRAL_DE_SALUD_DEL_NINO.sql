@@ -1,11 +1,11 @@
 USE [HIS2018]
 GO
-/****** Object:  StoredProcedure [dbo].[atencionInmediataNacido]    Script Date: 12/16/2018 6:40:29 PM ******/
+/****** Object:  StoredProcedure [dbo].[SP_ATENCION_INTEGRAL_DE_SALUD_DEL_NINO]    Script Date: 12/16/2018 6:40:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROCEDURE [dbo].[atencionInmediataNacido] @red varchar(50), @microred varchar(50), @provincia varchar(50), @distrito varchar(50), @startDate date, @endDate date
+ALTER PROCEDURE [dbo].[SP_ATENCION_INTEGRAL_DE_SALUD_DEL_NINO] @red varchar(50), @microred varchar(50), @provincia varchar(50), @distrito varchar(50), @startDate date, @endDate date
 AS
 
 SELECT convert(date, his_2018.FECHA) as fecha, ESTABLEC.COD_ESTAB,ESTABLEC.DESC_ESTAB,red.desc_red,mred.desc_micro,provincia.desc_prov,distrito.desc_dist,
@@ -6382,7 +6382,7 @@ OR
 GROUP BY ESTABLEC.COD_ESTAB,ESTABLEC.DESC_ESTAB,red.desc_red,mred.desc_micro,provincia.desc_prov,distrito.desc_dist, FECHA
 
 
---EXEC [atencionInmediataNacido] @red = '', @microred = '', @provincia = '', @distrito = '', @startDate='2018-01-01', @endDate='2018-01-01'
+--EXEC [SP_ATENCION_INTEGRAL_DE_SALUD_DEL_NINO] @red = '', @microred = '', @provincia = '', @distrito = '', @startDate='2018-01-01', @endDate='2018-01-01'
 
 
---EXEC [atencionInmediataNacido] @red = '01', @microred = '01', @provincia = '', @distrito = '', @startDate='2018-06-01', @endDate='2018-06-30'
+--EXEC [SP_ATENCION_INTEGRAL_DE_SALUD_DEL_NINO] @red = '01', @microred = '01', @provincia = '', @distrito = '', @startDate='2018-06-01', @endDate='2018-06-30'

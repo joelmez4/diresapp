@@ -754,7 +754,7 @@ class AtencionRecienNacido extends Controller
                $start_date = strip_tags(trim($_GET["startDate"]));
                $end_date = strip_tags(trim($_GET["endDate"]));
 
-               $results = DB::select('exec dbo.atencionInmediataNacido ?,?,?,?,?,?',[$red, $mred, $provincia, $distrito, $start_date, $end_date]);
+               $results = DB::select('exec dbo.SP_ATENCION_INTEGRAL_DE_SALUD_DEL_NINO ?,?,?,?,?,?',[$red, $mred, $provincia, $distrito, $start_date, $end_date]);
 
                // echo "<pre>";
                // echo var_dump($results);
