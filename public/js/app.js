@@ -5,7 +5,7 @@ const app = new Vue({
     //Get query ATENCIÓN INTEGRAL DE SALUD DEL NIÑO
 
     atIntegralSaludNino: '',
-    flag: false,
+    flag: null,
 
     //Data Send
     startDate: '',
@@ -16,16 +16,19 @@ const app = new Vue({
 
     selectedRed: '',
     selectedMred: '',
+    selectedEstablec: '',
     selectedProvincia: '',
     selectedDistrito: '',
 
     redes: [],
     mredes: [],
+    establecimientos: [],
     provincias: [],
     distritos: [],
 
     cmbRedes: false,
     cmbMredes: false,
+    cmbEstablec: false,
     cmbProvincias: true,
     cmbDistritos: true,
 
@@ -83,6 +86,12 @@ const app = new Vue({
 
     },
 
+    establec: function (event) {
+
+      axios.get('getEstablecimiento?cod_red='+this.selectedRed+'&cod_mic='+this.selectedMred).then(response => this.establecimientos = response.data);
+
+    },
+
     distrito: function (event) {
 
       axios.get('getDistrito?cod_prov='+this.selectedProvincia).then(response => this.distritos = response.data);
@@ -97,6 +106,8 @@ const app = new Vue({
 
         this.cmbMredes = false,
 
+        this.cmbEstablec = false,
+
         this.cmbProvincias = true,
 
         this.cmbDistritos = true
@@ -106,6 +117,8 @@ const app = new Vue({
         this.cmbRedes = true;
 
         this.cmbMredes = true;
+
+        this.cmbEstablec = true,
 
         this.cmbProvincias = false,
 

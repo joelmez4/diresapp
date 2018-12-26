@@ -31,7 +31,7 @@
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select v-model="selectedMred" v-bind:disabled="cmbMredes">
+          <select v-model="selectedMred" v-on:change="establec" v-bind:disabled="cmbMredes">
               <option value="" selected>Todas las Micro Redes</option>
               <option v-for="mred in mredes" v-bind:value="mred.cod_mic">@{{mred.desc_micro}}</option>
           </select>
@@ -44,8 +44,9 @@
     <div class="field">
       <p class="control is-expanded has-icons-left">
         <span class="select is-fullwidth">
-          <select v-model="selectedMred" v-bind:disabled="cmbMredes">
+          <select v-model="selectedEstablec" v-bind:disabled="cmbEstablec">
               <option value="" selected>Todos los Establecimientos</option>
+              <option v-for="establecimiento in establecimientos" v-bind:value="establecimiento.cod_2000">@{{establecimiento.desc_estab}}</option>
           </select>
         </span>
         <span class="icon is-small is-left">

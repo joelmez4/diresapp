@@ -55,4 +55,16 @@ class HomeController extends Controller
       return $mred;
     }
 
+    public function getEstablecimiento()
+    {
+
+      $cod_red = $_GET['cod_red'];
+      $cod_mic = $_GET['cod_mic'];
+
+      $mred = DB::select('select desc_estab, cod_2000 from establec where cod_red = ? AND cod_mic = ?',[$cod_red, $cod_mic]);
+
+      return $mred;
+
+    }
+
 }

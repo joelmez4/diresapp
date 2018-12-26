@@ -97,6 +97,13 @@
 		  </p>
 		</div>
 
+		<div v-if="flag == false" class="field is-grouped is-grouped-centered">
+		  <p class="control">
+				<i class="fas fa-spinner fa-spin fa-2x"></i>
+				<span>Cargando...</span>
+		  </p>
+		</div>
+
 </section>
 
 @endsection
