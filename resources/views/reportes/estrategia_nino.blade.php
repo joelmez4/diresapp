@@ -2316,13 +2316,12 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
-  <td class=xl1848777 colspan=3 style='border-right:.5pt solid #4F81BD'>&lt; 06
-  meses (BPN y Prematuros (SF))</td>
-  <td class=xl1858777 align=right style='border-left:none'>0</td>
-  <td class=xl1858777 align=right style='border-left:none'>0</td>
-  <td class=xl1858777 align=right style='border-left:none'>0</td>
-  <td class=xl1858777 align=right style='border-left:none'>0</td>
-  <td class=xl1858777 align=right style='border-left:none'>0</td>
+  <td class=xl1848777 colspan=3 style='border-right:.5pt solid #4F81BD'>&lt; 06 meses (BPN y Prematuros (SF))</td>
+  <td class=xl1858777 align=right style='border-left:none'>@{{aisn.menor_06m_bpn_prematuros_1m}}</td>
+  <td class=xl1858777 align=right style='border-left:none'>@{{aisn.menor_06m_bpn_prematuros_2m}}</td>
+  <td class=xl1858777 align=right style='border-left:none'>@{{aisn.menor_06m_bpn_prematuros_3m}}</td>
+  <td class=xl1858777 align=right style='border-left:none'>@{{aisn.menor_06m_bpn_prematuros_4m}}</td>
+  <td class=xl1858777 align=right style='border-left:none'>@{{aisn.menor_06m_bpn_prematuros_5m}}</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
@@ -2337,10 +2336,9 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
-  <td class=xl3008777 colspan=3 style='border-right:.5pt solid #4F81BD'>De 4 a
-  5 meses (Sulfato Ferroso)</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl3008777 colspan=3 style='border-right:.5pt solid #4F81BD'>De 4 a 5 meses (Sulfato Ferroso)</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4m_a_5m_1}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4m_a_5m_2}}</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
   <td class=xl1388777 align=right style='border-left:none'>0</td>
@@ -2358,14 +2356,13 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
-  <td class=xl3008777 colspan=3 style='border-right:.5pt solid #4F81BD'>De 6 a
-  11 meses (MMN)</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
+  <td class=xl3008777 colspan=3 style='border-right:.5pt solid #4F81BD'>De 6 a 11 meses (MMN)</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_1}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_2}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_3}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_4}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_5}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_6m_a_11m_mmn_6}}</td>
   <td class=xl1548777 align=right style='border-left:none'>0</td>
   <td class=xl1548777 align=right style='border-left:none'>0</td>
   <td class=xl1548777 align=right style='border-left:none'>0</td>
@@ -2381,19 +2378,19 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl3008777 colspan=2>De 1 año (MMN)</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_1}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_2}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_3}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_4}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_5}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_6}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_7}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_8}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_9}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_10}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_11}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_12}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1a_mmn_TA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2402,19 +2399,19 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl3008777 colspan=2>De 2 año (MMN)</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_1}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_2}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_3}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_4}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_5}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_6}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_7}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_8}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_9}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_10}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_11}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_12}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_2a_mmn_TA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2423,19 +2420,19 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl3008777 colspan=2>De 3 año (MMN)</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1868777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_1}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_2}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_3}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_4}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_5}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_6}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_7}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_8}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_9}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_10}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_11}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_12}}</td>
+  <td class=xl1868777 align=right style='border-top:none;border-left:none'>@{{aisn.de_3a_mmn_TA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2444,19 +2441,19 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl3058777 colspan=2>De 4 año (MMN)</td>
   <td class=xl838777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1878777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_1}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_2}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_3}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_4}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_5}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_6}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_7}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_8}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_9}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_10}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_11}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_12}}</td>
+  <td class=xl1878777 align=right style='border-top:none;border-left:none'>@{{aisn.de_4a_mmn_TA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2559,16 +2556,16 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl998777 colspan=2 style='border-right:.5pt solid #4F81BD'>Suplementados</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-left:none'>3</td>
-  <td class=xl788777 align=right>0</td>
-  <td class=xl1608777 align=right>2</td>
-  <td class=xl788777 align=right>6</td>
-  <td class=xl1608777 align=right>1</td>
-  <td class=xl788777 align=right>6</td>
-  <td class=xl1608777 align=right>4</td>
-  <td class=xl888777 align=right>2</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.nino_6m_11m_suple_vitamina_a_1dosis}}</td>
+  <td class=xl1608777 align=right style='border-left:none'>@{{aisn.nino_6m_11m_suple_vitamina_a_2dosis}}</td>
+  <td class=xl1608777 align=right style='border-left:none'>@{{aisn.nino_1a_suple_vitamina_a_1dosis}}</td>
+  <td class=xl788777 align=right>@{{aisn.nino_1a_suple_vitamina_a_2dosis}}</td>
+  <td class=xl1608777 align=right>@{{aisn.nino_2a_suple_vitamina_a_1dosis}}</td>
+  <td class=xl788777 align=right>@{{aisn.nino_2a_suple_vitamina_a_2dosis}}</td>
+  <td class=xl1608777 align=right>@{{aisn.nino_3a_suple_vitamina_a_1dosis}}</td>
+  <td class=xl788777 align=right>@{{aisn.nino_3a_suple_vitamina_a_2dosis}}</td>
+  <td class=xl1608777 align=right>@{{aisn.nino_4a_suple_vitamina_a_1dosis}}</td>
+  <td class=xl888777 align=right>@{{aisn.nino_4a_suple_vitamina_a_2dosis}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2631,12 +2628,11 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl2128777 colspan=3>Niños con LME a los 06 meses<span
   style='mso-spacerun:yes'> </span></td>
-  <td class=xl1088777 align=right style='border-top:none'>0</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.ninos_con_lme_06m}}</td>
   <td class=xl698777></td>
   <td class=xl818777></td>
-  <td class=xl1568777 colspan=8>Niños con Inicio de Alimentación Complementaria
-  antes de los 06 meses</td>
-  <td class=xl1578777 align=right style='border-top:none'>0</td>
+  <td class=xl1568777 colspan=8>Niños con Inicio de Alimentación Complementaria antes de los 06 meses</td>
+  <td class=xl1578777 align=right style='border-top:none'>@{{aisn.ninos_ini_alicomp_antes_06m}}</td>
   <td class=xl1078777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2647,9 +2643,8 @@ tags will be replaced.-->
   <td class=xl2158777 colspan=4>Solo se evalua el registro a los 06 meses</td>
   <td class=xl1078777></td>
   <td class=xl1078777></td>
-  <td class=xl1598777 colspan=8>Niños con Inicio de Alimentación Complementaria
-  después de los 06 meses</td>
-  <td class=xl1608777 align=right style='border-top:none'>1</td>
+  <td class=xl1598777 colspan=8>Niños con Inicio de Alimentación Complementaria después de los 06 meses</td>
+  <td class=xl1608777 align=right style='border-top:none'>@{{aisn.ninos_ini_alicomp_despues_06m}}</td>
   <td class=xl1078777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2663,10 +2658,9 @@ tags will be replaced.-->
   <td class=xl818777></td>
   <td class=xl818777></td>
   <td class=xl818777></td>
-  <td class=xl1568777 colspan=7>Niños con Inicio de Alimentación Complementaria
-  Adecuada</td>
+  <td class=xl1568777 colspan=7>Niños con Inicio de Alimentación Complementaria Adecuada</td>
   <td class=xl2108777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1578777 align=right style='border-top:none'>0</td>
+  <td class=xl1578777 align=right style='border-top:none'>@{{aisn.ninos_ini_alicomp_adecuada}}</td>
   <td class=xl1078777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2676,10 +2670,9 @@ tags will be replaced.-->
   <td height=24 class=xl1078777 style='height:18.0pt'></td>
   <td class=xl688777 colspan=5>VIII. EVALUACION DEL ESTADO NUTRICIONAL</td>
   <td class=xl1078777></td>
-  <td class=xl1598777 colspan=7>Niños con Inicio de Alimentación Complementaria
-  Inadecuada</td>
+  <td class=xl1598777 colspan=7>Niños con Inicio de Alimentación Complementaria Inadecuada</td>
   <td class=xl2118777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1608777 align=right style='border-top:none'>8</td>
+  <td class=xl1608777 align=right style='border-top:none'>@{{aisn.ninos_ini_alicomp_inadecuada}}</td>
   <td class=xl1078777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
