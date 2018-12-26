@@ -126,7 +126,7 @@ class AtencionRecienNacido extends Controller
          "de_22d_a_d_2c_EENA" => 0,
          "de_22d_a_d_3c_EENA" => 0,
          "de_22d_a_d_4c_EENA" => 0,
-         "de_29d_a_11m_1c__EENA" => 0,
+         "de_29d_a_11m_1c_EENA" => 0,
          "de_29d_a_11m_2c_EENA" => 0,
          "de_29d_a_11m_3c_EENA" => 0,
          "de_29d_a_11m_4c_EENA" => 0,
@@ -845,7 +845,7 @@ class AtencionRecienNacido extends Controller
                  $aisn["de_22d_a_d_2c_EENA"] += (int)$result->de_22d_a_d_2c_EENA;
                  $aisn["de_22d_a_d_3c_EENA"] += (int)$result->de_22d_a_d_3c_EENA;
                  $aisn["de_22d_a_d_4c_EENA"] += (int)$result->de_22d_a_d_4c_EENA;
-                 $aisn["de_29d_a_11m_1c__EENA"] += (int)$result->de_29d_a_11m_1c__EENA;
+                 $aisn["de_29d_a_11m_1c_EENA"] += (int)$result->de_29d_a_11m_1c_EENA;
                  $aisn["de_29d_a_11m_2c_EENA"] += (int)$result->de_29d_a_11m_2c_EENA;
                  $aisn["de_29d_a_11m_3c_EENA"] += (int)$result->de_29d_a_11m_3c_EENA;
                  $aisn["de_29d_a_11m_4c_EENA"] += (int)$result->de_29d_a_11m_4c_EENA;

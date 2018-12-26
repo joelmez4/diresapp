@@ -844,8 +844,8 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>De 1d a 7d</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1298777 align=right>3</td>
-  <td class=xl1298777 align=right style='border-left:none'>0</td>
+  <td class=xl1298777 align=right>@{{aisn.de_1d_a_7d_1c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_1d_a_7d_2c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -882,7 +882,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1348777 align=right>3</td>
+  <td class=xl1348777 align=right>@{{aisn.de_1d_a_7d_1c + aisn.de_1d_a_7d_2c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -893,9 +893,9 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>De 8d a 14d</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1298777 align=right>0</td>
-  <td class=xl1298777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
+  <td class=xl1298777 align=right>@{{aisn.de_8d_a_14d_1c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_8d_a_14d_2c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_8d_a_14d_3c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -928,7 +928,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1348777 align=right>0</td>
+  <td class=xl1348777 align=right>@{{aisn.de_8d_a_14d_1c + aisn.de_8d_a_14d_2c + aisn.de_8d_a_14d_3c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -939,10 +939,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>De 15d a 21d</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1298777 align=right>0</td>
-  <td class=xl1298777 align=right style='border-left:none'>3</td>
-  <td class=xl1298777 align=right style='border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
+  <td class=xl1298777 align=right>@{{aisn.de_15d_a_21d_1c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_15d_a_21d_2c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_15d_a_21d_3c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_15d_a_21d_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -971,7 +971,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1348777 align=right>4</td>
+  <td class=xl1348777 align=right>@{{aisn.de_15d_a_21d_1c + aisn.de_15d_a_21d_2c + aisn.de_15d_a_21d_3c + aisn.de_15d_a_21d_4c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -982,10 +982,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>De 22d a +d</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1298777 align=right>0</td>
-  <td class=xl1298777 align=right style='border-left:none'>0</td>
-  <td class=xl1298777 align=right style='border-left:none'>1</td>
-  <td class=xl1298777 align=right style='border-left:none'>0</td>
+  <td class=xl1298777 align=right>@{{aisn.de_22d_a_d_1c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_22d_a_d_2c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_22d_a_d_3c}}</td>
+  <td class=xl1298777 align=right style='border-left:none'>@{{aisn.de_22d_a_d_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1014,7 +1014,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1348777 align=right>1</td>
+  <td class=xl1348777 align=right>@{{aisn.de_22d_a_d_1c + aisn.de_22d_a_d_2c + aisn.de_22d_a_d_3c + aisn.de_22d_a_d_4c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1024,10 +1024,10 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2838777 colspan=2>Total Recién Nacido</td>
-  <td class=xl2858777 align=right>3</td>
-  <td class=xl2858777 align=right style='border-left:none'>3</td>
-  <td class=xl2858777 align=right style='border-left:none'>2</td>
-  <td class=xl2858777 align=right style='border-left:none'>0</td>
+  <td class=xl2858777 align=right>@{{aisn.de_1d_a_7d_1c + aisn.de_8d_a_14d_1c + aisn.de_15d_a_21d_1c + aisn.de_22d_a_d_1c}}</td>
+  <td class=xl2858777 align=right style='border-left:none'>@{{aisn.de_1d_a_7d_2c + aisn.de_8d_a_14d_2c + aisn.de_15d_a_21d_2c + aisn.de_22d_a_d_2c}}</td>
+  <td class=xl2858777 align=right style='border-left:none'>@{{aisn.de_8d_a_14d_3c + aisn.de_15d_a_21d_3c + aisn.de_22d_a_d_3c}}</td>
+  <td class=xl2858777 align=right style='border-left:none'>@{{aisn.de_15d_a_21d_4c + aisn.de_22d_a_d_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1056,7 +1056,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none'>8</td>
+  <td class=xl1358777 align=right style='border-top:none'>@{{aisn.de_1d_a_7d_1c + aisn.de_8d_a_14d_1c + aisn.de_15d_a_21d_1c + aisn.de_22d_a_d_1c + aisn.de_1d_a_7d_2c + aisn.de_8d_a_14d_2c + aisn.de_15d_a_21d_2c + aisn.de_22d_a_d_2c + aisn.de_8d_a_14d_3c + aisn.de_15d_a_21d_3c + aisn.de_22d_a_d_3c + aisn.de_15d_a_21d_4c + aisn.de_22d_a_d_4c}}</td>
   <td class=xl808777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1066,18 +1066,18 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 colspan=2>29 días - 11 meses</td>
-  <td class=xl1088777 align=right style='border-top:none'>1</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-left:none'>2</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>2</td>
-  <td class=xl1088777 align=right style='border-left:none'>3</td>
-  <td class=xl1088777 align=right style='border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>1</td>
-  <td class=xl1358777 align=right style='border-top:none;border-left:none'>14</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_29d_a_11m_1c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_2c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_3c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_4c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_5c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_6c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_7c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_8c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_9c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_10c}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_11c}}</td>
+  <td class=xl1358777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_1c + aisn.de_29d_a_11m_2c + aisn.de_29d_a_11m_3c + aisn.de_29d_a_11m_4c + aisn.de_29d_a_11m_5c + aisn.de_29d_a_11m_6c + aisn.de_29d_a_11m_7c + aisn.de_29d_a_11m_8c + aisn.de_29d_a_11m_9c + aisn.de_29d_a_11m_10c + aisn.de_29d_a_11m_11c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1088,12 +1088,12 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>01 año</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1088777 align=right style='border-top:none'>3</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_01a_1c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_2c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_3c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_4c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_5c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_6c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1114,7 +1114,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none'>17</td>
+  <td class=xl1358777 align=right style='border-top:none'>@{{aisn.de_01a_1c + aisn.de_01a_2c + aisn.de_01a_3c + aisn.de_01a_4c + aisn.de_01a_5c + aisn.de_01a_6c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1125,10 +1125,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>02 años</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1088777 align=right style='border-top:none'>2</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>4</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_02a_1c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_2c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_3c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1157,7 +1157,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none'>15</td>
+  <td class=xl1358777 align=right style='border-top:none'>@{{aisn.de_02a_1c + aisn.de_02a_2c + aisn.de_02a_3c + aisn.de_02a_4c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1168,10 +1168,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>03 años</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1088777 align=right style='border-top:none'>1</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_03a_1c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03a_2c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03a_3c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03a_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1200,7 +1200,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none'>10</td>
+  <td class=xl1358777 align=right style='border-top:none'>@{{aisn.de_03a_1c + aisn.de_03a_2c + aisn.de_03a_3c + aisn.de_03a_4c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1211,10 +1211,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>04 años</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1088777 align=right style='border-top:none'>4</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>3</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_04a_1c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_2c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_3c}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_4c}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1243,7 +1243,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none'>15</td>
+  <td class=xl1358777 align=right style='border-top:none'>@{{aisn.de_04a_1c + aisn.de_04a_2c + aisn.de_04a_3c + aisn.de_04a_4c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1254,7 +1254,7 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl998777 style='border-top:none'>05 a 11 años</td>
   <td class=xl1448777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1088777 align=right style='border-top:none'>5</td>
+  <td class=xl1088777 align=right style='border-top:none'>@{{aisn.de_05a_a_11a_1c}}</td>
   <td class=xl1318777 align=right style='border-left:none;font-size:11.0pt;
   color:#BFBFBF;font-weight:700;text-decoration:none;text-underline-style:none;
   text-line-through:none;font-family:Calibri, sans-serif;border-top:none;
@@ -1305,7 +1305,7 @@ tags will be replaced.-->
   none;font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid #4F81BD;
   border-bottom:.5pt solid #4F81BD;border-left:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl1358777 align=right style='border-top:none;border-left:none'>5</td>
+  <td class=xl1358777 align=right style='border-top:none;border-left:none'>@{{aisn.de_05a_a_11a_1c}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1409,8 +1409,8 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>De 1d a 7d</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_1d_a_7d_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_1d_a_7d_2c_EENA}}</td>
   <td class=xl2898777 align=right style='border-top:none;font-size:11.0pt;
   color:#BFBFBF;font-weight:700;text-decoration:none;text-underline-style:none;
   text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #76933C;
@@ -1456,7 +1456,7 @@ tags will be replaced.-->
   text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #76933C;
   border-right:none;border-bottom:none;border-left:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_1d_a_7d_1c_EENA + aisn.de_1d_a_7d_2c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1467,9 +1467,9 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>De 8d a 14d</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_8d_a_14d_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_8d_a_14d_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_8d_a_14d_3c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1502,7 +1502,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_8d_a_14d_1c_EENA + aisn.de_8d_a_14d_2c_EENA + aisn.de_8d_a_14d_3c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1513,10 +1513,10 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>De 15d a 21d</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_15d_a_21d_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_15d_a_21d_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_15d_a_21d_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_15d_a_21d_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1545,7 +1545,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_15d_a_21d_1c_EENA + aisn.de_15d_a_21d_2c_EENA + aisn.de_15d_a_21d_3c_EENA + aisn.de_15d_a_21d_4c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1556,10 +1556,10 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>De 22d a +d</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_22d_a_d_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_22d_a_d_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_22d_a_d_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_22d_a_d_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1588,7 +1588,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_22d_a_d_1c_EENA + aisn.de_22d_a_d_2c_EENA + aisn.de_22d_a_d_3c_EENA + aisn.de_22d_a_d_4c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1597,12 +1597,11 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl728777 style='height:18.0pt'></td>
-  <td class=xl2958777 colspan=2 style='border-right:.5pt solid #76933C'>Total
-  Recién Nacido</td>
-  <td class=xl2978777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2978777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2978777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2978777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2958777 colspan=2 style='border-right:.5pt solid #76933C'>Total Recién Nacido</td>
+  <td class=xl2978777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1d_a_7d_1c_EENA + aisn.de_8d_a_14d_1c_EENA + aisn.de_15d_a_21d_1c_EENA + aisn.de_22d_a_d_1c_EENA}}</td>
+  <td class=xl2978777 align=right style='border-top:none;border-left:none'>@{{aisn.de_1d_a_7d_2c_EENA + aisn.de_8d_a_14d_2c_EENA + aisn.de_15d_a_21d_2c_EENA + aisn.de_22d_a_d_2c_EENA}}</td>
+  <td class=xl2978777 align=right style='border-top:none;border-left:none'>@{{aisn.de_8d_a_14d_3c_EENA + aisn.de_15d_a_21d_3c_EENA + aisn.de_22d_a_d_3c_EENA}}</td>
+  <td class=xl2978777 align=right style='border-top:none;border-left:none'>@{{aisn.de_15d_a_21d_4c_EENA + aisn.de_22d_a_d_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1631,7 +1630,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_1d_a_7d_1c_EENA + aisn.de_8d_a_14d_1c_EENA + aisn.de_15d_a_21d_1c_EENA + aisn.de_22d_a_d_1c_EENA + aisn.de_1d_a_7d_2c_EENA + aisn.de_8d_a_14d_2c_EENA + aisn.de_15d_a_21d_2c_EENA + aisn.de_22d_a_d_2c_EENA + aisn.de_8d_a_14d_3c_EENA + aisn.de_15d_a_21d_3c_EENA + aisn.de_22d_a_d_3c_EENA + aisn.de_15d_a_21d_4c_EENA + aisn.de_22d_a_d_4c_EENA}}</td>
   <td class=xl808777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1640,20 +1639,19 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl728777 style='height:18.0pt'></td>
-  <td class=xl2938777 colspan=2 style='border-right:.5pt solid #76933C'>29 días
-  - 11 meses</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-left:none'>0</td>
-  <td class=xl2988777 align=right style='border-left:none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2938777 colspan=2 style='border-right:.5pt solid #76933C'>29 días - 11 meses</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_29d_a_11m_4c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_5c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_6c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_7c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_8c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_9c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_10c_EENA}}</td>
+  <td class=xl2988777 align=right style='border-left:none'>@{{aisn.de_29d_a_11m_11c_EENA}}</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_29d_a_11m_1c_EENA + aisn.de_29d_a_11m_2c_EENA + aisn.de_29d_a_11m_3c_EENA + aisn.de_29d_a_11m_4c_EENA + aisn.de_29d_a_11m_5c_EENA + aisn.de_29d_a_11m_6c_EENA + aisn.de_29d_a_11m_7c_EENA + aisn.de_29d_a_11m_8c_EENA + aisn.de_29d_a_11m_9c_EENA + aisn.de_29d_a_11m_10c_EENA + aisn.de_29d_a_11m_11c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1664,12 +1662,12 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>01 año</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_4c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_5c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_01a_6c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1690,7 +1688,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_01a_1c_EENA + aisn.de_01a_2c_EENA + aisn.de_01a_3c_EENA + aisn.de_01a_4c_EENA + aisn.de_01a_5c_EENA + aisn.de_01a_6c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1701,10 +1699,10 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>02 años</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_02a_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1733,7 +1731,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_02a_1c_EENA + aisn.de_02a_2c_EENA + aisn.de_02a_3c_EENA + aisn.de_02a_4c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1744,10 +1742,10 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>03 años</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03_a_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03_a_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03_a_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_03_a_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1776,7 +1774,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_03_a_1c_EENA + aisn.de_03_a_2c_EENA + aisn.de_03_a_3c_EENA + aisn.de_03_a_4c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1787,10 +1785,10 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>04 años</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_1c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_2c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_3c_EENA}}</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_04a_4c_EENA}}</td>
   <td class=xl1308777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
@@ -1819,7 +1817,7 @@ tags will be replaced.-->
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_04a_1c_EENA + aisn.de_04a_2c_EENA + aisn.de_04a_3c_EENA + aisn.de_04a_4c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -1830,7 +1828,7 @@ tags will be replaced.-->
   <td height=24 class=xl728777 style='height:18.0pt'></td>
   <td class=xl2938777 style='border-top:none'>05 a 11 años</td>
   <td class=xl2948777 style='border-top:none'>&nbsp;</td>
-  <td class=xl2928777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl2928777 align=right style='border-top:none;border-left:none'>@{{aisn.de_05a_a_11a_1c_EENA}}</td>
   <td class=xl2908777 align=right style='font-size:11.0pt;color:#BFBFBF;
   font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
   none;font-family:Calibri, sans-serif;border-top:none;border-right:none;
@@ -1881,7 +1879,7 @@ tags will be replaced.-->
   none;font-family:Calibri, sans-serif;border-top:none;border-right:none;
   border-bottom:.5pt solid #76933C;border-left:none;background:#BFBFBF;
   mso-pattern:black none'>0</td>
-  <td class=xl2998777 align=right style='border-top:none'>0</td>
+  <td class=xl2998777 align=right style='border-top:none'>@{{aisn.de_05a_a_11a_1c_EENA}}</td>
   <td class=xl808777 align=right>0</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
