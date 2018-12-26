@@ -2703,8 +2703,7 @@ tags will be replaced.-->
   <td class=xl1268777 style='border-left:none'>Nº</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
-  <td colspan=4 class=xl3328777 style='border-right:.5pt solid white'>Clasificación:
-  Ganancia de Peso / Talla</td>
+  <td colspan=4 class=xl3328777 style='border-right:.5pt solid white'>Clasificación: Ganancia de Peso / Talla</td>
   <td class=xl1508777 style='border-left:none'>Dx.</td>
   <td class=xl1268777>Recup.</td>
   <td class=xl818777></td>
@@ -2719,13 +2718,12 @@ tags will be replaced.-->
   <td height=22 class=xl1078777 style='height:16.5pt'></td>
   <td class=xl1628777 colspan=2>Extremadamente bajo</td>
   <td class=xl1618777>&nbsp;</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.extremadamente_bajo}}</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
-  <td class=xl1628777 colspan=4 style='border-right:.5pt solid #4F81BD'>Ganancia
-  Inadecuada de Peso</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1628777 colspan=4 style='border-right:.5pt solid #4F81BD'>Ganancia Inadecuada de Peso</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.ganancia_inadecuada_de_peso_dx}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.ganancia_inadecuada_de_peso_recup}}</td>
   <td class=xl708777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2738,13 +2736,12 @@ tags will be replaced.-->
   <td height=22 class=xl1078777 style='height:16.5pt'></td>
   <td class=xl1638777 colspan=2>Muy bajo peso al nacer</td>
   <td class=xl1648777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.muy_bajo_peso_al_nacer}}</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
-  <td class=xl1658777 colspan=4 style='border-right:.5pt solid #4F81BD'>Ganancia
-  Inadecuada de Talla</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1658777 colspan=4 style='border-right:.5pt solid #4F81BD'>Ganancia Inadecuada de Talla</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.ganancia_inadecuada_de_talla_dx}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.ganancia_inadecuada_de_talla_recup}}</td>
   <td class=xl708777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2757,7 +2754,7 @@ tags will be replaced.-->
   <td height=22 class=xl1078777 style='height:16.5pt'></td>
   <td class=xl1638777 colspan=2>Bajo peso al nacer</td>
   <td class=xl1648777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.bajo_peso_al_nacer}}</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
   <td class=xl678777 colspan=2>Dx<font class="font58777">: Diagnosticado</font></td>
@@ -2777,7 +2774,7 @@ tags will be replaced.-->
   <td class=xl1638777 style='border-top:none'>Normal</td>
   <td class=xl1688777 style='border-top:none'>&nbsp;</td>
   <td class=xl1648777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>4</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_een}}</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
   <td class=xl698777></td>
@@ -2798,7 +2795,7 @@ tags will be replaced.-->
   <td height=22 class=xl1078777 style='height:16.5pt'></td>
   <td class=xl1658777 colspan=2>Macrosómico</td>
   <td class=xl1668777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.macrosomico}}</td>
   <td class=xl818777></td>
   <td class=xl818777></td>
   <td class=xl698777></td>
@@ -2946,7 +2943,7 @@ tags will be replaced.-->
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
-  <td colspan=2 class=xl4128777 align=right style='border-right:.5pt solid #4F81BD'>0</td>
+  <td colspan=2 class=xl4128777 align=right style='border-right:.5pt solid #4F81BD'>@{{aisn.rn_bajo_peso_recuperados}}</td>
   <td class=xl708777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -2958,11 +2955,11 @@ tags will be replaced.-->
   <td height=24 class=xl708777 style='height:18.0pt'></td>
   <td class=xl1738777>&lt; 1 año</td>
   <td class=xl828777>&nbsp;</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl2758777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2758777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>7</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_dx_menor_1a}}</td>
+  <td class=xl2758777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_recup_menor_1a}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_dx_menor_1a}}</td>
+  <td class=xl2758777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_recup_menor_1a}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_gan_inadec_peso_o_talla_menor_1a}}</td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
@@ -2980,11 +2977,11 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>1 año</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>7</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_dx_1a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_recup_1a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_dx_1a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_recup_1a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_gan_inadec_peso_o_talla_1a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3002,11 +2999,11 @@ tags will be replaced.-->
   <td height=24 class=xl708777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>2 años</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>6</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_dx_2a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_recup_2a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_dx_2a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_recup_2a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_gan_inadec_peso_o_talla_2a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3024,11 +3021,11 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>3 años</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl2768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_dx_3a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_recup_3a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_dx_3a}}</td>
+  <td class=xl2768777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_recup_3a}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_gan_inadec_peso_o_talla_3a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3046,11 +3043,11 @@ tags will be replaced.-->
   <td height=24 class=xl708777 style='height:18.0pt'></td>
   <td class=xl1758777 style='border-top:none'>4 años</td>
   <td class=xl1828777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_dx_4a}}</td>
+  <td class=xl2778777 align=right style='border-top:none;border-left:none'>@{{aisn.peso_recup_4a}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_dx_4a}}</td>
+  <td class=xl2778777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_recup_4a}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_gan_inadec_peso_o_talla_4a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3109,21 +3106,16 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
-  <td rowspan=3 class=xl3188777 width=96 style='border-bottom:.5pt solid #4F81BD;
-  width:72pt'>GRUPO DE<br>
-    EDAD</td>
+  <td rowspan=3 class=xl3188777 width=96 style='border-bottom:.5pt solid #4F81BD;width:72pt'>GRUPO DE<br> EDAD</td>
   <td colspan=4 class=xl3118777 style='border-left:none'>Peso para la Edad (PE)</td>
-  <td colspan=8 class=xl3118777 style='border-right:.5pt solid white'>Peso para
-  la Edad (TP)</td>
-  <td colspan=4 class=xl3118777 style='border-left:none'>Talla para la Edad
-  (TE)</td>
+  <td colspan=8 class=xl3118777 style='border-right:.5pt solid white'>Peso para la Edad (TP)</td>
+  <td colspan=4 class=xl3118777 style='border-left:none'>Talla para la Edad (TE)</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
-  <td colspan=2 class=xl3078777 style='border-right:.5pt solid white;
-  border-left:none'>Sobrepeso</td>
+  <td colspan=2 class=xl3078777 style='border-right:.5pt solid white;border-left:none'>Sobrepeso</td>
   <td colspan=2 class=xl3098777 style='border-left:none'>Desnutrición</td>
   <td colspan=2 class=xl3078777 style='border-right:.5pt solid white'>Obesidad</td>
   <td colspan=2 class=xl3078777 style='border-right:.5pt solid white;
@@ -3162,110 +3154,110 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1738777 style='border-top:none'>&lt; 1 año</td>
-  <td class=xl1578777 align=right style='border-top:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2798777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1578777 align=right style='border-top:none'>@{{aisn.sobrepeso_dx_menor_1a}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_dx_menor_1a}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_dx_menor_1a}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_dx_menor_1a_tp}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_menor_1a_tp}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_dx_menor_1a}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_dx_menor_1a}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_menor_1a_te}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_menor_1a_te}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_menor_1a_te}}</td>
+  <td class=xl2798777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_menor_1a_te}}</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>1 año</td>
-  <td class=xl1588777 align=right style='border-top:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1588777 align=right style='border-top:none'>@{{aisn.sobrepeso_dx_1a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_dx_1a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_dx_1a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_dx_1a_tp}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_1a_tp}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_dx_1a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_dx_1a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_1a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_1a_te}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_1a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_1a_te}}</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>2 años</td>
-  <td class=xl1588777 align=right style='border-top:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1588777 align=right style='border-top:none'>@{{aisn.sobrepeso_dx_2a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_2a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_dx_2a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_recup_2a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_dx_2a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_recup_2a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_dx_2a_tp}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrePeso_recup_2a_tp}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_dx_2a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_recup_2a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_dx_2a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_recup_2a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_2a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_2a_te}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_2a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_2a_te}}</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1748777 style='border-top:none'>3 años</td>
-  <td class=xl1588777 align=right style='border-top:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2808777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1588777 align=right style='border-top:none'>@{{aisn.sobrepeso_dx_3a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_3a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_dx_3a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_recup_3a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_dx_3a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_recup_3a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_dx_3a_tp}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_3a_tp}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_dx_3a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_recup_3a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_dx_3a}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_recup_3a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_3a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_3a_te}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_3a_te}}</td>
+  <td class=xl2808777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_3a_te}}</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1758777 style='border-top:none'>4 años</td>
-  <td class=xl1608777 align=right style='border-top:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2818777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1608777 align=right style='border-top:none'>@{{aisn.sobrepeso_dx_4a}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_dx_4a}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_dx_4a}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.obesidad_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrepeso_dx_4a_tp}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.sobrePeso_recup_4a_tp}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_dx_4a}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_aguda_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_dx_4a}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.desnutricion_severa_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_4a_te}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_4a_te}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_4a_te}}</td>
+  <td class=xl2818777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_4a_te}}</td>
   <td class=xl858777></td>
   <td class=xl858777></td>
  </tr>
@@ -3407,21 +3399,21 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1718777>05 a 11 años</td>
-  <td class=xl1088777 align=right>0</td>
-  <td class=xl2788777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
-  <td class=xl2788777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
-  <td class=xl2788777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-left:none'>0</td>
-  <td class=xl2788777 align=right style='border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl2788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1088777 align=right style='border-top:none;border-left:none'>3</td>
+  <td class=xl1088777 align=right>@{{aisn.obesidad_dx_5a_11a_imc}}</td>
+  <td class=xl2788777 align=right style='border-left:none'>@{{aisn.obesidad_recup_5a_11a_imc}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.sobrepeso_dx_5a_11a_imc}}</td>
+  <td class=xl2788777 align=right style='border-left:none'>@{{aisn.sobrepeso_recup_5a_11a_imc}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.delgadez_dx_5a_11a_imc}}</td>
+  <td class=xl2788777 align=right style='border-left:none'>@{{aisn.delgadez_recup_5a_11a_imc}}</td>
+  <td class=xl1088777 align=right style='border-left:none'>@{{aisn.delgadez_severa_dx_5a_11a_imc}}</td>
+  <td class=xl2788777 align=right style='border-left:none'>@{{aisn.delgadez_severa_recup_5a_11a_imc}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_dx_5a_11a_te}}</td>
+  <td class=xl2788777 align=right style='border-top:none;border-left:none'>@{{aisn.alto_recup_5a_11a_te}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_dx_5a_11a_te}}</td>
+  <td class=xl2788777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_recup_5a_11a_te}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_severa_dx_5a_11a_te}}</td>
+  <td class=xl2788777 align=right style='border-top:none;border-left:none'>@{{aisn.talla_baja_severa_recup_5a_11a_te_sev}}</td>
+  <td class=xl1088777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_en_los_ninos_ninas_de_05a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3513,12 +3505,8 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td rowspan=3 class=xl3778777 style='border-bottom:.5pt solid #4F81BD'>Edades</td>
-  <td colspan=12 class=xl4288777 style='border-right:.5pt solid white;
-  border-left:none'>Trastorno del Desarrollo<span
-  style='mso-spacerun:yes'> </span></td>
-  <td rowspan=3 class=xl3928777 width=63 style='border-bottom:.5pt solid #4F81BD;
-  width:47pt'>Evaluac.<br>
-    Normal</td>
+  <td colspan=12 class=xl4288777 style='border-right:.5pt solid white;border-left:none'>Trastorno del Desarrollo<span style='mso-spacerun:yes'> </span></td>
+  <td rowspan=3 class=xl3928777 width=63 style='border-bottom:.5pt solid #4F81BD;width:47pt'>Evaluac.<br> Normal</td>
   <td class=xl758777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3562,19 +3550,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1888777 style='border-top:none'>&lt; 1 año</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>6</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.lenguaje_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.lenguaje_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.motora_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.motora_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.social_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.social_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.coordinacion_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.coordinacion_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_dx_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_recup_menor_1a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_trastorno_desarrollo_menor_1a}}</td>
   <td class=xl758777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3584,19 +3572,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1898777 style='border-top:none'>01 año</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1588777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.social_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.social_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_dx_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_recup_1a}}</td>
+  <td class=xl1588777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_trastorno_desarrollo_1a}}</td>
   <td class=xl758777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3606,19 +3594,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1908777 style='border-top:none'>02 años</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>2</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.social_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.social_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_dx_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.con_mas_de_un_trastorno_recup_2a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_trastorno_desarrollo_2a}}</td>
   <td class=xl758777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3670,12 +3658,8 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td rowspan=3 class=xl3778777 style='border-bottom:.5pt solid #4F81BD'>Edades</td>
-  <td colspan=12 class=xl3218777 style='border-right:.5pt solid white;
-  border-left:none'>Déficit del Desarrollo<span
-  style='mso-spacerun:yes'> </span></td>
-  <td rowspan=3 class=xl4078777 width=63 style='border-bottom:.5pt solid #4F81BD;
-  width:47pt'>Evaluac.<br>
-    Normal</td>
+  <td colspan=12 class=xl3218777 style='border-right:.5pt solid white;border-left:none'>Déficit del Desarrollo<span style='mso-spacerun:yes'> </span></td>
+  <td rowspan=3 class=xl4078777 width=63 style='border-bottom:.5pt solid #4F81BD;width:47pt'>Evaluac.<br> Normal</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3719,19 +3703,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1888777 style='border-top:none'>03 años</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1578777 align=right style='border-top:none;border-left:none'>4</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.lenguaje_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.lenguaje_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.motora_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.motora_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.social_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.social_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.coordinacion_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-left:none'>@{{aisn.coordinacion_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.mas_de_un_deficit_dx_3a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.mas_de_un_deficit_recup_3a}}</td>
+  <td class=xl1578777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_deficit_desarrollo_3a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3741,19 +3725,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1908777 style='border-top:none'>04 años</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1608777 align=right style='border-top:none;border-left:none'>3</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.lenguaje_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.motora_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.social_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.social_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.coordinacion_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.cognitiva_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.mas_de_un_deficit_dx_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.mas_de_un_deficit_recup_4a}}</td>
+  <td class=xl1608777 align=right style='border-top:none;border-left:none'>@{{aisn.normal_deficit_desarrollo_4a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3868,19 +3852,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1628777 style='border-top:none'>Elaborado</td>
-  <td class=xl1938777 align=right style='border-top:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1938777 align=right style='border-top:none'>@{{aisn.elaborado_menor_28d_rn}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_menor_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_2a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_3a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_4a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_5a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_6a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_7a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_8a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_9a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_10a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.elaborado_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3890,19 +3874,19 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 style='border-top:none'>Ejecutado</td>
-  <td class=xl1948777 align=right style='border-top:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1948777 align=right style='border-top:none'>@{{aisn.ejecutado_menor_28d_rn}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_menor_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_2a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_3a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_4a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_5a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_6a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_7a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_8a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_9a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_10a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.ejecutado_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -3998,14 +3982,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1628777 colspan=3>Nutricional por Suplementación</td>
-  <td class=xl1938777 align=right style='border-top:none'>3</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2008777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1938777 align=right style='border-top:none'>@{{aisn.nutricional_por_suplementacion_menor_28d_rn + aisn.nutricional_por_suplementacion_menor_1a + aisn.nutricional_por_suplementacion_1a + aisn.nutricional_por_suplementacion_2a + aisn.nutricional_por_suplementacion_3a + aisn.nutricional_por_suplementacion_4a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_menor_28d_rn}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_menor_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_2a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_3a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_4a}}</td>
+  <td class=xl2008777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_suplementacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4018,14 +4002,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=3>Nutricional por Eval. PE, TP, TE, IMC</td>
-  <td class=xl1948777 align=right style='border-top:none'>97</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>9</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>23</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>20</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>16</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>22</td>
-  <td class=xl1948777 align=right style='border-left:none'>5</td>
+  <td class=xl1948777 align=right style='border-top:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_menor_28d_RN + aisn.nutricional_por_eval_pe_tp_te_imc_menor_1a + aisn.nutricional_por_eval_pe_tp_te_imc_1a + aisn.nutricional_por_eval_pe_tp_te_imc_2a + aisn.nutricional_por_eval_pe_tp_te_imc_3a + aisn.nutricional_por_eval_pe_tp_te_imc_4a + aisn.nutricional_por_eval_pe_tp_te_imc_5a_11a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_menor_28d_RN}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_menor_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_2a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_3a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_4a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.nutricional_por_eval_pe_tp_te_imc_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4038,14 +4022,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1978777 colspan=3>Integral por Eval. del Desarrollo</td>
-  <td class=xl1998777 align=right>0</td>
-  <td class=xl2028777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1998777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
+  <td class=xl1998777 align=right>@{{aisn.integral_eval_desarrollo_menor_1a + aisn.integral_eval_desarrollo_1a + aisn.integral_eval_desarrollo_2a + aisn.integral_eval_desarrollo_3a + aisn.integral_eval_desarrollo_4a + aisn.integral_eval_desarrollo_5a_11a}}</td>
+  <td class=xl2028777 align=right style='border-top:none;border-left:none'>@{{aisn.integral_eval_desarrollo_menor_28d_RN}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_menor_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_2a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_3a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_4a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.integral_eval_desarrollo_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4058,14 +4042,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=3>Integral por Aliment. Complement.</td>
-  <td class=xl1948777 align=right style='border-top:none'>1</td>
-  <td class=xl2038777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl2048777 align=right style='border-left:none'>1</td>
-  <td class=xl2058777 align=right>1</td>
-  <td class=xl2058777 align=right>0</td>
-  <td class=xl2058777 align=right>0</td>
-  <td class=xl2068777 align=right>0</td>
+  <td class=xl1948777 align=right style='border-top:none'>@{{aisn.integral_aliment_complement_menor_1a + aisn.integral_aliment_complement_1a + aisn.integral_aliment_complement_2a + aisn.integral_aliment_complement_3a + aisn.integral_aliment_complement_4a + aisn.integral_aliment_complement_5a_11a}}</td>
+  <td class=xl2038777 align=right style='border-left:none'>@{{aisn.integral_aliment_complement_menor_28d_rn}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.integral_aliment_complement_menor_1a}}</td>
+  <td class=xl2048777 align=right style='border-left:none'>@{{aisn.integral_aliment_complement_1a}}</td>
+  <td class=xl2058777 align=right>@{{aisn.integral_aliment_complement_2a}}</td>
+  <td class=xl2058777 align=right>@{{aisn.integral_aliment_complement_3a}}</td>
+  <td class=xl2058777 align=right>@{{aisn.integral_aliment_complement_4a}}</td>
+  <td class=xl2068777 align=right>@{{aisn.integral_aliment_complement_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
