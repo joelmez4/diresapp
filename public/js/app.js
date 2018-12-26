@@ -4,7 +4,7 @@ const app = new Vue({
   data: {
     //Get query ATENCIÓN INTEGRAL DE SALUD DEL NIÑO
 
-    atIntegralSaludNino: '',
+    aisn: '',
     flag: null,
 
     //Data Send
@@ -57,16 +57,16 @@ const app = new Vue({
         if (response.status == 200) {
           this.flag = true;
         }
-        return this.atIntegralSaludNino = response.data
+        return this.aisn = response.data
       });
 
     },
 
     shareData: function (event) {
-      console.log(this.atIntegralSaludNino);
+      console.log(this.aisn);
 
       var thisIsAnObject = {
-        data: this.atIntegralSaludNino,
+        data: this.aisn,
         startDate: this.startDate,
         endDate: this.endDate,
         selectedRed: this.selectedRed,
@@ -76,7 +76,7 @@ const app = new Vue({
       };
 
       var w = window.open(base_url+"/atencion-integral-salud-nino/reporte");
-      w.atIntegralSaludNino = thisIsAnObject;
+      w.aisn = thisIsAnObject;
 
     },
 

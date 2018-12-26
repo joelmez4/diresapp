@@ -2,7 +2,7 @@ const reporte = new Vue({
   el: '#reporte',
 
   data: {
-    atIntegralSaludNino: '',
+    aisn: '',
     startDate: '',
     endDate: '',
 
@@ -15,14 +15,14 @@ const reporte = new Vue({
 
   mounted () {
 
-    //this.atIntegralSaludNino = "Joe cool"
-    this.atIntegralSaludNino = atIntegralSaludNino.data;
-    this.startDate = atIntegralSaludNino.startDate;
-    this.endDate = atIntegralSaludNino.endDate;
-    this.selectedRed = atIntegralSaludNino.selectedRed;
-    this.selectedMred = atIntegralSaludNino.selectedMred;
-    this.selectedProvincia = atIntegralSaludNino.selectedProvincia;
-    this.selectedDistrito = atIntegralSaludNino.selectedDistrito;
+    //this.aisn = "Joe cool"
+    this.aisn = aisn.data;
+    this.startDate = aisn.startDate;
+    this.endDate = aisn.endDate;
+    this.selectedRed = aisn.selectedRed;
+    this.selectedMred = aisn.selectedMred;
+    this.selectedProvincia = aisn.selectedProvincia;
+    this.selectedDistrito = aisn.selectedDistrito;
 
   },
 
