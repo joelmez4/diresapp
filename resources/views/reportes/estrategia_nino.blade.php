@@ -2193,14 +2193,14 @@ tags will be replaced.-->
   none;font-family:Calibri, sans-serif;border-top:.5pt dotted #4F81BD;
   border-right:.5pt solid #4F81BD;border-bottom:.5pt solid #4F81BD;border-left:
   none;background:#BFBFBF;mso-pattern:black none'>0</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl878777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_2a_lab1}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_2a_lab2}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_3a_lab1}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_3a_lab2}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_4a_lab1}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_4a_lab2}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_5a_11a_lab1}}</td>
+  <td class=xl878777 align=right style='border-top:none;border-left:none'>@{{aisn.admin_profilaxis_antiparasitaria_5a_11a_lab2}}</td>
   <td class=xl1078777></td>
   <td class=xl1078777></td>
   <td class=xl1078777></td>
