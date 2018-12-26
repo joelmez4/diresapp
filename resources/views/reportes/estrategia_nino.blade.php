@@ -1973,14 +1973,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1178777 colspan=3>1. Detección de Anemia</td>
   <td class=xl1228777 colspan=3>Solicitud de Dosaje de Hb</td>
-  <td class=xl778777 align=right style='border-top:none'>0</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>7</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>7</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1458777 align=right style='border-top:none;border-left:none'>24</td>
+  <td class=xl778777 align=right style='border-top:none'>@{{aisn.solicitud_de_dosaje_de_hb_1m}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_6m}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_1a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_2a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_3a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_4a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_5_11a}}</td>
+  <td class=xl1458777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_dosaje_de_hb_1m + aisn.solicitud_de_dosaje_de_hb_6m + aisn.solicitud_de_dosaje_de_hb_1a + aisn.solicitud_de_dosaje_de_hb_2a + aisn.solicitud_de_dosaje_de_hb_3a + aisn.solicitud_de_dosaje_de_hb_4a + aisn.solicitud_de_dosaje_de_hb_5_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl748777></td>
@@ -1993,14 +1993,14 @@ tags will be replaced.-->
   <td class=xl788777>&nbsp;</td>
   <td class=xl788777>&nbsp;</td>
   <td class=xl1238777 colspan=3>Resultados Evaluados</td>
-  <td class=xl798777 align=right style='border-top:none'>0</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>7</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1458777 align=right style='border-left:none'>20</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{aisn.resultados_evaluados_1m}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_6m}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_1a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_2a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_3a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_4a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_5_11a}}</td>
+  <td class=xl1458777 align=right style='border-left:none'>@{{aisn.resultados_evaluados_1m + aisn.resultados_evaluados_6m + aisn.resultados_evaluados_1a + aisn.resultados_evaluados_2a + aisn.resultados_evaluados_3a + aisn.resultados_evaluados_4a + aisn.resultados_evaluados_5_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl748777></td>
@@ -2021,12 +2021,12 @@ tags will be replaced.-->
   text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #4F81BD;
   border-right:.5pt solid #4F81BD;border-bottom:.5pt dotted #4F81BD;border-left:
   none;background:#BFBFBF;mso-pattern:black none'>0</td>
-  <td class=xl828777 align=right style='border-top:none'>0</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1458777 align=right style='border-left:none'>4</td>
+  <td class=xl828777 align=right style='border-top:none'>@{{aisn.solicitud_de_examen_1a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_examen_2a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_examen_3a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_examen_4a}}</td>
+  <td class=xl778777 align=right style='border-top:none;border-left:none'>@{{aisn.solicitud_de_examen_5_11a}}</td>
+  <td class=xl1458777 align=right style='border-left:none'>@{{aisn.solicitud_de_examen_1a + aisn.solicitud_de_examen_2a + aisn.solicitud_de_examen_3a + aisn.solicitud_de_examen_4a + aisn.solicitud_de_examen_5_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl748777></td>
@@ -2049,12 +2049,12 @@ tags will be replaced.-->
   text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt dotted #4F81BD;
   border-right:.5pt solid #4F81BD;border-bottom:.5pt solid #4F81BD;border-left:
   none;background:#BFBFBF;mso-pattern:black none'>0</td>
-  <td class=xl838777 align=right style='border-top:none'>0</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl798777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1468777 align=right style='border-top:none;border-left:none'>3</td>
+  <td class=xl838777 align=right style='border-top:none'>@{{aisn.resultados_evaluados_dp_1a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_dp_2a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_dp_3a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_dp_4a}}</td>
+  <td class=xl798777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_dp_5_11a}}</td>
+  <td class=xl1468777 align=right style='border-top:none;border-left:none'>@{{aisn.resultados_evaluados_dp_1a + aisn.resultados_evaluados_dp_2a + aisn.resultados_evaluados_dp_3a + aisn.resultados_evaluados_dp_4a + aisn.resultados_evaluados_dp_5_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl748777></td>
