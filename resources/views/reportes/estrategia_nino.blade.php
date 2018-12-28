@@ -4103,8 +4103,7 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
-  <td colspan=4 class=xl1378777 style='border-right:.5pt solid white'>TIPOS DE
-  VISITA / EDADES</td>
+  <td colspan=4 class=xl1378777 style='border-right:.5pt solid white'>TIPOS DE VISITA / EDADES</td>
   <td class=xl1288777 style='border-left:none'>Total</td>
   <td class=xl1288777 style='border-left:none'>RN</td>
   <td class=xl1288777 style='border-left:none'>&lt;1 año</td>
@@ -4125,14 +4124,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1628777 colspan=3>Seguimiento al Control CRED</td>
   <td class=xl1678777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1938777 align=right style='border-top:none'>10</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1938777 align=right style='border-top:none'>@{{aisn.seguimiento_al_control_cred_menor_28d_rn + aisn.seguimiento_al_control_cred_menor_1a + aisn.seguimiento_al_control_cred_1a + aisn.seguimiento_al_control_cred_2a + aisn.seguimiento_al_control_cred_3a + aisn.seguimiento_al_control_cred_4a + aisn.seguimiento_al_control_cred_5a_11a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_menor_28d_rn}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_menor_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_2a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_3a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_4a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_al_control_cred_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4144,14 +4143,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1958777 colspan=4>Seguimiento a Problemas Nutricionales</td>
-  <td class=xl1938777 align=right>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
+  <td class=xl1938777 align=right>@{{aisn.seguimiento_a_problemas_nutricionales_menor_28d_rn + aisn.seguimiento_a_problemas_nutricionales_menor_1a + aisn.seguimiento_a_problemas_nutricionales_1a + aisn.seguimiento_a_problemas_nutricionales_2a + aisn.seguimiento_a_problemas_nutricionales_3a + aisn.seguimiento_a_problemas_nutricionales_4a + aisn.seguimiento_a_problemas_nutricionales_5a_11a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_menor_28d_rn}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_menor_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_2a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_3a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_4a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_nutricionales_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4163,14 +4162,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=4>Seguimiento a Problemas del Desarrollo</td>
-  <td class=xl1938777 align=right>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
+  <td class=xl1938777 align=right>@{{aisn.seguimiento_a_problemas_del_desarrollo_menor_28d_rn + aisn.seguimiento_a_problemas_del_desarrollo_menor_1a + aisn.seguimiento_a_problemas_del_desarrollo_1a + aisn.seguimiento_a_problemas_del_desarrollo_2a + aisn.seguimiento_a_problemas_del_desarrollo_3a + aisn.seguimiento_a_problemas_del_desarrollo_4a + aisn.seguimiento_a_problemas_del_desarrollo_5a_11a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_menor_28d_rn}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_menor_1a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_1a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_2a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_3a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_4a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_a_problemas_del_desarrollo_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4183,14 +4182,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1978777 colspan=3>Entrega de Suplementación</td>
   <td class=xl1988777>&nbsp;</td>
-  <td class=xl1998777 align=right>2</td>
-  <td class=xl1998777 align=right style='border-left:none'>0</td>
-  <td class=xl1998777 align=right style='border-left:none'>0</td>
-  <td class=xl1998777 align=right style='border-left:none'>1</td>
-  <td class=xl1998777 align=right style='border-left:none'>0</td>
-  <td class=xl1998777 align=right style='border-left:none'>1</td>
-  <td class=xl1998777 align=right style='border-left:none'>0</td>
-  <td class=xl2028777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1998777 align=right>@{{aisn.entrega_de_suplementacion_menor_28d_rn + aisn.entrega_de_suplementacion_menor_1a + aisn.entrega_de_suplementacion_1a + aisn.entrega_de_suplementacion_2a + aisn.entrega_de_suplementacion_3a + aisn.entrega_de_suplementacion_4a}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_menor_28d_rn}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_menor_1a}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_1a}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_2a}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_3a}}</td>
+  <td class=xl1998777 align=right style='border-left:none'>@{{aisn.entrega_de_suplementacion_4a}}</td>
+  <td class=xl2028777 align=right style='border-top:none;border-left:none'>@{{aisn.entrega_de_suplementacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4202,14 +4201,14 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=4>Verificación de Consumo de Micronutrientes</td>
-  <td class=xl1998777 align=right>21</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>16</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl1948777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2038777 align=right style='border-left:none'>0</td>
+  <td class=xl1998777 align=right>@{{aisn.verifi_consumo_micronut_menor_28d_rn + aisn.verifi_consumo_micronut_menor_1a + aisn.verifi_consumo_micronut_1a + aisn.verifi_consumo_micronut_2a + aisn.verifi_consumo_micronut_3a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_menor_28d_rn}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_menor_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_1a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_2a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_3a}}</td>
+  <td class=xl1948777 align=right style='border-top:none;border-left:none'>@{{aisn.verifi_consumo_micronut_4a}}</td>
+  <td class=xl2038777 align=right style='border-left:none'>@{{aisn.verifi_consumo_micronut_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4223,14 +4222,14 @@ tags will be replaced.-->
   <td class=xl1628777 colspan=2>Seguimiento de IRA</td>
   <td class=xl1678777 style='border-top:none'>&nbsp;</td>
   <td class=xl1678777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1938777 align=right>22</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>5</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1938777 align=right style='border-top:none;border-left:none'>5</td>
+  <td class=xl1938777 align=right>@{{aisn.seguimiento_de_ira_menor_28d_rn + aisn.seguimiento_de_ira_menor_1a + aisn.seguimiento_de_ira_1a + aisn.seguimiento_de_ira_2a + aisn.seguimiento_de_ira_3a + aisn.seguimiento_de_ira_4a + aisn.seguimiento_de_ira_5a_11a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_menor_28d_rn}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_menor_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_1a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_2a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_3a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_4a}}</td>
+  <td class=xl1938777 align=right style='border-top:none;border-left:none'>@{{aisn.seguimiento_de_ira_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4244,14 +4243,14 @@ tags will be replaced.-->
   <td class=xl1958777 colspan=2>Seguimiento de EDA</td>
   <td class=xl2018777></td>
   <td class=xl2018777></td>
-  <td class=xl1968777 align=right>1</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>1</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
-  <td class=xl1968777 align=right style='border-left:none'>0</td>
+  <td class=xl1968777 align=right>@{{aisn.seguimiento_de_eda_menor_28d_RN + aisn.seguimiento_de_eda_menor_1a + aisn.seguimiento_de_eda_1a + aisn.seguimiento_de_eda_2a + aisn.seguimiento_de_eda_3a + aisn.seguimiento_de_eda_4a + aisn.seguimiento_de_eda_5a_11a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_menor_28d_RN}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_menor_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_1a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_2a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_3a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_4a}}</td>
+  <td class=xl1968777 align=right style='border-left:none'>@{{aisn.seguimiento_de_eda_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4264,14 +4263,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl1658777 colspan=3>Seguimiento de Anemia</td>
   <td class=xl1698777>&nbsp;</td>
-  <td class=xl1948777 align=right>3</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>1</td>
-  <td class=xl1948777 align=right style='border-left:none'>1</td>
-  <td class=xl1948777 align=right style='border-left:none'>1</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
-  <td class=xl1948777 align=right style='border-left:none'>0</td>
+  <td class=xl1948777 align=right>@{{aisn.seguimiento_de_anemia_menor_28d_rn + aisn.seguimiento_de_anemia_menor_1a + aisn.seguimiento_de_anemia_1a + aisn.seguimiento_de_anemia_2a + aisn.seguimiento_de_anemia_3a + aisn.seguimiento_de_anemia_4a + aisn.seguimiento_de_anemia_5a_11a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_menor_28d_rn}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_menor_1a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_1a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_2a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_3a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_4a}}</td>
+  <td class=xl1948777 align=right style='border-left:none'>@{{aisn.seguimiento_de_anemia_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4311,8 +4310,7 @@ tags will be replaced.-->
   <td class=xl868777></td>
   <td class=xl868777></td>
   <td class=xl698777></td>
-  <td class=xl688777 colspan=7>XIV. ACTIVIDADES EXTRAMURALES, MASIVAS Y DE
-  GESTIÓN</td>
+  <td class=xl688777 colspan=7>XIV. ACTIVIDADES EXTRAMURALES, MASIVAS Y DE GESTIÓN</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4339,12 +4337,12 @@ tags will be replaced.-->
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1628777 colspan=2>Recién Nacido</td>
-  <td class=xl778777 align=right style='border-top:none'>4</td>
-  <td class=xl2168777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl2218777 align=right style='border-top:none'>0</td>
-  <td class=xl2218777 align=right style='border-top:none'>0</td>
-  <td class=xl2218777 align=right style='border-top:none'>0</td>
-  <td class=xl2228777 align=right style='border-top:none'>0</td>
+  <td class=xl778777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_28d_lab1}}</td>
+  <td class=xl2168777 align=right style='border-top:none;border-left:none'>@{{aisn.recien_nacido_menor_28d_lab2}}</td>
+  <td class=xl2218777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_28d_lab3}}</td>
+  <td class=xl2218777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_28d_lab4}}</td>
+  <td class=xl2218777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_28d_lab5}}</td>
+  <td class=xl2228777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_28d_lab6}}</td>
   <td class=xl698777></td>
   <td rowspan=2 class=xl4348777 width=63 style='border-bottom:.5pt solid #4F81BD;
   border-top:none;width:47pt'>Sesiones Demos-trativas<span
@@ -4368,12 +4366,12 @@ tags will be replaced.-->
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1638777 style='border-top:none'>&lt; 01 año</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>1</td>
-  <td class=xl968777 align=right style='border-left:none'>2</td>
-  <td class=xl968777 align=right style='border-left:none'>1</td>
-  <td class=xl968777 align=right style='border-left:none'>0</td>
-  <td class=xl968777 align=right style='border-left:none'>2</td>
-  <td class=xl968777 align=right style='border-left:none'>1</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{aisn.recien_nacido_menor_1a_lab1}}</td>
+  <td class=xl968777 align=right style='border-left:none'>@{{aisn.recien_nacido_menor_1a_lab2}}</td>
+  <td class=xl968777 align=right style='border-left:none'>@{{aisn.recien_nacido_menor_1a_lab3}}</td>
+  <td class=xl968777 align=right style='border-left:none'>@{{aisn.recien_nacido_menor_1a_lab4}}</td>
+  <td class=xl968777 align=right style='border-left:none'>@{{aisn.recien_nacido_menor_1a_lab5}}</td>
+  <td class=xl968777 align=right style='border-left:none'>@{{aisn.recien_nacido_menor_1a_lab6}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
@@ -4381,54 +4379,54 @@ tags will be replaced.-->
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1638777 style='border-top:none'>01 año</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>3</td>
-  <td class=xl1278777 align=right style='border-top:none;border-left:none'>3</td>
-  <td class=xl1278777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1278777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl2178777 align=right style='border-left:none'>0</td>
-  <td class=xl2208777 align=right>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{aisn.recien_nacido_1a_lab1}}</td>
+  <td class=xl1278777 align=right style='border-top:none;border-left:none'>@{{aisn.recien_nacido_1a_lab2}}</td>
+  <td class=xl1278777 align=right style='border-top:none;border-left:none'>@{{aisn.recien_nacido_1a_lab3}}</td>
+  <td class=xl1278777 align=right style='border-top:none;border-left:none'>@{{aisn.recien_nacido_1a_lab4}}</td>
+  <td class=xl2178777 align=right style='border-left:none'>@{{aisn.recien_nacido_1a_lab5}}</td>
+  <td class=xl2208777 align=right>@{{aisn.recien_nacido_1a_lab6}}</td>
   <td class=xl698777></td>
   <td colspan=2 class=xl4198777>Actividades</td>
-  <td class=xl2258777 align=right style='border-top:none'>0</td>
-  <td class=xl2258777 align=right style='border-top:none'>0</td>
-  <td class=xl928777 style='border-top:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
+  <td class=xl2258777 align=right style='border-top:none'>@{{aisn.sesiones_demostrativas_actividades}}</td>
+  <td class=xl2258777 align=right style='border-top:none'>@{{aisn.sesiones_educativas_actividades}}</td>
+  <td class=xl928777 style='border-top:none'>@{{aisn.activi_gestion_evaluacion}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.activi_gestion_supervision}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.activi_gestion_asist_tec}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.activi_gestion_reu_tec_personal_de_salud}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.activi_gestion_reu_tec_agente_com_de_salud}}</td>
   <td class=xl2248777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1638777 style='border-top:none'>02 años</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1278777 align=right style='border-top:none'>2</td>
-  <td class=xl1368777 align=right style='border-top:none;border-left:none'>6</td>
-  <td class=xl2178777 align=right style='border-left:none'>0</td>
-  <td class=xl2188777 align=right>0</td>
-  <td class=xl1308777 align=right>0</td>
-  <td class=xl2198777 align=right>0</td>
+  <td class=xl1278777 align=right style='border-top:none'>@{{aisn.recien_nacido_2a_lab1}}</td>
+  <td class=xl1368777 align=right style='border-top:none;border-left:none'>@{{aisn.recien_nacido_2a_lab2}}</td>
+  <td class=xl2178777 align=right style='border-left:none'>@{{aisn.recien_nacido_2a_lab3}}</td>
+  <td class=xl2188777 align=right>@{{aisn.recien_nacido_2a_lab4}}</td>
+  <td class=xl1308777 align=right>@{{aisn.recien_nacido_2a_lab5}}</td>
+  <td class=xl2198777 align=right>@{{aisn.recien_nacido_2a_lab6}}</td>
   <td class=xl698777></td>
   <td colspan=2 class=xl4208777>Participantes</td>
-  <td class=xl2268777 align=right style='border-top:none'>0</td>
-  <td class=xl2268777 align=right style='border-top:none'>0</td>
-  <td class=xl898777 style='border-top:none'>0</td>
-  <td class=xl898777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
-  <td class=xl928777 style='border-top:none;border-left:none'>0</td>
+  <td class=xl2268777 align=right style='border-top:none'>@{{aisn.sesiones_demostrativas_part}}</td>
+  <td class=xl2268777 align=right style='border-top:none'>@{{aisn.sesiones_educativas_part}}</td>
+  <td class=xl898777 style='border-top:none'>@{{aisn.evaluacion_participantes}}</td>
+  <td class=xl898777 style='border-top:none;border-left:none'>@{{aisn.supervision_participantes}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.asistencia_tec_participantes}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.reu_tec_personal_de_salud_participantes}}</td>
+  <td class=xl928777 style='border-top:none;border-left:none'>@{{aisn.reu_tec_agente_com_de_salud_participantes}}</td>
   <td class=xl2248777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
   <td class=xl1658777 style='border-top:none'>03 años</td>
   <td class=xl1208777 style='border-top:none'>&nbsp;</td>
-  <td class=xl798777 align=right style='border-top:none'>1</td>
-  <td class=xl2168777 align=right style='border-left:none'>0</td>
-  <td class=xl1328777 align=right>0</td>
-  <td class=xl1328777 align=right>0</td>
-  <td class=xl1328777 align=right>0</td>
-  <td class=xl1338777 align=right>0</td>
+  <td class=xl798777 align=right style='border-top:none'>@{{aisn.recien_nacido_3a_lab1}}</td>
+  <td class=xl2168777 align=right style='border-left:none'>@{{aisn.recien_nacido_3a_lab2}}</td>
+  <td class=xl1328777 align=right>@{{aisn.recien_nacido_3a_lab3}}</td>
+  <td class=xl1328777 align=right>@{{aisn.recien_nacido_3a_lab4}}</td>
+  <td class=xl1328777 align=right>@{{aisn.recien_nacido_3a_lab5}}</td>
+  <td class=xl1338777 align=right>@{{aisn.recien_nacido_3a_lab6}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4528,29 +4526,28 @@ tags will be replaced.-->
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl698777 style='height:18.0pt'></td>
-  <td class=xl2558777 colspan=3>1. Total de Casos de IRA ( 1<span
-  style='mso-spacerun:yes'>  </span>+ 2<span style='mso-spacerun:yes'> 
+  <td class=xl2558777 colspan=3>1. Total de Casos de IRA ( 1<span style='mso-spacerun:yes'>  </span>+ 2<span style='mso-spacerun:yes'> 
   </span>)</td>
   <td class=xl2568777 style='border-top:none'>&nbsp;</td>
   <td class=xl2568777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl3448777 align=right>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>4</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>18</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>7</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>29</td>
+  <td colspan=2 class=xl3448777 align=right></td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2408777 colspan=5>1.1. Nº casos de IRA complicada ( a + b + c )</td>
-  <td colspan=2 class=xl3838777 align=right>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3838777 align=right></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
   <td class=xl1078777></td>
   <td class=xl818777></td>
  </tr>
@@ -4559,12 +4556,12 @@ tags will be replaced.-->
   <td class=xl2538777 colspan=3>a. Neumonía complicada</td>
   <td class=xl2548777 style='border-top:none'>&nbsp;</td>
   <td class=xl2548777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1088777 align=right>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1088777 align=right>@{{aisn.a_neumonia_complicada_menor_29d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.a_neumonia_complicada_29d_59d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.a_neumonia_complicada_02m_11m}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.a_neumonia_complicada_01a_04a}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.a_neumonia_complicada_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.a_neumonia_complicada_menor_29d + aisn.a_neumonia_complicada_29d_59d + aisn.a_neumonia_complicada_02m_11m + aisn.a_neumonia_complicada_01a_04a + aisn.a_neumonia_complicada_05a_11a}}</td>
   <td class=xl1078777></td>
   <td class=xl818777></td>
  </tr>
@@ -4572,12 +4569,12 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2538777 colspan=4>b. Neumonía no complicada</td>
   <td class=xl2548777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1088777 align=right>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1088777 align=right>@{{aisn.b_neumonia_no_complicada_menor_29d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.b_neumonia_no_complicada_29d_59d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.b_neumonia_no_complicada_02m_11m}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.b_neumonia_no_complicada_01a_04a}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.b_neumonia_no_complicada_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.b_neumonia_no_complicada_menor_29d + aisn.b_neumonia_no_complicada_29d_59d + aisn.b_neumonia_no_complicada_02m_11m + aisn.b_neumonia_no_complicada_01a_04a + aisn.b_neumonia_no_complicada_05a_11a}}</td>
   <td class=xl1078777></td>
   <td class=xl818777></td>
  </tr>
@@ -4587,12 +4584,12 @@ tags will be replaced.-->
   <td class=xl2148777 style='border-top:none'>&nbsp;</td>
   <td class=xl2548777 style='border-top:none'>&nbsp;</td>
   <td class=xl2548777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1088777 align=right>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1088777 align=right>@{{aisn.c_soba_o_asma_menor_29d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.c_soba_o_asma_29d_59d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.c_soba_o_asma_02m_11m}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.c_soba_o_asma_01a_4a}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.c_soba_o_asma_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.c_soba_o_asma_menor_29d + aisn.c_soba_o_asma_29d_59d + aisn.c_soba_o_asma_02m_11m + aisn.c_soba_o_asma_01a_4a + aisn.c_soba_o_asma_05a_11a}}</td>
   <td class=xl1078777></td>
   <td class=xl818777></td>
  </tr>
@@ -4600,24 +4597,24 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2408777 colspan=5>1.2. Nº casos de IRA no complicada ( a + b + c
   )</td>
-  <td colspan=2 class=xl3838777 align=right>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>4</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>18</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>7</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>29</td>
+  <td colspan=2 class=xl3838777 align=right></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
   <td class=xl748777></td>
   <td class=xl748777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2538777 colspan=5>a. Faringo amigdalitis purulenta aguda</td>
-  <td colspan=2 class=xl4178777 align=right>0</td>
-  <td colspan=2 class=xl4318777 align=right>0</td>
-  <td colspan=2 class=xl4318777 align=right>0</td>
-  <td colspan=2 class=xl4308777 style='border-left:none'>0</td>
-  <td colspan=2 class=xl4308777 style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl4178777 align=right>@{{aisn.faringoamig_purulenta_aguda_menor_29d}}</td>
+  <td colspan=2 class=xl4318777 align=right>@{{aisn.faringoamig_purulenta_aguda_29d_59d}}</td>
+  <td colspan=2 class=xl4318777 align=right>@{{aisn.faringoamig_purulenta_aguda_02m_11m}}</td>
+  <td colspan=2 class=xl4308777 style='border-left:none'>@{{aisn.faringoamig_purulenta_aguda_01a_4a}}</td>
+  <td colspan=2 class=xl4308777 style='border-left:none'>@{{aisn.faringoamig_purulenta_aguda_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.faringoamig_purulenta_aguda_menor_29d + aisn.faringoamig_purulenta_aguda_29d_59d + aisn.faringoamig_purulenta_aguda_02m_11m + aisn.faringoamig_purulenta_aguda_01a_4a + aisn.faringoamig_purulenta_aguda_05a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
@@ -4626,37 +4623,36 @@ tags will be replaced.-->
   <td class=xl2538777 colspan=3>b. Otitis media aguda</td>
   <td class=xl2148777 style='border-top:none'>&nbsp;</td>
   <td class=xl2148777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1088777 align=right>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1088777 align=right>@{{aisn.otitis_media_aguda_menor_29d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.otitis_media_aguda_29d_59d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.otitis_media_aguda_02m_11m}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.otitis_media_aguda_01a_4a}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.otitis_media_aguda_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.otitis_media_aguda_menor_29d + aisn.otitis_media_aguda_29d_59d + aisn.otitis_media_aguda_02m_11m + aisn.otitis_media_aguda_01a_4a + aisn.otitis_media_aguda_05a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2538777 colspan=5>c. Resfrió, faringitis viral, bronquitis,etc</td>
-  <td colspan=2 class=xl1088777 align=right>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>4</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>18</td>
-  <td colspan=2 class=xl1088777 align=right style='border-left:none'>7</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>29</td>
+  <td colspan=2 class=xl1088777 align=right>@{{aisn.resfrio_fari_viral_brom_29d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.resfrio_fari_viral_brom_29d_59d}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.resfrio_fari_viral_brom_02m_11m}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.resfrio_fari_viral_brom_01a_4a}}</td>
+  <td colspan=2 class=xl1088777 align=right style='border-left:none'>@{{aisn.resfrio_fari_viral_brom_05a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.resfrio_fari_viral_brom_29d + aisn.resfrio_fari_viral_brom_29d_59d + aisn.resfrio_fari_viral_brom_02m_11m + aisn.resfrio_fari_viral_brom_01a_4a + aisn.resfrio_fari_viral_brom_05a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
  <tr class=xl698777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
-  <td class=xl2558777 colspan=5>2. Total de casos IRA complicadas
-  hospitalizadas</td>
+  <td class=xl2558777 colspan=5>2. Total de casos IRA complicadas hospitalizadas</td>
   <td colspan=2 class=xl3458777>&nbsp;</td>
   <td colspan=2 class=xl3458777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3458777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3458777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3458777 style='border-left:none'>&nbsp;</td>
-  <td colspan=2 class=xl3458777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3458777 align=right style='border-left:none'></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
@@ -4669,7 +4665,7 @@ tags will be replaced.-->
   <td colspan=2 class=xl3448777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3448777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3448777 style='border-left:none'>&nbsp;</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
@@ -4677,12 +4673,12 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2558777 colspan=5>4. Control de seguimiento de neumonia a las 48
   horas</td>
-  <td colspan=2 class=xl3448777 align=right>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3448777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3448777 align=right>@{{aisn.control_segui_neumonia_48_horas_29d}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.control_segui_neumonia_48_horas_29d_59d}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.control_segui_neumonia_48_horas_02m_11m}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.control_segui_neumonia_48_horas_01a_04a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.control_segui_neumonia_48_horas_5a_11a}}</td>
+  <td colspan=2 class=xl3448777 align=right style='border-left:none'>@{{aisn.control_segui_neumonia_48_horas_29d + aisn.control_segui_neumonia_48_horas_29d_59d + aisn.control_segui_neumonia_48_horas_02m_11m + aisn.control_segui_neumonia_48_horas_01a_04a + aisn.control_segui_neumonia_48_horas_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
  </tr>
@@ -4794,10 +4790,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2418777 colspan=4>a. Acuosa Aguda s/deshidratación</td>
   <td class=xl828777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>1</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>5</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>1</td>
-  <td colspan=2 class=xl3848777 align=right style='border-left:none'>7</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_s_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_s_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_s_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3848777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_s_deshidratacion_menor_1a + aisn.a_acuosa_aguda_s_deshidratacion_1a_4a + aisn.a_acuosa_aguda_s_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4809,10 +4805,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2428777 colspan=4>b. Sospechoso de cólera s/deshidratación</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_s_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_s_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_s_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_s_deshidratacion_menor_1a + aisn.b_sospechoso_de_colera_s_deshidratacion_1a_4a + aisn.b_sospechoso_de_colera_s_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4825,10 +4821,10 @@ tags will be replaced.-->
   <td class=xl2428777 colspan=3>c. Disenteria s/deshidratación</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>1</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>1</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>2</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_s_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_s_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_s_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.c_disenteria_s_deshidratacion_menor_1a + aisn.c_disenteria_s_deshidratacion_1a_4a + aisn.c_disenteria_s_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4842,10 +4838,10 @@ tags will be replaced.-->
   style='mso-spacerun:yes'> </span></td>
   <td class=xl1208777 style='border-top:none'>&nbsp;</td>
   <td class=xl838777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3468777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.d_diarrea_persistente_menor_1a}}</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.d_diarrea_persistente_1a_4a}}</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.d_diarrea_persistente_5a_11a}}</td>
+  <td colspan=2 class=xl3468777 align=right style='border-left:none'>@{{aisn.d_diarrea_persistente_menor_1a + aisn.d_diarrea_persistente_1a_4a + aisn.d_diarrea_persistente_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4858,10 +4854,10 @@ tags will be replaced.-->
   <td class=xl2278777 colspan=4>2.<span style='mso-spacerun:yes'>  </span>EDA
   Complicada ( a + b + c + d + e + f )</td>
   <td class=xl978777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
@@ -4873,10 +4869,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2418777 colspan=4>a. Acuosa Aguda c/deshidratación</td>
   <td class=xl828777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1578777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3848777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_c_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_c_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1578777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_c_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3848777 align=right style='border-left:none'>@{{aisn.a_acuosa_aguda_c_deshidratacion_menor_1a + aisn.a_acuosa_aguda_c_deshidratacion_1a_4a + aisn.a_acuosa_aguda_c_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4888,10 +4884,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2428777 colspan=4>b. Sospechoso de cólera c/deshidratación</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_c_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_c_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_c_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.b_sospechoso_de_colera_c_deshidratacion_menor_1a + aisn.b_sospechoso_de_colera_c_deshidratacion_1a_4a + aisn.b_sospechoso_de_colera_c_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4904,10 +4900,10 @@ tags will be replaced.-->
   <td class=xl2428777 colspan=3>c. Disenteria c/deshidratación</td>
   <td class=xl988777 style='border-top:none'>&nbsp;</td>
   <td class=xl1218777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_c_deshidratacion_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_c_deshidratacion_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.c_disenteria_c_deshidratacion_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.c_disenteria_c_deshidratacion_menor_1a + aisn.c_disenteria_c_deshidratacion_1a_4a + aisn.c_disenteria_c_deshidratacion_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4919,10 +4915,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2428777 colspan=5 style='border-right:.5pt solid #4F81BD'>d.
   Acuosa Aguda c/deshidratación c/shock</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.d_acuosa_aguda_c_deshidratacion_c_shock_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.d_acuosa_aguda_c_deshidratacion_c_shock_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.d_acuosa_aguda_c_deshidratacion_c_shock_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.d_acuosa_aguda_c_deshidratacion_c_shock_menor_1a + aisn.d_acuosa_aguda_c_deshidratacion_c_shock_1a_4a + aisn.d_acuosa_aguda_c_deshidratacion_c_shock_5a_11a}}</td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
@@ -4934,10 +4930,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2428777 colspan=5 style='border-right:.5pt solid #4F81BD'>e.
   Sospechoso de cólera c/deshidratación c/shock</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1588777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3428777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.a_sospechoso_de_colera_c_deshidratacion_c_shock_menor_1a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.e_sospechoso_de_colera_c_deshidratacion_c_shock_1a_4a}}</td>
+  <td colspan=2 class=xl1588777 align=right style='border-left:none'>@{{aisn.e_sospechoso_de_colera_c_deshidratacion_c_shock_5a_11a}}</td>
+  <td colspan=2 class=xl3428777 align=right style='border-left:none'>@{{aisn.a_sospechoso_de_colera_c_deshidratacion_c_shock_menor_1a + aisn.e_sospechoso_de_colera_c_deshidratacion_c_shock_1a_4a + aisn.e_sospechoso_de_colera_c_deshidratacion_c_shock_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4949,10 +4945,10 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2458777 colspan=4>f. Disenteria c/deshidratación c/shock</td>
   <td class=xl838777 style='border-top:none'>&nbsp;</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl1608777 align=right style='border-left:none'>0</td>
-  <td colspan=2 class=xl3468777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.f_disenteria_c_deshidratacion_c_shock_menor_1a}}</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.f_disenteria_c_deshidratacion_c_shock_1a_4a}}</td>
+  <td colspan=2 class=xl1608777 align=right style='border-left:none'>@{{aisn.f_disenteria_c_deshidratacion_c_shock_5a_11a}}</td>
+  <td colspan=2 class=xl3468777 align=right style='border-left:none'>@{{aisn.f_disenteria_c_deshidratacion_c_shock_menor_1a + aisn.f_disenteria_c_deshidratacion_c_shock_1a_4a + aisn.f_disenteria_c_deshidratacion_c_shock_5a_11a}}</td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -4968,7 +4964,7 @@ tags will be replaced.-->
   <td colspan=2 class=xl3828777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3828777 style='border-left:none'>&nbsp;</td>
   <td colspan=2 class=xl3828777 style='border-left:none'>&nbsp;</td>
-  <td colspan=2 class=xl3838777 align=right style='border-left:none'>0</td>
+  <td colspan=2 class=xl3838777 align=right style='border-left:none'></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
   <td class=xl708777></td>
@@ -5112,44 +5108,44 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2488777 colspan=3><span style='mso-spacerun:yes'>  </span>Anemia
   por Deficiencia de Hierro</td>
-  <td class=xl2508777 align=right>7</td>
-  <td class=xl2508777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>2</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>2</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>1</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>1</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>1</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
-  <td class=xl2518777 align=right style='border-left:none'>0</td>
+  <td class=xl2508777 align=right>@{{aisn.anemia_deficiencia_hierro_dx_menor_28d + aisn.anemia_deficiencia_hierro_dx_menor_1a + aisn.anemia_deficiencia_hierro_dx_1a + aisn.anemia_deficiencia_hierro_dx_2a + aisn.anemia_deficiencia_hierro_dx_3a + aisn.anemia_deficiencia_hierro_dx_4a + aisn.anemia_deficiencia_hierro_dx_5a_11a}}</td>
+  <td class=xl2508777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_menor_28d + aisn.anemia_deficiencia_hierro_rc_menor_1a + aisn.anemia_deficiencia_hierro_rc_1a + aisn.anemia_deficiencia_hierro_rc_2a + aisn.anemia_deficiencia_hierro_rc_3a + aisn.anemia_deficiencia_hierro_rc_4a + aisn.anemia_deficiencia_hierro_rc_5a_11a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_menor_28d}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_menor_28d}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_menor_1a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_menor_1a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_1a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_1a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_2a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_2a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_3a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_3a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_4a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_4a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_dx_5a_11a}}</td>
+  <td class=xl2518777 align=right style='border-left:none'>@{{aisn.anemia_deficiencia_hierro_rc_5a_11a}}</td>
  </tr>
  <tr class=xl708777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2468777 colspan=2><span style='mso-spacerun:yes'> 
   </span>Parasitosis Intestinal</td>
   <td class=xl2478777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1128777 align=right style='border-top:none'>2</td>
-  <td class=xl1128777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>1</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1118777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1128777 align=right style='border-top:none'>@{{aisn.parasitosis_intestinal_dx_menor_28d + aisn.parasitosis_intestinal_dx_menor_1a + aisn.parasitosis_intestinal_dx_1a + aisn.parasitosis_intestinal_dx_2a + aisn.parasitosis_intestinal_dx_3a + aisn.parasitosis_intestinal_dx_4a + aisn.parasitosis_intestinal_dx_5a_11a}}</td>
+  <td class=xl1128777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_menor_28d + aisn.parasitosis_intestinal_rc_menor_1a + aisn.parasitosis_intestinal_rc_1a + aisn.parasitosis_intestinal_rc_2a + aisn.parasitosis_intestinal_rc_3a + aisn.parasitosis_intestinal_rc_4a + aisn.parasitosis_intestinal_rc_5a_11a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_menor_28d}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_menor_28d}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_menor_1a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_menor_1a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_1a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_1a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_2a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_2a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_3a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_3a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_4a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_4a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_dx_5a_11a}}</td>
+  <td class=xl1118777 align=right style='border-top:none;border-left:none'>@{{aisn.parasitosis_intestinal_rc_5a_11a}}</td>
  </tr>
  <tr class=xl708777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl708777 style='height:18.0pt'></td>
@@ -5438,14 +5434,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2638777 style='border-top:none'>Suficiente</td>
   <td class=xl2598777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1768777 align=right style='border-top:none'>2</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>12</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>12</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1768777 align=right style='border-top:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda + aisn.control_cual_sal_yodada_n_activ_mercado + aisn.control_cual_sal_yodada_n_activ_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda + aisn.control_cual_sal_yodada_muestras_mercado + aisn.control_cual_sal_yodada_muestras_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_mercado}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_mercado}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_pla_procesadora}}</td>
   <td class=xl1148777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -5460,14 +5456,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2648777 style='border-top:none'>Poco</td>
   <td class=xl2608777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1778777 align=right style='border-top:none'>2</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>8</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>2</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>8</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1778777 align=right style='border-top:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda_poco + aisn.control_sual_sal_yodada_n_activ_mercado_poco + aisn.control_cual_sal_yodada_n_activ_pla_procesadora_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda_poco + aisn.control_cual_sal_yodada_muestras_mercado_poco + aisn.control_cual_sal_yodada_muestras_pla_procesadora_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_sual_sal_yodada_n_activ_mercado_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_mercado_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_pla_procesadora_poco}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_pla_procesadora_poco}}</td>
   <td class=xl1148777></td>
   <td class=xl2688777>&nbsp;</td>
   <td class=xl2688777>&nbsp;</td>
@@ -5482,14 +5478,14 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2658777 style='border-top:none'>Negativo</td>
   <td class=xl2618777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1788777 align=right style='border-top:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1788777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1788777 align=right style='border-top:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda_neg + aisn.control_cual_sal_yodada_n_activ_mercado_neg + aisn.control_cual_sal_yodada_n_activ_pla_procesadora_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda_neg + aisn.control_cual_sal_yodada_muestras_mercado_neg + aisn.control_cual_sal_yodada_muestras_pla_procesadora_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_vivienda_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_vivienda_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_mercado_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_mercado_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_n_activ_pla_procesadora_neg}}</td>
+  <td class=xl1788777 align=right style='border-top:none;border-left:none'>@{{aisn.control_cual_sal_yodada_muestras_pla_procesadora_neg}}</td>
   <td class=xl1148777></td>
   <td class=xl2688777 style='border-top:none'>&nbsp;</td>
   <td class=xl2688777 style='border-top:none'>&nbsp;</td>
@@ -5504,14 +5500,14 @@ tags will be replaced.-->
   <td height=24 class=xl1138777 style='height:18.0pt'></td>
   <td class=xl2668777 style='border-top:none'>Total</td>
   <td class=xl2628777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1498777 align=right style='border-top:none'>4</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>20</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>4</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>20</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1498777 align=right style='border-top:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
+  <td class=xl1498777 align=right style='border-top:none;border-left:none'></td>
   <td class=xl1148777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
@@ -5601,12 +5597,12 @@ tags will be replaced.-->
  <tr class=xl1148777 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2638777 colspan=4>Muestra de Sal &lt;= 15 Ppm de Yodo</td>
-  <td class=xl1768777 align=right style='border-top:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1768777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1768777 align=right style='border-top:none'>@{{aisn.muestra_de_sal_menorigual_15ppm_de_yodo_n_activ_mercado + aisn.muestra_de_sal_menorigual_15ppm_de_yodo_n_activ_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_menorigual_15ppm_de_yodo_mercado + aisn.muestra_de_sal_menorigual_15_ppm_de_yodo_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_menorigual_15ppm_de_yodo_n_activ_mercado}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_menorigual_15ppm_de_yodo_mercado}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_menorigual_15ppm_de_yodo_n_activ_pla_procesadora}}</td>
+  <td class=xl1768777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_menorigual_15_ppm_de_yodo_pla_procesadora}}</td>
   <td class=xl1148777></td>
   <td class=xl1148777></td>
   <td class=xl1148777></td>
@@ -5621,12 +5617,12 @@ tags will be replaced.-->
   <td height=24 class=xl758777 style='height:18.0pt'></td>
   <td class=xl2658777 colspan=3>Muestra de Sal &gt; 15 Ppm de Yodo</td>
   <td class=xl2618777 style='border-top:none'>&nbsp;</td>
-  <td class=xl1778777 align=right style='border-top:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
-  <td class=xl1778777 align=right style='border-top:none;border-left:none'>0</td>
+  <td class=xl1778777 align=right style='border-top:none'>@{{aisn.muestra_de_sal_mayor_15ppm_de_yodo_n_activ_mercado + aisn.muestra_de_sal_mayor_15_ppm_de_yodo_n_activ_pla_procesadora}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_mayor_15ppm_de_yodo_mercado + aisn.muestra_de_sal_mayor_15ppm_de_yodo_pla_procesadora}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_mayor_15ppm_de_yodo_n_activ_mercado}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_mayor_15ppm_de_yodo_mercado}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_mayor_15_ppm_de_yodo_n_activ_pla_procesadora}}</td>
+  <td class=xl1778777 align=right style='border-top:none;border-left:none'>@{{aisn.muestra_de_sal_mayor_15ppm_de_yodo_pla_procesadora}}</td>
   <td class=xl1148777></td>
   <td class=xl1148777></td>
   <td class=xl1148777></td>
@@ -5643,12 +5639,12 @@ tags will be replaced.-->
   <td class=xl1488777>&nbsp;</td>
   <td class=xl1488777>&nbsp;</td>
   <td class=xl1488777>&nbsp;</td>
-  <td class=xl1498777 align=right>0</td>
-  <td class=xl1498777 align=right style='border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-left:none'>0</td>
-  <td class=xl1498777 align=right style='border-left:none'>0</td>
+  <td class=xl1498777 align=right></td>
+  <td class=xl1498777 align=right style='border-left:none'></td>
+  <td class=xl1498777 align=right style='border-left:none'></td>
+  <td class=xl1498777 align=right style='border-left:none'></td>
+  <td class=xl1498777 align=right style='border-left:none'></td>
+  <td class=xl1498777 align=right style='border-left:none'></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
   <td class=xl698777></td>
