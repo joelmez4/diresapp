@@ -30,3 +30,10 @@ Route::get('/provincias', 'HomeController@getProvincias');
 Route::get('/getDistrito', 'HomeController@getDistrito');
 Route::get('/getMicroRed', 'HomeController@getMicroRed');
 Route::get('/getEstablecimiento', 'HomeController@getEstablecimiento');
+
+
+//indicadores
+
+Route::get('indicadores/admin-profix-antiparasitaria', 'IndicadoresController@antiparasitaria');
+
+Route::get('indicadores/permanencia-personal', 'IndicadoresController@personal');

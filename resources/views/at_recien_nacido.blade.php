@@ -68,7 +68,7 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                ATENCIÓN INTEGRAL DE SALUD DEL NIÑO
+                Atención Integral de Salud del Niño
             </h1>
             <h2 class="subtitle">
                 Consultas por redes y provincias.

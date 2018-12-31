@@ -104,24 +104,27 @@
           <div class="column is-3 ">
               <aside class="menu is-hidden-mobile">
                   <p class="menu-label">
-                      General
-                  </p>
-                  <ul class="menu-list">
-                      <li><a class="is-active" href="{{ url('/') }}">Dashboard</a></li>
-                  </ul>
-                  <p class="menu-label">
-                      Administración
+                      Dashboard
                   </p>
                   <ul class="menu-list">
                       <li>
-                          <a href="{{ url('atencion-integral-salud-nino') }}">ATENCIÓN INTEGRAL DE SALUD DEL NIÑO</a>
+                        <a class="is-active" href="{{ url('/') }}">Indicadores</a>
+                        <ul>
+                            <li><a href="{{ url('/indicadores/admin-profix-antiparasitaria') }}">Administración de Profilaxis Antiparasitaria</a></li>
+                            <li><a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                  <p class="menu-label">
+                      Reportes
+                  </p>
+                  <ul class="menu-list">
+                      <li>
+                          <a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a>
                           <ul>
-                              <li><a>Indicadores</a></li>
                               <li><a>Metas</a></li>
                           </ul>
                       </li>
-                      <li><a>Team Settings</a></li>
-                      <li><a>Invitations</a></li>
                       <li><a>Authentication</a></li>
                   </ul>
                   <p class="menu-label">

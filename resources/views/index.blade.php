@@ -34,10 +34,10 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Hola, Admin.
+                Indicadores
             </h1>
             <h2 class="subtitle">
-                I hope you are having a great day!
+                DIRESA
             </h2>
         </div>
     </div>
