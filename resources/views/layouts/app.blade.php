@@ -54,7 +54,7 @@
                   </div>
                 </div>
                 @else
-                <div class="navbar-start">
+                <!-- <div class="navbar-start">
                     <a class="navbar-item" href="admin.html">
                       Inicio
                     </a>
@@ -67,7 +67,7 @@
                     <a class="navbar-item" href="admin.html">
                       Ayuda
                     </a>
-                </div>
+                </div> -->
                 <div class="navbar-end">
                   <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
