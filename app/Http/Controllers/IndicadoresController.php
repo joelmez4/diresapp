@@ -29,7 +29,10 @@ class IndicadoresController extends Controller
 
     public function antiparasitaria()
     {
-        return view('indicadores.admin_profi_antiparasitaria');
+      $red = '10';
+      $data = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?',[$red]);
+
+      return view('indicadores.admin_profi_antiparasitaria',['data' => $data]);
     }
 
     public function personal()
