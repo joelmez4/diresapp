@@ -107,3 +107,11 @@
 </section>
 
 @endsection
+
+@section('custom-js')
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+	<script src="{{ url('/public/js/app.js') }}"></script>
+@endsection

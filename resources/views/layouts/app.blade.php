@@ -150,11 +150,5 @@
     <!-- <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-
-    <script src="{{ url('/public/js/app.js') }}"></script>
-
   </body>
 </html>
