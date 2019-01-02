@@ -27,7 +27,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item brand-text" href="{{ url('/') }}">
-                  <b>KPI | DIRESA</b>
+                  <img src="{{ asset('storage/app/public/diresa2.png') }}">
                 </a>
                 <div class="navbar-burger burger" data-target="navMenu">
                     <span></span>
