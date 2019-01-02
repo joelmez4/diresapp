@@ -20,6 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "bulma-calendar": "^4.0.2"
+        "bulma-calendar": "^4.0.2",
+        "highcharts": "^7.0.1"
     }
 }
