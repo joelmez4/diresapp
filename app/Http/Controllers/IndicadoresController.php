@@ -29,9 +29,15 @@ class IndicadoresController extends Controller
 
     public function antiparasitaria()
     {
-      $c = 0;
-      $red = '10';
-      $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?',[$red]);
+      /*
+      $option = 'provincia';
+      $group = '10';
+      $month = '2019-01';
+
+      $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?, ?, ?',[$option, $group, $month]);
+      */
+
+      $results = 'some';
 
       // foreach ($results as $result) {
       //   // echo "<pre>";
