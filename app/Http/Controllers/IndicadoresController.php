@@ -29,10 +29,28 @@ class IndicadoresController extends Controller
 
     public function antiparasitaria()
     {
+      $c = 0;
       $red = '10';
-      $data = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?',[$red]);
+      $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?',[$red]);
 
-      return view('indicadores.admin_profi_antiparasitaria',['data' => $data]);
+      // foreach ($results as $result) {
+      //   // echo "<pre>";
+      //   // echo var_dump($result->desc_prov);
+      //   // echo "</pre>";
+      //
+      //   if ($result->desc_prov == 'ABANCAY') {
+      //     echo "- ".(int)$result->admin_profilaxis_antiparasitaria_1A_LAB1;
+      //     $c += ;
+      //   }
+      //
+      //   // echo "result: ".$c;
+      // }
+      //
+      // // echo "<pre>";
+      // // echo var_dump($data[0]->desc_prov);
+      // // echo "<pre>";
+
+      return view('indicadores.admin_profi_antiparasitaria',['results' => $results]);
     }
 
     public function personal()

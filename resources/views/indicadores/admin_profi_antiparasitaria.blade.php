@@ -22,6 +22,51 @@
   <article class="media">
     <div class="media-content">
       <div class="content">
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <div class="buttons has-addons">
+                <span class="button is-small is-info is-selected">Provincia</span>
+                <span class="button is-small">Red</span>
+                <div class="field has-addons">
+                  <div class="control">
+                    <input class="input is-small" type="text" placeholder="Establecimientos">
+                  </div>
+                  <div class="control">
+                    <a class="button is-small is-info" disabled>
+                      Buscar
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="field has-addons has-addons-right">
+                <p class="control">
+                  <span class="select is-small">
+                    <select>
+                      <option>1 año</option>
+                      <option>2 año</option>
+                      <option>3 año</option>
+                      <option>4 año</option>
+                      <option>5 a 11 años</option>
+                      <option>Grandes grupos</option>
+                    </select>
+                  </span>
+                </p>
+                <p class="control">
+                  <input type="month" id="start" name="start" min="2017-01" max="2019-01" value="2019-01" class="input is-small">
+                </p>
+              </div>
+            </div>
+            <!-- <div class="field">
+              <div class="field has-addons has-addons-right">
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+
         <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
       </div>
     </div>
@@ -79,12 +124,24 @@ Highcharts.chart('container', {
       shared: true,
       useHTML: true
   },
+  // plotOptions: {
+  //     column: {
+  //         pointPadding: 0.2,
+  //         borderWidth: 0
+  //     }
+  // },
   plotOptions: {
-      column: {
-          pointPadding: 0.2,
-          borderWidth: 0
-      }
-  },
+        series: {
+            cursor: 'pointer',
+            point: {
+                events: {
+                    click: function () {
+                        alert('Category: ' + this.category + ', value: ' + this.y);
+                    }
+                }
+            }
+        }
+    },
   series: [{
       name: 'Abancay',
       data: [49.9, 71.5]
