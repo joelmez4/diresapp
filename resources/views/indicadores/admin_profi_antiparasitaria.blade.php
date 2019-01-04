@@ -5,72 +5,75 @@
 @endsection
 
 @section('content')
-<section class="hero is-info welcome is-small">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Administración de Profilaxis Antiparasitaria
-            </h1>
-            <h2 class="subtitle">
-                Indicadores
-            </h2>
-        </div>
-    </div>
-</section>
-<br>
-<div class="box">
-  <article class="media">
-    <div class="media-content">
-      <div class="content">
-        <div class="field is-horizontal">
-          <div class="field-body">
-            <div class="field">
-              <div class="buttons has-addons">
-                <span class="button is-small is-info is-selected">Provincia</span>
-                <span class="button is-small">Red</span>
-                <div class="field has-addons">
-                  <div class="control">
-                    <input class="input is-small" type="text" placeholder="Establecimientos">
-                  </div>
-                  <div class="control">
-                    <a class="button is-small is-info" disabled>
-                      Buscar
-                    </a>
+
+<div class="column is-9" id="profilaxis">
+  <section class="hero is-info welcome is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h1 class="title">
+                  Administración de Profilaxis Antiparasitaria
+              </h1>
+              <h2 class="subtitle">
+                  Indicadores
+              </h2>
+          </div>
+      </div>
+  </section>
+  <br>
+  <div class="box">
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="buttons has-addons">
+                  <span class="button is-small is-info is-selected" v-model="option">Provincia</span>
+                  <span class="button is-small">Red</span>
+                  <div class="field has-addons">
+                    <div class="control">
+                      <input class="input is-small" type="text" placeholder="Establecimientos">
+                    </div>
+                    <div class="control">
+                      <a class="button is-small is-info" disabled>
+                        Buscar
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="field">
-              <div class="field has-addons has-addons-right">
-                <p class="control">
-                  <span class="select is-small">
-                    <select>
-                      <option>1 año</option>
-                      <option>2 año</option>
-                      <option>3 año</option>
-                      <option>4 año</option>
-                      <option>5 a 11 años</option>
-                      <option>Grandes grupos</option>
-                    </select>
-                  </span>
-                </p>
-                <p class="control">
-                  <input type="month" id="start" name="start" min="2017-01" max="2019-01" value="2019-01" class="input is-small">
-                </p>
+              <div class="field">
+                <div class="field has-addons has-addons-right">
+                  <p class="control">
+                    <span class="select is-small">
+                      <select>
+                        <option>1 año</option>
+                        <option>2 año</option>
+                        <option>3 año</option>
+                        <option>4 año</option>
+                        <option>5 a 11 años</option>
+                        <option>Grandes grupos</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control">
+                    <input type="month" id="start" name="start" min="2017-01" max="20" value="2018-05" class="input is-small">
+                  </p>
+                </div>
               </div>
-            </div>
-            <!-- <div class="field">
-              <div class="field has-addons has-addons-right">
+              <!-- <div class="field">
+                <div class="field has-addons has-addons-right">
 
-              </div>
-            </div> -->
+                </div>
+              </div> -->
+            </div>
           </div>
-        </div>
 
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+          <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 
 @endsection
@@ -80,6 +83,10 @@
 <script src="{{ asset('node_modules/highcharts/highcharts.js') }} "></script>
 <script src="{{ asset('node_modules/highcharts/modules/exporting.js') }} "></script>
 <script src="{{ asset('node_modules/highcharts/modules/export-data.js') }}"></script>
+
+<script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
+<script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
+<script src="{{ url('/public/js/app-profilaxis.js') }}"></script>
 
   <script type="text/javascript">
 

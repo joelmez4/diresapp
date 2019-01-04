@@ -137,9 +137,7 @@
               </aside>
           </div>
 
-          <div class="column is-9" id="app">
-            @yield('content')
-          </div>
+          @yield('content')          
 
         </div>
     </div>

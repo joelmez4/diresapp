@@ -64,54 +64,64 @@
 @endsection
 
 @section('content')
-<section class="hero is-info welcome is-small">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Atención Integral de Salud del Niño
-            </h1>
-            <h2 class="subtitle">
-                Consultas por redes y provincias.
-            </h2>
-        </div>
-    </div>
-</section>
 
-<section class="section">
-		@include('form.main')
-		<br>
+<div class="column is-9" id="app">
 
-		<div v-if="flag == true" class="field is-grouped is-grouped-centered">
-		  <p class="control">
-				<a class="button is-primary" v-on:click="shareData">
-		      Ver
-		    </a>
-		  </p>
-		  <p class="control">
-				<a class="button is-info" href="atencionRecienNacido/exportarpdf">
-          <span>Descargar</span>
-          <span class="icon">
-            <i class="fas fa-file-pdf"></i>
-          </span>
-        </a>
-		  </p>
-		</div>
+	<section class="hero is-info welcome is-small">
+	    <div class="hero-body">
+	        <div class="container">
+	            <h1 class="title">
+	                Atención Integral de Salud del Niño
+	            </h1>
+	            <h2 class="subtitle">
+	                Consultas por redes y provincias.
+	            </h2>
+	        </div>
+	    </div>
+	</section>
 
-		<div v-if="flag == false" class="field is-grouped is-grouped-centered">
-		  <p class="control">
-				<i class="fas fa-spinner fa-spin fa-2x"></i>
-				<span>Cargando...</span>
-		  </p>
-		</div>
+	<section class="section">
+			@include('form.main')
+			<br>
 
-</section>
+			<div v-if="flag == true" class="field is-grouped is-grouped-centered">
+			  <p class="control">
+					<a class="button is-primary" v-on:click="shareData">
+			      Ver
+			    </a>
+			  </p>
+			  <p class="control">
+					<a class="button is-info" href="atencionRecienNacido/exportarpdf">
+	          <span>Descargar</span>
+	          <span class="icon">
+	            <i class="fas fa-file-pdf"></i>
+	          </span>
+	        </a>
+			  </p>
+			</div>
+
+			<div v-if="flag == false" class="field is-grouped is-grouped-centered">
+			  <p class="control">
+					<i class="fas fa-spinner fa-spin fa-2x"></i>
+					<span>Cargando...</span>
+					<progress class="progress is-large is-info" max="100">60%</progress>
+			  </p>
+			</div>
+
+	</section>
+
+</div>
 
 @endsection
 
 @section('custom-js')
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
+
+	<script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
+
+	<script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
 
 	<script src="{{ url('/public/js/app.js') }}"></script>
 @endsection
