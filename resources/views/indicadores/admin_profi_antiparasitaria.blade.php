@@ -57,7 +57,7 @@
                     </span>
                   </p>
                   <p class="control">
-                    <input type="month" id="start" name="start" min="2017-01" max="20" value="2018-05" class="input is-small">
+                    <input  type="month" id="start" name="start" min="2017-01" max="20" value="2019-01" class="input is-small">
                   </p>
                 </div>
               </div>

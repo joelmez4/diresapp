@@ -5,15 +5,15 @@ const profilaxis = new Vue({
 
     option: { provincia : null, red : null, establecimiento : null, selected: null},
     group: '1',
-    month: '2018-05'
+    month: '2018-12'
 
   },
 
   mounted () {
     this.option.provincia = 'is-info is-selected';
     this.option.selected = "provincia";
-
-    axios.get('redes').then(response => this.redes = response.data);
+    console.log(this.option.selected);
+    //axios.get('redes').then(response => this.redes = response.data);
   },
 
   methods: {
@@ -40,6 +40,8 @@ const profilaxis = new Vue({
         this.option.red = null;
         this.option.establecimiento = 'is-info is-selected';
       }
+
+      console.log(this.option.selected);
 
     }
 
