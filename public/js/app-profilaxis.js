@@ -1,19 +1,47 @@
-const reporte = new Vue({
+const profilaxis = new Vue({
   el: '#profilaxis',
 
   data: {
-    option: 'dsa',
+
+    option: { provincia : null, red : null, establecimiento : null, selected: null},
     group: '1',
     month: '2018-05'
+
   },
 
   mounted () {
+    this.option.provincia = 'is-info is-selected';
+    this.option.selected = "provincia";
 
-    //this.aisn = "Joe cool"
-
+    axios.get('redes').then(response => this.redes = response.data);
   },
 
   methods: {
+
+    clickOption: function(opt) {
+
+      if (opt == 'provincia') {
+        this.option.selected = "provincia";
+        this.option.provincia = 'is-info is-selected';
+        this.option.red = null;
+        this.option.establecimiento = null;
+      }
+
+      if (opt == 'red') {
+        this.option.selected = "red";
+        this.option.provincia = null;
+        this.option.red = 'is-info is-selected';
+        this.option.establecimiento = null;
+      }
+
+      if (opt == 'establecimiento') {
+        this.option.selected = "establecimiento";
+        this.option.provincia = null;
+        this.option.red = null;
+        this.option.establecimiento = 'is-info is-selected';
+      }
+
+    }
 
   }
 

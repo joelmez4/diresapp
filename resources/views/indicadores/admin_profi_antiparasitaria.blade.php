@@ -28,14 +28,14 @@
             <div class="field-body">
               <div class="field">
                 <div class="buttons has-addons">
-                  <span class="button is-small is-info is-selected" v-model="option">Provincia</span>
-                  <span class="button is-small">Red</span>
+                  <span class="button is-small" v-bind:class="option.provincia" v-on:click="clickOption('provincia')">Provincia</span>
+                  <span class="button is-small" v-bind:class="option.red" v-on:click="clickOption('red')">Red</span>
                   <div class="field has-addons">
                     <div class="control">
-                      <input class="input is-small" type="text" placeholder="Establecimientos">
+                      <input class="input is-small" type="text" v-on:click="clickOption('establecimiento')" placeholder="Establecimientos">
                     </div>
                     <div class="control">
-                      <a class="button is-small is-info" disabled>
+                      <a class="button is-small" v-bind:class="option.establecimiento">
                         Buscar
                       </a>
                     </div>
@@ -83,6 +83,7 @@
 <script src="{{ asset('node_modules/highcharts/highcharts.js') }} "></script>
 <script src="{{ asset('node_modules/highcharts/modules/exporting.js') }} "></script>
 <script src="{{ asset('node_modules/highcharts/modules/export-data.js') }}"></script>
+<script src="{{ asset('node_modules/highcharts/modules/drilldown.js') }}"></script>
 
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
@@ -137,25 +138,31 @@ Highcharts.chart('container', {
   //         borderWidth: 0
   //     }
   // },
+
   plotOptions: {
         series: {
             cursor: 'pointer',
             point: {
                 events: {
                     click: function () {
-                        alert('Category: ' + this.category + ', value: ' + this.y);
+                        //alert('Category: ' + this.category + ', value: ' + this.y);
                     }
                 }
+            },
+
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}%'
             }
         }
     },
   series: [{
       name: 'Abancay',
-      data: [49.9, 71.5]
-
+      data: [{ y: 40, drilldown: 'abancay' },{ y: 52, drilldown: 'abancay2' }]
   }, {
       name: 'Andahuaylas',
-      data: [83.6, 78.8]
+      data: [83.6, 78.8],
 
   }, {
       name: 'Antabamba',
@@ -177,7 +184,29 @@ Highcharts.chart('container', {
       name: 'Grau',
       data: [42.4, 33.2]
 
-  }]
+  }],
+
+  drilldown : {
+					series: [{
+                name: 'Abancay',
+                id: 'abancay',
+                data: [
+                    [ 'data A', 24.13 ],
+                    [ 'data B', 17.2 ],
+                    [ 'data C', 8.11 ],
+                    [ 'data D', 5.33 ]
+                ]
+            },{
+                  name: 'Test Drilldown',
+                  id: 'abancay2',
+                  data: [
+                      [ 'data A', 24.13 ],
+                      [ 'data B', 17.2 ],
+                      [ 'data C', 8.11 ]
+                  ]
+              }]
+        }
+
 });
   </script>
 @endsection
