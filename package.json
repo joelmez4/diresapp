@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "bulma-calendar": "^4.0.2",
-        "highcharts": "^7.0.1"
+        "highcharts": "^7.0.1",
+        "vue-search-select": "^2.7.1"
     }
 }
