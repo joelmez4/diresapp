@@ -5712,7 +5712,7 @@ tags will be replaced.-->
 
   <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
   <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
-  <script src="{{ url('/public/js/app-reporte.js') }}"></script>
+  <script src="{{ url('/resources/assets/js/app-reporte.js') }}"></script>
 
 </body>
 

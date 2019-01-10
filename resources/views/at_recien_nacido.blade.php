@@ -123,5 +123,6 @@
 
 	<script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
 
-	<script src="{{ url('/public/js/app.js') }}"></script>
+	<script src="{{ url('/resources/assets/js/app.js') }}"></script>
+
 @endsection
