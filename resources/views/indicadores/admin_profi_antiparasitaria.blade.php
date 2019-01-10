@@ -42,6 +42,7 @@
                   </div>
                 </div>
               </div>
+              <example-component></example-component>
               <div class="field">
                 <div class="field has-addons has-addons-right">
                   <p class="control">
@@ -87,7 +88,7 @@
 
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
-<script src="{{ url('/resources/assets/js/app-profilaxis.js') }}"></script>
+<script src="{{ asset('/public/js/app-profilaxis.js') }}"></script>
 
   <script type="text/javascript">
 
