@@ -4,7 +4,14 @@ html,body {
   font-weight: 300;
 }
 .hero.is-success {
-  background: #F2F6FA;
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://source.unsplash.com/1600x900/?chart,statistics,') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
