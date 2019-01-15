@@ -42,7 +42,7 @@
                   </div>
                 </div>
               </div>
-              <example-component></example-component>
+              <v-select v-model="selected" :options="['foo','bar']"></v-select>
               <div class="field">
                 <div class="field has-addons has-addons-right">
                   <p class="control">
