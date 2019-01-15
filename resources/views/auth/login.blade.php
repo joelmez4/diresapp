@@ -24,7 +24,7 @@
                     <p class="subtitle has-text-white">Por favor, inicie sesión para continuar.</p>
                     <div class="box">
                         <figure class="avatar">
-                            <img src="{{url('/storage/app/public/diresa.png')}}" width="128">
+                            <img src="{{asset('public/images/diresa.png')}}" width="128">
                         </figure>
                         <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                             @csrf
