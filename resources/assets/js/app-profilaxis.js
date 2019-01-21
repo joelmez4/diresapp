@@ -9,7 +9,15 @@ const profilaxis = new Vue({
 
     option: { provincia : null, red : null, establecimiento : null, selected: null},
     group: '1',
-    month: '2018-12'
+    month: '2018-12',
+
+    
+    options: [      
+      {id: 1, label: 'foo'},
+      {id: 3, label: 'bar'},
+      {id: 2, label: 'baz'},
+    ],
+    selected: {id: 3, label: 'bar'},
 
   },
 

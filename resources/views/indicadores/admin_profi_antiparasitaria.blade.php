@@ -34,6 +34,7 @@
                     <div class="control">
                       <input class="input is-small" type="text" v-on:click="clickOption('establecimiento')" placeholder="Establecimientos">
                     </div>
+                    <v-select v-model="selected" :options="options"></v-select> 
                     <div class="control">
                       <a class="button is-small" v-bind:class="option.establecimiento">
                         Buscar
@@ -42,7 +43,6 @@
                   </div>
                 </div>
               </div>
-              <v-select v-model="selected" :options="['foo','bar']"></v-select>
               <div class="field">
                 <div class="field has-addons has-addons-right">
                   <p class="control">
