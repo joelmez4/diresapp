@@ -16,6 +16,8 @@
 // });
 
 Auth::routes();
+Route::get('/changepassword','Auth\ChangePasswordController@showChangePasswordForm');
+Route::post('/changepassword','Auth\ChangePasswordController@changePassword')->name('changePassword');
 
 Route::get('/', 'HomeController@index');
 

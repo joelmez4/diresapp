@@ -76,6 +76,14 @@
                     </a>
 
                     <div class="navbar-dropdown is-boxed">
+
+                      <a class="navbar-item" href="{{ url('changepassword') }}">
+                        {{ __('Perfil') }}
+                      </a>
+                      
+                      
+
+                      <hr class="navbar-divider">
                       <a class="navbar-item" href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
@@ -85,11 +93,6 @@
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                           @csrf
                       </form>
-
-                      <hr class="navbar-divider">
-                      <div class="navbar-item">
-                        Version 0.7.1
-                      </div>
                     </div>
                   </div>
                 </div>
