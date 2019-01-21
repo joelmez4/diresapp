@@ -21,7 +21,9 @@
 
   <body>
     <script type="text/javascript">
-    var base_url = "{{ URL::to('/') }}"
+    var base_url = "{{ URL::to('/') }}";
+    var tab = "<?php echo  isset($_GET['tab']) ? $_GET['tab'] : '' ;  ?>";
+    console.log(tab);
     </script>
     <!-- START NAV -->
     <nav class="navbar is-white">
@@ -80,8 +82,8 @@
                       <a class="navbar-item" href="{{ url('changepassword') }}">
                         {{ __('Perfil') }}
                       </a>
-                      
-                      
+
+
 
                       <hr class="navbar-divider">
                       <a class="navbar-item" href="{{ route('logout') }}"
@@ -112,31 +114,38 @@
                   </p>
                   <ul class="menu-list">
                       <li>
-                        <a class="is-active" href="{{ url('/') }}">Indicadores</a>
+                        <a href="{{ url('/') }}">Programa Articulado Nutricional</a>
                         <ul>
-                            <li><a href="{{ url('/indicadores/admin-profix-antiparasitaria') }}">Administración de Profilaxis Antiparasitaria</a></li>
+                            <li><a class="is-active" href="{{ url('/indicadores/admin-profix-antiparasitaria?tab=admprofilaxis') }}">Administración de Profilaxis Antiparasitaria</a></li>
                             <li><a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a></li>
                         </ul>
                       </li>
                   </ul>
-                  <p class="menu-label">
-                      Reportes
-                  </p>
                   <ul class="menu-list">
                       <li>
-                          <a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a>
+                          <a href="{{ url('atencion-integral-salud-nino') }}">Estrategias de Salud</a>
                           <ul>
-                              <li><a>Metas</a></li>
+                              <li><a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
+                              <li><a href="{{ url('#') }}">Programa Etapa Vida Niño</a></li>
+                              <li><a href="{{ url('#') }}">Morbilidad por Consulta Externa</a></li>
+                              <li><a href="{{ url('#') }}">Salud Ocular</a></li>
+                              <li><a href="{{ url('#') }}">Estrategia Cáncer</a></li>
                           </ul>
                       </li>
-                      <li><a>Authentication</a></li>
+                  </ul>
+                  <ul class="menu-list">
+                      <li>
+                          <a href="{{ url('#') }}">Padrón Nominal Regional</a>
+                          <ul>
+                              <li><a href="{{ url('#') }}">Detalle de seguimiento y monitoreo del registro de padrón nominal</a></li>
+                          </ul>
+                      </li>
                   </ul>
                   <p class="menu-label">
                       Configuración
                   </p>
                   <ul class="menu-list">
-                      <li><a>Perfil</a></li>
-                      <li><a>Seguridad</a></li>
+                      <li><a href="{{ url('changepassword') }}">Perfil</a></li>
                   </ul>
               </aside>
           </div>
