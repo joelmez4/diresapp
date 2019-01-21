@@ -78,7 +78,7 @@ mapa = $('#container').highcharts('Map', {
                       text: 'Apurimac'
                   },
                   subtitle: {
-                      text: null
+                      text: 'Fuente: Diresa Apurímac'
                   },
                   credits: {
                       enabled: false
