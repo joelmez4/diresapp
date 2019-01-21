@@ -116,8 +116,7 @@
                       <li>
                         <a href="{{ url('/') }}">Programa Articulado Nutricional</a>
                         <ul>
-                            <li><a class="is-active" href="{{ url('/indicadores/admin-profix-antiparasitaria?tab=admprofilaxis') }}">Administración de Profilaxis Antiparasitaria</a></li>
-                            <li><a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a></li>
+                            <li><a href="#">Comparación con el padrón nominal regional</a></li>
                         </ul>
                       </li>
                   </ul>
@@ -126,6 +125,7 @@
                           <a href="{{ url('atencion-integral-salud-nino') }}">Estrategias de Salud</a>
                           <ul>
                               <li><a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
+                              <li><a class="is-active" href="{{ url('/indicadores/admin-profix-antiparasitaria?tab=admprofilaxis') }}">Administración de Profilaxis Antiparasitaria</a></li>
                               <li><a href="{{ url('#') }}">Programa Etapa Vida Niño</a></li>
                               <li><a href="{{ url('#') }}">Morbilidad por Consulta Externa</a></li>
                               <li><a href="{{ url('#') }}">Salud Ocular</a></li>
@@ -139,6 +139,11 @@
                           <ul>
                               <li><a href="{{ url('#') }}">Detalle de seguimiento y monitoreo del registro de padrón nominal</a></li>
                           </ul>
+                      </li>
+                  </ul>
+                  <ul class="menu-list">
+                      <li>
+                        <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
                       </li>
                   </ul>
                   <p class="menu-label">
