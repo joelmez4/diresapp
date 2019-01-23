@@ -29,6 +29,7 @@ Route::get('/atencionRecienNacido/exportarpdf', 'AtencionIntegralSaludNino\Atenc
 
 Route::get('/redes', 'HomeController@getRedes');
 Route::get('/provincias', 'HomeController@getProvincias');
+Route::get('/establecimientos', 'HomeController@getEstablecimientos');
 Route::get('/getDistrito', 'HomeController@getDistrito');
 Route::get('/getMicroRed', 'HomeController@getMicroRed');
 Route::get('/getEstablecimiento', 'HomeController@getEstablecimiento');

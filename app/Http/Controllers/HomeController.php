@@ -67,4 +67,13 @@ class HomeController extends Controller
 
     }
 
+    public function getEstablecimientos()
+    {
+
+      $establecimientos = DB::select('select desc_estab, cod_2000 from establec');
+
+      return $establecimientos;
+
+    }
+
 }
