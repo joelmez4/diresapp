@@ -119,12 +119,15 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
         option: { provincia: null, red: null, establecimiento: null, selected: null },
         group: '1',
-        month: '2018-12',
+
+        startDate: '2018-10-01',
+        endDate: '2018-10-31',
 
         establecimientos: [],
 
+        //vue-select
         options: [],
-        selected: { id: null, label: null }
+        selected: { id: null, label: 'ANTABAMBA' }
     },
 
     mounted: function mounted() {
@@ -133,13 +136,13 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
         //axios.get('redes').then(response => this.redes = response.data);
 
-        axios.get('../establecimientos').then(function (response) {
+        axios.get(base_url + '/establecimientos').then(function (response) {
             this.establecimientos = response.data;
 
             for (var i = 0; i < this.establecimientos.length; i++) {
                 this.options.push({ id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab });
-                this.selected.id = this.establecimientos[3].cod_2000;
-                this.selected.label = this.establecimientos[3].desc_estab;
+                this.selected.id = this.establecimientos[4].cod_2000;
+                this.selected.label = this.establecimientos[4].desc_estab;
             }
 
             drawChart(this.selected.label);
@@ -173,10 +176,39 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             }
         },
 
-        setEstablec: function setEstablec(val) {
-            this.selected.id = val.id;
+        setEstablecimiento: function setEstablecimiento(val) {
+            //tab color
+            this.option.selected = "establecimiento";
+            this.option.provincia = null;
+            this.option.red = null;
+            this.option.establecimiento = 'is-info is-selected';
+
             this.selected.label = val.label;
-            drawChart(this.selected.label);
+
+            var data;
+            data = {
+                query: this.option.selected,
+                establecimiento: this.selected.label,
+                group: this.group,
+                startDate: this.startDate,
+                endDate: this.endDate
+            };
+
+            data = JSON.stringify(data);
+
+            axios.get(base_url + '/indicadores/admin-profix-antiparasitaria/get', {
+                params: {
+                    data: data
+                }
+            }).then(function (response) {
+                // this.establecimientos = response.data;
+                console.log("joextech");
+                console.log(response.data);
+                drawChart(response.data);
+            }.bind(this));
+        },
+        setGroup: function setGroup(val) {
+            console.log(this.group);
         }
     }
 
@@ -184,7 +216,7 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 var chart;
 var options;
-function drawChart(val) {
+function drawChart(data) {
     options = {
         chart: {
             type: 'column',
@@ -217,12 +249,12 @@ function drawChart(val) {
         yAxis: {
             min: 0,
             title: {
-                text: 'Rendimiento (mm)'
+                text: 'Atención'
             }
         },
         tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true
@@ -247,7 +279,7 @@ function drawChart(val) {
 
                 borderWidth: 0,
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     format: '{point.y:.1f}%'
                 }
             }
@@ -281,8 +313,35 @@ function drawChart(val) {
         //
         // }],
         series: [{
-            name: val,
-            data: [83.6, 78.8]
+            name: "1 año",
+            data: [data.admin_profilaxis_antiparasitaria_1A_LAB1, data.admin_profilaxis_antiparasitaria_1A_LAB2]
+        }, {
+            name: "2 años",
+            data: [data.admin_profilaxis_antiparasitaria_2A_LAB1, data.admin_profilaxis_antiparasitaria_2A_LAB2]
+        }, {
+            name: "3 años",
+            data: [data.admin_profilaxis_antiparasitaria_3A_LAB1, data.admin_profilaxis_antiparasitaria_3A_LAB2]
+        }, {
+            name: "4 años",
+            data: [data.admin_profilaxis_antiparasitaria_4A_LAB1, data.admin_profilaxis_antiparasitaria_4A_LAB2]
+        }, {
+            name: "0 a 11 años",
+            data: [data.admin_profilaxis_antiparasitaria_0_11a_LAB1, data.admin_profilaxis_antiparasitaria_0_11a_LAB2]
+        }, {
+            name: "5 a 11 años",
+            data: [data.admin_profilaxis_antiparasitaria_5_11a_LAB1, data.admin_profilaxis_antiparasitaria_5_11a_LAB2]
+        }, {
+            name: "12 a 17 años",
+            data: [data.admin_profilaxis_antiparasitaria_12_17a_LAB1, data.admin_profilaxis_antiparasitaria_12_17a_LAB2]
+        }, {
+            name: "18 a 29 años",
+            data: [data.admin_profilaxis_antiparasitaria_18_29a_LAB1, data.admin_profilaxis_antiparasitaria_18_29a_LAB2]
+        }, {
+            name: "30 a 59 años",
+            data: [data.admin_profilaxis_antiparasitaria_30_59a_LAB1, data.admin_profilaxis_antiparasitaria_30_59a_LAB2]
+        }, {
+            name: "60 años a más",
+            data: [data.admin_profilaxis_antiparasitaria_60_a_mas_LAB1, data.admin_profilaxis_antiparasitaria_60_a_mas_LAB2]
         }],
 
         drilldown: {
@@ -297,7 +356,7 @@ function drawChart(val) {
             }]
         }
     };
-    options.series[0].name = val;
+    //options.series[0].name = val;
     chart = new Highcharts.Chart(options);
 };
 // Highcharts.chart('container', {

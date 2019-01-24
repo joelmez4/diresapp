@@ -38,5 +38,6 @@ Route::get('/getEstablecimiento', 'HomeController@getEstablecimiento');
 //indicadores
 
 Route::get('indicadores/admin-profix-antiparasitaria', 'IndicadoresController@antiparasitaria');
+Route::get('indicadores/admin-profix-antiparasitaria/get', 'IndicadoresController@getAntiparasitaria');
 
 Route::get('indicadores/permanencia-personal', 'IndicadoresController@personal');

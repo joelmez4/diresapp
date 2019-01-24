@@ -2,6 +2,11 @@
 
 @section('custom-css')
 
+<style media="screen">
+.v-select input[type=search], .v-select input[type=search]:focus {
+  width: inherit !important;
+}
+</style>
 
 @endsection
 
@@ -29,32 +34,50 @@
             <div class="field-body">
               <div class="field">
                 <div class="buttons has-addons">
-                  <span class="button" v-bind:class="option.provincia" v-on:click="clickOption('provincia')">Provincia</span>
-                  <span class="button" v-bind:class="option.red" v-on:click="clickOption('red')">Red</span>
-                  <v-select v-model="selected" :options="options" @input="setEstablec">
-                    <!-- <span slot="no-options">
+                  <span class="button is-small" v-bind:class="option.provincia" v-on:click="clickOption('provincia')">Provincia</span>
+                  <span class="button is-small" v-bind:class="option.red" v-on:click="clickOption('red')">Red</span>
+                  <v-select v-model="selected" :options="options" @input="setEstablecimiento">
+                    <span slot="no-options">
                       No se encontró establecimiento.
-                    </span> -->
+                    </span>
                   </v-select>
                 </div>
               </div>
               <div class="field">
                 <div class="field has-addons has-addons-right">
-                  <p class="control">
+                  <!-- <p class="control">
                     <span class="select is-small">
-                      <select>
-                        <option>1 año</option>
-                        <option>2 año</option>
-                        <option>3 año</option>
-                        <option>4 año</option>
-                        <option>5 a 11 años</option>
-                        <option>Grandes grupos</option>
+                      <select v-model="group" v-on:change="setGroup">
+                        <option value="1">1 año</option>
+                        <option value="2">2 años</option>
+                        <option value="3">3 años</option>
+                        <option value="4">4 años</option>
+                        <option value="5">0 a 11 años</option>
+                        <option value="6">5 a 11 años</option>
+                        <option value="7">12 a 17 años</option>
+                        <option value="8">18 a 29 años</option>
+                        <option value="9">30 a 59 años</option>
+                        <option value="10">60 años a más</option>
                       </select>
                     </span>
-                  </p>
-                  <p class="control">
-                    <input  type="month" id="start" name="start" min="2017-01" max="20" value="2019-01" class="input is-small">
-                  </p>
+                  </p> -->
+                  <!-- <p class="control">
+                    <input type="month" id="start" name="start" min="2017-01" max="20" value="2019-01" class="input is-small">
+                  </p> -->
+                      <p class="control is-expanded has-icons-left">
+                        <input class="input is-small" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" value="2018-12-01" min="2018-01-01" max="2018-12-31" required>
+                        <span class="icon is-small is-left">
+                          <i class="far fa-calendar-alt"></i>
+                        </span>
+                      </p>
+
+                      <p class="control is-expanded has-icons-left has-icons-right">
+                        <input class="input is-small" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" value="2018-12-31" min="2018-01-01" max="2018-12-31" required>
+                        <span class="icon is-small is-left">
+                          <i class="far fa-calendar-alt"></i>
+                        </span>
+                      </p>
+
                 </div>
               </div>
               <!-- <div class="field">
@@ -64,9 +87,10 @@
               </div> -->
             </div>
           </div>
-          <p>@{{selected.id+' - '+selected.label}}</p>
           <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
+          <p>@{{startDate+' - '+endDate}}</p>
+          <p>@{{group}}</p>
+          <p>@{{selected.id +" - "+ selected.label}}</p>
         </div>
       </div>
     </article>
