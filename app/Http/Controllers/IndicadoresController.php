@@ -69,6 +69,8 @@ class IndicadoresController extends Controller
       $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?, ?, ?, ?, ?',[$data['query'], $data['establecimiento'], $data['group'], $data['startDate'], $data['endDate']]);
 
       $admin_pro_anti = array(
+        "startDate" => $data['startDate'],
+        "endDate" => $data['endDate'],
         "establecimiento" => $data['establecimiento'],
         "admin_profilaxis_antiparasitaria_0_11a_LAB1" => 0,
         "admin_profilaxis_antiparasitaria_0_11a_LAB2" => 0,

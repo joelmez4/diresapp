@@ -65,14 +65,14 @@
                     <input type="month" id="start" name="start" min="2017-01" max="20" value="2019-01" class="input is-small">
                   </p> -->
                       <p class="control is-expanded has-icons-left">
-                        <input class="input is-small" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" value="2018-12-01" min="2018-01-01" max="2018-12-31" required>
+                        <input class="input is-small" name="startDate" type="date" v-model="startDate" v-on:input="setStartDate" placeholder="Fecha Inicio" min="2018-01-01" max="2018-12-31" required>
                         <span class="icon is-small is-left">
                           <i class="far fa-calendar-alt"></i>
                         </span>
                       </p>
 
                       <p class="control is-expanded has-icons-left has-icons-right">
-                        <input class="input is-small" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" value="2018-12-31" min="2018-01-01" max="2018-12-31" required>
+                        <input class="input is-small" name="endDate" type="date" v-model="endDate" v-on:input="setEndDate" placeholder="Fecha Fin" min="2018-01-01" max="2018-12-31" required>
                         <span class="icon is-small is-left">
                           <i class="far fa-calendar-alt"></i>
                         </span>
@@ -88,9 +88,7 @@
             </div>
           </div>
           <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-          <p>@{{startDate+' - '+endDate}}</p>
-          <p>@{{group}}</p>
-          <p>@{{selected.id +" - "+ selected.label}}</p>
+          <p>@{{startDate+" - "+endDate}}</p>
         </div>
       </div>
     </article>
@@ -111,6 +109,5 @@
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
 <script src="{{ asset('/public/js/app-profilaxis.js') }}"></script>
-
 
 @endsection

@@ -11,8 +11,8 @@ var profilaxis = new Vue({
     option: { provincia : null, red : null, establecimiento : null, selected: null},
     group: '1',
 
-    startDate: '2018-10-01',
-    endDate: '2018-10-31',
+    startDate: null,  //
+    endDate: null,
 
     establecimientos: [],
 
@@ -27,6 +27,16 @@ var profilaxis = new Vue({
 
     //axios.get('redes').then(response => this.redes = response.data);
 
+    // Current Date minus one month
+    var currentDate = new Date(new Date().toISOString().substr(0, 10));
+
+    this.endDate = currentDate.toISOString().substr(0, 10);
+
+    currentDate.setMonth(currentDate.getMonth() - 1);
+
+    this.startDate = currentDate.toISOString().substr(0, 10);
+
+
     axios.get(base_url+'/establecimientos')
     .then(function (response) {
         this.establecimientos = response.data;
@@ -37,9 +47,12 @@ var profilaxis = new Vue({
           this.selected.label = this.establecimientos[4].desc_estab;
         }
 
-        drawChart(this.selected.label);
-
      }.bind(this));
+
+     axios.get(base_url+'redes').then(response => this.redes = response.data);
+
+     axios.get(base_url+'provincias').then(response => this.provincias = response.data);
+
   },
 
   methods: {
@@ -102,10 +115,58 @@ var profilaxis = new Vue({
 
     },
 
-    setGroup(val) {
-      console.log(this.group);
+    setStartDate() {
+
+      var data;
+      data = {
+        query: this.option.selected,
+        establecimiento: this.selected.label,
+        group: this.group,
+        startDate: this.startDate,
+        endDate: this.endDate
+      };
+
+      data = JSON.stringify(data);
+
+      axios.get(base_url+'/indicadores/admin-profix-antiparasitaria/get', {
+        params: {
+          data: data
+        }
+      }).then(function (response) {
+          // this.establecimientos = response.data;
+          console.log("setStartDate");
+          console.log(response.data);
+          drawChart(response.data);
+       }.bind(this));
+
+    },
+
+    setEndDate() {
+
+      var data;
+      data = {
+        query: this.option.selected,
+        establecimiento: this.selected.label,
+        group: this.group,
+        startDate: this.startDate,
+        endDate: this.endDate
+      };
+
+      data = JSON.stringify(data);
+
+      axios.get(base_url+'/indicadores/admin-profix-antiparasitaria/get', {
+        params: {
+          data: data
+        }
+      }).then(function (response) {
+          // this.establecimientos = response.data;
+          console.log("setEndDate");
+          console.log(response.data);
+          drawChart(response.data);
+       }.bind(this));
 
     }
+
 
   }
 
@@ -127,7 +188,7 @@ function drawChart(data) {
         plotShadow: false
     },
     title: {
-        text: 'Promedio mensual de Administración de Profilaxis Antiparasitaria'
+        text: 'Administración de Profilaxis Antiparasitaria'
     },
     subtitle: {
         text: 'Fuente: Diresa Apurímac'
