@@ -11,14 +11,36 @@ var profilaxis = new Vue({
     option: { provincia : null, red : null, establecimiento : null, selected: null},
     group: '1',
 
-    startDate: null,  //
+    //Date
+    startDate: null,
     endDate: null,
 
+    //vue-select  for Establecimientos
     establecimientos: [],
 
-    //vue-select
     options: [],
-    selected: {id: null, label: 'ANTABAMBA'}
+    selected: {id: null, label: 'ANTABAMBA'},
+
+    //Form query
+    picked: 'three',
+
+    selectedRed: '',
+    selectedMred: '',
+    selectedEstablec: '',
+    selectedProvincia: '',
+    selectedDistrito: '',
+
+    redes: [],
+    mredes: [],
+    establecimientos: [],
+    provincias: [],
+    distritos: [],
+
+    cmbRedes: null,
+    cmbMredes: null,
+    cmbProvincias: null,
+    cmbDistritos: null,
+    cmbEstablec: null
   },
 
   mounted () {
@@ -29,11 +51,8 @@ var profilaxis = new Vue({
 
     // Current Date minus one month
     var currentDate = new Date(new Date().toISOString().substr(0, 10));
-
     this.endDate = currentDate.toISOString().substr(0, 10);
-
     currentDate.setMonth(currentDate.getMonth() - 1);
-
     this.startDate = currentDate.toISOString().substr(0, 10);
 
 
@@ -49,9 +68,9 @@ var profilaxis = new Vue({
 
      }.bind(this));
 
-     axios.get(base_url+'redes').then(response => this.redes = response.data);
+     axios.get(base_url+'/redes').then(response => this.redes = response.data);
 
-     axios.get(base_url+'provincias').then(response => this.provincias = response.data);
+     axios.get(base_url+'/provincias').then(response => this.provincias = response.data);
 
   },
 
@@ -165,8 +184,63 @@ var profilaxis = new Vue({
           drawChart(response.data);
        }.bind(this));
 
-    }
+    },
 
+    microRedes: function (event) {
+
+      axios.get(base_url+'/getMicroRed?cod_red='+this.selectedRed).then(response => this.mredes = response.data);
+
+    },
+
+    establec: function (event) {
+
+      axios.get(base_url+'/getEstablecimiento?cod_red='+this.selectedRed+'&cod_mic='+this.selectedMred).then(response => this.establecimientos = response.data);
+
+    },
+
+    distrito: function (event) {
+
+      axios.get(base_url+'/getDistrito?cod_prov='+this.selectedProvincia).then(response => this.distritos = response.data);
+
+    },
+
+    selectQuery: function (event) {
+
+      if (this.picked == 'one') {
+
+        this.cmbRedes = false;
+        this.cmbMredes = false;
+
+        this.cmbProvincias = true;
+        this.cmbDistritos = true;
+        this.cmbEstablec = true;
+
+      } else if (this.picked == 'two') {
+
+        this.cmbRedes = true;
+        this.cmbMredes = true;
+
+        this.cmbEstablec = true,
+
+        this.cmbProvincias = false,
+
+        this.cmbDistritos = false
+
+      } else if (this.picked == 'three') {
+
+        this.cmbRedes = true;
+
+        this.cmbMredes = true;
+
+        this.cmbEstablec = true,
+
+        this.cmbProvincias = true,
+
+        this.cmbDistritos = true
+
+      }
+      console.log(this.picked);
+    }
 
   }
 
@@ -191,7 +265,10 @@ function drawChart(data) {
         text: 'Administración de Profilaxis Antiparasitaria'
     },
     subtitle: {
-        text: 'Fuente: Diresa Apurímac'
+        text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
+    },
+    credits: {
+        enabled: false
     },
     xAxis: {
         categories: [

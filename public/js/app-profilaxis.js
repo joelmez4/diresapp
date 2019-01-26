@@ -108,6 +108,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_select__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_select__);
+var _data;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-select', __WEBPACK_IMPORTED_MODULE_1_vue_select___default.a);
@@ -115,34 +119,46 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-select', __WEBPACK_IMPO
 var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#profilaxis',
 
-    data: {
+    data: (_data = {
 
         option: { provincia: null, red: null, establecimiento: null, selected: null },
         group: '1',
 
-        startDate: null, //
+        //Date
+        startDate: null,
         endDate: null,
 
+        //vue-select  for Establecimientos
         establecimientos: [],
 
-        //vue-select
         options: [],
-        selected: { id: null, label: 'ANTABAMBA' }
-    },
+        selected: { id: null, label: 'ANTABAMBA' },
+
+        //Form query
+        picked: 'three',
+
+        selectedRed: '',
+        selectedMred: '',
+        selectedEstablec: '',
+        selectedProvincia: '',
+        selectedDistrito: '',
+
+        redes: [],
+        mredes: []
+    }, _defineProperty(_data, 'establecimientos', []), _defineProperty(_data, 'provincias', []), _defineProperty(_data, 'distritos', []), _defineProperty(_data, 'cmbRedes', null), _defineProperty(_data, 'cmbMredes', null), _defineProperty(_data, 'cmbProvincias', null), _defineProperty(_data, 'cmbDistritos', null), _defineProperty(_data, 'cmbEstablec', null), _data),
 
     mounted: function mounted() {
+        var _this = this;
+
         this.option.provincia = 'is-info is-selected';
         this.option.selected = "provincia";
 
         //axios.get('redes').then(response => this.redes = response.data);
 
-        //Current Date minus one month
+        // Current Date minus one month
         var currentDate = new Date(new Date().toISOString().substr(0, 10));
-
         this.endDate = currentDate.toISOString().substr(0, 10);
-
         currentDate.setMonth(currentDate.getMonth() - 1);
-
         this.startDate = currentDate.toISOString().substr(0, 10);
 
         axios.get(base_url + '/establecimientos').then(function (response) {
@@ -155,9 +171,13 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             }
         }.bind(this));
 
-        // axios.get('redes').then(response => this.redes = response.data);
-        //
-        // axios.get('provincias').then(response => this.provincias = response.data);
+        axios.get(base_url + '/redes').then(function (response) {
+            return _this.redes = response.data;
+        });
+
+        axios.get(base_url + '/provincias').then(function (response) {
+            return _this.provincias = response.data;
+        });
     },
 
 
@@ -265,7 +285,60 @@ var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
                 console.log(response.data);
                 drawChart(response.data);
             }.bind(this));
+        },
+
+
+        microRedes: function microRedes(event) {
+            var _this2 = this;
+
+            axios.get(base_url + '/getMicroRed?cod_red=' + this.selectedRed).then(function (response) {
+                return _this2.mredes = response.data;
+            });
+        },
+
+        establec: function establec(event) {
+            var _this3 = this;
+
+            axios.get(base_url + '/getEstablecimiento?cod_red=' + this.selectedRed + '&cod_mic=' + this.selectedMred).then(function (response) {
+                return _this3.establecimientos = response.data;
+            });
+        },
+
+        distrito: function distrito(event) {
+            var _this4 = this;
+
+            axios.get(base_url + '/getDistrito?cod_prov=' + this.selectedProvincia).then(function (response) {
+                return _this4.distritos = response.data;
+            });
+        },
+
+        selectQuery: function selectQuery(event) {
+
+            if (this.picked == 'one') {
+
+                this.cmbRedes = false;
+                this.cmbMredes = false;
+
+                this.cmbProvincias = true;
+                this.cmbDistritos = true;
+                this.cmbEstablec = true;
+            } else if (this.picked == 'two') {
+
+                this.cmbRedes = true;
+                this.cmbMredes = true;
+
+                this.cmbEstablec = true, this.cmbProvincias = false, this.cmbDistritos = false;
+            } else if (this.picked == 'three') {
+
+                this.cmbRedes = true;
+
+                this.cmbMredes = true;
+
+                this.cmbEstablec = true, this.cmbProvincias = true, this.cmbDistritos = true;
+            }
+            console.log(this.picked);
         }
+
     }
 
 });
@@ -285,7 +358,10 @@ function drawChart(data) {
             text: 'Administración de Profilaxis Antiparasitaria'
         },
         subtitle: {
-            text: 'Fuente: Diresa Apurímac'
+            text: 'Fuente: Diresa Apurímac | fecha: ' + data.startDate + ' hasta ' + data.endDate
+        },
+        credits: {
+            enabled: false
         },
         xAxis: {
             categories: ['Dosis A', 'Dosis B'
