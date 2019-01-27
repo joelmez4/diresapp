@@ -7,7 +7,7 @@ const appMorbilidad = new Vue({
   el: '#appMorbilidad',
 
   data: {
-
+    
     flag: null,
 
     //Date
@@ -44,7 +44,6 @@ const appMorbilidad = new Vue({
   },
 
   mounted () {
-
     //axios.get('redes').then(response => this.redes = response.data);
 
     // Establecimientos | default selected
@@ -184,9 +183,6 @@ const appMorbilidad = new Vue({
   }
 
 });
-
-
-
 
 
 var chart;

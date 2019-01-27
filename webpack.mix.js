@@ -11,13 +11,22 @@ let mix = require('laravel-mix');
  |
  */
 
+ // mix.js('resources/assets/js/app.js', 'public/js')
+ //    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
 // mix.js('resources/assets/js/indicadores/appProfilaxis.js', 'public/js/indicadores')
 //    .sass('resources/assets/sass/app.scss', 'public/css');
 
+  // mix.js('resources/assets/js/indicadores/appMorbilidad.js', 'public/js/indicadores')
+  //  .sass('resources/assets/sass/app.scss', 'public/css');
 
-// mix.js('resources/assets/js/app.js', 'public/js')
-//    .sass('resources/assets/sass/app.scss', 'public/css');
+   mix.js('resources/assets/js/app.js', 'public/js')
+       .js('resources/assets/js/indicadores/appProfilaxis.js', 'public/js/indicadores')
+       .js('resources/assets/js/indicadores/appMorbilidad.js', 'public/js/indicadores')
+       .sass('resources/assets/sass/app.scss', 'public/css');
 
-
-mix.js('resources/assets/js/indicadores/appMorbilidad.js', 'public/js/indicadores')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+/* eXAMPLE */
+   // mix.js('resources/assets/js/admin.js', 'public/js')
+   //     .js('resources/assets/js/frontend.js', 'public/js')
+   //     .sass('resources/assets/sass/app.scss', 'public/css');

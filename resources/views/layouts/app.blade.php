@@ -20,11 +20,11 @@
   </head>
 
   <body>
+
     <script type="text/javascript">
     var base_url = "{{ URL::to('/') }}";
-    var tab = "<?php echo  isset($_GET['tab']) ? $_GET['tab'] : '' ;  ?>";
-    console.log(tab);
     </script>
+
     <!-- START NAV -->
     <nav class="navbar is-white">
         <div class="container">
@@ -107,7 +107,7 @@
     <div class="container">
         <div class="columns">
 
-          <div class="column is-3 ">
+          <div class="column is-3">
               <aside class="menu is-hidden-mobile">
                   <p class="menu-label">
                       Dashboard
@@ -161,6 +161,7 @@
     </div>
 
     <script async type="text/javascript" src="{{ asset('public/js/bulma.js') }}"></script>
+
     @yield('custom-js')
 
     <!-- <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script> -->

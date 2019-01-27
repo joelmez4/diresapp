@@ -1,4 +1,6 @@
 {
+    "/js/indicadores/appProfilaxis.js": "/js/indicadores/appProfilaxis.js",
     "/js/indicadores/appMorbilidad.js": "/js/indicadores/appMorbilidad.js",
+    "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css"
 }

@@ -1,16 +1,6 @@
 @extends('layouts.app')
 
 @section('custom-css')
-<script src="{{ asset('public/highchart/js/jquery-1.10.2.min.js') }}"></script>
-<script src="{{ asset('public/highchart/js/highmaps.js') }}"></script>
-<script src="{{ asset('public/highchart/js/highcharts.js') }} "></script>
-<script src="{{ asset('public/highchart/js/exporting.js') }} "></script>
-<script src="{{ asset('public/highchart/js/modulos/exporting.js') }}"></script>
-<script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
-<script src="{{ asset('public/highchart/js/mapa.js') }}"></script>
-<script src="{{ asset('public/highchart/js/drilldown.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" />
 
 <!--ARCHIVOS UTILIZADOS EN LA TABLA -->
 
@@ -159,6 +149,16 @@
 @endsection
 
 @section('custom-js')
+<script src="{{ asset('public/highchart/js/jquery-1.10.2.min.js') }}"></script>
+<script src="{{ asset('public/highchart/js/highmaps.js') }}"></script>
+<script src="{{ asset('public/highchart/js/highcharts.js') }} "></script>
+<script src="{{ asset('public/highchart/js/exporting.js') }} "></script>
+<script src="{{ asset('public/highchart/js/modulos/exporting.js') }}"></script>
+<script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
+<script src="{{ asset('public/highchart/js/mapa.js') }}"></script>
+<script src="{{ asset('public/highchart/js/drilldown.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" />
 <script>
 Highcharts.setOptions({
   lang: {

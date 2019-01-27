@@ -185,10 +185,6 @@ const appProfilaxis = new Vue({
 
 });
 
-
-
-
-
 var chart;
 var options;
 function drawChart(data) {
