@@ -66,12 +66,18 @@ class IndicadoresController extends Controller
 
       $data = json_decode($_GET['data'], true);
 
-      $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?, ?, ?, ?, ?',[$data['query'], $data['establecimiento'], $data['group'], $data['startDate'], $data['endDate']]);
+      $results = DB::select('exec dbo.SP_ADMIN_PROFILAXIS_ANTIPARASITARIA ?, ?, ?, ?, ?, ?, ?, ?',[$data['picked'], $data['red'], $data['mred'], $data['provincia'], $data['distrito'], (int)$data['establecimiento'], $data['startDate'], $data['endDate']]);
 
       $admin_pro_anti = array(
+        "picked" => $data['picked'],
+        "red" => $data['red'],
+        "mred" => $data['mred'],
+        "provincia" => $data['provincia'],
+        "distrito" => $data['distrito'],
+        "establecimiento" => (int)$data['establecimiento'],
         "startDate" => $data['startDate'],
         "endDate" => $data['endDate'],
-        "establecimiento" => $data['establecimiento'],
+
         "admin_profilaxis_antiparasitaria_0_11a_LAB1" => 0,
         "admin_profilaxis_antiparasitaria_0_11a_LAB2" => 0,
 

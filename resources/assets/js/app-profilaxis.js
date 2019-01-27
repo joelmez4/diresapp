@@ -8,8 +8,7 @@ var profilaxis = new Vue({
 
   data: {
 
-    option: { provincia : null, red : null, establecimiento : null, selected: null},
-    group: '1',
+    flag: null,
 
     //Date
     startDate: null,
@@ -18,17 +17,18 @@ var profilaxis = new Vue({
     //vue-select  for Establecimientos
     establecimientos: [],
 
+    //load establecimientos
     options: [],
-    selected: {id: null, label: 'ANTABAMBA'},
+    //set establecimiento
+    selected: {id: null, label: null},
 
-    //Form query
-    picked: 'three',
+    //Form Kind of query
+    picked: 'establecimiento',
 
-    selectedRed: '',
-    selectedMred: '',
-    selectedEstablec: '',
-    selectedProvincia: '',
-    selectedDistrito: '',
+    selectedRed: null,
+    selectedMred: null,
+    selectedProvincia: null,
+    selectedDistrito: null,
 
     redes: [],
     mredes: [],
@@ -44,10 +44,15 @@ var profilaxis = new Vue({
   },
 
   mounted () {
-    this.option.provincia = 'is-info is-selected';
-    this.option.selected = "provincia";
 
     //axios.get('redes').then(response => this.redes = response.data);
+
+    // Establecimientos | default selected
+    this.cmbRedes = true;
+    this.cmbMredes = true;
+    this.cmbProvincias = true;
+    this.cmbDistritos = true;
+    this.cmbEstablec = false;
 
     // Current Date minus one month
     var currentDate = new Date(new Date().toISOString().substr(0, 10));
@@ -62,9 +67,9 @@ var profilaxis = new Vue({
 
         for (var i = 0; i < this.establecimientos.length; i++) {
           this.options.push({id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab});
-          this.selected.id = this.establecimientos[4].cod_2000;
-          this.selected.label = this.establecimientos[4].desc_estab;
         }
+        // this.selected.id = this.establecimientos[4].cod_2000;
+        // this.selected.label = this.establecimientos[4].desc_estab;
 
      }.bind(this));
 
@@ -76,45 +81,20 @@ var profilaxis = new Vue({
 
   methods: {
 
-    clickOption: function(opt) {
+    setEstablecimiento() {
 
-      if (opt == 'provincia') {
-        this.option.selected = "provincia";
-        this.option.provincia = 'is-info is-selected';
-        this.option.red = null;
-        this.option.establecimiento = null;
-      }
+      this.flag = false;
 
-      if (opt == 'red') {
-        this.option.selected = "red";
-        this.option.provincia = null;
-        this.option.red = 'is-info is-selected';
-        this.option.establecimiento = null;
-      }
-
-      if (opt == 'establecimiento') {
-        this.option.selected = "establecimiento";
-        this.option.provincia = null;
-        this.option.red = null;
-        this.option.establecimiento = 'is-info is-selected';
-      }
-
-    },
-
-    setEstablecimiento(val) {
-      //tab color
-      this.option.selected = "establecimiento";
-      this.option.provincia = null;
-      this.option.red = null;
-      this.option.establecimiento = 'is-info is-selected';
-
-      this.selected.label = val.label;
+      console.log("loading..");
 
       var data;
       data = {
-        query: this.option.selected,
-        establecimiento: this.selected.label,
-        group: this.group,
+        picked: this.picked,
+        red: this.selectedRed,
+        mred: this.selectedMred,
+        provincia: this.selectedProvincia,
+        distrito: this.selectedDistrito,
+        establecimiento: this.selected.id,
         startDate: this.startDate,
         endDate: this.endDate
       };
@@ -127,61 +107,15 @@ var profilaxis = new Vue({
         }
       }).then(function (response) {
           // this.establecimientos = response.data;
-          console.log("joextech");
+
+          if (response.status == 200) {
+            this.flag = true;
+          }
+
           console.log(response.data);
+
           drawChart(response.data);
-       }.bind(this));
 
-    },
-
-    setStartDate() {
-
-      var data;
-      data = {
-        query: this.option.selected,
-        establecimiento: this.selected.label,
-        group: this.group,
-        startDate: this.startDate,
-        endDate: this.endDate
-      };
-
-      data = JSON.stringify(data);
-
-      axios.get(base_url+'/indicadores/admin-profix-antiparasitaria/get', {
-        params: {
-          data: data
-        }
-      }).then(function (response) {
-          // this.establecimientos = response.data;
-          console.log("setStartDate");
-          console.log(response.data);
-          drawChart(response.data);
-       }.bind(this));
-
-    },
-
-    setEndDate() {
-
-      var data;
-      data = {
-        query: this.option.selected,
-        establecimiento: this.selected.label,
-        group: this.group,
-        startDate: this.startDate,
-        endDate: this.endDate
-      };
-
-      data = JSON.stringify(data);
-
-      axios.get(base_url+'/indicadores/admin-profix-antiparasitaria/get', {
-        params: {
-          data: data
-        }
-      }).then(function (response) {
-          // this.establecimientos = response.data;
-          console.log("setEndDate");
-          console.log(response.data);
-          drawChart(response.data);
        }.bind(this));
 
     },
@@ -206,38 +140,43 @@ var profilaxis = new Vue({
 
     selectQuery: function (event) {
 
-      if (this.picked == 'one') {
+      if (this.picked == 'red') {
 
         this.cmbRedes = false;
         this.cmbMredes = false;
-
         this.cmbProvincias = true;
         this.cmbDistritos = true;
         this.cmbEstablec = true;
 
-      } else if (this.picked == 'two') {
+        this.selectedProvincia = null;
+        this.selectedDistrito = null;
+        this.selected.id = null;
+
+      } else if (this.picked == 'provincia') {
 
         this.cmbRedes = true;
         this.cmbMredes = true;
+        this.cmbProvincias = false;
+        this.cmbDistritos = false;
+        this.cmbEstablec = true;
 
-        this.cmbEstablec = true,
+        this.selectedRed = null;
+        this.selectedMred = null;
+        this.selected.id = null;
 
-        this.cmbProvincias = false,
-
-        this.cmbDistritos = false
-
-      } else if (this.picked == 'three') {
+      } else if (this.picked == 'establecimiento') {
 
         this.cmbRedes = true;
-
         this.cmbMredes = true;
+        this.cmbProvincias = true;
+        this.cmbDistritos = true;
+        this.cmbEstablec = false;
 
-        this.cmbEstablec = true,
-
-        this.cmbProvincias = true,
-
-        this.cmbDistritos = true
-
+        this.selectedRed = null;
+        this.selectedMred = null;
+        this.selectedProvincia = null;
+        this.selectedDistrito = null;
+        
       }
       console.log(this.picked);
     }
