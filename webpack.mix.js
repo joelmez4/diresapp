@@ -15,5 +15,9 @@ let mix = require('laravel-mix');
 //    .sass('resources/assets/sass/app.scss', 'public/css');
 
 
-mix.js('resources/assets/js/app.js', 'public/js')
+// mix.js('resources/assets/js/app.js', 'public/js')
+//    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+mix.js('resources/assets/js/indicadores/appMorbilidad.js', 'public/js/indicadores')
    .sass('resources/assets/sass/app.scss', 'public/css');

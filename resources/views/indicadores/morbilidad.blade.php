@@ -12,7 +12,7 @@
 
 @section('content')
 
-<div class="column is-9" id="appProfilaxis">
+<div class="column is-9" id="appMorbilidad">
   <section class="hero is-info welcome is-small">
       <div class="hero-body">
           <div class="container">
@@ -195,6 +195,6 @@
 
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
-<script src="{{ asset('/public/js/indicadores/appProfilaxis.js') }}"></script>
+<script src="{{ asset('/public/js/indicadores/appMorbilidad.js') }}"></script>
 
 @endsection
