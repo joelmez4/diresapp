@@ -17,7 +17,7 @@
       <div class="hero-body">
           <div class="container">
               <h1 class="title">
-                  Administración de Profilaxis Antiparasitaria
+                  Morbilidad por Consulta Externa
               </h1>
               <h2 class="subtitle">
                   Indicadores

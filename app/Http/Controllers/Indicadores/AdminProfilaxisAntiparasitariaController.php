@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Indicadores;
 
 use Illuminate\Http\Request;
 use DB;
 use PDF;
-class IndicadoresController extends Controller
+
+use App\Http\Controllers\Controller;
+
+
+class AdminProfilaxisAntiparasitariaController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,11 +27,6 @@ class IndicadoresController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('index');
-    }
-
-    public function antiparasitaria()
     {
       /*
       $option = 'provincia';
@@ -60,7 +59,7 @@ class IndicadoresController extends Controller
     }
 
 
-    public function getAntiparasitaria()
+    public function getIndicador()
     {
 
 

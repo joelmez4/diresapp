@@ -116,8 +116,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-select', __WEBPACK_IMPORTED_MODULE_1_vue_select___default.a);
 
-var profilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: '#profilaxis',
+var appProfilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+    el: '#appProfilaxis',
 
     data: (_data = {
 

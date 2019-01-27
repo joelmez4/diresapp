@@ -127,7 +127,7 @@
                               <li><a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
                               <li><a class="is-active" href="{{ url('/indicadores/admin-profix-antiparasitaria?tab=admprofilaxis') }}">Administración de Profilaxis Antiparasitaria</a></li>
                               <li><a href="{{ url('#') }}">Programa Etapa Vida Niño</a></li>
-                              <li><a href="{{ url('#') }}">Morbilidad por Consulta Externa</a></li>
+                              <li><a href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
                               <li><a href="{{ url('#') }}">Salud Ocular</a></li>
                               <li><a href="{{ url('#') }}">Estrategia Cáncer</a></li>
                           </ul>

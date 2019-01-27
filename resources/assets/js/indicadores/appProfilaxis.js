@@ -3,8 +3,8 @@ import vSelect from 'vue-select'
 Vue.component('v-select', vSelect)
 
 
-var profilaxis = new Vue({
-  el: '#profilaxis',
+const appProfilaxis = new Vue({
+  el: '#appProfilaxis',
 
   data: {
 
@@ -176,7 +176,7 @@ var profilaxis = new Vue({
         this.selectedMred = null;
         this.selectedProvincia = null;
         this.selectedDistrito = null;
-        
+
       }
       console.log(this.picked);
     }
