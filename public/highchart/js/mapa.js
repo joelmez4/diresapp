@@ -66,13 +66,15 @@ Highcharts.setOptions({
                   //ACREDITADAS
               ];
 // INCIALIZADO EL MAPA
-mapa = $('#container').highcharts('Map', {
+// mapa = $('#container').highcharts('Map', {
+mapa = new Highcharts.Map({
                 chart: {
                     width: 520,
                     height: 500,
                       events: {
 
-                      }
+                      },
+                    renderTo: 'container'
                 },
                   title: {
                       text: 'Apurimac'
