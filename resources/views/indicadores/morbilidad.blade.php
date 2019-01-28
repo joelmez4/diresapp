@@ -43,7 +43,7 @@
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
                     <select v-model="selectedRed" v-on:change="microRedes" v-bind:disabled="cmbRedes">
-                        <!-- <option value="" selected>Seleccionar Red</option> -->
+                        <option value="" disabled selected>Selecciona Red</option>
                         <option v-for="red in redes" v-bind:value="red.cod_red">@{{red.desc_red}}</option>
                     </select>
                   </span>
@@ -56,7 +56,7 @@
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
                     <select v-model="selectedMred" v-bind:disabled="cmbMredes">
-                        <!-- <option value="" selected>Seleccionar las Micro Redes</option> -->
+                        <option value="" disabled selected>Selecciona Micro Red</option>
                         <option v-for="mred in mredes" v-bind:value="mred.cod_mic">@{{mred.desc_micro}}</option>
                     </select>
                   </span>
@@ -80,7 +80,7 @@
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
                     <select v-model="selectedProvincia" v-on:change="distrito" v-bind:disabled="cmbProvincias">
-                        <!-- <option value="" selected>Seleccionar Provincias</option> -->
+                        <option value="" disabled selected>Selecciona Provincia</option>
                         <option v-for="provincia in provincias" v-bind:value="provincia.cod_prov">@{{provincia.desc_prov}}</option>
                     </select>
                   </span>
@@ -93,7 +93,7 @@
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
                     <select v-model="selectedDistrito" v-bind:disabled="cmbDistritos">
-                      <!-- <option value="" selected>Seleccionar Distrito</option> -->
+                      <option value="" disabled selected>Selecciona Distrito</option>
                       <option v-for="distrito in distritos" v-bind:value="distrito.cod_dist" v-text="distrito.desc_dist"></option>
                     </select>
                   </span>

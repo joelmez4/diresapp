@@ -44,80 +44,34 @@ class MorbilidadController extends Controller
 
       $results = DB::select('exec dbo.SP_MORBILIDAD_CONSULTA_EXTERNA ?, ?, ?, ?, ?, ?, ?, ?',[$data['picked'], $data['red'], $data['mred'], $data['provincia'], $data['distrito'], (int)$data['establecimiento'], $data['startDate'], $data['endDate']]);
 
-      // $admin_pro_anti = array(
-      //   "picked" => $data['picked'],
-      //   "red" => $data['red'],
-      //   "mred" => $data['mred'],
-      //   "provincia" => $data['provincia'],
-      //   "distrito" => $data['distrito'],
-      //   "establecimiento" => (int)$data['establecimiento'],
-      //   "startDate" => $data['startDate'],
-      //   "endDate" => $data['endDate'],
-      //
-      //   "admin_profilaxis_antiparasitaria_0_11a_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_0_11a_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_1A_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_1A_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_2A_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_2A_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_3A_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_3A_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_4A_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_4A_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_5_11a_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_5_11a_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_12_17a_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_12_17a_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_18_29a_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_18_29a_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_30_59a_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_30_59a_LAB2" => 0,
-      //
-      //   "admin_profilaxis_antiparasitaria_60_a_mas_LAB1" => 0,
-      //   "admin_profilaxis_antiparasitaria_60_a_mas_LAB2" => 0
-      // );
-      //
-      // foreach ($results as $result) {
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_0_11a_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_0_11a_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_0_11a_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_0_11a_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_1A_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_1A_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_1A_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_1A_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_2A_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_2A_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_2A_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_2A_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_3A_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_3A_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_3A_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_3A_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_4A_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_4A_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_4A_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_4A_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_5_11a_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_5_11a_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_5_11a_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_5_11a_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_12_17a_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_12_17a_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_12_17a_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_12_17a_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_18_29a_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_18_29a_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_18_29a_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_18_29a_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_30_59a_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_30_59a_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_30_59a_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_30_59a_LAB2;
-      //
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_60_a_mas_LAB1"] += (int)$result->admin_profilaxis_antiparasitaria_60_a_mas_LAB1;
-      //   $admin_pro_anti["admin_profilaxis_antiparasitaria_60_a_mas_LAB2"] += (int)$result->admin_profilaxis_antiparasitaria_60_a_mas_LAB2;
-      // }
+      $morb = array(
+        "picked" => $data['picked'],
+        "red" => $data['red'],
+        "mred" => $data['mred'],
+        "provincia" => $data['provincia'],
+        "distrito" => $data['distrito'],
+        "establecimiento" => (int)$data['establecimiento'],
+        "startDate" => $data['startDate'],
+        "endDate" => $data['endDate'],
 
-      return $results;
+        "morb_0_11a_nino" => 0,
+        "morb_12_17a_adolescente" => 0,
+        "morb_18_29a_joven" => 0,
+        "morb_30_59a_adulto" => 0,
+        "morb_60a_a_mas_adulto_mayor" => 0,
+        "morb_materna" => 0
+      );
+
+      foreach ($results as $result) {
+        $morb["morb_0_11a_nino"] += (int)$result->morb_0_11a_nino;
+        $morb["morb_12_17a_adolescente"] += (int)$result->morb_12_17a_adolescente;
+        $morb["morb_18_29a_joven"] += (int)$result->morb_18_29a_joven;
+        $morb["morb_30_59a_adulto"] += (int)$result->morb_30_59a_adulto;
+        $morb["morb_60a_a_mas_adulto_mayor"] += (int)$result->morb_60a_a_mas_adulto_mayor;
+        $morb["morb_materna"] += (int)$result->morb_materna;
+      }
+
+      return $morb;
     }
 
     public function personal()

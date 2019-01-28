@@ -7,7 +7,7 @@ const appMorbilidad = new Vue({
   el: '#appMorbilidad',
 
   data: {
-    
+
     flag: null,
 
     //Date
@@ -113,7 +113,7 @@ const appMorbilidad = new Vue({
 
           console.log(response.data);
 
-          // drawChart(response.data);
+          drawChart(response.data);
 
        }.bind(this));
 
@@ -150,6 +150,7 @@ const appMorbilidad = new Vue({
         this.selectedProvincia = null;
         this.selectedDistrito = null;
         this.selected.id = null;
+        this.selected.label = null;
 
       } else if (this.picked == 'provincia') {
 
@@ -162,6 +163,7 @@ const appMorbilidad = new Vue({
         this.selectedRed = null;
         this.selectedMred = null;
         this.selected.id = null;
+        this.selected.label = null;
 
       } else if (this.picked == 'establecimiento') {
 
@@ -197,7 +199,7 @@ function drawChart(data) {
         plotShadow: false
     },
     title: {
-        text: 'Administración de Profilaxis Antiparasitaria'
+        text: 'Morbilidad por Consulta Externa'
     },
     subtitle: {
         text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
@@ -207,7 +209,7 @@ function drawChart(data) {
     },
     xAxis: {
         categories: [
-            'Dosis A',
+            '',
             'Dosis B'
             // 'Mar',
             // 'Abr',
@@ -290,35 +292,23 @@ function drawChart(data) {
     //
     // }],
     series: [{
-        name: "1 año",
-        data: [data.admin_profilaxis_antiparasitaria_1A_LAB1, data.admin_profilaxis_antiparasitaria_1A_LAB2]
+        name: "0-11a Niño",
+        data: [data.morb_0_11a_nino]
     }, {
-        name: "2 años",
-        data: [data.admin_profilaxis_antiparasitaria_2A_LAB1, data.admin_profilaxis_antiparasitaria_2A_LAB2]
+        name: "12-17a Adolescente",
+        data: [data.morb_12_17a_adolescente]
     }, {
-        name: "3 años",
-        data: [data.admin_profilaxis_antiparasitaria_3A_LAB1, data.admin_profilaxis_antiparasitaria_3A_LAB2]
+        name: "18-29a Joven",
+        data: [data.morb_18_29a_joven]
     }, {
-        name: "4 años",
-        data: [data.admin_profilaxis_antiparasitaria_4A_LAB1, data.admin_profilaxis_antiparasitaria_4A_LAB2]
+        name: "30-59a Adulto",
+        data: [data.morb_30_59a_adulto]
     }, {
-        name: "0 a 11 años",
-        data: [data.admin_profilaxis_antiparasitaria_0_11a_LAB1, data.admin_profilaxis_antiparasitaria_0_11a_LAB2]
+        name: "60a+ Adulto Mayor",
+        data: [data.morb_60a_a_mas_adulto_mayor]
     }, {
-        name: "5 a 11 años",
-        data: [data.admin_profilaxis_antiparasitaria_5_11a_LAB1, data.admin_profilaxis_antiparasitaria_5_11a_LAB2]
-    }, {
-        name: "12 a 17 años",
-        data: [data.admin_profilaxis_antiparasitaria_12_17a_LAB1, data.admin_profilaxis_antiparasitaria_12_17a_LAB2]
-    }, {
-        name: "18 a 29 años",
-        data: [data.admin_profilaxis_antiparasitaria_18_29a_LAB1, data.admin_profilaxis_antiparasitaria_18_29a_LAB2]
-    }, {
-        name: "30 a 59 años",
-        data: [data.admin_profilaxis_antiparasitaria_30_59a_LAB1, data.admin_profilaxis_antiparasitaria_30_59a_LAB2]
-    }, {
-        name: "60 años a más",
-        data: [data.admin_profilaxis_antiparasitaria_60_a_mas_LAB1, data.admin_profilaxis_antiparasitaria_60_a_mas_LAB2]
+        name: "Materna",
+        data: [data.morb_materna]
     }],
 
     drilldown : {
