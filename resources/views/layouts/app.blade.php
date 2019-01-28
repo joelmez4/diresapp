@@ -107,14 +107,14 @@
     <div class="container">
         <div class="columns">
 
-          <div class="column is-3">
+          <div class="column is-3" id="vm2">
               <aside class="menu is-hidden-mobile">
                   <p class="menu-label">
-                      Dashboard
+                      DIRESA APURIMAC
                   </p>
                   <ul class="menu-list">
                       <li>
-                        <a href="{{ url('/') }}">Programa Articulado Nutricional</a>
+                        <p class="menu-label">Programa Articulado Nutricional</p>
                         <ul>
                             <li><a href="#">Comparación con el padrón nominal regional</a></li>
                         </ul>
@@ -122,35 +122,35 @@
                   </ul>
                   <ul class="menu-list">
                       <li>
-                          <a href="{{ url('atencion-integral-salud-nino') }}">Estrategias de Salud</a>
+                          <p class="menu-label">Estrategias de Salud</p>
                           <ul>
-                              <li><a href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
-                              <li><a class="is-active" href="{{ url('/indicadores/admin-profix-antiparasitaria?tab=admprofilaxis') }}">Administración de Profilaxis Antiparasitaria</a></li>
-                              <li><a href="{{ url('#') }}">Programa Etapa Vida Niño</a></li>
-                              <li><a href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
-                              <li><a href="{{ url('#') }}">Salud Ocular</a></li>
-                              <li><a href="{{ url('#') }}">Estrategia Cáncer</a></li>
+                              <li><a :class="[ tab === 'saludnino' ? 'is-active' : '']" @click="tab='saludnino'" href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
+                              <li><a :class="[ tab === 'profilaxis' ? 'is-active' : '']" href="{{ url('/indicadores/admin-profix-antiparasitaria') }}">Administración de Profilaxis Antiparasitaria</a></li>
+                              <!-- <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" @click="tab='morbilidad'" href="{{ url('#') }}">Programa Etapa Vida Niño</a></li> -->
+                              <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
+                              <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('#') }}">Salud Ocular</a></li>
+                              <li><a :class="[ tab === 'cancer' ? 'is-active' : '']" @click="tab='cancer'" href="{{ url('#') }}">Estrategia Cáncer</a></li>
                           </ul>
                       </li>
                   </ul>
                   <ul class="menu-list">
                       <li>
-                          <a href="{{ url('#') }}">Padrón Nominal Regional</a>
+                          <p class="menu-label">Padrón Nominal Regional</p>
                           <ul>
                               <li><a href="{{ url('#') }}">Detalle de seguimiento y monitoreo del registro de padrón nominal</a></li>
+                              <li>
+                                <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
+                              </li>
                           </ul>
                       </li>
                   </ul>
-                  <ul class="menu-list">
-                      <li>
-                        <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
-                      </li>
-                  </ul>
+
                   <p class="menu-label">
                       Configuración
                   </p>
                   <ul class="menu-list">
                       <li><a href="{{ url('changepassword') }}">Perfil</a></li>
+                      <li><a href="{{ url('changepassword') }}">Seguridad</a></li>
                   </ul>
               </aside>
           </div>
@@ -164,6 +164,7 @@
 
     @yield('custom-js')
 
+    <!-- <script async type="text/javascript" src="{{ asset('public/js/navmenu.js') }}"></script> -->
     <!-- <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 

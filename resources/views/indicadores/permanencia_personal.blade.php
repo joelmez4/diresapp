@@ -15,7 +15,6 @@
           </div>
       </div>
   </section>
-  <br>
   <div class="box">
     <article class="media">
       <div class="media-content">

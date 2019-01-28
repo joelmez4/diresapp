@@ -11,7 +11,6 @@
 @endsection
 
 @section('content')
-
 <div class="column is-9" id="appMorbilidad">
   <section class="hero is-info welcome is-small">
       <div class="hero-body">
@@ -25,7 +24,6 @@
           </div>
       </div>
   </section>
-  <br>
   <div class="box">
     <article class="media">
       <div class="media-content">

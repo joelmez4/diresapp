@@ -2,6 +2,12 @@ import Vue from 'vue'
 import vSelect from 'vue-select'
 Vue.component('v-select', vSelect)
 
+var vm2 = new Vue({
+	el: '#vm2',
+  data: {
+    tab: 'profilaxis'
+  }
+});
 
 const appProfilaxis = new Vue({
   el: '#appProfilaxis',

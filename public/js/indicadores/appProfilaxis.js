@@ -11676,6 +11676,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-select', __WEBPACK_IMPORTED_MODULE_1_vue_select___default.a);
 
+var vm2 = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+    el: '#vm2',
+    data: {
+        tab: 'profilaxis'
+    }
+});
+
 var appProfilaxis = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#appProfilaxis',
 

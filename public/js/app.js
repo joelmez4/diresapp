@@ -77,6 +77,13 @@ module.exports = __webpack_require__(8);
 /***/ 7:
 /***/ (function(module, exports) {
 
+var vm2 = new Vue({
+    el: '#vm2',
+    data: {
+        tab: 'saludnino'
+    }
+});
+
 var app = new Vue({
     el: '#app',
 

@@ -1,3 +1,10 @@
+var vm2 = new Vue({
+	el: '#vm2',
+  data: {
+    tab: 'saludnino'
+  }
+});
+
 const app = new Vue({
   el: '#app',
 

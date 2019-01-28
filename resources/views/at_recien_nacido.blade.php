@@ -80,36 +80,41 @@
 	    </div>
 	</section>
 
-	<section class="section">
-			@include('form.main')
-			<br>
+	<div class="box">
+		<article class="media">
+			<div class="media-content">
+				<div class="content">
 
-			<div v-if="flag == true" class="field is-grouped is-grouped-centered">
-			  <p class="control">
-					<a class="button is-primary" v-on:click="shareData">
-			      Ver
-			    </a>
-			  </p>
-			  <p class="control">
-					<a class="button is-info" href="atencionRecienNacido/exportarpdf">
-	          <span>Descargar</span>
-	          <span class="icon">
-	            <i class="fas fa-file-pdf"></i>
-	          </span>
-	        </a>
-			  </p>
+					@include('form.main')
+
+					<div v-if="flag == true" class="field is-grouped is-grouped-centered">
+					  <p class="control">
+							<a class="button is-primary" v-on:click="shareData">
+					      Ver
+					    </a>
+					  </p>
+					  <p class="control">
+							<a class="button is-info" href="atencionRecienNacido/exportarpdf">
+			          <span>Descargar</span>
+			          <span class="icon">
+			            <i class="fas fa-file-pdf"></i>
+			          </span>
+			        </a>
+					  </p>
+					</div>
+
+					<div v-if="flag == false" class="field is-grouped is-grouped-centered">
+					  <p class="control">
+							<i class="fas fa-spinner fa-spin fa-2x"></i>
+							<span>Cargando...</span>
+							<progress class="progress is-large is-info" max="100">60%</progress>
+					  </p>
+					</div>
+
+				</div>
 			</div>
-
-			<div v-if="flag == false" class="field is-grouped is-grouped-centered">
-			  <p class="control">
-					<i class="fas fa-spinner fa-spin fa-2x"></i>
-					<span>Cargando...</span>
-					<progress class="progress is-large is-info" max="100">60%</progress>
-			  </p>
-			</div>
-
-	</section>
-
+		</article>
+	</div>
 </div>
 
 @endsection
