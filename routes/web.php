@@ -49,10 +49,13 @@ Route::get('indicadores/admin-profix-antiparasitaria/get', 'Indicadores\AdminPro
 Route::get('morbilidad', 'Indicadores\MorbilidadController@index');
 Route::get('morbilidad/get', 'Indicadores\MorbilidadController@getIndicador');
 
-// Indicador: Ocular por Consulta Externa
+// Indicador: Salud Ocular
 Route::get('ocular', 'Indicadores\OcularController@index');
 Route::get('ocular/get', 'Indicadores\OcularController@getIndicador');
 
+// Indicador: Estrategia Cancer
+Route::get('cancer', 'Indicadores\CancerController@index');
+Route::get('cancer/get', 'Indicadores\CancerController@getIndicador');
 
 
 // Indicador: Permanencia Personal

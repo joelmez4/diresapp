@@ -2,6 +2,7 @@
     "/js/indicadores/appProfilaxis.js": "/js/indicadores/appProfilaxis.js",
     "/js/indicadores/appOcular.js": "/js/indicadores/appOcular.js",
     "/js/indicadores/appMorbilidad.js": "/js/indicadores/appMorbilidad.js",
+    "/js/indicadores/appCancer.js": "/js/indicadores/appCancer.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css"
 }
