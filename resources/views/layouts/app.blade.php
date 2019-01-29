@@ -128,7 +128,7 @@
                               <li><a :class="[ tab === 'profilaxis' ? 'is-active' : '']" href="{{ url('/indicadores/admin-profix-antiparasitaria') }}">Administración de Profilaxis Antiparasitaria</a></li>
                               <!-- <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" @click="tab='morbilidad'" href="{{ url('#') }}">Programa Etapa Vida Niño</a></li> -->
                               <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
-                              <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('#') }}">Salud Ocular</a></li>
+                              <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('/ocular') }}">Salud Ocular</a></li>
                               <li><a :class="[ tab === 'cancer' ? 'is-active' : '']" @click="tab='cancer'" href="{{ url('#') }}">Estrategia Cáncer</a></li>
                           </ul>
                       </li>
