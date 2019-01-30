@@ -144,6 +144,16 @@
                           </ul>
                       </li>
                   </ul>
+                  <ul class="menu-list">
+                      <li>
+                          <p class="menu-label">Reportes</p>
+                          <ul>
+                              <li>
+                                <a :class="[ tab === 'vacunas' ? 'is-active' : '']" @click="tab='vacunas'" href="{{ url('/vacunas') }}">Vacunas</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
 
                   <p class="menu-label">
                       Configuración
