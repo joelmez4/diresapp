@@ -2,15 +2,41 @@
 
 @section('custom-css')
 
-<style media="screen">
-.v-select input[type=search], .v-select input[type=search]:focus {
-  width: inherit !important;
-}
-</style>
-
 @endsection
 
 @section('content')
+
+
+<div class="column is-9" id="appInmunizaciones">
+  <section class="hero is-info welcome is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h1 class="title">
+                  Inmunizaciones
+              </h1>
+              <h2 class="subtitle">
+                  Indicadores
+              </h2>
+          </div>
+      </div>
+  </section>
+  <div class="box">
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <div id="vacuna1" style="width:100%; height:100%;"></div>
+          <div id="vacuna2" style="width:100%; height:100%;"></div>
+          <div id="vacuna3" style="width:100%; height:100%;"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+@endsection
+
+@section('custom-js')
+
 <script type="text/javascript"
   src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 <script type="text/javascript">
@@ -41,36 +67,6 @@
     }
 </script>
 
-<div class="column is-9" id="appOcular">
-  <section class="hero is-info welcome is-small">
-      <div class="hero-body">
-          <div class="container">
-              <h1 class="title">
-                  Vacunas
-              </h1>
-              <h2 class="subtitle">
-                  Indicadores
-              </h2>
-          </div>
-      </div>
-  </section>
-  <div class="box">
-    <article class="media">
-      <div class="media-content">
-        <div class="content" onload="initViz();">
-          @csrf
-          <div id="vacuna1" style="width:100%; height:460px;"></div>
-          <div id="vacuna2" style="width:100%; height:460px;"></div>
-          <div id="vacuna3" style="width:100%; height:560px;"></div>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-@endsection
-
-@section('custom-js')
 
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -81,6 +77,6 @@
 
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
-<script src="{{ asset('/public/js/indicadores/appVacunas.js') }}"></script>
+<script src="{{ asset('/public/js/indicadores/appInmunizaciones.js') }}"></script>
 
 @endsection

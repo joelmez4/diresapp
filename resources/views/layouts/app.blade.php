@@ -25,10 +25,10 @@
 
   </head>
 
-  <body>
+  <body onload="initViz();">
 
     <script type="text/javascript">
-    var base_url = "{{ URL::to('/') }}";
+      var base_url = "{{ URL::to('/') }}";
     </script>
 
     <!-- START NAV -->
@@ -155,7 +155,7 @@
                           <p class="menu-label">Reportes</p>
                           <ul>
                               <li>
-                                <a :class="[ tab === 'vacunas' ? 'is-active' : '']" @click="tab='vacunas'" href="{{ url('/vacunas') }}">Vacunas</a>
+                                <a :class="[ tab === 'inmunizaciones' ? 'is-active' : '']" @click="tab='inmunizaciones'" href="{{ url('/inmunizaciones') }}">Inmunizaciones</a>
                               </li>
                           </ul>
                       </li>

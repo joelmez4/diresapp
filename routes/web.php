@@ -59,8 +59,8 @@ Route::get('cancer/get', 'Indicadores\CancerController@getIndicador');
 
 
 // Indicador: Reportes Vacunas
-Route::get('/vacunas', function () {
-  return view('indicadores.vacunas');
+Route::get('/inmunizaciones', function () {
+  return view('indicadores.inmunizaciones');
 });
 
 

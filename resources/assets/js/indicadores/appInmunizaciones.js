@@ -1,5 +1,5 @@
-var appVacunas = new Vue({
-	el: '#appVacunas',
+var appInmunizaciones = new Vue({
+	el: '#appInmunizaciones',
   data: {
     tab: null
   },
@@ -15,6 +15,6 @@ var appVacunas = new Vue({
 var vm2 = new Vue({
 	el: '#vm2',
   data: {
-    tab: 'vacunas'
+    tab: 'inmunizaciones'
   }
 });
