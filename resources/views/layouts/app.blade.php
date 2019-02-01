@@ -15,6 +15,12 @@
 
       <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
+      <style media="screen">
+        .navbar-item img {
+          max-height: 40px;
+        }
+      </style>
+
       @yield('custom-css')
 
   </head>
@@ -30,7 +36,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item brand-text" href="{{ url('/') }}">
-                  <img src="{{ asset('public/images/diresa2.png') }}">
+                  <img src="{{ asset('public/images/diresa.png') }}">
                 </a>
                 <div class="navbar-burger burger" data-target="navMenu">
                     <span></span>
