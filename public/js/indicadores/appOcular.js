@@ -11777,7 +11777,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
             data = JSON.stringify(data);
 
-            axios.get(base_url + '/morbilidad/get', {
+            axios.get(base_url + '/ocular/get', {
                 params: {
                     data: data
                 }

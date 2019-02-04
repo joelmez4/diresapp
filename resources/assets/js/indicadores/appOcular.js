@@ -106,7 +106,7 @@ const appOcular = new Vue({
 
       data = JSON.stringify(data);
 
-      axios.get(base_url+'/morbilidad/get', {
+      axios.get(base_url+'/ocular/get', {
         params: {
           data: data
         }
