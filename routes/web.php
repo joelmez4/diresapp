@@ -27,6 +27,7 @@ Route::get('/establecimientos', 'HomeController@getEstablecimientos');
 Route::get('/getDistrito', 'HomeController@getDistrito');
 Route::get('/getMicroRed', 'HomeController@getMicroRed');
 Route::get('/getEstablecimiento', 'HomeController@getEstablecimiento');
+Route::get('/getEstablecimiento2', 'HomeController@getEstablecimiento2');
 
 /*
 

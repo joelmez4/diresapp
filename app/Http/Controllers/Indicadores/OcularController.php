@@ -42,7 +42,7 @@ class OcularController extends Controller
 
       $data = json_decode($_GET['data'], true);
 
-      $results = DB::select('exec dbo.SP_SALUD_OCULAR ?, ?, ?, ?, ?, ?, ?, ?',[$data['picked'], $data['red'], $data['mred'], $data['provincia'], $data['distrito'], (int)$data['establecimiento'], $data['startDate'], $data['endDate']]);
+      $results = DB::select('exec dbo.SP_SALUD_OCULAR ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], (int)$data['establecimiento'], $data['startDate'], $data['endDate']]);
 
       // $morb = array(
       //   "picked" => $data['picked'],

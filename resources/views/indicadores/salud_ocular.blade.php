@@ -29,6 +29,8 @@
       <div class="media-content">
         <div class="content">
 
+          <form v-on:submit.prevent="getResult">
+
           <div class="field is-horizontal">
             <div class="field-label is-normal">
               <label class="label">
@@ -40,7 +42,7 @@
               <div class="field">
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
-                    <select v-model="selectedRed" v-on:change="microRedes" v-bind:disabled="cmbRedes">
+                    <select v-model="selectedRed" v-on:change="microRedes" v-bind:disabled="cmbRedes" required>
                         <option value="" disabled selected>Selecciona Red</option>
                         <option v-for="red in redes" v-bind:value="red.cod_red">@{{red.desc_red}}</option>
                     </select>
@@ -53,9 +55,22 @@
               <div class="field">
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
-                    <select v-model="selectedMred" v-bind:disabled="cmbMredes">
+                    <select v-model="selectedMred" v-on:change="establecByRedes" v-bind:disabled="cmbMredes">
                         <option value="" disabled selected>Selecciona Micro Red</option>
                         <option v-for="mred in mredes" v-bind:value="mred.cod_mic">@{{mred.desc_micro}}</option>
+                    </select>
+                  </span>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <span class="select is-fullwidth">
+                    <select v-model="selectedEstablecRed" v-bind:disabled="cmbEstablecRed">
+                        <option value="" disabled selected>Seleccionar Establecimiento</option>
+                        <option v-for="establecRed in establecRedes" v-bind:value="establecRed.cod_2000">@{{establecRed.desc_estab}}</option>
                     </select>
                   </span>
                   <span class="icon is-small is-left">
@@ -77,7 +92,7 @@
               <div class="field">
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
-                    <select v-model="selectedProvincia" v-on:change="distrito" v-bind:disabled="cmbProvincias">
+                    <select v-model="selectedProvincia" v-on:change="distrito" v-bind:disabled="cmbProvincias" required>
                         <option value="" disabled selected>Selecciona Provincia</option>
                         <option v-for="provincia in provincias" v-bind:value="provincia.cod_prov">@{{provincia.desc_prov}}</option>
                     </select>
@@ -90,9 +105,22 @@
               <div class="field">
                 <p class="control is-expanded has-icons-left">
                   <span class="select is-fullwidth">
-                    <select v-model="selectedDistrito" v-bind:disabled="cmbDistritos">
+                    <select v-model="selectedDistrito" v-on:change="establecByProvincias" v-bind:disabled="cmbDistritos">
                       <option value="" disabled selected>Selecciona Distrito</option>
                       <option v-for="distrito in distritos" v-bind:value="distrito.cod_dist" v-text="distrito.desc_dist"></option>
+                    </select>
+                  </span>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <span class="select is-fullwidth">
+                    <select v-model="selectedEstablecProv" v-bind:disabled="cmbEstablecProv">
+                        <option value="" disabled selected>Seleccionar Establecimiento</option>
+                        <option v-for="establecProvincia in establecProvincias" v-bind:value="establecProvincia.cod_2000">@{{establecProvincia.desc_estab}}</option>
                     </select>
                   </span>
                   <span class="icon is-small is-left">
@@ -113,7 +141,7 @@
             <div class="field-body">
               <div class="field">
                 <p class="control is-expanded">
-                  <v-select v-model="selected" :options="options" v-bind:disabled="cmbEstablec">
+                  <v-select v-model="selectedEstablec" :options="loadEstablec" v-bind:disabled="cmbEstablec">
                     <span slot="no-options">
                       No se encontró establecimiento.
                     </span>
@@ -131,7 +159,7 @@
             <div class="field-body">
               <div class="field">
                 <p class="control is-expanded has-icons-left">
-                  <input class="input" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" min="2018-01-01" max="2018-12-31" required>
+                  <input class="input" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" min="2017-01-01" :max="endDate" required>
                   <span class="icon is-small is-left">
                     <i class="far fa-calendar-alt"></i>
                   </span>
@@ -139,7 +167,7 @@
               </div>
               <div class="field">
                 <p class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" min="2018-01-01" max="2018-12-31" required>
+                  <input class="input" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" min="2017-01-01" :max="endDate" required>
                   <span class="icon is-small is-left">
                     <i class="far fa-calendar-alt"></i>
                   </span>
@@ -155,7 +183,7 @@
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <button type="submit" class="button is-primary is-fullwidth" v-on:click="setEstablecimiento">
+                  <button type="submit" class="button is-primary is-fullwidth" v-on:click="">
                     <span class="icon"><i class="fa fa-search"></i></span>
                     <span>Procesar</span>
                   </button>
@@ -164,6 +192,8 @@
             </div>
           </div>
 
+        </form>
+        <br>
           <div v-if="flag == false" class="field is-grouped is-grouped-centered">
     			  <p class="control">
     					<i class="fas fa-spinner fa-spin fa-2x"></i>
@@ -177,7 +207,7 @@
         </div>
       </div>
     </article>
-  </div>
+  </div>  <br>
 </div>
 
 @endsection

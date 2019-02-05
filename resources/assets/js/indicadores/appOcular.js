@@ -24,28 +24,33 @@ const appOcular = new Vue({
     establecimientos: [],
 
     //load establecimientos
-    options: [],
+    loadEstablec: [],
     //set establecimiento
-    selected: {id: null, label: null},
+    selectedEstablec: {id: null, label: null},
 
     //Form Kind of query
     picked: 'establecimiento',
 
     selectedRed: null,
     selectedMred: null,
+		selectedEstablecRed: null,
     selectedProvincia: null,
     selectedDistrito: null,
+		selectedEstablecProv: null,
 
     redes: [],
     mredes: [],
-    establecimientos: [],
+		establecRedes: [],
     provincias: [],
     distritos: [],
+		establecProvincias: [],
 
     cmbRedes: null,
     cmbMredes: null,
+		cmbEstablecRed: null,
     cmbProvincias: null,
     cmbDistritos: null,
+		cmbEstablecProv: null,
     cmbEstablec: null
   },
 
@@ -55,8 +60,10 @@ const appOcular = new Vue({
     // Establecimientos | default selected
     this.cmbRedes = true;
     this.cmbMredes = true;
+		this.cmbEstablecRed = true;
     this.cmbProvincias = true;
     this.cmbDistritos = true;
+		this.cmbEstablecProv = true;
     this.cmbEstablec = false;
 
     // Current Date minus one month
@@ -71,10 +78,10 @@ const appOcular = new Vue({
         this.establecimientos = response.data;
 
         for (var i = 0; i < this.establecimientos.length; i++) {
-          this.options.push({id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab});
+          this.loadEstablec.push({id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab});
         }
-        // this.selected.id = this.establecimientos[4].cod_2000;
-        // this.selected.label = this.establecimientos[4].desc_estab;
+        // this.selectedEstablec.id = this.establecimientos[4].cod_2000;
+        // this.selectedEstablec.label = this.establecimientos[4].desc_estab;
 
      }.bind(this));
 
@@ -86,7 +93,7 @@ const appOcular = new Vue({
 
   methods: {
 
-    setEstablecimiento() {
+    getResult() {
 
       this.flag = false;
 
@@ -95,11 +102,17 @@ const appOcular = new Vue({
       var data;
       data = {
         picked: this.picked,
+
         red: this.selectedRed,
         mred: this.selectedMred,
+				establecRed: this.selectedEstablecRed,
+
         provincia: this.selectedProvincia,
         distrito: this.selectedDistrito,
-        establecimiento: this.selected.id,
+				establecProv: this.selectedEstablecProv,
+
+        establecimiento: this.selectedEstablec.id,
+
         startDate: this.startDate,
         endDate: this.endDate
       };
@@ -111,7 +124,6 @@ const appOcular = new Vue({
           data: data
         }
       }).then(function (response) {
-          // this.establecimientos = response.data;
 
           if (response.status == 200) {
             this.flag = true;
@@ -131,13 +143,19 @@ const appOcular = new Vue({
 
     },
 
-    establec: function (event) {
+    establecByRedes: function (event) {
 
-      axios.get(base_url+'/getEstablecimiento?cod_red='+this.selectedRed+'&cod_mic='+this.selectedMred).then(response => this.establecimientos = response.data);
+      axios.get(base_url+'/getEstablecimiento?cod_red='+this.selectedRed+'&cod_mic='+this.selectedMred).then(response => this.establecRedes = response.data);
 
     },
 
-    distrito: function (event) {
+		establecByProvincias: function (event) {
+
+      axios.get(base_url+'/getEstablecimiento2?cod_prov='+this.selectedProvincia+'&cod_dist='+this.selectedDistrito).then(response => this.establecProvincias = response.data);
+
+    },
+
+	    distrito: function (event) {
 
       axios.get(base_url+'/getDistrito?cod_prov='+this.selectedProvincia).then(response => this.distritos = response.data);
 
@@ -149,40 +167,50 @@ const appOcular = new Vue({
 
         this.cmbRedes = false;
         this.cmbMredes = false;
+				this.cmbEstablecRed = false;
         this.cmbProvincias = true;
         this.cmbDistritos = true;
+				this.cmbEstablecProv = true;
         this.cmbEstablec = true;
 
         this.selectedProvincia = null;
         this.selectedDistrito = null;
-        this.selected.id = null;
-        this.selected.label = null;
+				this.selectedEstablecProv = null;
+        this.selectedEstablec.id = null;
+        this.selectedEstablec.label = null;
 
       } else if (this.picked == 'provincia') {
 
         this.cmbRedes = true;
         this.cmbMredes = true;
+				this.cmbEstablecRed = true;
         this.cmbProvincias = false;
         this.cmbDistritos = false;
+				this.cmbEstablecProv = false;
         this.cmbEstablec = true;
 
         this.selectedRed = null;
         this.selectedMred = null;
-        this.selected.id = null;
-        this.selected.label = null;
+				this.selectedEstablecRed = null;
+        this.selectedEstablec.id = null;
+        this.selectedEstablec.label = null;
 
       } else if (this.picked == 'establecimiento') {
 
         this.cmbRedes = true;
         this.cmbMredes = true;
+				this.cmbEstablecRed = true;
         this.cmbProvincias = true;
         this.cmbDistritos = true;
+				this.cmbEstablecProv = true;
         this.cmbEstablec = false;
 
         this.selectedRed = null;
         this.selectedMred = null;
+				this.selectedEstablecRed = null;
         this.selectedProvincia = null;
         this.selectedDistrito = null;
+				this.selectedEstablecProv = null;
 
       }
       console.log(this.picked);
