@@ -53,6 +53,7 @@ Route::get('morbilidad/get', 'Indicadores\MorbilidadController@getIndicador');
 // Indicador: Salud Ocular
 Route::get('ocular', 'Indicadores\OcularController@index');
 Route::get('ocular/get', 'Indicadores\OcularController@getIndicador');
+Route::get('/ocular/reporte', 'Indicadores\OcularController@reporte');
 
 // Indicador: Estrategia Cancer
 Route::get('cancer', 'Indicadores\CancerController@index');

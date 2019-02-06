@@ -203,7 +203,7 @@
 
           <div v-if="flag == true" class="field is-grouped is-grouped-centered">
 					  <p class="control">
-							<a class="button is-primary" >
+							<a class="button is-primary" target="_blank" href="{{ url('/ocular/reporte') }}">
 					      Ver Reporte
 					    </a>
 					  </p>

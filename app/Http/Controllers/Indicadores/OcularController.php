@@ -1572,9 +1572,9 @@ class OcularController extends Controller
       return $ocular;
     }
 
-    public function personal()
+    public function reporte()
     {
-        return view('indicadores.permanencia_personal');
+      return view('reportes/salud_ocular');
     }
 
 }
