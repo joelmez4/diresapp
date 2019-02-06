@@ -133,7 +133,7 @@ const appOcular = new Vue({
 
           console.log(response.data);
 
-          drawChart(response.data);
+          // drawChart(response.data);
 
        }.bind(this))
 			 .catch(function (error) {

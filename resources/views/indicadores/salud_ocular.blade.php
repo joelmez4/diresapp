@@ -198,11 +198,26 @@
     			  <p class="control">
     					<i class="fas fa-spinner fa-spin fa-2x"></i>
     					<span>Cargando...</span>
-    					<progress class="progress is-large is-info" max="100">60%</progress>
     			  </p>
     			</div>
 
-          <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+          <div v-if="flag == true" class="field is-grouped is-grouped-centered">
+					  <p class="control">
+							<a class="button is-primary" >
+					      Ver Reporte
+					    </a>
+					  </p>
+					  <p class="control">
+							<a class="button is-info" href="atencionRecienNacido/exportarpdf">
+			          <span>Descargar</span>
+			          <span class="icon">
+			            <i class="fas fa-file-pdf"></i>
+			          </span>
+			        </a>
+					  </p>
+					</div>
+
+          <!-- <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
 
         </div>
       </div>

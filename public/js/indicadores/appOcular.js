@@ -11810,7 +11810,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
                 console.log(response.data);
 
-                drawChart(response.data);
+                // drawChart(response.data);
             }.bind(this)).catch(function (error) {
                 // handle error
                 this.flag = true;
