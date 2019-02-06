@@ -159,7 +159,7 @@
             <div class="field-body">
               <div class="field">
                 <p class="control is-expanded has-icons-left">
-                  <input class="input" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" min="2017-01-01" :max="endDate" required>
+                  <input class="input" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" min="2017-01-01" :max="maxDate" required>
                   <span class="icon is-small is-left">
                     <i class="far fa-calendar-alt"></i>
                   </span>
@@ -167,7 +167,7 @@
               </div>
               <div class="field">
                 <p class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" min="2017-01-01" :max="endDate" required>
+                  <input class="input" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" min="2017-01-01" :max="maxDate" required>
                   <span class="icon is-small is-left">
                     <i class="far fa-calendar-alt"></i>
                   </span>

@@ -61,7 +61,7 @@ class HomeController extends Controller
       $cod_red = $_GET['cod_red'];
       $cod_mic = $_GET['cod_mic'];
 
-      $mred = DB::select('select desc_estab, cod_2000 from establec where cod_red = ? AND cod_mic = ?',[$cod_red, $cod_mic]);
+      $mred = DB::select('select desc_estab, CAST(cod_2000 AS INT) AS cod_2000 from establec where cod_red = ? AND cod_mic = ?',[$cod_red, $cod_mic]);
 
       return $mred;
 
@@ -73,7 +73,7 @@ class HomeController extends Controller
       $cod_prov = $_GET['cod_prov'];
       $cod_dist = $_GET['cod_dist'];
 
-      $mred = DB::select('select desc_estab, cod_2000 from establec where cod_prov = ? AND cod_dist = ?',[$cod_prov, $cod_dist]);
+      $mred = DB::select('select desc_estab, CAST(cod_2000 AS INT) AS cod_2000 from establec where cod_prov = ? AND cod_dist = ?',[$cod_prov, $cod_dist]);
 
       return $mred;
 
@@ -82,7 +82,7 @@ class HomeController extends Controller
     public function getEstablecimientos()
     {
 
-      $establecimientos = DB::select('select desc_estab, cod_2000 from establec');
+      $establecimientos = DB::select('select desc_estab, CAST(cod_2000 AS INT) AS cod_2000 from establec');
 
       return $establecimientos;
 

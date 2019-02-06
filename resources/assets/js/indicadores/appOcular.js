@@ -20,6 +20,8 @@ const appOcular = new Vue({
     startDate: null,
     endDate: null,
 
+		maxDate: null,
+
     //vue-select  for Establecimientos
     establecimientos: [],
 
@@ -68,10 +70,10 @@ const appOcular = new Vue({
 
     // Current Date minus one month
     var currentDate = new Date(new Date().toISOString().substr(0, 10));
+		this.maxDate = currentDate.toISOString().substr(0, 10);
     this.endDate = currentDate.toISOString().substr(0, 10);
     currentDate.setMonth(currentDate.getMonth() - 1);
     this.startDate = currentDate.toISOString().substr(0, 10);
-
 
     axios.get(base_url+'/establecimientos')
     .then(function (response) {
@@ -133,7 +135,12 @@ const appOcular = new Vue({
 
           drawChart(response.data);
 
-       }.bind(this));
+       }.bind(this))
+			 .catch(function (error) {
+			    // handle error
+					this.flag = true;
+					alert("Error en el servidor: "+error);
+			  }.bind(this));
 
     },
 

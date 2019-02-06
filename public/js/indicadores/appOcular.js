@@ -11694,6 +11694,8 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         startDate: null,
         endDate: null,
 
+        maxDate: null,
+
         //vue-select  for Establecimientos
         establecimientos: [],
 
@@ -11744,6 +11746,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
         // Current Date minus one month
         var currentDate = new Date(new Date().toISOString().substr(0, 10));
+        this.maxDate = currentDate.toISOString().substr(0, 10);
         this.endDate = currentDate.toISOString().substr(0, 10);
         currentDate.setMonth(currentDate.getMonth() - 1);
         this.startDate = currentDate.toISOString().substr(0, 10);
@@ -11808,6 +11811,10 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
                 console.log(response.data);
 
                 drawChart(response.data);
+            }.bind(this)).catch(function (error) {
+                // handle error
+                this.flag = true;
+                alert("Error en el servidor: " + error);
             }.bind(this));
         },
 
