@@ -14,6 +14,8 @@ const appOcular = new Vue({
 
   data: {
 
+		dataOcular: [],
+
     flag: null,
 
     //Date
@@ -132,7 +134,7 @@ const appOcular = new Vue({
           }
 
           console.log(response.data);
-
+					this.dataOcular = response.data;
           // drawChart(response.data);
 
        }.bind(this))
@@ -143,6 +145,25 @@ const appOcular = new Vue({
 			  }.bind(this));
 
     },
+
+		reporteSaludOcular: function (event) {
+
+      console.log(this.dataOcular);
+
+      var thisIsAnObject = {
+        data: this.dataOcular,
+        startDate: this.startDate,
+        endDate: this.endDate,
+        selectedRed: this.selectedRed,
+        selectedMred: this.selectedMred,
+        selectedProvincia: this.selectedProvincia,
+        selectedDistrito: this.selectedDistrito
+      };
+
+      var w = window.open(base_url+"/ocular/reporte");
+	      w.dataOcular = thisIsAnObject;
+
+		},
 
     microRedes: function (event) {
 
@@ -162,7 +183,7 @@ const appOcular = new Vue({
 
     },
 
-	    distrito: function (event) {
+	  distrito: function (event) {
 
       axios.get(base_url+'/getDistrito?cod_prov='+this.selectedProvincia).then(response => this.distritos = response.data);
 

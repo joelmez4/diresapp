@@ -203,7 +203,7 @@
 
           <div v-if="flag == true" class="field is-grouped is-grouped-centered">
 					  <p class="control">
-							<a class="button is-primary" target="_blank" href="{{ url('/ocular/reporte') }}">
+							<a class="button is-primary" v-on:click="reporteSaludOcular">
 					      Ver Reporte
 					    </a>
 					  </p>
@@ -222,7 +222,7 @@
         </div>
       </div>
     </article>
-  </div>  <br>
+  </div>
 </div>
 
 @endsection

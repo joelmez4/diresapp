@@ -16,7 +16,7 @@ x\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<link rel="stylesheet" href="{{ asset('public/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('public/css/estrategia_nino.css') }}">
 </head>
 
 <body>

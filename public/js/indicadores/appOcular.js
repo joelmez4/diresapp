@@ -11688,6 +11688,8 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
     data: {
 
+        dataOcular: [],
+
         flag: null,
 
         //Date
@@ -11809,7 +11811,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
                 }
 
                 console.log(response.data);
-
+                this.dataOcular = response.data;
                 // drawChart(response.data);
             }.bind(this)).catch(function (error) {
                 // handle error
@@ -11818,6 +11820,24 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             }.bind(this));
         },
 
+
+        reporteSaludOcular: function reporteSaludOcular(event) {
+
+            console.log(this.dataOcular);
+
+            var thisIsAnObject = {
+                data: this.dataOcular,
+                startDate: this.startDate,
+                endDate: this.endDate,
+                selectedRed: this.selectedRed,
+                selectedMred: this.selectedMred,
+                selectedProvincia: this.selectedProvincia,
+                selectedDistrito: this.selectedDistrito
+            };
+
+            var w = window.open(base_url + "/ocular/reporte");
+            w.dataOcular = thisIsAnObject;
+        },
 
         microRedes: function microRedes(event) {
             var _this2 = this;
