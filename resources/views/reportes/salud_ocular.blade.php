@@ -182,71 +182,71 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>99173 Determinación de la
   Agudeza Visual (Técnico capacitado)</td>
-  <td class=xl9810219>777777</td>
-  <td class=xl10810219>74</td>
-  <td class=xl10810219>910</td>
-  <td class=xl10810219>2,878</td>
-  <td class=xl10810219>1,364</td>
-  <td class=xl10810219>232</td>
-  <td class=xl10810219>77</td>
-  <td class=xl10810219>38</td>
-  <td class=xl10910219>680</td>
+  <td class=xl9810219>@{{esso.DET_AGUD_V_NINO_0d_2a + esso.DET_AGUD_V_NINO_3_5a + esso.DET_AGUD_V_NINO_6_11a + esso.DET_AGUD_V_ADOLES_12_17a + esso.DET_AGUD_V_JOVEN_18_29a + esso.DET_AGUD_V_ADUL1_30_49a + esso.DET_AGUD_V_ADUL2_50_59a + esso.DET_AGUD_V_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DET_AGUD_V_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DET_AGUD_V_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7510219 style='height:18.0pt'>Z010<span
   style='mso-spacerun:yes'>  </span>Examen de los Ojos y de la Visión<span
   style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>8,082</td>
-  <td class=xl10810219>122</td>
-  <td class=xl10810219>1,088</td>
-  <td class=xl10810219>3,187</td>
-  <td class=xl10810219>2,293</td>
-  <td class=xl10810219>473</td>
-  <td class=xl10810219>79</td>
-  <td class=xl10810219>38</td>
-  <td class=xl10910219>802</td>
+  <td class=xl9810219>@{{esso.EXA_OJOS_VISION_NINO_0d_2a + esso.EXA_OJOS_VISION_NINO_3_5a + esso.EXA_OJOS_VISION_NINO_6_11a + esso.EXA_OJOS_VISION_ADOLES_12_17a + esso.EXA_OJOS_VISION_JOVEN_18_29a + esso.EXA_OJOS_VISION_ADUL1_30_49a + esso.EXA_OJOS_VISION_ADUL2_50_59a + esso.EXA_OJOS_VISION_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.EXA_OJOS_VISION_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.EXA_OJOS_VISION_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7510219 style='height:18.0pt'>99401 Consejería Integral</td>
-  <td class=xl9810219>3,293</td>
-  <td class=xl10810219>10</td>
-  <td class=xl10810219>614</td>
-  <td class=xl10810219>1,731</td>
-  <td class=xl10810219>322</td>
-  <td class=xl10810219>183</td>
-  <td class=xl10810219>117</td>
-  <td class=xl10810219>37</td>
-  <td class=xl10910219>279</td>
+  <td class=xl9810219>@{{esso.Consejeria_Integral_01d_02a + esso.Consejeria_Integral_03_05a + esso.Consejeria_Integral_06_11a + esso.Consejeria_Integral_12_17a + esso.Consejeria_Integral_18_29a + esso.Consejeria_Integral_30_49a + esso.Consejeria_Integral_50_59 + esso.Consejeria_Integral_60a_mas}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_01d_02a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_03_05a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_06_11a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Consejeria_Integral_50_59}}</td>
+  <td class=xl10910219>@{{esso.Consejeria_Integral_60a_mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7510219 style='height:18.0pt'>Z006 Normal (SO en
   LAB)<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>3,353</td>
-  <td class=xl10810219>17</td>
-  <td class=xl10810219>671</td>
-  <td class=xl10810219>1,817</td>
-  <td class=xl10810219>624</td>
-  <td class=xl10810219>72</td>
-  <td class=xl10810219>42</td>
-  <td class=xl10810219>9</td>
-  <td class=xl10910219>101</td>
+  <td class=xl9810219>@{{esso.NORMAL_NINO_0D_2a + esso.NORMAL_NINO_3_5a + esso.NORMAL_NINO_6_11a + esso.NORMAL_ADOLES_12_17a + esso.NORMAL_JOVEN_18_29a + esso.NORMAL_ADUL1_30_49a + esso.NORMAL_ADUL2_50_59a + esso.NORMAL_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_NINO_0D_2a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.NORMAL_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.NORMAL_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>92250 Examen de fondo de
   ojo (Oftalmoscopia Directa)</td>
-  <td class=xl9810219>4</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>4</td>
+  <td class=xl9810219>@{{esso.EXAMEN_F_OJO_NINO_0d_2a + esso.EXAMEN_F_OJO_NINO_3_5a + esso.EXAMEN_F_OJO_NINO_6_11a + esso.EXAMEN_F_OJO_ADOLES_12_17a + esso.EXAMEN_F_OJO_JOVEN_18_29a + esso.EXAMEN_F_OJO_ADUL1_30_49a + esso.EXAMEN_F_OJO_ADUL2_50_59a + esso.EXAMEN_F_OJO_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.EXAMEN_F_OJO_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.EXAMEN_F_OJO_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -266,141 +266,141 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Derecho Normal (20/20
   a 20/30)</td>
-  <td class=xl9810219>4,843</td>
-  <td class=xl10810219>55</td>
-  <td class=xl10810219>834</td>
-  <td class=xl10810219>2,276</td>
-  <td class=xl11310219>1,165</td>
-  <td class=xl10810219>207</td>
-  <td class=xl10810219>76</td>
-  <td class=xl10810219>21</td>
-  <td class=xl10910219>209</td>
+  <td class=xl9810219>@{{esso.OJO_DER_NORMAL_NINO_0d_2a + esso.OJO_DER_NORMAL_NINO_3_5a + esso.OJO_DER_NORMAL_NINO_6_11a + esso.OJO_DER_NORMAL_ADOLES_3_5a + esso.OJO_DER_NORMAL_JOVEN_18_29a + esso.OJO_DER_NORMAL_ADUL1_30_49a + esso.OJO_DER_NORMAL_ADUL2_50_59a + esso.OJO_DER_NORMAL_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_NINO_6_11a}}</td>
+  <td class=xl11310219>@{{esso.OJO_DER_NORMAL_ADOLES_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_NORMAL_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_DER_NORMAL_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Izquierdo Normal
   (20/20 a 20/30)</td>
-  <td class=xl9810219>4,550</td>
-  <td class=xl10810219>45</td>
-  <td class=xl10810219>785</td>
-  <td class=xl10810219>2,454</td>
-  <td class=xl11310219>883</td>
-  <td class=xl10810219>104</td>
-  <td class=xl10810219>70</td>
-  <td class=xl10810219>20</td>
-  <td class=xl10910219>189</td>
+  <td class=xl9810219>@{{esso.OJO_IZQ_NORMAL_NINO_0d_2a + esso.OJO_IZQ_NORMAL_NINO_3_5a + esso.OJO_IZQ_NORMAL_NINO_6_11a + esso.OJO_IZQ_NORMAL_NINO_12_17a + esso.OJO_IZQ_NORMAL_NINO_18_29a + esso.OJO_IZQ_NORMAL_NINO_30_49a + esso.OJO_IZQ_NORMAL_NINO_50_59a + esso.OJO_IZQ_NORMAL_NINO_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_6_11a}}</td>
+  <td class=xl11310219>@{{esso.OJO_IZQ_NORMAL_NINO_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_NINO_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_IZQ_NORMAL_NINO_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7810219 style='height:18.0pt'>Ojo Derecho Limitación
   visual leve (20/40 a 20/60)</td>
-  <td class=xl10010219>243</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>27</td>
-  <td class=xl11410219>8</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>12</td>
-  <td class=xl11510219>193</td>
+  <td class=xl10010219>@{{esso.OJO_DER_LIM_VIS_LEVE_NINO_0d_2a + esso.OJO_DER_LIM_VIS_LEVE_NINO_3_5a + esso.OJO_DER_LIM_VIS_LEVE_NINO_6_11a + esso.OJO_DER_LIM_VIS_LEVE_ADOLES_3_5a + esso.OJO_DER_LIM_VIS_LEVE_JOVEN_18_29a + esso.OJO_DER_LIM_VIS_LEVE_ADUL1_30_49a + esso.OJO_DER_LIM_VIS_LEVE_ADUL2_50_59a + esso.OJO_DER_LIM_VIS_LEVE_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_NINO_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_NINO_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_NINO_6_11a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_ADOLES_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_JOVEN_18_29a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_ADUL1_30_49a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_LEVE_ADUL2_50_59a}}</td>
+  <td class=xl11510219>@{{esso.OJO_DER_LIM_VIS_LEVE_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7810219 style='height:18.0pt'>Ojo Izquierdo Limitación
   visual leve (20/40 a 20/60)</td>
-  <td class=xl10010219>232</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>2</td>
-  <td class=xl11410219>51</td>
-  <td class=xl11410219>9</td>
-  <td class=xl11410219>2</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>12</td>
-  <td class=xl11510219>155</td>
+  <td class=xl10010219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_NINO_0d_2a + esso.OJO_IZQ_LIM_VIS_LEVE_NINO_3_5a + esso.OJO_IZQ_LIM_VIS_LEVE_NINO_6_11a + esso.OJO_IZQ_LIM_VIS_LEVE_ADOLES_12_17a + esso.OJO_IZQ_LIM_VIS_LEVE_JOV_18_29a + esso.OJO_IZQ_LIM_VIS_LEVE_ADUL1_30_49a + esso.OJO_IZQ_LIM_VIS_LEVE_ADUL2_50_59a + esso.OJO_IZQ_LIM_VIS_LEVE_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_NINO_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_NINO_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_NINO_6_11a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_ADOLES_12_17a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_JOV_18_29a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_ADUL1_30_49a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_ADUL2_50_59a}}</td>
+  <td class=xl11510219>@{{esso.OJO_IZQ_LIM_VIS_LEVE_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Derecho Limitación
   visual moderada (20/70 a 20/200)</td>
-  <td class=xl9810219>186</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>21</td>
-  <td class=xl10810219>5</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>5</td>
-  <td class=xl10910219>153</td>
+  <td class=xl9810219>@{{esso.OJO_DER_LIM_VIS_MOD_NINO_0d_2a + esso.OJO_DER_LIM_VIS_MOD_NINO_3_5a + esso.OJO_DER_LIM_VIS_MOD_NINO_6_11a + esso.OJO_DER_LIM_VIS_MOD_ADOLES_3_5a + esso.OJO_DER_LIM_VIS_MOD_JOVEN_18_29a + esso.OJO_DER_LIM_VIS_MOD_ADUL1_30_49a + esso.OJO_DER_LIM_VIS_MOD_ADUL2_50_59a + esso.OJO_DER_LIM_VIS_MOD_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_ADOLES_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_LIM_VIS_MOD_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_DER_LIM_VIS_MOD_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Izquierdo Limitación
   visual moderada (20/70 a 20/200)</td>
-  <td class=xl9810219>180</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>22</td>
-  <td class=xl10810219>6</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>6</td>
-  <td class=xl10910219>145</td>
+  <td class=xl9810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_NINO_0d_2a + esso.OJO_IZQ_LIM_VIS_MOD_NINO_3_5a + esso.OJO_IZQ_LIM_VIS_MOD_NINO_6_11a + esso.OJO_IZQ_LIM_VIS_MOD_ADOLES_12_17a + esso.OJO_IZQ_LIM_VIS_MOD_JOV_18_29a + esso.OJO_IZQ_LIM_VIS_MOD_ADUL1_30_49a + esso.OJO_IZQ_LIM_VIS_MOD_ADUL2_50_59a + esso.OJO_IZQ_LIM_VIS_MOD_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_JOV_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_LIM_VIS_MOD_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_IZQ_LIM_VIS_MOD_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7810219 style='height:18.0pt'>Ojo Derecho Limitación
   visual severa (&lt; 20/200 a 20/400)</td>
-  <td class=xl10010219>37</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11510219>37</td>
+  <td class=xl10010219>@{{esso.OJO_DER_LIM_VIS_SEV_NINO_0d_2a + esso.OJO_DER_LIM_VIS_SEV_NINO_3_5a + esso.OJO_DER_LIM_VIS_SEV_NINO_6_11a + esso.OJO_DER_LIM_VIS_SEV_ADOLES_3_5a + esso.OJO_DER_LIM_VIS_SEV_JOVEN_18_29a + esso.OJO_DER_LIM_VIS_SEV_ADUL1_30_49a + esso.OJO_DER_LIM_VIS_SEV_ADUL2_50_59a + esso.OJO_DER_LIM_VIS_SEV_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_NINO_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_NINO_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_NINO_6_11a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_ADOLES_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_JOVEN_18_29a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_ADUL1_30_49a}}</td>
+  <td class=xl11410219>@{{esso.OJO_DER_LIM_VIS_SEV_ADUL2_50_59a}}</td>
+  <td class=xl11510219>@{{esso.OJO_DER_LIM_VIS_SEV_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7810219 style='height:18.0pt'>Ojo Izquierdo Limitación
   visual severa (&lt; 20/200 a 20/400)</td>
-  <td class=xl10010219>6</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11510219>5</td>
+  <td class=xl10010219>@{{esso.OJO_IZQ_LIM_VIS_SEV_NINO_0d_2a + esso.OJO_IZQ_LIM_VIS_SEV_NINO_3_5a + esso.OJO_IZQ_LIM_VIS_SEV_NINO_6_11a + esso.OJO_IZQ_LIM_VIS_SEV_ADOLES_12_17a + esso.OJO_IZQ_LIM_VIS_SEV_JOV_18_29a + esso.OJO_IZQ_LIM_VIS_SEV_ADUL1_30_49a + esso.OJO_IZQ_LIM_VIS_SEV_ADUL2_50_59a + esso.OJO_IZQ_LIM_VIS_SEV_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_NINO_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_NINO_3_5a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_NINO_6_11a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_ADOLES_12_17a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_JOV_18_29a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_ADUL1_30_49a}}</td>
+  <td class=xl11410219>@{{esso.OJO_IZQ_LIM_VIS_SEV_ADUL2_50_59a}}</td>
+  <td class=xl11510219>@{{esso.OJO_IZQ_LIM_VIS_SEV_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Derecho Ceguera (&lt;
   20/400 a NPL1/)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_DER_CEGUERA_NINO_0d_2a + esso.OJO_DER_CEGUERA_NINO_3_5a + esso.OJO_DER_CEGUERA_NINO_6_11a + esso.OJO_DER_CEGUERA_ADOLES_3_5a + esso.OJO_DER_CEGUERA_JOVEN_18_29a + esso.OJO_DER_CEGUERA_ADUL1_30_49a + esso.OJO_DER_CEGUERA_ADUL2_50_59a + esso.OJO_DER_CEGUERA_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_ADOLES_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DER_CEGUERA_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_DER_CEGUERA_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7710219 style='height:18.0pt'>Ojo Izquierdo Ceguera
   (&lt; 20/400 a NPL1/)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_IZQ_CEGUERA_NINO_0d_2a + esso.OJO_IZQ_CEGUERA_NINO_3_5a + esso.OJO_IZQ_CEGUERA_NINO_6_11a + esso.OJO_IZQ_CEGUERA_ADOLES_12_17a + esso.OJO_IZQ_CEGUERA_JOV_18_29a + esso.OJO_IZQ_CEGUERA_ADUL1_30_49a + esso.OJO_IZQ_CEGUERA_ADUL2_50_59a + esso.OJO_IZQ_CEGUERA_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_NINO_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_JOV_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_CEGUERA_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_IZQ_CEGUERA_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -420,57 +420,57 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Ojo Derecho Normal (10 –
   20 mm Hg)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl11310219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_DERECHO_NORMAL_NINO_0d_2a + esso.OJO_DERECHO_NORMAL_NINO_3_5a + esso.OJO_DERECHO_NORMAL_NINO_6_11a + esso.OJO_DERECHO_NORMAL_ADOLES_3_5a + esso.OJO_DERECHO_NORMAL_JOVEN_18_29a + esso.OJO_DERECHO_NORMAL_ADUL1_30_49a + esso.OJO_DERECHO_NORMAL_ADUL2_50_59a + esso.OJO_DERECHO_NORMAL_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_NINO_6_11a}}</td>
+  <td class=xl11310219>@{{esso.OJO_DERECHO_NORMAL_ADOLES_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_NORMAL_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_DERECHO_NORMAL_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Ojo Derecho Anormal (&gt;
   20 mm Hg)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl11310219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_DERECHO_ANORMAL_NINO_0d_2a + esso.OJO_DERECHO_ANORMAL_NINO_3_5a + esso.OJO_DERECHO_ANORMAL_NINO_6_11a + esso.OJO_DERECHO_ANORMAL_ADOLES_3_5a + esso.OJO_DERECHO_ANORMAL_JOVEN_18_29a + esso.OJO_DERECHO_ANORMAL_ADUL1_30_49a + esso.OJO_DERECHO_ANORMAL_ADUL2_50_59a + esso.OJO_DERECHO_ANORMAL_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_NINO_6_11a}}</td>
+  <td class=xl11310219>@{{esso.OJO_DERECHO_ANORMAL_ADOLES_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_JOVEN_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_DERECHO_ANORMAL_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_DERECHO_ANORMAL_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Ojo Izquierdo Normal (10
   – 20 mm Hg)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl11310219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_IZQ_NORMAL_ADOLES_12_17a + esso.OJO_IZQ_NORMAL_JOV_18_29a + esso.OJO_IZQ_NORMAL_ADUL1_30_49a + esso.OJO_IZQ_NORMAL_ADUL2_50_59a + esso.OJO_IZQ_NORMAL_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219></td>
+  <td class=xl10810219></td>
+  <td class=xl10810219></td>
+  <td class=xl11310219>@{{esso.OJO_IZQ_NORMAL_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_JOV_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_NORMAL_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_IZQ_NORMAL_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Ojo Izquierdo Anormal
   (&gt; 20 mm Hg)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl11310219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.OJO_IZQ_ANORMAL1_NINO_0d_2a + esso.OJO_IZQ_ANORMAL1_NINO_3_5a + esso.OJO_IZQ_ANORMAL1_NINO_6_11a + esso.OJO_IZQ_ANORMAL1_ADOLES_12_17a + esso.OJO_IZQ_ANORMAL1_JOV_18_29a + esso.OJO_IZQ_ANORMAL1_ADUL1_30_49a + esso.OJO_IZQ_ANORMAL1_ADUL2_50_59a + esso.OJO_IZQ_ANORMAL1_ADUL_MAY_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_NINO_6_11a}}</td>
+  <td class=xl11310219>@{{esso.OJO_IZQ_ANORMAL1_ADOLES_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_JOV_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_ADUL1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OJO_IZQ_ANORMAL1_ADUL2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.OJO_IZQ_ANORMAL1_ADUL_MAY_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -489,101 +489,101 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>H543 Discapacidad visual
   leve</td>
-  <td class=xl9810219>180</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10810219>51</td>
-  <td class=xl10810219>13</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>6</td>
-  <td class=xl10810219>11</td>
-  <td class=xl10910219>97</td>
+  <td class=xl9810219>@{{esso.DISCAP_VISUAL_LEV_0d_2a + esso.DISCAP_VISUAL_LEV_3_5a + esso.DISCAP_VISUAL_LEV_6_11a + esso.DISCAP_VISUAL_LEV_12_17a + esso.DISCAP_VISUAL_LEV_18_29a + esso.DISCAP_VISUAL_LEV_30_49a + esso.DISCAP_VISUAL_LEV_50_59a + esso.DISCAP_VISUAL_LEV_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DISCAP_VISUAL_LEV_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DISCAP_VISUAL_LEV_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=34 style='height:25.5pt'>
   <td height=34 class=xl8110219 width=433 style='height:25.5pt;width:325pt'>H546
   Disminución Indeterminada de la Agudeza Visual de un ojo (Discapacidad visual
   moderada, monocular)</td>
-  <td class=xl10010219>141</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>3</td>
-  <td class=xl11410219>15</td>
-  <td class=xl11410219>4</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11510219>118</td>
+  <td class=xl10010219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_0d_2a + esso.DISM_INDET_AGU_V_OJO_DVMM_3_5a + esso.DISM_INDET_AGU_V_OJO_DVMM_6_11a + esso.DISM_INDET_AGU_V_OJO_DVMM_12_17a + esso.DISM_INDET_AGU_V_OJO_DVMM_18_29a + esso.DISM_INDET_AGU_V_OJO_DVMM_30_49a + esso.DISM_INDET_AGU_V_OJO_DVMM_50_59a + esso.DISM_INDET_AGU_V_OJO_DVMM_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_3_5a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_6_11a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_12_17a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_18_29a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_30_49a}}</td>
+  <td class=xl11410219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_50_59a}}</td>
+  <td class=xl11510219>@{{esso.DISM_INDET_AGU_V_OJO_DVMM_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=34 style='height:25.5pt'>
   <td height=34 class=xl8210219 width=433 style='height:25.5pt;width:325pt'>H542
   Disminución Indeterminada de la Agudeza Visual en ambos ojos (Discapacidad
   visual moderada, binocular)</td>
-  <td class=xl9810219>212</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>19</td>
-  <td class=xl10810219>5</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>3</td>
-  <td class=xl10910219>183</td>
+  <td class=xl9810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_0d_2a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_3_5a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_6_11a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_12_17a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_18_29a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_30_49a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_50_59a + esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DISM_INDET_AGU_V_AMB_OJOS_DVMB_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8110219 width=433 style='height:18.0pt;width:325pt'>H545
   Discapacidad visual grave, monocular<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl10010219>9</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>2</td>
-  <td class=xl11410219>1</td>
-  <td class=xl11510219>5</td>
+  <td class=xl10010219>@{{esso.DISCP_VISUAL_GRAVE_0d_2a + esso.DISCP_VISUAL_GRAVE_3_5a + esso.DISCP_VISUAL_GRAVE_6_11a + esso.DISCP_VISUAL_GRAVE_12_17a + esso.DISCP_VISUAL_GRAVE_18_29a + esso.DISCP_VISUAL_GRAVE_30_49a + esso.DISCP_VISUAL_GRAVE_50_59a + esso.DISCP_VISUAL_GRAVE_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_3_5a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_6_11a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_12_17a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_18_29a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_30_49a}}</td>
+  <td class=xl11410219>@{{esso.DISCP_VISUAL_GRAVE_50_59a}}</td>
+  <td class=xl11510219>@{{esso.DISCP_VISUAL_GRAVE_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>H541 Discapacidad visual
   grave, binocular</td>
-  <td class=xl9810219>12</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10910219>7</td>
+  <td class=xl9810219>@{{esso.DISCP_VISUAL_GRAVE_B_0d_2a + esso.DISCP_VISUAL_GRAVE_B_3_5a + esso.DISCP_VISUAL_GRAVE_B_6_11a + esso.DISCP_VISUAL_GRAVE_B_12_17a + esso.DISCP_VISUAL_GRAVE_B_18_29a + esso.DISCP_VISUAL_GRAVE_B_30_49a + esso.DISCP_VISUAL_GRAVE_B_50_59a + esso.DISCP_VISUAL_GRAVE_B_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DISCP_VISUAL_GRAVE_B_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DISCP_VISUAL_GRAVE_B_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8110219 width=433 style='height:18.0pt;width:325pt'>H544
   Ceguera de un ojo (ceguera monocular)</td>
-  <td class=xl10010219>11</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11410219>2</td>
-  <td class=xl11410219>0</td>
-  <td class=xl11510219>9</td>
+  <td class=xl10010219>@{{esso.CEGUERA_DE_UN_OJO_CM_0d_2a + esso.CEGUERA_DE_UN_OJO_CM_3_5a + esso.CEGUERA_DE_UN_OJO_CM_6_11a + esso.CEGUERA_DE_UN_OJO_CM_12_17a + esso.CEGUERA_DE_UN_OJO_CM_18_29a + esso.CEGUERA_DE_UN_OJO_CM_30_49a + esso.CEGUERA_DE_UN_OJO_CM_50_59a + esso.CEGUERA_DE_UN_OJO_CM_60a_Mas}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_0d_2a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_3_5a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_6_11a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_12_17a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_18_29a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_30_49a}}</td>
+  <td class=xl11410219>@{{esso.CEGUERA_DE_UN_OJO_CM_50_59a}}</td>
+  <td class=xl11510219>@{{esso.CEGUERA_DE_UN_OJO_CM_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>H540 Ceguera en ambos
   ojos (ceguera binocular)</td>
-  <td class=xl9810219>5</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>4</td>
+  <td class=xl9810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_0d_2a + esso.CEGUERA_AMBOS_OJOS_CB_3_5a + esso.CEGUERA_AMBOS_OJOS_CB_6_11a + esso.CEGUERA_AMBOS_OJOS_CB_12_17a + esso.CEGUERA_AMBOS_OJOS_CB_18_29a + esso.CEGUERA_AMBOS_OJOS_CB_30_49a + esso.CEGUERA_AMBOS_OJOS_CB_50_59a + esso.CEGUERA_AMBOS_OJOS_CB_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CEGUERA_AMBOS_OJOS_CB_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CEGUERA_AMBOS_OJOS_CB_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -602,29 +602,29 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes Referidos para
   Diagnóstico</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.PACIENTES_REF_DX_0d_2a + esso.PACIENTES_REF_DX_3_5a + esso.PACIENTES_REF_DX_6_11a + esso.PACIENTES_REF_DX_12_17a + esso.PACIENTES_REF_DX_18_29a + esso.PACIENTES_REF_DX_30_49a + esso.PACIENTES_REF_DX_50_59a + esso.PACIENTES_REF_DX_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_3_5a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_6_11a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_12_17a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_18_29a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_30_49a}}</td>
+  <td class=xl10810219>@{{esso.PACIENTES_REF_DX_50_59a}}</td>
+  <td class=xl10910219>@{{esso.PACIENTES_REF_DX_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8310219 style='height:18.0pt'>Pacientes Referidos que
   llegaron a EESS para Diagnóstico</td>
-  <td class=xl10110219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl12010219>0</td>
+  <td class=xl10110219>@{{esso.PACIENTES_REF_EESS_DX_0d_2a + esso.PACIENTES_REF_EESS_DX_3_5a + esso.PACIENTES_REF_EESS_DX_6_11a + esso.PACIENTES_REF_EESS_DX_12_17a + esso.PACIENTES_REF_EESS_DX_18_29a + esso.PACIENTES_REF_EESS_DX_30_49a + esso.PACIENTES_REF_EESS_DX_50_59a + esso.PACIENTES_REF_EESS_DX_60a_Mas}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_0d_2a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_3_5a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_6_11a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_12_17a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_18_29a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_30_49a}}</td>
+  <td class=xl11910219>@{{esso.PACIENTES_REF_EESS_DX_50_59a}}</td>
+  <td class=xl12010219>@{{esso.PACIENTES_REF_EESS_DX_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -657,57 +657,57 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8410219 width=433 style='height:18.0pt;width:325pt'>99173
   Determinación de la Agudeza Visual</td>
-  <td class=xl9810219>25</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10910219>22</td>
+  <td class=xl9810219>@{{esso.DETER_AGUDEZA_VISUAL_0d_2a + esso.DETER_AGUDEZA_VISUAL_3_5a + esso.DETER_AGUDEZA_VISUAL_6_11a + esso.DETER_AGUDEZA_VISUAL_12_17a + esso.DETER_AGUDEZA_VISUAL_18_29a + esso.DETER_AGUDEZA_VISUAL_30_49a + esso.DETER_AGUDEZA_VISUAL_50_59a + esso.DETER_AGUDEZA_VISUAL_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DETER_AGUDEZA_VISUAL_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DETER_AGUDEZA_VISUAL_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>92100 Determinación de la
   Presión Intraocular Bilateral</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.DETER_PRES_INTRA_BILAT_0d_2a + esso.DETER_PRES_INTRA_BILAT_3_5a + esso.DETER_PRES_INTRA_BILAT_6_11a + esso.DETER_PRES_INTRA_BILAT_12_17a + esso.DETER_PRES_INTRA_BILAT_18_29a + esso.DETER_PRES_INTRA_BILAT_30_49a + esso.DETER_PRES_INTRA_BILAT_50_59a + esso.DETER_PRES_INTRA_BILAT_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_12_17a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_18_29a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_30_49a}}</td>
+  <td class=xl10810219>@{{esso.DETER_PRES_INTRA_BILAT_50_59a}}</td>
+  <td class=xl10910219>@{{esso.DETER_PRES_INTRA_BILAT_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>76516 Biometría ocular
   por ultrasonido</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_0d_2a + esso.BIOMETRIA_OCU_ULTRAS_CB_3_5a + esso.BIOMETRIA_OCU_ULTRAS_CB_6_11a + esso.BIOMETRIA_OCU_ULTRAS_CB_12_17a + esso.BIOMETRIA_OCU_ULTRAS_CB_18_29a + esso.BIOMETRIA_OCU_ULTRAS_CB_30_49a + esso.BIOMETRIA_OCU_ULTRAS_CB_50_59a + esso.BIOMETRIA_OCU_ULTRAS_CB_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_3_5a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_6_11a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_12_17a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_18_29a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_30_49a}}</td>
+  <td class=xl10810219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_50_59a}}</td>
+  <td class=xl10910219>@{{esso.BIOMETRIA_OCU_ULTRAS_CB_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>82947 Glucosa
   cuantitativa en sangre</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.GLUCOSA_CUANT_SANGRE_0d_2a + esso.GLUCOSA_CUANT_SANGRE_3_5a + esso.GLUCOSA_CUANT_SANGRE_6_11a + esso.GLUCOSA_CUANT_SANGRE_12_17a + esso.GLUCOSA_CUANT_SANGRE_18_29a + esso.GLUCOSA_CUANT_SANGRE_30_49a + esso.GLUCOSA_CUANT_SANGRE_50_59a + esso.GLUCOSA_CUANT_SANGRE_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_3_5a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_6_11a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_12_17a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_18_29a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_30_49a}}</td>
+  <td class=xl10810219>@{{esso.GLUCOSA_CUANT_SANGRE_50_59a}}</td>
+  <td class=xl10910219>@{{esso.GLUCOSA_CUANT_SANGRE_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -726,210 +726,210 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H250 Catarata Senil
   Incipiente</td>
-  <td class=xl9810219>4</td>
+  <td class=xl9810219>@{{esso.Catarata_Senil_Incip_50_59a + esso.Catarata_Senil_Incip_60a_Mas}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>4</td>
+  <td class=xl10810219>@{{esso.Catarata_Senil_Incip_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Senil_Incip_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H251 Catarata Senil
   Nuclear</td>
-  <td class=xl9810219>2</td>
+  <td class=xl9810219>@{{esso.Catarata_Senil_Nuclear_50_59a + esso.Catarata_Senil_Nuclear_60a_Mas}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>2</td>
+  <td class=xl10810219>@{{esso.Catarata_Senil_Nuclear_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Senil_Nuclear_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H252 Catarata Senil, Tipo
   Morgagnian</td>
-  <td class=xl9810219>0</td>
+  <td class=xl9810219>@{{esso.Catarata_Senil_Tip_Morgagnian_50_59a + esso.Catarata_Senil_Tip_Morgagnian_60a_Mas}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl10810219>@{{esso.Catarata_Senil_Tip_Morgagnian_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Senil_Tip_Morgagnian_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H258 Otras Cataratas
   Seniles</td>
-  <td class=xl9810219>1</td>
+  <td class=xl9810219>@{{esso.Otras_Cataratas_Seniles_50_59a + esso.Otras_Cataratas_Seniles_60a_Mas}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>1</td>
+  <td class=xl10810219>@{{esso.Otras_Cataratas_Seniles_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Otras_Cataratas_Seniles_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H259 Catarata Senil, no
   Especificada</td>
-  <td class=xl9810219>29</td>
+  <td class=xl9810219>@{{esso.Catarata_Senil_no_Especificada_30_49a + esso.Catarata_Senil_no_Especificada_50_59a + esso.Catarata_Senil_no_Especificada_60a_Mas}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>29</td>
+  <td class=xl10810219>@{{esso.Catarata_Senil_no_Especificada_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Senil_no_Especificada_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Senil_no_Especificada_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H260 Catarata Infantil,
   Juvenil y Presenil</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Catarata_Inf_Juv_Presenil_0d_2a + esso.Catarata_Inf_Juv_Presenil_3_5a + esso.Catarata_Inf_Juv_Presenil_6_11a + esso.Catarata_Inf_Juv_Presenil_12_17a + esso.Catarata_Inf_Juv_Presenil_18_29a + esso.Catarata_Inf_Juv_Presenil_30_49a + esso.Catarata_Inf_Juv_Presenil_50_59a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inf_Juv_Presenil_50_59a}}</td>
   <td class=xl13210219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
   font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid #7030A0;
-  border-bottom:none;border-left:none;background:#BFBFBF;mso-pattern:black none'>1</td>
+  border-bottom:none;border-left:none;background:#BFBFBF;mso-pattern:black none'>@{{esso.Catarata_Inf_Juv_Presenil_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H261 Catarata Traumática</td>
-  <td class=xl9810219>2</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Catarata_Traumatica_0d_2a + esso.Catarata_Traumatica_3_5a + esso.Catarata_Traumatica_6_11a + esso.Catarata_Traumatica_12_17a + esso.Catarata_Traumatica_18_29a + esso.Catarata_Traumatica_30_49a + esso.Catarata_Traumatica_50_59a + esso.Catarata_Traumatica_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Traumatica_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Traumatica_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H262 Catarata Complicada</td>
-  <td class=xl9810219>2</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10910219>1</td>
+  <td class=xl9810219>@{{esso.Catarata_Complicada_0d_2a + esso.Catarata_Complicada_3_5a + esso.Catarata_Complicada_6_11a + esso.Catarata_Complicada_12_17a + esso.Catarata_Complicada_18_29a + esso.Catarata_Complicada_30_49a + esso.Catarata_Complicada_50_59a + esso.Catarata_Complicada_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Complicada_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Complicada_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H263 Catarata Inducida
   por drogas</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Catarata_Inducida_drogas_0d_2a + esso.Catarata_Inducida_drogas_3_5a + esso.Catarata_Inducida_drogas_6_11a + esso.Catarata_Inducida_drogas_12_17a + esso.Catarata_Inducida_drogas_18_29a + esso.Catarata_Inducida_drogas_30_49a + esso.Catarata_Inducida_drogas_50_59a + esso.Catarata_Inducida_drogas_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Inducida_drogas_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Inducida_drogas_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H264 Catarata Residual</td>
-  <td class=xl9810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>1</td>
+  <td class=xl9810219>@{{esso.Catarata_Residual_0d_2a + esso.Catarata_Residual_3_5a + esso.Catarata_Residual_6_11a + esso.Catarata_Residual_12_17a + esso.Catarata_Residual_18_29a + esso.Catarata_Residual_30_49a + esso.Catarata_Residual_50_59a + esso.Catarata_Residual_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_Residual_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_Residual_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H268 Otras Formas
   Especificadas de Catarata</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Otras_Formas_Espe_Catarata_0d_2a + esso.Otras_Formas_Espe_Catarata_3_5a + esso.Otras_Formas_Espe_Catarata_6_11a + esso.Otras_Formas_Espe_Catarata_12_17a + esso.Otras_Formas_Espe_Catarata_18_29a + esso.Otras_Formas_Espe_Catarata_30_49a + esso.Otras_Formas_Espe__Catarata_50_59a + esso.Otras_Formas_Espe_Catarata_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe_Catarata_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Otras_Formas_Espe__Catarata_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Otras_Formas_Espe_Catarata_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H269 Catarata, no
   Especificada</td>
-  <td class=xl9810219>13</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10910219>9</td>
+  <td class=xl9810219>@{{esso.Catarata_no_Especificada_0d_2a + esso.Catarata_no_Especificada_3_5a + esso.Catarata_no_Especificada_6_11a + esso.Catarata_no_Especificada_12_17a + esso.Catarata_no_Especificada_18_29a + esso.Catarata_no_Especificada_30_49a + esso.Catarata_no_Especificada_50_59a + esso.Catarata_no_Especificada_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_no_Especificada_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_no_Especificada_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H280 Catarata diabética</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Catarata_diabetica_0d_2a + esso.Catarata_diabetica_3_5a + esso.Catarata_diabetica_6_11a + esso.Catarata_diabetica_12_17a + esso.Catarata_diabetica_18_29a + esso.Catarata_diabetica_30_49a + esso.Catarata_diabetica_50_59a + esso.Catarata_diabetica_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Catarata_diabetica_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Catarata_diabetica_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H400 Sospecha de Glaucoma
   (Hipertensión ocular)</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_0d_2a + esso.Sosp_Glaucoma_Hipertension_ocular_3_5a + esso.Sosp_Glaucoma_Hipertension_ocular_6_11a + esso.Sosp_Glaucoma_Hipertension_ocular_12_17a + esso.Sosp_Glaucoma_Hipertension_ocular_18_29a + esso.Sosp_Glaucoma_Hipertension_ocular_30_49a + esso.Sosp_Glaucoma_Hipertension_ocular_50_59a + esso.Sosp_Glaucoma_Hipertension_ocular_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Sosp_Glaucoma_Hipertension_ocular_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>H409 Glaucoma, no
   Especificado</td>
-  <td class=xl9810219>11</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>3</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>7</td>
+  <td class=xl9810219>@{{esso.Glaucoma_no_Especificado_0d_2a + esso.Glaucoma_no_Especificado_3_5a + esso.Glaucoma_no_Especificado_6_11a + esso.Glaucoma_no_Especificado_12_17a + esso.Glaucoma_no_Especificado_18_29a + esso.Glaucoma_no_Especificado_30_49a + esso.Glaucoma_no_Especificado_50_59a + esso.Glaucoma_no_Especificado_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Glaucoma_no_Especificado_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Glaucoma_no_Especificado_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -963,43 +963,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>6</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10910219>5</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_1_Bajo_0d_2a + esso.Grado_Dificultad_1_Bajo_3_5a + esso.Grado_Dificultad_1_Bajo_6_11a + esso.Grado_Dificultad_1_Bajo_12_17a + esso.Grado_Dificultad_1_Bajo_18_29a + esso.Grado_Dificultad_1_Bajo_30_49a + esso.Grado_Dificultad_1_Bajo_50_59a + esso.Grado_Dificultad_1_Bajo_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_1_Bajo_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_1_Bajo_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_2_Mod_0d_2a + esso.Grado_Dificultad_2_Mod_3_5a + esso.Grado_Dificultad_2_Mod_6_11a + esso.Grado_Dificultad_2_Mod_12_17a + esso.Grado_Dificultad_2_Mod_18_29a + esso.Grado_Dificultad_2_Mod_30_49a + esso.Grado_Dificultad_2_Mod_50_59a + esso.Grado_Dificultad_2_Mod_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_0d_2a + esso.Grado_Dificultad_3_Alto_3_5a + esso.Grado_Dificultad_3_Alto_6_11a + esso.Grado_Dificultad_3_Alto_12_17a + esso.Grado_Dificultad_3_Alto_18_29a + esso.Grado_Dificultad_3_Alto_30_49a + esso.Grado_Dificultad_3_Alto_50_59a + esso.Grado_Dificultad_3_Alto_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1019,43 +1019,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_0d_2a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_3_5a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_6_11a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_12_17a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_18_29a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_30_49a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_50_59a + esso.Facofrag_mecanica_o_ultrasonido_aspiracion_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Facofrag_mecanica_o_ultrasonido_aspiracion_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_2_Mod_MUA_0d_2a + esso.Grado_Dificultad_2_Mod_MUA_3_5a + esso.Grado_Dificultad_2_Mod_MUA_6_11a + esso.Grado_Dificultad_2_Mod_MUA_12_17a + esso.Grado_Dificultad_2_Mod_MUA_18_29a + esso.Grado_Dificultad_2_Mod_MUA_30_49a + esso.Grado_Dificultad_2_Mod_MUA_50_59a + esso.Grado_Dificultad_2_Mod_MUA_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_MUA_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_MUA_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_MUA_0d_2a + esso.Grado_Dificultad_3_Alto_MUA_3_5a + esso.Grado_Dificultad_3_Alto_MUA_6_11a + esso.Grado_Dificultad_3_Alto_MUA_12_17a + esso.Grado_Dificultad_3_Alto_MUA_18_29a + esso.Grado_Dificultad_3_Alto_MUA_30_49a + esso.Grado_Dificultad_3_Alto_MUA_50_59a + esso.Grado_Dificultad_3_Alto_MUA_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_MUA_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_MUA_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1075,43 +1075,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Cir_laser_escision_catarata_0d_2a + esso.Cir_laser_escision_catarata_3_5a + esso.Cir_laser_escision_catarata_6_11a + esso.Cir_laser_escision_catarata_12_17a + esso.Cir_laser_escision_catarata_18_29a + esso.Cir_laser_escision_catarata_30_49a + esso.Cir_laser_escision_catarata_50_59a + esso.Cir_laser_escision_catarata_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Cir_laser_escision_catarata_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Cir_laser_escision_catarata_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad2_Mod_CLEC_0d_2a + esso.Grado_Dificultad_2_Mod_CLEC_3_5a + esso.Grado_Dificultad_2_Mod_CLEC_6_11a + esso.Grado_Dificultad_2_Mod_CLEC_12_17a + esso.Grado_Dificultad_2_Mod_CLEC_18_29a + esso.Grado_Dificultad_2_Mod_CLEC_30_49a + esso.Grado_Dificultad_2_Mod_CLEC_50_59a + esso.Grado_Dificultad_2_Mod_CLEC_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad2_Mod_CLEC_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CLEC_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_CLEC_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_0d_2a + esso.Grado_Dificultad_3_Alto_CLEC_3_5a + esso.Grado_Dificultad_3_Alto_CLEC_6_11a + esso.Grado_Dificultad_3_Alto_CLEC_12_17a + esso.Grado_Dificultad_3_Alto_CLEC_18_29a + esso.Grado_Dificultad_3_Alto_CLEC_30_49a + esso.Grado_Dificultad_3_Alto_CLEC_50_59a + esso.Grado_Dificultad_3_Alto_CLEC_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CLEC_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_CLEC_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1124,43 +1124,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_0d_2a + esso.Dis_Ins_CMS_OCPH_CZW_3_5a + esso.Dis_Ins_CMS_OCPH_CZW_6_11a + esso.Dis_Ins_CMS_OCPH_CZW_12_17a + esso.Dis_Ins_CMS_OCPH_CZW_18_29a + esso.Dis_Ins_CMS_OCPH_CZW_30_49a + esso.Dis_Ins_CMS_OCPH_CZW_50_59a + esso.Dis_Ins_CMS_OCPH_CZW_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Dis_Ins_CMS_OCPH_CZW_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Dis_Ins_CMS_OCPH_CZW_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_0d_2a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_3_5a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_6_11a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_12_17a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_18_29a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_30_49a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_50_59a + esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPH_CZW_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_0d_2a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_3_5a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_6_11a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_12_17a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_18_29a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_30_49a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_50_59a + esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPH_CZW_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1174,43 +1174,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.EXTIP_CMS_OCPHA_IRI_0d_2a + esso.EXTIP_CMS_OCPHA_IRI_3_5a + esso.EXTIP_CMS_OCPHA_IRI_6_11a + esso.EXTIP_CMS_OCPHA_IRI_12_17a + esso.EXTIP_CMS_OCPHA_IRI_18_29a + esso.EXTIP_CMS_OCPHA_IRI_30_49a + esso.EXTIP_CMS_OCPHA_IRI_50_59a + esso.EXTIP_CMS_OCPHA_IRI_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_3_5a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_6_11a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_12_17a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_18_29a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_30_49a}}</td>
+  <td class=xl10810219>@{{esso.EXTIP_CMS_OCPHA_IRI_50_59a}}</td>
+  <td class=xl10910219>@{{esso.EXTIP_CMS_OCPHA_IRI_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_0d_2a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_3_5a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_6_11a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_12_17a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_18_29a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_30_49a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_50_59a + esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_0d_2a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_3_5a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_6_11a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_12_17a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_18_29a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_30_49a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_50_59a + esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1228,43 +1228,43 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 1 =
   Bajo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_0d_2a + esso.EXTP_CEXT_INS_PROT_CIF_3_5a + esso.EXTP_CEXT_INS_PROT_CIF_6_11a + esso.EXTP_CEXT_INS_PROT_CIF_12_17a + esso.EXTP_CEXT_INS_PROT_CIF_18_29a + esso.EXTP_CEXT_INS_PROT_CIF_30_49a + esso.EXTP_CEXT_INS_PROT_CIF_50_59a + esso.EXTP_CEXT_INS_PROT_CIF_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_3_5a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_6_11a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_12_17a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_18_29a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_30_49a}}</td>
+  <td class=xl10810219>@{{esso.EXTP_CEXT_INS_PROT_CIF_50_59a}}</td>
+  <td class=xl10910219>@{{esso.EXTP_CEXT_INS_PROT_CIF_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 2 =
   Moderado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_0d_2a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_3_5a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_6_11a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_12_17a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_18_29a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_30_49a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_50_59a + esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_2_Mod_INS_PROT_CIF_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Grado de Dificultad 3 =
   Alto</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_0d_2a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_3_5a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_6_11a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_12_17a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_18_29a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_30_49a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_50_59a + esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Grado_Dificultad_3_Alto_INS_PROT_CIF_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1284,29 +1284,29 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>99401 Consejería Integral
   1º<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>13</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>13</td>
+  <td class=xl9810219>@{{esso.CONSEJ_INTEGRAL_1_02d_2a + esso.CONSEJ_INTEGRAL_1_3_5a + esso.CONSEJ_INTEGRAL_1_6_11a + esso.CONSEJ_INTEGRAL_1_12_17a + esso.CONSEJ_INTEGRAL_1_18_29a + esso.CONSEJ_INTEGRAL_1_30_49a + esso.CONSEJ_INTEGRAL_1_50_59a + esso.CONSEJ_INTEGRAL_1_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_02d_2a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_1_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONSEJ_INTEGRAL_1_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7410219 style='height:18.0pt'>99401 Consejería Integral
   2º<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.CONSEJ_INTEGRAL_2_02d_2a + esso.CONSEJ_INTEGRAL_2_3_5a + esso.CONSEJ_INTEGRAL_2_6_11a + esso.CONSEJ_INTEGRAL_2_12_17a + esso.CONSEJ_INTEGRAL_2_18_29a + esso.CONSEJ_INTEGRAL_2_30_49a + esso.CONSEJ_INTEGRAL_2_50_59a + esso.CONSEJ_INTEGRAL_2_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_02d_2a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONSEJ_INTEGRAL_2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONSEJ_INTEGRAL_2_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1326,99 +1326,99 @@ tags will be replaced.-->
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes con 1º Control
   Post Operatorio</td>
-  <td class=xl9810219>7</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10910219>6</td>
+  <td class=xl9810219>@{{esso.CONTROLES_POST_OPER_menor_0d_2as + esso.CONTROLES_POST_OPER_3_5a + esso.CONTROLES_POST_OPER_6_11a + esso.CONTROLES_POST_OPER_12_17a + esso.CONTROLES_POST_OPER_18_29a + esso.CONTROLES_POST_OPER_30_49a + esso.CONTROLES_POST_OPER_50_59a + esso.CONTROLES_POST_OPER_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONTROLES_POST_OPER_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes con 2º Control
   Post Operatorio</td>
-  <td class=xl9810219>6</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10910219>5</td>
+  <td class=xl9810219>@{{esso.CONTROLES_POST_OPER_2_menor_0d_2as + esso.CONTROLES_POST_OPER_2_3_5a + esso.CONTROLES_POST_OPER_2_6_11a + esso.CONTROLES_POST_OPER_2_12_17a + esso.CONTROLES_POST_OPER_2_18_29a + esso.CONTROLES_POST_OPER_2_30_49a + esso.CONTROLES_POST_OPER_2_50_59a + esso.CONTROLES_POST_OPER_2_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_2_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONTROLES_POST_OPER_2_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes con 3º Control
   Post Operatorio</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.CONTROLES_POST_OPER_3_menor_0d_2as + esso.CONTROLES_POST_OPER_3_3_5a + esso.CONTROLES_POST_OPER_3_6_11a + esso.CONTROLES_POST_OPER_3_12_17a + esso.CONTROLES_POST_OPER_3_18_29a + esso.CONTROLES_POST_OPER_3_30_49a + esso.CONTROLES_POST_OPER_3_50_59a + esso.CONTROLES_POST_OPER_3_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_3_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONTROLES_POST_OPER_3_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes con 4º Control
   Post Operatorio</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.CONTROLES_POST_OPER_4_menor_0d_2as + esso.CONTROLES_POST_OPER_4_3_5a + esso.CONTROLES_POST_OPER_4_6_11a + esso.CONTROLES_POST_OPER_4_12_17a + esso.CONTROLES_POST_OPER_4_18_29a + esso.CONTROLES_POST_OPER_4_30_49a + esso.CONTROLES_POST_OPER_4_50_59a + esso.CONTROLES_POST_OPER_4_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_4_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONTROLES_POST_OPER_4_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Pacientes con 5 a +
   Controles Post Operatorio</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10910219>0</td>
+  <td class=xl9810219>@{{esso.CONTROLES_POST_OPER_5a_menor_0d_2as + esso.CONTROLES_POST_OPER_5a_3_5a + esso.CONTROLES_POST_OPER_5a_6_11a + esso.CONTROLES_POST_OPER_5a_12_17a + esso.CONTROLES_POST_OPER_5a_18_29a + esso.CONTROLES_POST_OPER_5a_30_49a + esso.CONTROLES_POST_OPER_5a_50_59a + esso.CONTROLES_POST_OPER_5a_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_3_5a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_6_11a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_12_17a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_18_29a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_30_49a}}</td>
+  <td class=xl10810219>@{{esso.CONTROLES_POST_OPER_5a_50_59a}}</td>
+  <td class=xl10910219>@{{esso.CONTROLES_POST_OPER_5a_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl7910219 style='height:18.0pt'>Determinación de la
   Agudeza Visual</td>
-  <td class=xl9810219>13</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10910219>11</td>
+  <td class=xl9810219>@{{esso.Determ_Agudeza_Visual_menor_0d_2as + esso.Determ_Agudeza_Visual_3_5a + esso.Determ_Agudeza_Visual_6_11a + esso.Determ_Agudeza_Visual_12_17a + esso.Determ_Agudeza_Visual_18_29a + esso.Determ_Agudeza_Visual_30_49a + esso.Determ_Agudeza_Visual_50_59a + esso.Determ_Agudeza_Visual_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_menor_0d_2as}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_18_29a}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_30_49a}}</td>
+  <td class=xl10810219>@{{esso.Determ_Agudeza_Visual_50_59a}}</td>
+  <td class=xl10910219>@{{esso.Determ_Agudeza_Visual_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr class=xl8510219 height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8310219 style='height:18.0pt'>Determinación de la
   Presión Intraocular Bilateral</td>
-  <td class=xl10110219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl11910219>0</td>
-  <td class=xl12010219>0</td>
+  <td class=xl10110219>@{{esso.Determ_Pre_Intraocular_Bilateral_menor_0d_2as + esso.Determ_Pre_Intraocular_Bilateral_3_5a + esso.Determ_Pre_Intraocular_Bilateral_6_11a + esso.Determ_Pre_Intraocular_Bilateral_12_17a + esso.Determ_Pre_Intraocular_Bilateral_18_29a + esso.Determ_Pre_Intraocular_Bilateral_30_49a + esso.Determ_Pre_Intraocular_Bilateral_50_59a + esso.Determ_Pre_Intraocular_Bilateral_60a_Mas}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_menor_0d_2as}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_3_5a}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_6_11a}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_12_17a}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_18_29a}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_30_49a}}</td>
+  <td class=xl11910219>@{{esso.Determ_Pre_Intraocular_Bilateral_50_59a}}</td>
+  <td class=xl12010219>@{{esso.Determ_Pre_Intraocular_Bilateral_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>

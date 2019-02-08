@@ -949,11 +949,13 @@ class OcularController extends Controller
         $ocular["OJO_DERECHO_ANORMAL_ADUL1_30_49a"] += (int)$result->OJO_DERECHO_ANORMAL_ADUL1_30_49a;
         $ocular["OJO_DERECHO_ANORMAL_ADUL2_50_59a"] += (int)$result->OJO_DERECHO_ANORMAL_ADUL2_50_59a;
         $ocular["OJO_DERECHO_ANORMAL_ADUL_MAY_60a_Mas"] += (int)$result->OJO_DERECHO_ANORMAL_ADUL_MAY_60a_Mas;
+        // Ojo Izquierdo Normal (10 – 20 mm Hg)	  (Revisar)
         $ocular["OJO_IZQ_NORMAL_ADOLES_12_17a"] += (int)$result->OJO_IZQ_NORMAL_ADOLES_12_17a;
         $ocular["OJO_IZQ_NORMAL_JOV_18_29a"] += (int)$result->OJO_IZQ_NORMAL_JOV_18_29a;
         $ocular["OJO_IZQ_NORMAL_ADUL1_30_49a"] += (int)$result->OJO_IZQ_NORMAL_ADUL1_30_49a;
         $ocular["OJO_IZQ_NORMAL_ADUL2_50_59a"] += (int)$result->OJO_IZQ_NORMAL_ADUL2_50_59a;
         $ocular["OJO_IZQ_NORMAL_ADUL_MAY_60a_Mas"] += (int)$result->OJO_IZQ_NORMAL_ADUL_MAY_60a_Mas;
+        // fin
         $ocular["OJO_IZQ_ANORMAL1_NINO_0d_2a"] += (int)$result->OJO_IZQ_ANORMAL1_NINO_0d_2a;
         $ocular["OJO_IZQ_ANORMAL1_NINO_3_5a"] += (int)$result->OJO_IZQ_ANORMAL1_NINO_3_5a;
         $ocular["OJO_IZQ_ANORMAL1_NINO_6_11a"] += (int)$result->OJO_IZQ_ANORMAL1_NINO_6_11a;
@@ -962,6 +964,7 @@ class OcularController extends Controller
         $ocular["OJO_IZQ_ANORMAL1_ADUL1_30_49a"] += (int)$result->OJO_IZQ_ANORMAL1_ADUL1_30_49a;
         $ocular["OJO_IZQ_ANORMAL1_ADUL2_50_59a"] += (int)$result->OJO_IZQ_ANORMAL1_ADUL2_50_59a;
         $ocular["OJO_IZQ_ANORMAL1_ADUL_MAY_60a_Mas"] += (int)$result->OJO_IZQ_ANORMAL1_ADUL_MAY_60a_Mas;
+
         $ocular["DISCAP_VISUAL_LEV_0d_2a"] += (int)$result->DISCAP_VISUAL_LEV_0d_2a;
         $ocular["DISCAP_VISUAL_LEV_3_5a"] += (int)$result->DISCAP_VISUAL_LEV_3_5a;
         $ocular["DISCAP_VISUAL_LEV_6_11a"] += (int)$result->DISCAP_VISUAL_LEV_6_11a;
@@ -970,6 +973,7 @@ class OcularController extends Controller
         $ocular["DISCAP_VISUAL_LEV_30_49a"] += (int)$result->DISCAP_VISUAL_LEV_30_49a;
         $ocular["DISCAP_VISUAL_LEV_50_59a"] += (int)$result->DISCAP_VISUAL_LEV_50_59a;
         $ocular["DISCAP_VISUAL_LEV_60a_Mas"] += (int)$result->DISCAP_VISUAL_LEV_60a_Mas;
+
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_0d_2a"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_0d_2a;
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_3_5a"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_3_5a;
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_6_11a"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_6_11a;
@@ -978,6 +982,7 @@ class OcularController extends Controller
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_30_49a"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_30_49a;
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_50_59a"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_50_59a;
         $ocular["DISM_INDET_AGU_V_OJO_DVMM_60a_Mas"] += (int)$result->DISM_INDET_AGU_V_OJO_DVMM_60a_Mas;
+
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_0d_2a"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_0d_2a;
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_3_5a"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_3_5a;
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_6_11a"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_6_11a;
@@ -986,6 +991,7 @@ class OcularController extends Controller
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_30_49a"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_30_49a;
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_50_59a"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_50_59a;
         $ocular["DISM_INDET_AGU_V_AMB_OJOS_DVMB_60a_Mas"] += (int)$result->DISM_INDET_AGU_V_AMB_OJOS_DVMB_60a_Mas;
+
         $ocular["DISCP_VISUAL_GRAVE_0d_2a"] += (int)$result->DISCP_VISUAL_GRAVE_0d_2a;
         $ocular["DISCP_VISUAL_GRAVE_3_5a"] += (int)$result->DISCP_VISUAL_GRAVE_3_5a;
         $ocular["DISCP_VISUAL_GRAVE_6_11a"] += (int)$result->DISCP_VISUAL_GRAVE_6_11a;
@@ -994,6 +1000,7 @@ class OcularController extends Controller
         $ocular["DISCP_VISUAL_GRAVE_30_49a"] += (int)$result->DISCP_VISUAL_GRAVE_30_49a;
         $ocular["DISCP_VISUAL_GRAVE_50_59a"] += (int)$result->DISCP_VISUAL_GRAVE_50_59a;
         $ocular["DISCP_VISUAL_GRAVE_60a_Mas"] += (int)$result->DISCP_VISUAL_GRAVE_60a_Mas;
+
         $ocular["DISCP_VISUAL_GRAVE_B_0d_2a"] += (int)$result->DISCP_VISUAL_GRAVE_B_0d_2a;
         $ocular["DISCP_VISUAL_GRAVE_B_3_5a"] += (int)$result->DISCP_VISUAL_GRAVE_B_3_5a;
         $ocular["DISCP_VISUAL_GRAVE_B_6_11a"] += (int)$result->DISCP_VISUAL_GRAVE_B_6_11a;
@@ -1002,6 +1009,7 @@ class OcularController extends Controller
         $ocular["DISCP_VISUAL_GRAVE_B_30_49a"] += (int)$result->DISCP_VISUAL_GRAVE_B_30_49a;
         $ocular["DISCP_VISUAL_GRAVE_B_50_59a"] += (int)$result->DISCP_VISUAL_GRAVE_B_50_59a;
         $ocular["DISCP_VISUAL_GRAVE_B_60a_Mas"] += (int)$result->DISCP_VISUAL_GRAVE_B_60a_Mas;
+
         $ocular["CEGUERA_DE_UN_OJO_CM_0d_2a"] += (int)$result->CEGUERA_DE_UN_OJO_CM_0d_2a;
         $ocular["CEGUERA_DE_UN_OJO_CM_3_5a"] += (int)$result->CEGUERA_DE_UN_OJO_CM_3_5a;
         $ocular["CEGUERA_DE_UN_OJO_CM_6_11a"] += (int)$result->CEGUERA_DE_UN_OJO_CM_6_11a;
@@ -1010,6 +1018,7 @@ class OcularController extends Controller
         $ocular["CEGUERA_DE_UN_OJO_CM_30_49a"] += (int)$result->CEGUERA_DE_UN_OJO_CM_30_49a;
         $ocular["CEGUERA_DE_UN_OJO_CM_50_59a"] += (int)$result->CEGUERA_DE_UN_OJO_CM_50_59a;
         $ocular["CEGUERA_DE_UN_OJO_CM_60a_Mas"] += (int)$result->CEGUERA_DE_UN_OJO_CM_60a_Mas;
+
         $ocular["CEGUERA_AMBOS_OJOS_CB_0d_2a"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_0d_2a;
         $ocular["CEGUERA_AMBOS_OJOS_CB_3_5a"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_3_5a;
         $ocular["CEGUERA_AMBOS_OJOS_CB_6_11a"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_6_11a;
@@ -1018,6 +1027,7 @@ class OcularController extends Controller
         $ocular["CEGUERA_AMBOS_OJOS_CB_30_49a"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_30_49a;
         $ocular["CEGUERA_AMBOS_OJOS_CB_50_59a"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_50_59a;
         $ocular["CEGUERA_AMBOS_OJOS_CB_60a_Mas"] += (int)$result->CEGUERA_AMBOS_OJOS_CB_60a_Mas;
+
         $ocular["PACIENTES_REF_DX_0d_2a"] += (int)$result->PACIENTES_REF_DX_0d_2a;
         $ocular["PACIENTES_REF_DX_3_5a"] += (int)$result->PACIENTES_REF_DX_3_5a;
         $ocular["PACIENTES_REF_DX_6_11a"] += (int)$result->PACIENTES_REF_DX_6_11a;
@@ -1026,6 +1036,7 @@ class OcularController extends Controller
         $ocular["PACIENTES_REF_DX_30_49a"] += (int)$result->PACIENTES_REF_DX_30_49a;
         $ocular["PACIENTES_REF_DX_50_59a"] += (int)$result->PACIENTES_REF_DX_50_59a;
         $ocular["PACIENTES_REF_DX_60a_Mas"] += (int)$result->PACIENTES_REF_DX_60a_Mas;
+
         $ocular["PACIENTES_REF_EESS_DX_0d_2a"] += (int)$result->PACIENTES_REF_EESS_DX_0d_2a;
         $ocular["PACIENTES_REF_EESS_DX_3_5a"] += (int)$result->PACIENTES_REF_EESS_DX_3_5a;
         $ocular["PACIENTES_REF_EESS_DX_6_11a"] += (int)$result->PACIENTES_REF_EESS_DX_6_11a;
@@ -1034,6 +1045,7 @@ class OcularController extends Controller
         $ocular["PACIENTES_REF_EESS_DX_30_49a"] += (int)$result->PACIENTES_REF_EESS_DX_30_49a;
         $ocular["PACIENTES_REF_EESS_DX_50_59a"] += (int)$result->PACIENTES_REF_EESS_DX_50_59a;
         $ocular["PACIENTES_REF_EESS_DX_60a_Mas"] += (int)$result->PACIENTES_REF_EESS_DX_60a_Mas;
+
         $ocular["DETER_AGUDEZA_VISUAL_0d_2a"] += (int)$result->DETER_AGUDEZA_VISUAL_0d_2a;
         $ocular["DETER_AGUDEZA_VISUAL_3_5a"] += (int)$result->DETER_AGUDEZA_VISUAL_3_5a;
         $ocular["DETER_AGUDEZA_VISUAL_6_11a"] += (int)$result->DETER_AGUDEZA_VISUAL_6_11a;
@@ -1042,6 +1054,7 @@ class OcularController extends Controller
         $ocular["DETER_AGUDEZA_VISUAL_30_49a"] += (int)$result->DETER_AGUDEZA_VISUAL_30_49a;
         $ocular["DETER_AGUDEZA_VISUAL_50_59a"] += (int)$result->DETER_AGUDEZA_VISUAL_50_59a;
         $ocular["DETER_AGUDEZA_VISUAL_60a_Mas"] += (int)$result->DETER_AGUDEZA_VISUAL_60a_Mas;
+
         $ocular["DETER_PRES_INTRA_BILAT_0d_2a"] += (int)$result->DETER_PRES_INTRA_BILAT_0d_2a;
         $ocular["DETER_PRES_INTRA_BILAT_3_5a"] += (int)$result->DETER_PRES_INTRA_BILAT_3_5a;
         $ocular["DETER_PRES_INTRA_BILAT_6_11a"] += (int)$result->DETER_PRES_INTRA_BILAT_6_11a;
@@ -1050,6 +1063,7 @@ class OcularController extends Controller
         $ocular["DETER_PRES_INTRA_BILAT_30_49a"] += (int)$result->DETER_PRES_INTRA_BILAT_30_49a;
         $ocular["DETER_PRES_INTRA_BILAT_50_59a"] += (int)$result->DETER_PRES_INTRA_BILAT_50_59a;
         $ocular["DETER_PRES_INTRA_BILAT_60a_Mas"] += (int)$result->DETER_PRES_INTRA_BILAT_60a_Mas;
+
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_0d_2a"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_0d_2a;
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_3_5a"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_3_5a;
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_6_11a"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_6_11a;
@@ -1058,6 +1072,7 @@ class OcularController extends Controller
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_30_49a"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_30_49a;
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_50_59a"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_50_59a;
         $ocular["BIOMETRIA_OCU_ULTRAS_CB_60a_Mas"] += (int)$result->BIOMETRIA_OCU_ULTRAS_CB_60a_Mas;
+
         $ocular["GLUCOSA_CUANT_SANGRE_0d_2a"] += (int)$result->GLUCOSA_CUANT_SANGRE_0d_2a;
         $ocular["GLUCOSA_CUANT_SANGRE_3_5a"] += (int)$result->GLUCOSA_CUANT_SANGRE_3_5a;
         $ocular["GLUCOSA_CUANT_SANGRE_6_11a"] += (int)$result->GLUCOSA_CUANT_SANGRE_6_11a;
@@ -1066,6 +1081,7 @@ class OcularController extends Controller
         $ocular["GLUCOSA_CUANT_SANGRE_30_49a"] += (int)$result->GLUCOSA_CUANT_SANGRE_30_49a;
         $ocular["GLUCOSA_CUANT_SANGRE_50_59a"] += (int)$result->GLUCOSA_CUANT_SANGRE_50_59a;
         $ocular["GLUCOSA_CUANT_SANGRE_60a_Mas"] += (int)$result->GLUCOSA_CUANT_SANGRE_60a_Mas;
+
         $ocular["Catarata_Senil_Incip_0d_2a"] += (int)$result->Catarata_Senil_Incip_0d_2a;
         $ocular["Catarata_Senil_Incip_3_5a"] += (int)$result->Catarata_Senil_Incip_3_5a;
         $ocular["Catarata_Senil_Incip_6_11a"] += (int)$result->Catarata_Senil_Incip_6_11a;
@@ -1074,6 +1090,7 @@ class OcularController extends Controller
         $ocular["Catarata_Senil_Incip_30_49a"] += (int)$result->Catarata_Senil_Incip_30_49a;
         $ocular["Catarata_Senil_Incip_50_59a"] += (int)$result->Catarata_Senil_Incip_50_59a;
         $ocular["Catarata_Senil_Incip_60a_Mas"] += (int)$result->Catarata_Senil_Incip_60a_Mas;
+
         $ocular["Catarata_Senil_Nuclear_0d_2a"] += (int)$result->Catarata_Senil_Nuclear_0d_2a;
         $ocular["Catarata_Senil_Nuclear_3_5a"] += (int)$result->Catarata_Senil_Nuclear_3_5a;
         $ocular["Catarata_Senil_Nuclear_6_11a"] += (int)$result->Catarata_Senil_Nuclear_6_11a;
@@ -1082,6 +1099,7 @@ class OcularController extends Controller
         $ocular["Catarata_Senil_Nuclear_30_49a"] += (int)$result->Catarata_Senil_Nuclear_30_49a;
         $ocular["Catarata_Senil_Nuclear_50_59a"] += (int)$result->Catarata_Senil_Nuclear_50_59a;
         $ocular["Catarata_Senil_Nuclear_60a_Mas"] += (int)$result->Catarata_Senil_Nuclear_60a_Mas;
+
         $ocular["Catarata_Senil_Tip_Morgagnian_0d_2a"] += (int)$result->Catarata_Senil_Tip_Morgagnian_0d_2a;
         $ocular["Catarata_Senil_Tip_Morgagnian_3_5a"] += (int)$result->Catarata_Senil_Tip_Morgagnian_3_5a;
         $ocular["Catarata_Senil_Tip_Morgagnian_6_11a"] += (int)$result->Catarata_Senil_Tip_Morgagnian_6_11a;
@@ -1090,6 +1108,7 @@ class OcularController extends Controller
         $ocular["Catarata_Senil_Tip_Morgagnian_30_49a"] += (int)$result->Catarata_Senil_Tip_Morgagnian_30_49a;
         $ocular["Catarata_Senil_Tip_Morgagnian_50_59a"] += (int)$result->Catarata_Senil_Tip_Morgagnian_50_59a;
         $ocular["Catarata_Senil_Tip_Morgagnian_60a_Mas"] += (int)$result->Catarata_Senil_Tip_Morgagnian_60a_Mas;
+
         $ocular["Otras_Cataratas_Seniles_0d_2a"] += (int)$result->Otras_Cataratas_Seniles_0d_2a;
         $ocular["Otras_Cataratas_Seniles_3_5a"] += (int)$result->Otras_Cataratas_Seniles_3_5a;
         $ocular["Otras_Cataratas_Seniles_6_11a"] += (int)$result->Otras_Cataratas_Seniles_6_11a;
@@ -1098,6 +1117,7 @@ class OcularController extends Controller
         $ocular["Otras_Cataratas_Seniles_30_49a"] += (int)$result->Otras_Cataratas_Seniles_30_49a;
         $ocular["Otras_Cataratas_Seniles_50_59a"] += (int)$result->Otras_Cataratas_Seniles_50_59a;
         $ocular["Otras_Cataratas_Seniles_60a_Mas"] += (int)$result->Otras_Cataratas_Seniles_60a_Mas;
+
         $ocular["Catarata_Senil_no_Especificada_0d_2a"] += (int)$result->Catarata_Senil_no_Especificada_0d_2a;
         $ocular["Catarata_Senil_no_Especificada_3_5a"] += (int)$result->Catarata_Senil_no_Especificada_3_5a;
         $ocular["Catarata_Senil_no_Especificada_6_11a"] += (int)$result->Catarata_Senil_no_Especificada_6_11a;
@@ -1106,6 +1126,7 @@ class OcularController extends Controller
         $ocular["Catarata_Senil_no_Especificada_30_49a"] += (int)$result->Catarata_Senil_no_Especificada_30_49a;
         $ocular["Catarata_Senil_no_Especificada_50_59a"] += (int)$result->Catarata_Senil_no_Especificada_50_59a;
         $ocular["Catarata_Senil_no_Especificada_60a_Mas"] += (int)$result->Catarata_Senil_no_Especificada_60a_Mas;
+
         $ocular["Catarata_Inf_Juv_Presenil_0d_2a"] += (int)$result->Catarata_Inf_Juv_Presenil_0d_2a;
         $ocular["Catarata_Inf_Juv_Presenil_3_5a"] += (int)$result->Catarata_Inf_Juv_Presenil_3_5a;
         $ocular["Catarata_Inf_Juv_Presenil_6_11a"] += (int)$result->Catarata_Inf_Juv_Presenil_6_11a;
@@ -1114,6 +1135,7 @@ class OcularController extends Controller
         $ocular["Catarata_Inf_Juv_Presenil_30_49a"] += (int)$result->Catarata_Inf_Juv_Presenil_30_49a;
         $ocular["Catarata_Inf_Juv_Presenil_50_59a"] += (int)$result->Catarata_Inf_Juv_Presenil_50_59a;
         $ocular["Catarata_Inf_Juv_Presenil_60a_Mas"] += (int)$result->Catarata_Inf_Juv_Presenil_60a_Mas;
+
         $ocular["Catarata_Traumatica_0d_2a"] += (int)$result->Catarata_Traumatica_0d_2a;
         $ocular["Catarata_Traumatica_3_5a"] += (int)$result->Catarata_Traumatica_3_5a;
         $ocular["Catarata_Traumatica_6_11a"] += (int)$result->Catarata_Traumatica_6_11a;
@@ -1122,6 +1144,7 @@ class OcularController extends Controller
         $ocular["Catarata_Traumatica_30_49a"] += (int)$result->Catarata_Traumatica_30_49a;
         $ocular["Catarata_Traumatica_50_59a"] += (int)$result->Catarata_Traumatica_50_59a;
         $ocular["Catarata_Traumatica_60a_Mas"] += (int)$result->Catarata_Traumatica_60a_Mas;
+
         $ocular["Catarata_Complicada_0d_2a"] += (int)$result->Catarata_Complicada_0d_2a;
         $ocular["Catarata_Complicada_3_5a"] += (int)$result->Catarata_Complicada_3_5a;
         $ocular["Catarata_Complicada_6_11a"] += (int)$result->Catarata_Complicada_6_11a;
@@ -1130,6 +1153,7 @@ class OcularController extends Controller
         $ocular["Catarata_Complicada_30_49a"] += (int)$result->Catarata_Complicada_30_49a;
         $ocular["Catarata_Complicada_50_59a"] += (int)$result->Catarata_Complicada_50_59a;
         $ocular["Catarata_Complicada_60a_Mas"] += (int)$result->Catarata_Complicada_60a_Mas;
+
         $ocular["Catarata_Inducida_drogas_0d_2a"] += (int)$result->Catarata_Inducida_drogas_0d_2a;
         $ocular["Catarata_Inducida_drogas_3_5a"] += (int)$result->Catarata_Inducida_drogas_3_5a;
         $ocular["Catarata_Inducida_drogas_6_11a"] += (int)$result->Catarata_Inducida_drogas_6_11a;
@@ -1138,6 +1162,7 @@ class OcularController extends Controller
         $ocular["Catarata_Inducida_drogas_30_49a"] += (int)$result->Catarata_Inducida_drogas_30_49a;
         $ocular["Catarata_Inducida_drogas_50_59a"] += (int)$result->Catarata_Inducida_drogas_50_59a;
         $ocular["Catarata_Inducida_drogas_60a_Mas"] += (int)$result->Catarata_Inducida_drogas_60a_Mas;
+
         $ocular["Catarata_Residual_0d_2a"] += (int)$result->Catarata_Residual_0d_2a;
         $ocular["Catarata_Residual_3_5a"] += (int)$result->Catarata_Residual_3_5a;
         $ocular["Catarata_Residual_6_11a"] += (int)$result->Catarata_Residual_6_11a;
@@ -1146,6 +1171,7 @@ class OcularController extends Controller
         $ocular["Catarata_Residual_30_49a"] += (int)$result->Catarata_Residual_30_49a;
         $ocular["Catarata_Residual_50_59a"] += (int)$result->Catarata_Residual_50_59a;
         $ocular["Catarata_Residual_60a_Mas"] += (int)$result->Catarata_Residual_60a_Mas;
+
         $ocular["Otras_Formas_Espe_Catarata_0d_2a"] += (int)$result->Otras_Formas_Espe_Catarata_0d_2a;
         $ocular["Otras_Formas_Espe_Catarata_3_5a"] += (int)$result->Otras_Formas_Espe_Catarata_3_5a;
         $ocular["Otras_Formas_Espe_Catarata_6_11a"] += (int)$result->Otras_Formas_Espe_Catarata_6_11a;
@@ -1154,6 +1180,7 @@ class OcularController extends Controller
         $ocular["Otras_Formas_Espe_Catarata_30_49a"] += (int)$result->Otras_Formas_Espe_Catarata_30_49a;
         $ocular["Otras_Formas_Espe__Catarata_50_59a"] += (int)$result->Otras_Formas_Espe__Catarata_50_59a;
         $ocular["Otras_Formas_Espe_Catarata_60a_Mas"] += (int)$result->Otras_Formas_Espe_Catarata_60a_Mas;
+
         $ocular["Catarata_no_Especificada_0d_2a"] += (int)$result->Catarata_no_Especificada_0d_2a;
         $ocular["Catarata_no_Especificada_3_5a"] += (int)$result->Catarata_no_Especificada_3_5a;
         $ocular["Catarata_no_Especificada_6_11a"] += (int)$result->Catarata_no_Especificada_6_11a;
@@ -1162,6 +1189,7 @@ class OcularController extends Controller
         $ocular["Catarata_no_Especificada_30_49a"] += (int)$result->Catarata_no_Especificada_30_49a;
         $ocular["Catarata_no_Especificada_50_59a"] += (int)$result->Catarata_no_Especificada_50_59a;
         $ocular["Catarata_no_Especificada_60a_Mas"] += (int)$result->Catarata_no_Especificada_60a_Mas;
+
         $ocular["Catarata_diabetica_0d_2a"] += (int)$result->Catarata_diabetica_0d_2a;
         $ocular["Catarata_diabetica_3_5a"] += (int)$result->Catarata_diabetica_3_5a;
         $ocular["Catarata_diabetica_6_11a"] += (int)$result->Catarata_diabetica_6_11a;
@@ -1170,6 +1198,7 @@ class OcularController extends Controller
         $ocular["Catarata_diabetica_30_49a"] += (int)$result->Catarata_diabetica_30_49a;
         $ocular["Catarata_diabetica_50_59a"] += (int)$result->Catarata_diabetica_50_59a;
         $ocular["Catarata_diabetica_60a_Mas"] += (int)$result->Catarata_diabetica_60a_Mas;
+
         $ocular["Sosp_Glaucoma_Hipertension_ocular_0d_2a"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_0d_2a;
         $ocular["Sosp_Glaucoma_Hipertension_ocular_3_5a"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_3_5a;
         $ocular["Sosp_Glaucoma_Hipertension_ocular_6_11a"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_6_11a;
@@ -1178,6 +1207,7 @@ class OcularController extends Controller
         $ocular["Sosp_Glaucoma_Hipertension_ocular_30_49a"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_30_49a;
         $ocular["Sosp_Glaucoma_Hipertension_ocular_50_59a"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_50_59a;
         $ocular["Sosp_Glaucoma_Hipertension_ocular_60a_Mas"] += (int)$result->Sosp_Glaucoma_Hipertension_ocular_60a_Mas;
+
         $ocular["Glaucoma_no_Especificado_0d_2a"] += (int)$result->Glaucoma_no_Especificado_0d_2a;
         $ocular["Glaucoma_no_Especificado_3_5a"] += (int)$result->Glaucoma_no_Especificado_3_5a;
         $ocular["Glaucoma_no_Especificado_6_11a"] += (int)$result->Glaucoma_no_Especificado_6_11a;
@@ -1186,6 +1216,7 @@ class OcularController extends Controller
         $ocular["Glaucoma_no_Especificado_30_49a"] += (int)$result->Glaucoma_no_Especificado_30_49a;
         $ocular["Glaucoma_no_Especificado_50_59a"] += (int)$result->Glaucoma_no_Especificado_50_59a;
         $ocular["Glaucoma_no_Especificado_60a_Mas"] += (int)$result->Glaucoma_no_Especificado_60a_Mas;
+
         $ocular["Grado_Dificultad_1_Bajo_0d_2a"] += (int)$result->Grado_Dificultad_1_Bajo_0d_2a;
         $ocular["Grado_Dificultad_1_Bajo_3_5a"] += (int)$result->Grado_Dificultad_1_Bajo_3_5a;
         $ocular["Grado_Dificultad_1_Bajo_6_11a"] += (int)$result->Grado_Dificultad_1_Bajo_6_11a;
@@ -1194,6 +1225,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_1_Bajo_30_49a"] += (int)$result->Grado_Dificultad_1_Bajo_30_49a;
         $ocular["Grado_Dificultad_1_Bajo_50_59a"] += (int)$result->Grado_Dificultad_1_Bajo_50_59a;
         $ocular["Grado_Dificultad_1_Bajo_60a_Mas"] += (int)$result->Grado_Dificultad_1_Bajo_60a_Mas;
+
         $ocular["Grado_Dificultad_2_Mod_0d_2a"] += (int)$result->Grado_Dificultad_2_Mod_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_3_5a;
         $ocular["Grado_Dificultad_2_Mod_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_6_11a;
@@ -1202,6 +1234,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_30_49a;
         $ocular["Grado_Dificultad_2_Mod_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_50_59a;
         $ocular["Grado_Dificultad_2_Mod_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_3_5a;
         $ocular["Grado_Dificultad_3_Alto_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_6_11a;
@@ -1210,6 +1243,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_30_49a;
         $ocular["Grado_Dificultad_3_Alto_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_50_59a;
         $ocular["Grado_Dificultad_3_Alto_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_60a_Mas;
+
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_0d_2a"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_0d_2a;
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_3_5a"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_3_5a;
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_6_11a"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_6_11a;
@@ -1218,6 +1252,7 @@ class OcularController extends Controller
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_30_49a"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_30_49a;
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_50_59a"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_50_59a;
         $ocular["Facofrag_mecanica_o_ultrasonido_aspiracion_60a_Mas"] += (int)$result->Facofrag_mecanica_o_ultrasonido_aspiracion_60a_Mas;
+
         $ocular["Grado_Dificultad_2_Mod_MUA_0d_2a"] += (int)$result->Grado_Dificultad_2_Mod_MUA_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_MUA_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_MUA_3_5a;
         $ocular["Grado_Dificultad_2_Mod_MUA_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_MUA_6_11a;
@@ -1226,6 +1261,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_MUA_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_MUA_30_49a;
         $ocular["Grado_Dificultad_2_Mod_MUA_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_MUA_50_59a;
         $ocular["Grado_Dificultad_2_Mod_MUA_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_MUA_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_MUA_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_MUA_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_MUA_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_MUA_3_5a;
         $ocular["Grado_Dificultad_3_Alto_MUA_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_MUA_6_11a;
@@ -1234,6 +1270,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_MUA_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_MUA_30_49a;
         $ocular["Grado_Dificultad_3_Alto_MUA_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_MUA_50_59a;
         $ocular["Grado_Dificultad_3_Alto_MUA_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_MUA_60a_Mas;
+
         $ocular["Cir_laser_escision_catarata_0d_2a"] += (int)$result->Cir_laser_escision_catarata_0d_2a;
         $ocular["Cir_laser_escision_catarata_3_5a"] += (int)$result->Cir_laser_escision_catarata_3_5a;
         $ocular["Cir_laser_escision_catarata_6_11a"] += (int)$result->Cir_laser_escision_catarata_6_11a;
@@ -1242,6 +1279,7 @@ class OcularController extends Controller
         $ocular["Cir_laser_escision_catarata_30_49a"] += (int)$result->Cir_laser_escision_catarata_30_49a;
         $ocular["Cir_laser_escision_catarata_50_59a"] += (int)$result->Cir_laser_escision_catarata_50_59a;
         $ocular["Cir_laser_escision_catarata_60a_Mas"] += (int)$result->Cir_laser_escision_catarata_60a_Mas;
+
         $ocular["Grado_Dificultad2_Mod_CLEC_0d_2a"] += (int)$result->Grado_Dificultad2_Mod_CLEC_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_CLEC_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_CLEC_3_5a;
         $ocular["Grado_Dificultad_2_Mod_CLEC_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_CLEC_6_11a;
@@ -1250,6 +1288,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_CLEC_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_CLEC_30_49a;
         $ocular["Grado_Dificultad_2_Mod_CLEC_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_CLEC_50_59a;
         $ocular["Grado_Dificultad_2_Mod_CLEC_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_CLEC_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_CLEC_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_CLEC_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_3_5a;
         $ocular["Grado_Dificultad_3_Alto_CLEC_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_6_11a;
@@ -1258,6 +1297,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_CLEC_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_30_49a;
         $ocular["Grado_Dificultad_3_Alto_CLEC_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_50_59a;
         $ocular["Grado_Dificultad_3_Alto_CLEC_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_CLEC_60a_Mas;
+
         $ocular["Dis_Ins_CMS_OCPH_CZW_0d_2a"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_0d_2a;
         $ocular["Dis_Ins_CMS_OCPH_CZW_3_5a"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_3_5a;
         $ocular["Dis_Ins_CMS_OCPH_CZW_6_11a"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_6_11a;
@@ -1266,6 +1306,7 @@ class OcularController extends Controller
         $ocular["Dis_Ins_CMS_OCPH_CZW_30_49a"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_30_49a;
         $ocular["Dis_Ins_CMS_OCPH_CZW_50_59a"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_50_59a;
         $ocular["Dis_Ins_CMS_OCPH_CZW_60a_Mas"] += (int)$result->Dis_Ins_CMS_OCPH_CZW_60a_Mas;
+
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_0d_2a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_3_5a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_6_11a;
@@ -1274,6 +1315,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_30_49a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_50_59a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPH_CZW_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPH_CZW_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_3_5a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_6_11a;
@@ -1282,6 +1324,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_30_49a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_50_59a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPH_CZW_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPH_CZW_60a_Mas;
+
         $ocular["EXTIP_CMS_OCPHA_IRI_0d_2a"] += (int)$result->EXTIP_CMS_OCPHA_IRI_0d_2a;
         $ocular["EXTIP_CMS_OCPHA_IRI_3_5a"] += (int)$result->EXTIP_CMS_OCPHA_IRI_3_5a;
         $ocular["EXTIP_CMS_OCPHA_IRI_6_11a"] += (int)$result->EXTIP_CMS_OCPHA_IRI_6_11a;
@@ -1290,6 +1333,7 @@ class OcularController extends Controller
         $ocular["EXTIP_CMS_OCPHA_IRI_30_49a"] += (int)$result->EXTIP_CMS_OCPHA_IRI_30_49a;
         $ocular["EXTIP_CMS_OCPHA_IRI_50_59a"] += (int)$result->EXTIP_CMS_OCPHA_IRI_50_59a;
         $ocular["EXTIP_CMS_OCPHA_IRI_60a_Mas"] += (int)$result->EXTIP_CMS_OCPHA_IRI_60a_Mas;
+
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_0d_2a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_3_5a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_6_11a;
@@ -1298,6 +1342,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_30_49a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_50_59a;
         $ocular["Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_CMS_OCPHA_IRI_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_3_5a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_6_11a;
@@ -1306,6 +1351,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_30_49a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_50_59a;
         $ocular["Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_CMS_OCPHA_IRI_60a_Mas;
+
         $ocular["EXTP_CEXT_INS_PROT_CIF_0d_2a"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_0d_2a;
         $ocular["EXTP_CEXT_INS_PROT_CIF_3_5a"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_3_5a;
         $ocular["EXTP_CEXT_INS_PROT_CIF_6_11a"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_6_11a;
@@ -1314,6 +1360,7 @@ class OcularController extends Controller
         $ocular["EXTP_CEXT_INS_PROT_CIF_30_49a"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_30_49a;
         $ocular["EXTP_CEXT_INS_PROT_CIF_50_59a"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_50_59a;
         $ocular["EXTP_CEXT_INS_PROT_CIF_60a_Mas"] += (int)$result->EXTP_CEXT_INS_PROT_CIF_60a_Mas;
+
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_0d_2a"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_0d_2a;
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_3_5a"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_3_5a;
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_6_11a"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_6_11a;
@@ -1322,6 +1369,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_30_49a"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_30_49a;
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_50_59a"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_50_59a;
         $ocular["Grado_Dificultad_2_Mod_INS_PROT_CIF_60a_Mas"] += (int)$result->Grado_Dificultad_2_Mod_INS_PROT_CIF_60a_Mas;
+
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_0d_2a"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_0d_2a;
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_3_5a"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_3_5a;
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_6_11a"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_6_11a;
@@ -1330,6 +1378,7 @@ class OcularController extends Controller
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_30_49a"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_30_49a;
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_50_59a"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_50_59a;
         $ocular["Grado_Dificultad_3_Alto_INS_PROT_CIF_60a_Mas"] += (int)$result->Grado_Dificultad_3_Alto_INS_PROT_CIF_60a_Mas;
+
         $ocular["CONSEJ_INTEGRAL_1_02d_2a"] += (int)$result->CONSEJ_INTEGRAL_1_02d_2a;
         $ocular["CONSEJ_INTEGRAL_1_3_5a"] += (int)$result->CONSEJ_INTEGRAL_1_3_5a;
         $ocular["CONSEJ_INTEGRAL_1_6_11a"] += (int)$result->CONSEJ_INTEGRAL_1_6_11a;
@@ -1338,6 +1387,7 @@ class OcularController extends Controller
         $ocular["CONSEJ_INTEGRAL_1_30_49a"] += (int)$result->CONSEJ_INTEGRAL_1_30_49a;
         $ocular["CONSEJ_INTEGRAL_1_50_59a"] += (int)$result->CONSEJ_INTEGRAL_1_50_59a;
         $ocular["CONSEJ_INTEGRAL_1_60a_Mas"] += (int)$result->CONSEJ_INTEGRAL_1_60a_Mas;
+
         $ocular["CONSEJ_INTEGRAL_2_02d_2a"] += (int)$result->CONSEJ_INTEGRAL_2_02d_2a;
         $ocular["CONSEJ_INTEGRAL_2_3_5a"] += (int)$result->CONSEJ_INTEGRAL_2_3_5a;
         $ocular["CONSEJ_INTEGRAL_2_6_11a"] += (int)$result->CONSEJ_INTEGRAL_2_6_11a;
@@ -1346,6 +1396,7 @@ class OcularController extends Controller
         $ocular["CONSEJ_INTEGRAL_2_30_49a"] += (int)$result->CONSEJ_INTEGRAL_2_30_49a;
         $ocular["CONSEJ_INTEGRAL_2_50_59a"] += (int)$result->CONSEJ_INTEGRAL_2_50_59a;
         $ocular["CONSEJ_INTEGRAL_2_60a_Mas"] += (int)$result->CONSEJ_INTEGRAL_2_60a_Mas;
+
         $ocular["CONTROLES_POST_OPER_menor_0d_2as"] += (int)$result->CONTROLES_POST_OPER_menor_0d_2as;
         $ocular["CONTROLES_POST_OPER_3_5a"] += (int)$result->CONTROLES_POST_OPER_3_5a;
         $ocular["CONTROLES_POST_OPER_6_11a"] += (int)$result->CONTROLES_POST_OPER_6_11a;
@@ -1354,6 +1405,7 @@ class OcularController extends Controller
         $ocular["CONTROLES_POST_OPER_30_49a"] += (int)$result->CONTROLES_POST_OPER_30_49a;
         $ocular["CONTROLES_POST_OPER_50_59a"] += (int)$result->CONTROLES_POST_OPER_50_59a;
         $ocular["CONTROLES_POST_OPER_60a_Mas"] += (int)$result->CONTROLES_POST_OPER_60a_Mas;
+
         $ocular["CONTROLES_POST_OPER_2_menor_0d_2as"] += (int)$result->CONTROLES_POST_OPER_2_menor_0d_2as;
         $ocular["CONTROLES_POST_OPER_2_3_5a"] += (int)$result->CONTROLES_POST_OPER_2_3_5a;
         $ocular["CONTROLES_POST_OPER_2_6_11a"] += (int)$result->CONTROLES_POST_OPER_2_6_11a;
@@ -1362,6 +1414,7 @@ class OcularController extends Controller
         $ocular["CONTROLES_POST_OPER_2_30_49a"] += (int)$result->CONTROLES_POST_OPER_2_30_49a;
         $ocular["CONTROLES_POST_OPER_2_50_59a"] += (int)$result->CONTROLES_POST_OPER_2_50_59a;
         $ocular["CONTROLES_POST_OPER_2_60a_Mas"] += (int)$result->CONTROLES_POST_OPER_2_60a_Mas;
+
         $ocular["CONTROLES_POST_OPER_3_menor_0d_2as"] += (int)$result->CONTROLES_POST_OPER_3_menor_0d_2as;
         $ocular["CONTROLES_POST_OPER_3_3_5a"] += (int)$result->CONTROLES_POST_OPER_3_3_5a;
         $ocular["CONTROLES_POST_OPER_3_6_11a"] += (int)$result->CONTROLES_POST_OPER_3_6_11a;
@@ -1370,6 +1423,7 @@ class OcularController extends Controller
         $ocular["CONTROLES_POST_OPER_3_30_49a"] += (int)$result->CONTROLES_POST_OPER_3_30_49a;
         $ocular["CONTROLES_POST_OPER_3_50_59a"] += (int)$result->CONTROLES_POST_OPER_3_50_59a;
         $ocular["CONTROLES_POST_OPER_3_60a_Mas"] += (int)$result->CONTROLES_POST_OPER_3_60a_Mas;
+
         $ocular["CONTROLES_POST_OPER_4_menor_0d_2as"] += (int)$result->CONTROLES_POST_OPER_4_menor_0d_2as;
         $ocular["CONTROLES_POST_OPER_4_3_5a"] += (int)$result->CONTROLES_POST_OPER_4_3_5a;
         $ocular["CONTROLES_POST_OPER_4_6_11a"] += (int)$result->CONTROLES_POST_OPER_4_6_11a;
@@ -1378,6 +1432,7 @@ class OcularController extends Controller
         $ocular["CONTROLES_POST_OPER_4_30_49a"] += (int)$result->CONTROLES_POST_OPER_4_30_49a;
         $ocular["CONTROLES_POST_OPER_4_50_59a"] += (int)$result->CONTROLES_POST_OPER_4_50_59a;
         $ocular["CONTROLES_POST_OPER_4_60a_Mas"] += (int)$result->CONTROLES_POST_OPER_4_60a_Mas;
+
         $ocular["CONTROLES_POST_OPER_5a_menor_0d_2as"] += (int)$result->CONTROLES_POST_OPER_5a_menor_0d_2as;
         $ocular["CONTROLES_POST_OPER_5a_3_5a"] += (int)$result->CONTROLES_POST_OPER_5a_3_5a;
         $ocular["CONTROLES_POST_OPER_5a_6_11a"] += (int)$result->CONTROLES_POST_OPER_5a_6_11a;
@@ -1386,6 +1441,7 @@ class OcularController extends Controller
         $ocular["CONTROLES_POST_OPER_5a_30_49a"] += (int)$result->CONTROLES_POST_OPER_5a_30_49a;
         $ocular["CONTROLES_POST_OPER_5a_50_59a"] += (int)$result->CONTROLES_POST_OPER_5a_50_59a;
         $ocular["CONTROLES_POST_OPER_5a_60a_Mas"] += (int)$result->CONTROLES_POST_OPER_5a_60a_Mas;
+
         $ocular["Determ_Agudeza_Visual_menor_0d_2as"] += (int)$result->Determ_Agudeza_Visual_menor_0d_2as;
         $ocular["Determ_Agudeza_Visual_3_5a"] += (int)$result->Determ_Agudeza_Visual_3_5a;
         $ocular["Determ_Agudeza_Visual_6_11a"] += (int)$result->Determ_Agudeza_Visual_6_11a;
@@ -1394,6 +1450,7 @@ class OcularController extends Controller
         $ocular["Determ_Agudeza_Visual_30_49a"] += (int)$result->Determ_Agudeza_Visual_30_49a;
         $ocular["Determ_Agudeza_Visual_50_59a"] += (int)$result->Determ_Agudeza_Visual_50_59a;
         $ocular["Determ_Agudeza_Visual_60a_Mas"] += (int)$result->Determ_Agudeza_Visual_60a_Mas;
+
         $ocular["Determ_Pre_Intraocular_Bilateral_menor_0d_2as"] += (int)$result->Determ_Pre_Intraocular_Bilateral_menor_0d_2as;
         $ocular["Determ_Pre_Intraocular_Bilateral_3_5a"] += (int)$result->Determ_Pre_Intraocular_Bilateral_3_5a;
         $ocular["Determ_Pre_Intraocular_Bilateral_6_11a"] += (int)$result->Determ_Pre_Intraocular_Bilateral_6_11a;
@@ -1402,6 +1459,7 @@ class OcularController extends Controller
         $ocular["Determ_Pre_Intraocular_Bilateral_30_49a"] += (int)$result->Determ_Pre_Intraocular_Bilateral_30_49a;
         $ocular["Determ_Pre_Intraocular_Bilateral_50_59a"] += (int)$result->Determ_Pre_Intraocular_Bilateral_50_59a;
         $ocular["Determ_Pre_Intraocular_Bilateral_60a_Mas"] += (int)$result->Determ_Pre_Intraocular_Bilateral_60a_Mas;
+
         $ocular["SIND_VITREO_CCC_menor_0d_2a"] += (int)$result->SIND_VITREO_CCC_menor_0d_2a;
         $ocular["SIND_VITREO_CCC_3_5a"] += (int)$result->SIND_VITREO_CCC_3_5a;
         $ocular["SIND_VITREO_CCC_6_11a"] += (int)$result->SIND_VITREO_CCC_6_11a;
@@ -1410,6 +1468,7 @@ class OcularController extends Controller
         $ocular["SIND_VITREO_CCC_30_49a"] += (int)$result->SIND_VITREO_CCC_30_49a;
         $ocular["SIND_VITREO_CCC_50_59a"] += (int)$result->SIND_VITREO_CCC_50_59a;
         $ocular["SIND_VITREO_CCC_60a_Mas"] += (int)$result->SIND_VITREO_CCC_60a_Mas;
+
         $ocular["OTROS_TRAS_OJO_ACP_menor_0d_2a"] += (int)$result->OTROS_TRAS_OJO_ACP_menor_0d_2a;
         $ocular["OTROS_TRAS_OJO_ACP_3_5a"] += (int)$result->OTROS_TRAS_OJO_ACP_3_5a;
         $ocular["OTROS_TRAS_OJO_ACP_6_11a"] += (int)$result->OTROS_TRAS_OJO_ACP_6_11a;

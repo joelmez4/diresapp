@@ -2,7 +2,7 @@ const reporte = new Vue({
   el: '#reporte',
 
   data: {
-    dataOcular: '',
+    esso: '',
     startDate: '',
     endDate: '',
 
@@ -16,7 +16,7 @@ const reporte = new Vue({
   mounted () {
 
     //this.dataOcular = "Joe cool"
-    this.dataOcular = dataOcular.data;
+    this.esso = dataOcular.data;
     this.startDate = dataOcular.startDate;
     this.endDate = dataOcular.endDate;
     this.selectedRed = dataOcular.selectedRed;
