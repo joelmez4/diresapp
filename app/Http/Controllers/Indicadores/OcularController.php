@@ -1477,6 +1477,7 @@ class OcularController extends Controller
         $ocular["OTROS_TRAS_OJO_ACP_30_49a"] += (int)$result->OTROS_TRAS_OJO_ACP_30_49a;
         $ocular["OTROS_TRAS_OJO_ACP_50_59a"] += (int)$result->OTROS_TRAS_OJO_ACP_50_59a;
         $ocular["OTROS_TRAS_OJO_ACP_60a_Mas"] += (int)$result->OTROS_TRAS_OJO_ACP_60a_Mas;
+
         $ocular["RETINOP_PREMATURIDAD_menor_0d_2a"] += (int)$result->RETINOP_PREMATURIDAD_menor_0d_2a;
         $ocular["RETINOP_PREMATURIDAD_3_5a"] += (int)$result->RETINOP_PREMATURIDAD_3_5a;
         $ocular["RETINOP_PREMATURIDAD_6_11a"] += (int)$result->RETINOP_PREMATURIDAD_6_11a;
@@ -1485,6 +1486,7 @@ class OcularController extends Controller
         $ocular["RETINOP_PREMATURIDAD_30_49a"] += (int)$result->RETINOP_PREMATURIDAD_30_49a;
         $ocular["RETINOP_PREMATURIDAD_50_59a"] += (int)$result->RETINOP_PREMATURIDAD_50_59a;
         $ocular["RETINOP_PREMATURIDAD_60a_Mas"] += (int)$result->RETINOP_PREMATURIDAD_60a_Mas;
+
         $ocular["OFTALMOS_INDIRECTA_menor_0d_2a"] += (int)$result->OFTALMOS_INDIRECTA_menor_0d_2a;
         $ocular["OFTALMOS_INDIRECTA_3_5a"] += (int)$result->OFTALMOS_INDIRECTA_3_5a;
         $ocular["OFTALMOS_INDIRECTA_6_11a"] += (int)$result->OFTALMOS_INDIRECTA_6_11a;
@@ -1493,6 +1495,7 @@ class OcularController extends Controller
         $ocular["OFTALMOS_INDIRECTA_30_49a"] += (int)$result->OFTALMOS_INDIRECTA_30_49a;
         $ocular["OFTALMOS_INDIRECTA_50_59a"] += (int)$result->OFTALMOS_INDIRECTA_50_59a;
         $ocular["OFTALMOS_INDIRECTA_60a_Mas"] += (int)$result->OFTALMOS_INDIRECTA_60a_Mas;
+
         $ocular["Destruc_retinopat_extensa_menor_0d_2a"] += (int)$result->Destruc_retinopat_extensa_menor_0d_2a;
         $ocular["Destruc_retinopat_extensa_3_5a"] += (int)$result->Destruc_retinopat_extensa_3_5a;
         $ocular["Destruc_retinopat_extensa_6_11a"] += (int)$result->Destruc_retinopat_extensa_6_11a;
@@ -1501,6 +1504,7 @@ class OcularController extends Controller
         $ocular["Destruc_retinopat_extensa_30_49a"] += (int)$result->Destruc_retinopat_extensa_30_49a;
         $ocular["Destruc_retinopat_extensa_50_59a"] += (int)$result->Destruc_retinopat_extensa_50_59a;
         $ocular["Destruc_retinopat_extensa_60a_Mas"] += (int)$result->Destruc_retinopat_extensa_60a_Mas;
+
         $ocular["CONTROL_POST_OPE_RN_RP_menor_0d_2a"] += (int)$result->CONTROL_POST_OPE_RN_RP_menor_0d_2a;
         $ocular["CONTROL_POST_OPE_RN_RP_3_5a"] += (int)$result->CONTROL_POST_OPE_RN_RP_3_5a;
         $ocular["CONTROL_POST_OPE_RN_RP_6_11a"] += (int)$result->CONTROL_POST_OPE_RN_RP_6_11a;
@@ -1509,6 +1513,7 @@ class OcularController extends Controller
         $ocular["CONTROL_POST_OPE_RN_RP_30_49a"] += (int)$result->CONTROL_POST_OPE_RN_RP_30_49a;
         $ocular["CONTROL_POST_OPE_RN_RP_50_59a"] += (int)$result->CONTROL_POST_OPE_RN_RP_50_59a;
         $ocular["CONTROL_POST_OPE_RN_RP_60a_Mas"] += (int)$result->CONTROL_POST_OPE_RN_RP_60a_Mas;
+
         $ocular["ALTERACION_VISUAL_NO_ESPEC_menor_0d_2a"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_menor_0d_2a;
         $ocular["ALTERACION_VISUAL_NO_ESPEC_3_5a"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_3_5a;
         $ocular["ALTERACION_VISUAL_NO_ESPEC_6_11a"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_6_11a;
@@ -1517,6 +1522,7 @@ class OcularController extends Controller
         $ocular["ALTERACION_VISUAL_NO_ESPEC_30_49a"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_30_49a;
         $ocular["ALTERACION_VISUAL_NO_ESPEC_50_59a"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_50_59a;
         $ocular["ALTERACION_VISUAL_NO_ESPEC_60a_Mas"] += (int)$result->ALTERACION_VISUAL_NO_ESPEC_60a_Mas;
+
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_NINO_0d_2a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_NINO_0d_2a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_NINO_3_5a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_NINO_3_5a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_NINO_6_11a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_NINO_6_11a;
@@ -1525,6 +1531,7 @@ class OcularController extends Controller
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_ADUL1_30_49a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_ADUL1_30_49a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_ADUL2_50_59a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_ADUL2_50_59a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMB_ADUL_MAY_60a_Mas"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMB_ADUL_MAY_60a_Mas;
+
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_0d_2a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_0d_2a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_3_5a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_3_5a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_6_11a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_6_11a;
@@ -1533,18 +1540,23 @@ class OcularController extends Controller
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_ADUL1_30_49a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_ADUL1_30_49a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_ADUL2_50_59a"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_ADUL2_50_59a;
         $ocular["DISM_INDETER_AVAMBOJOS_DVMM_ADUL_MAY_60a_Mas"] += (int)$result->DISM_INDETER_AVAMBOJOS_DVMM_ADUL_MAY_60a_Mas;
+
         $ocular["DETERM_AGUD_VB_3_5a"] += (int)$result->DETERM_AGUD_VB_3_5a;
         $ocular["DETERM_AGUD_VB_6_11a"] += (int)$result->DETERM_AGUD_VB_6_11a;
         $ocular["DETERM_AGUD_VB_12_17a"] += (int)$result->DETERM_AGUD_VB_12_17a;
+
         $ocular["ALTERA_VISUAL_NO_ESPE_3_5a"] += (int)$result->ALTERA_VISUAL_NO_ESPE_3_5a;
         $ocular["ALTERA_VISUAL_NO_ESPE_6_11a"] += (int)$result->ALTERA_VISUAL_NO_ESPE_6_11a;
         $ocular["ALTERA_VISUAL_NO_ESPE_12_17a"] += (int)$result->ALTERA_VISUAL_NO_ESPE_12_17a;
+
         $ocular["DISM_DISC_VMB_3_5a"] += (int)$result->DISM_DISC_VMB_3_5a;
         $ocular["DISM_DISC_VMB_6_11a"] += (int)$result->DISM_DISC_VMB_6_11a;
         $ocular["DISM_DISC_VMB_12_17a"] += (int)$result->DISM_DISC_VMB_12_17a;
+
         $ocular["DISM_DISC_VMM_3_5a"] += (int)$result->DISM_DISC_VMM_3_5a;
         $ocular["DISM_DISC_VMM_6_11a"] += (int)$result->DISM_DISC_VMM_6_11a;
         $ocular["DISM_DISC_VMM_12_17a"] += (int)$result->DISM_DISC_VMM_12_17a;
+
         $ocular["OTRAS_ALT_VIS_LAINF_0d_2a"] += (int)$result->OTRAS_ALT_VIS_LAINF_0d_2a;
         $ocular["OTRAS_ALT_VIS_LAINF_3_5a"] += (int)$result->OTRAS_ALT_VIS_LAINF_3_5a;
         $ocular["OTRAS_ALT_VIS_LAINF_6_11a"] += (int)$result->OTRAS_ALT_VIS_LAINF_6_11a;
@@ -1553,6 +1565,7 @@ class OcularController extends Controller
         $ocular["OTRAS_ALT_VIS_LAINF_30_49a"] += (int)$result->OTRAS_ALT_VIS_LAINF_30_49a;
         $ocular["OTRAS_ALT_VIS_LAINF_50_59a"] += (int)$result->OTRAS_ALT_VIS_LAINF_50_59a;
         $ocular["OTRAS_ALT_VIS_LAINF_60a_Mas"] += (int)$result->OTRAS_ALT_VIS_LAINF_60a_Mas;
+
         $ocular["Estrabismo_0d_2a"] += (int)$result->Estrabismo_0d_2a;
         $ocular["Estrabismo_3_5a"] += (int)$result->Estrabismo_3_5a;
         $ocular["Estrabismo_6_11a"] += (int)$result->Estrabismo_6_11a;
@@ -1561,6 +1574,7 @@ class OcularController extends Controller
         $ocular["Estrabismo_30_49a"] += (int)$result->Estrabismo_30_49a;
         $ocular["Estrabismo_50_59a"] += (int)$result->Estrabismo_50_59a;
         $ocular["Estrabismo_60a_Mas"] += (int)$result->Estrabismo_60a_Mas;
+
         $ocular["Patologias_Retinales_0d_2a"] += (int)$result->Patologias_Retinales_0d_2a;
         $ocular["Patologias_Retinales_3_5a"] += (int)$result->Patologias_Retinales_3_5a;
         $ocular["Patologias_Retinales_6_11a"] += (int)$result->Patologias_Retinales_6_11a;
@@ -1569,6 +1583,7 @@ class OcularController extends Controller
         $ocular["Patologias_Retinales_30_49a"] += (int)$result->Patologias_Retinales_30_49a;
         $ocular["Patologias_Retinales_50_59a"] += (int)$result->Patologias_Retinales_50_59a;
         $ocular["Patologias_Retinales_60a_Mas"] += (int)$result->Patologias_Retinales_60a_Mas;
+
         $ocular["Cicatriz_Corneal_0d_2a"] += (int)$result->Cicatriz_Corneal_0d_2a;
         $ocular["Cicatriz_Corneal_3_5a"] += (int)$result->Cicatriz_Corneal_3_5a;
         $ocular["Cicatriz_Corneal_6_11a"] += (int)$result->Cicatriz_Corneal_6_11a;
@@ -1577,6 +1592,7 @@ class OcularController extends Controller
         $ocular["Cicatriz_Corneal_30_49a"] += (int)$result->Cicatriz_Corneal_30_49a;
         $ocular["Cicatriz_Corneal_50_59a"] += (int)$result->Cicatriz_Corneal_50_59a;
         $ocular["Cicatriz_Corneal_60a_Mas"] += (int)$result->Cicatriz_Corneal_60a_Mas;
+
         $ocular["Enfermedad_del_Parpado_0d_2a"] += (int)$result->Enfermedad_del_Parpado_0d_2a;
         $ocular["Enfermedad_del_Parpado_3_5a"] += (int)$result->Enfermedad_del_Parpado_3_5a;
         $ocular["Enfermedad_del_Parpado_6_11a"] += (int)$result->Enfermedad_del_Parpado_6_11a;
@@ -1585,6 +1601,7 @@ class OcularController extends Controller
         $ocular["Enfermedad_del_Parpado_30_49a"] += (int)$result->Enfermedad_del_Parpado_30_49a;
         $ocular["Enfermedad_del_Parpado_50_59a"] += (int)$result->Enfermedad_del_Parpado_50_59a;
         $ocular["Enfermedad_del_Parpado_60a_Mas"] += (int)$result->Enfermedad_del_Parpado_60a_Mas;
+
         $ocular["Ametropia_0d_2a"] += (int)$result->Ametropia_0d_2a;
         $ocular["Ametropia_3_5a"] += (int)$result->Ametropia_3_5a;
         $ocular["Ametropia_6_11a"] += (int)$result->Ametropia_6_11a;
@@ -1593,6 +1610,7 @@ class OcularController extends Controller
         $ocular["Ametropia_30_49a"] += (int)$result->Ametropia_30_49a;
         $ocular["Ametropia_50_59a"] += (int)$result->Ametropia_50_59a;
         $ocular["Ametropia_60a_Mas"] += (int)$result->Ametropia_60a_Mas;
+
         $ocular["Miopia_0d_2a"] += (int)$result->Miopia_0d_2a;
         $ocular["Miopia_3_5a"] += (int)$result->Miopia_3_5a;
         $ocular["Miopia_6_11a"] += (int)$result->Miopia_6_11a;
@@ -1601,6 +1619,7 @@ class OcularController extends Controller
         $ocular["Miopia_30_49a"] += (int)$result->Miopia_30_49a;
         $ocular["Miopia_50_59a"] += (int)$result->Miopia_50_59a;
         $ocular["Miopia_60a_Mas"] += (int)$result->Miopia_60a_Mas;
+
         $ocular["Hipermetropia_0d_2a"] += (int)$result->Hipermetropia_0d_2a;
         $ocular["Hipermetropia_3_5a"] += (int)$result->Hipermetropia_3_5a;
         $ocular["Hipermetropia_6_11a"] += (int)$result->Hipermetropia_6_11a;
@@ -1609,6 +1628,7 @@ class OcularController extends Controller
         $ocular["Hipermetropia_30_49a"] += (int)$result->Hipermetropia_30_49a;
         $ocular["Hipermetropia_50_59a"] += (int)$result->Hipermetropia_50_59a;
         $ocular["Hipermetropia_60a_Mas"] += (int)$result->Hipermetropia_60a_Mas;
+        
         $ocular["Astigmatismo_0d_2a"] += (int)$result->Astigmatismo_0d_2a;
         $ocular["Astigmatismo_3_5a"] += (int)$result->Astigmatismo_3_5a;
         $ocular["Astigmatismo_6_11a"] += (int)$result->Astigmatismo_6_11a;

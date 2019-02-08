@@ -1449,29 +1449,29 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H590 Síndrome vítreo
   consecutivo a cirugía de catarata</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl12710219>0</td>
+  <td class=xl9810219>@{{esso.SIND_VITREO_CCC_menor_0d_2a + esso.SIND_VITREO_CCC_3_5a + esso.SIND_VITREO_CCC_6_11a + esso.SIND_VITREO_CCC_12_17a + esso.SIND_VITREO_CCC_18_29a + esso.SIND_VITREO_CCC_30_49a + esso.SIND_VITREO_CCC_50_59a + esso.SIND_VITREO_CCC_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_menor_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_3_5a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_6_11a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_12_17a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_18_29a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_30_49a}}</td>
+  <td class=xl10810219>@{{esso.SIND_VITREO_CCC_50_59a}}</td>
+  <td class=xl12710219>@{{esso.SIND_VITREO_CCC_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H598 Otros trastornos del
   ojo y sus anexos, consecutivos a procedimientos</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl12710219>0</td>
+  <td class=xl9810219>@{{esso.OTROS_TRAS_OJO_ACP_menor_0d_2a + esso.OTROS_TRAS_OJO_ACP_3_5a + esso.OTROS_TRAS_OJO_ACP_6_11a + esso.OTROS_TRAS_OJO_ACP_12_17a + esso.OTROS_TRAS_OJO_ACP_18_29a + esso.OTROS_TRAS_OJO_ACP_30_49a + esso.OTROS_TRAS_OJO_ACP_50_59a + esso.OTROS_TRAS_OJO_ACP_60a_Mas}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_menor_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_18_29a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_30_49a}}</td>
+  <td class=xl10810219>@{{esso.OTROS_TRAS_OJO_ACP_50_59a}}</td>
+  <td class=xl12710219>@{{esso.OTROS_TRAS_OJO_ACP_60a_Mas}}</td>
   <td class=xl6510219></td>
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
@@ -1502,8 +1502,8 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H351 Retinopatía de la
   prematuridad</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.RETINOP_PREMATURIDAD_menor_0d_2a + 0}}</td>
+  <td class=xl10810219>@{{esso.RETINOP_PREMATURIDAD_menor_0d_2a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1516,8 +1516,8 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>92225 Oftalmoscopia
   Indirecta</td>
-  <td class=xl9810219>6</td>
-  <td class=xl10810219>6</td>
+  <td class=xl9810219>@{{esso.OFTALMOS_INDIRECTA_menor_0d_2a + 0}}</td>
+  <td class=xl10810219>@{{esso.OFTALMOS_INDIRECTA_menor_0d_2a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1530,8 +1530,8 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>67227 Destrucción de
   retinopatía extensa</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Destruc_retinopat_extensa_menor_0d_2a + 0}}</td>
+  <td class=xl10810219>@{{esso.Destruc_retinopat_extensa_menor_0d_2a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1544,8 +1544,8 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>Z489 Control Post
   Operatorio de RN con retinopatía de la Prematuridad</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.CONTROL_POST_OPE_RN_RP_menor_0d_2a + 0}}</td>
+  <td class=xl10810219>@{{esso.CONTROL_POST_OPE_RN_RP_menor_0d_2a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1586,9 +1586,9 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H539 Alteración Visual No
   Especificada</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.ALTERACION_VISUAL_NO_ESPEC_menor_0d_2a + esso.ALTERACION_VISUAL_NO_ESPEC_3_5a}}</td>
+  <td class=xl10810219>@{{esso.ALTERACION_VISUAL_NO_ESPEC_menor_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.ALTERACION_VISUAL_NO_ESPEC_3_5a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
@@ -1616,9 +1616,9 @@ tags will be replaced.-->
   <td height=34 class=xl9010219 width=433 style='height:25.5pt;width:325pt'>H542
   Disminución Indeterminada de la Agudeza Visual en ambos ojos (Discapacidad
   visual moderada, binocular)<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMB_NINO_0d_2a + esso.DISM_INDETER_AVAMBOJOS_DVMB_NINO_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMB_NINO_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMB_NINO_3_5a}}</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
   font-family:Calibri, sans-serif;border:none;background:#BFBFBF;mso-pattern:
@@ -1649,9 +1649,9 @@ tags will be replaced.-->
   <td height=34 class=xl9010219 width=433 style='height:25.5pt;width:325pt'>H546
   Disminución Indeterminada de la Agudeza Visual de un ojo (Discapacidad visual
   moderada, monocular)</td>
-  <td class=xl9810219>3</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>3</td>
+  <td class=xl9810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMM_0d_2a + esso.DISM_INDETER_AVAMBOJOS_DVMM_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMM_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.DISM_INDETER_AVAMBOJOS_DVMM_3_5a}}</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
   font-family:Calibri, sans-serif;border:none;background:#BFBFBF;mso-pattern:
@@ -1689,11 +1689,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>99173 Determinación de la
   Agudeza Visual Bilateral</td>
-  <td class=xl9810219>0</td>
+  <td class=xl9810219>@{{esso.DETERM_AGUD_VB_3_5a + esso.DETERM_AGUD_VB_6_11a + esso.DETERM_AGUD_VB_12_17a}}</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl10810219>@{{esso.DETERM_AGUD_VB_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DETERM_AGUD_VB_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DETERM_AGUD_VB_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1703,11 +1703,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H539 Alteración Visual No
   Especificada</td>
-  <td class=xl9810219>0</td>
+  <td class=xl9810219>@{{esso.ALTERA_VISUAL_NO_ESPE_3_5a + esso.ALTERA_VISUAL_NO_ESPE_6_11a + esso.ALTERA_VISUAL_NO_ESPE_12_17a}}</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl10810219>@{{esso.ALTERA_VISUAL_NO_ESPE_3_5a}}</td>
+  <td class=xl10810219>@{{esso.ALTERA_VISUAL_NO_ESPE_6_11a}}</td>
+  <td class=xl10810219>@{{esso.ALTERA_VISUAL_NO_ESPE_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1718,11 +1718,11 @@ tags will be replaced.-->
   <td height=34 class=xl9010219 width=433 style='height:25.5pt;width:325pt'>H542
   Disminución Indeterminada de la Agudeza Visual en ambos ojos (Discapacidad
   visual moderada, binocular)<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>0</td>
+  <td class=xl9810219>@{{esso.DISM_DISC_VMB_3_5a + esso.DISM_DISC_VMB_6_11a + esso.DISM_DISC_VMB_12_17a}}</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMB_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMB_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMB_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1733,11 +1733,11 @@ tags will be replaced.-->
   <td height=34 class=xl9010219 width=433 style='height:25.5pt;width:325pt'>H546
   Disminución Indeterminada de la Agudeza Visual de un ojo (Discapacidad visual
   moderada, monocular)</td>
-  <td class=xl9810219>0</td>
+  <td class=xl9810219>@{{esso.DISM_DISC_VMM_3_5a + esso.DISM_DISC_VMM_6_11a + esso.DISM_DISC_VMM_12_17a}}</td>
   <td class=xl13110219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMM_3_5a}}</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMM_6_11a}}</td>
+  <td class=xl10810219>@{{esso.DISM_DISC_VMM_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1762,11 +1762,11 @@ tags will be replaced.-->
   <td height=34 class=xl9010219 width=433 style='height:25.5pt;width:325pt'>H538
   Otras Alteraciones Visuales: Leucocoria, Anormalidades en la inspección, No
   fijación</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.OTRAS_ALT_VIS_LAINF_0d_2a + esso.OTRAS_ALT_VIS_LAINF_3_5a + esso.OTRAS_ALT_VIS_LAINF_6_11a + esso.OTRAS_ALT_VIS_LAINF_12_17a}}</td>
+  <td class=xl10810219>@{{esso.OTRAS_ALT_VIS_LAINF_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.OTRAS_ALT_VIS_LAINF_3_5a}}</td>
+  <td class=xl10810219>@{{esso.OTRAS_ALT_VIS_LAINF_6_11a}}</td>
+  <td class=xl10810219>@{{esso.OTRAS_ALT_VIS_LAINF_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1775,11 +1775,11 @@ tags will be replaced.-->
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H509 Estrabismo</td>
-  <td class=xl9810219>2</td>
-  <td class=xl10810219>2</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Estrabismo_0d_2a + esso.Estrabismo_3_5a + esso.Estrabismo_6_11a + esso.Estrabismo_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Estrabismo_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Estrabismo_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Estrabismo_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Estrabismo_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
@@ -1791,11 +1791,11 @@ tags will be replaced.-->
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H359 Patologías Retinales</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Patologias_Retinales_0d_2a + esso.Patologias_Retinales_3_5a + esso.Patologias_Retinales_6_11a + esso.Patologias_Retinales_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Patologias_Retinales_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Patologias_Retinales_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Patologias_Retinales_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Patologias_Retinales_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1804,11 +1804,11 @@ tags will be replaced.-->
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H179 Cicatriz Corneal</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Cicatriz_Corneal_0d_2a + esso.Cicatriz_Corneal_3_5a + esso.Cicatriz_Corneal_6_11a + esso.Cicatriz_Corneal_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Cicatriz_Corneal_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Cicatriz_Corneal_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Cicatriz_Corneal_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Cicatriz_Corneal_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
@@ -1821,11 +1821,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H028 / H029 Enfermedad
   del Parpado</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Enfermedad_del_Parpado_0d_2a + esso.Enfermedad_del_Parpado_3_5a + esso.Enfermedad_del_Parpado_6_11a + esso.Enfermedad_del_Parpado_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Enfermedad_del_Parpado_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Enfermedad_del_Parpado_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Enfermedad_del_Parpado_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Enfermedad_del_Parpado_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1834,11 +1834,11 @@ tags will be replaced.-->
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H527 Ametropía</td>
-  <td class=xl9810219>9</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>1</td>
-  <td class=xl10810219>3</td>
-  <td class=xl10810219>5</td>
+  <td class=xl9810219>@{{esso.Ametropia_0d_2a + esso.Ametropia_3_5a + esso.Ametropia_6_11a + esso.Ametropia_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Ametropia_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Ametropia_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Ametropia_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Ametropia_12_17a}}</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
   font-family:Calibri, sans-serif;border:none;background:#BFBFBF;mso-pattern:
@@ -1874,11 +1874,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H521 Miopía<span
   style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Miopia_0d_2a + esso.Miopia_3_5a + esso.Miopia_6_11a + esso.Miopia_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Miopia_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Miopia_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Miopia_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Miopia_12_17a}}</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
   text-decoration:none;text-underline-style:none;text-line-through:none;
   font-family:Calibri, sans-serif;border:none;background:#BFBFBF;mso-pattern:
@@ -1894,11 +1894,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H520 Hipermetropía<span
   style='mso-spacerun:yes'> </span></td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Hipermetropia_0d_2a + esso.Hipermetropia_3_5a + esso.Hipermetropia_6_11a + esso.Hipermetropia_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Hipermetropia_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Hipermetropia_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Hipermetropia_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Hipermetropia_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219 style='font-size:10.0pt;color:red;font-weight:400;
@@ -1913,11 +1913,11 @@ tags will be replaced.-->
  </tr>
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl8710219 style='height:18.0pt'>H522 Astigmatismo</td>
-  <td class=xl9810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
-  <td class=xl10810219>0</td>
+  <td class=xl9810219>@{{esso.Astigmatismo_0d_2a + esso.Astigmatismo_3_5a + esso.Astigmatismo_6_11a + esso.Astigmatismo_12_17a}}</td>
+  <td class=xl10810219>@{{esso.Astigmatismo_0d_2a}}</td>
+  <td class=xl10810219>@{{esso.Astigmatismo_3_5a}}</td>
+  <td class=xl10810219>@{{esso.Astigmatismo_6_11a}}</td>
+  <td class=xl10810219>@{{esso.Astigmatismo_12_17a}}</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
   <td class=xl13110219>0</td>
@@ -1927,11 +1927,11 @@ tags will be replaced.-->
  <tr height=24 style='mso-height-source:userset;height:18.0pt'>
   <td height=24 class=xl9110219 style='height:18.0pt'>Z460 Prueba y ajuste de
   anteojos</td>
-  <td class=xl9810219>0</td>
-  <td class=xl12910219>0</td>
-  <td class=xl12910219>0</td>
-  <td class=xl12910219>0</td>
-  <td class=xl12910219>0</td>
+  <td class=xl9810219>@{{esso.Prueba_ajuste_anteojos_0d_2a + esso.Prueba_ajuste_anteojos_3_5a + esso.Prueba_ajuste_anteojos_6_11a + esso.Prueba_ajuste_anteojos_12_17a}}</td>
+  <td class=xl12910219>@{{esso.Prueba_ajuste_anteojos_0d_2a}}</td>
+  <td class=xl12910219>@{{esso.Prueba_ajuste_anteojos_3_5a}}</td>
+  <td class=xl12910219>@{{esso.Prueba_ajuste_anteojos_6_11a}}</td>
+  <td class=xl12910219>@{{esso.Prueba_ajuste_anteojos_12_17a}}</td>
   <td class=xl13410219>0</td>
   <td class=xl13410219>0</td>
   <td class=xl13410219>0</td>
