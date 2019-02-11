@@ -11674,10 +11674,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_select__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_select__);
-var _data;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-select', __WEBPACK_IMPORTED_MODULE_1_vue_select___default.a);
@@ -11692,7 +11688,9 @@ var vm2 = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#appCancer',
 
-    data: (_data = {
+    data: {
+
+        dataCancer: [],
 
         flag: null,
 
@@ -11700,25 +11698,41 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         startDate: null,
         endDate: null,
 
+        maxDate: null,
+
         //vue-select  for Establecimientos
         establecimientos: [],
 
         //load establecimientos
-        options: [],
+        loadEstablec: [],
         //set establecimiento
-        selected: { id: null, label: null },
+        selectedEstablec: { id: null, label: null },
 
         //Form Kind of query
         picked: 'establecimiento',
 
         selectedRed: null,
         selectedMred: null,
+        selectedEstablecRed: null,
         selectedProvincia: null,
         selectedDistrito: null,
+        selectedEstablecProv: null,
 
         redes: [],
-        mredes: []
-    }, _defineProperty(_data, 'establecimientos', []), _defineProperty(_data, 'provincias', []), _defineProperty(_data, 'distritos', []), _defineProperty(_data, 'cmbRedes', null), _defineProperty(_data, 'cmbMredes', null), _defineProperty(_data, 'cmbProvincias', null), _defineProperty(_data, 'cmbDistritos', null), _defineProperty(_data, 'cmbEstablec', null), _data),
+        mredes: [],
+        establecRedes: [],
+        provincias: [],
+        distritos: [],
+        establecProvincias: [],
+
+        cmbRedes: null,
+        cmbMredes: null,
+        cmbEstablecRed: null,
+        cmbProvincias: null,
+        cmbDistritos: null,
+        cmbEstablecProv: null,
+        cmbEstablec: null
+    },
 
     mounted: function mounted() {
         var _this = this;
@@ -11728,12 +11742,15 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         // Establecimientos | default selected
         this.cmbRedes = true;
         this.cmbMredes = true;
+        this.cmbEstablecRed = true;
         this.cmbProvincias = true;
         this.cmbDistritos = true;
+        this.cmbEstablecProv = true;
         this.cmbEstablec = false;
 
         // Current Date minus one month
         var currentDate = new Date(new Date().toISOString().substr(0, 10));
+        this.maxDate = currentDate.toISOString().substr(0, 10);
         this.endDate = currentDate.toISOString().substr(0, 10);
         currentDate.setMonth(currentDate.getMonth() - 1);
         this.startDate = currentDate.toISOString().substr(0, 10);
@@ -11742,10 +11759,10 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             this.establecimientos = response.data;
 
             for (var i = 0; i < this.establecimientos.length; i++) {
-                this.options.push({ id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab });
+                this.loadEstablec.push({ id: this.establecimientos[i].cod_2000, label: this.establecimientos[i].desc_estab });
             }
-            // this.selected.id = this.establecimientos[4].cod_2000;
-            // this.selected.label = this.establecimientos[4].desc_estab;
+            // this.selectedEstablec.id = this.establecimientos[4].cod_2000;
+            // this.selectedEstablec.label = this.establecimientos[4].desc_estab;
         }.bind(this));
 
         axios.get(base_url + '/redes').then(function (response) {
@@ -11759,7 +11776,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 
     methods: {
-        setEstablecimiento: function setEstablecimiento() {
+        getResult: function getResult() {
 
             this.flag = false;
 
@@ -11768,34 +11785,61 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             var data;
             data = {
                 picked: this.picked,
+
                 red: this.selectedRed,
                 mred: this.selectedMred,
+                establecRed: this.selectedEstablecRed,
+
                 provincia: this.selectedProvincia,
                 distrito: this.selectedDistrito,
-                establecimiento: this.selected.id,
+                establecProv: this.selectedEstablecProv,
+
+                establecimiento: this.selectedEstablec.id,
+
                 startDate: this.startDate,
                 endDate: this.endDate
             };
 
             data = JSON.stringify(data);
 
-            axios.get(base_url + '/morbilidad/get', {
+            axios.get(base_url + '/cancer/get', {
                 params: {
                     data: data
                 }
             }).then(function (response) {
-                // this.establecimientos = response.data;
 
                 if (response.status == 200) {
                     this.flag = true;
                 }
 
                 console.log(response.data);
-
-                drawChart(response.data);
+                this.dataCancer = response.data;
+                // drawChart(response.data);
+            }.bind(this)).catch(function (error) {
+                // handle error
+                this.flag = true;
+                alert("Error en el servidor: " + error);
             }.bind(this));
         },
 
+
+        reporteSaludOcular: function reporteSaludOcular(event) {
+
+            console.log(this.dataCancer);
+
+            var thisIsAnObject = {
+                data: this.dataCancer,
+                startDate: this.startDate,
+                endDate: this.endDate,
+                selectedRed: this.selectedRed,
+                selectedMred: this.selectedMred,
+                selectedProvincia: this.selectedProvincia,
+                selectedDistrito: this.selectedDistrito
+            };
+
+            var w = window.open(base_url + "/cancer/reporte");
+            w.dataCancer = thisIsAnObject;
+        },
 
         microRedes: function microRedes(event) {
             var _this2 = this;
@@ -11805,19 +11849,27 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             });
         },
 
-        establec: function establec(event) {
+        establecByRedes: function establecByRedes(event) {
             var _this3 = this;
 
             axios.get(base_url + '/getEstablecimiento?cod_red=' + this.selectedRed + '&cod_mic=' + this.selectedMred).then(function (response) {
-                return _this3.establecimientos = response.data;
+                return _this3.establecRedes = response.data;
+            });
+        },
+
+        establecByProvincias: function establecByProvincias(event) {
+            var _this4 = this;
+
+            axios.get(base_url + '/getEstablecimiento2?cod_prov=' + this.selectedProvincia + '&cod_dist=' + this.selectedDistrito).then(function (response) {
+                return _this4.establecProvincias = response.data;
             });
         },
 
         distrito: function distrito(event) {
-            var _this4 = this;
+            var _this5 = this;
 
             axios.get(base_url + '/getDistrito?cod_prov=' + this.selectedProvincia).then(function (response) {
-                return _this4.distritos = response.data;
+                return _this5.distritos = response.data;
             });
         },
 
@@ -11827,38 +11879,48 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
                 this.cmbRedes = false;
                 this.cmbMredes = false;
+                this.cmbEstablecRed = false;
                 this.cmbProvincias = true;
                 this.cmbDistritos = true;
+                this.cmbEstablecProv = true;
                 this.cmbEstablec = true;
 
                 this.selectedProvincia = null;
                 this.selectedDistrito = null;
-                this.selected.id = null;
-                this.selected.label = null;
+                this.selectedEstablecProv = null;
+                this.selectedEstablec.id = null;
+                this.selectedEstablec.label = null;
             } else if (this.picked == 'provincia') {
 
                 this.cmbRedes = true;
                 this.cmbMredes = true;
+                this.cmbEstablecRed = true;
                 this.cmbProvincias = false;
                 this.cmbDistritos = false;
+                this.cmbEstablecProv = false;
                 this.cmbEstablec = true;
 
                 this.selectedRed = null;
                 this.selectedMred = null;
-                this.selected.id = null;
-                this.selected.label = null;
+                this.selectedEstablecRed = null;
+                this.selectedEstablec.id = null;
+                this.selectedEstablec.label = null;
             } else if (this.picked == 'establecimiento') {
 
                 this.cmbRedes = true;
                 this.cmbMredes = true;
+                this.cmbEstablecRed = true;
                 this.cmbProvincias = true;
                 this.cmbDistritos = true;
+                this.cmbEstablecProv = true;
                 this.cmbEstablec = false;
 
                 this.selectedRed = null;
                 this.selectedMred = null;
+                this.selectedEstablecRed = null;
                 this.selectedProvincia = null;
                 this.selectedDistrito = null;
+                this.selectedEstablecProv = null;
             }
             console.log(this.picked);
         }

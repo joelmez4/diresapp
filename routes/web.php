@@ -58,6 +58,7 @@ Route::get('/ocular/reporte', 'Indicadores\OcularController@reporte');
 // Indicador: Estrategia Cancer
 Route::get('cancer', 'Indicadores\CancerController@index');
 Route::get('cancer/get', 'Indicadores\CancerController@getIndicador');
+Route::get('cancer/reporte', 'Indicadores\CancerController@reporte');
 
 
 // Indicador: Reportes Vacunas
