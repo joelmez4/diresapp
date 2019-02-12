@@ -2,7 +2,7 @@ const reporte = new Vue({
   el: '#reporte',
 
   data: {
-    esso: '',
+    ecr: '',
     startDate: '',
     endDate: '',
 
@@ -16,7 +16,7 @@ const reporte = new Vue({
   mounted () {
 
     //this.dataCancer = "Joe cool"
-    this.esso = dataCancer.data;
+    this.ecr = dataCancer.data;
     this.startDate = dataCancer.startDate;
     this.endDate = dataCancer.endDate;
     this.selectedRed = dataCancer.selectedRed;

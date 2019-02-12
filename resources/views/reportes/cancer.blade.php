@@ -3,11 +3,12 @@ xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=ProgId content=Excel.Sheet>
-<meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="cancer2_files/filelist.xml">
-<link rel="stylesheet" href="{{ asset('public/css/estrategia_cancer.css') }}">
+  <title>Estrategia Cáncer</title>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <meta name=ProgId content=Excel.Sheet>
+  <meta name=Generator content="Microsoft Excel 15">
+  <link rel=File-List href="cancer2_files/filelist.xml">
+  <link rel="stylesheet" href="{{ asset('public/css/estrategia_cancer.css') }}">
 </head>
 
 <body>
@@ -97,59 +98,59 @@ tags will be replaced.-->
   <td rowspan=2 height=40 class=xl12612389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Persona examinada con papanicolaou</td>
   <td class=xl10112389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10212389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Per_Exa_Con_Pap_50_64a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_20_29a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_30_39a}}</td>
+  <td class=xl10212389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_40_49a}}</td>
+  <td class=xl6612389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_50_59a}}</td>
+  <td class=xl6612389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_60_69a}}</td>
+  <td class=xl6612389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Pap_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10112389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Per_Exa_Con_Pap_50_64a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_20_29a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_30_39a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Pap_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl12612389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Persona examinada con Inspección Visual Acido
   Acético</td>
   <td class=xl10112389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Per_Exa_Con_Insp_VAA_30_49a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Per_Exa_Con_Insp_VAA_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_20_29a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_30_39a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Per_Exa_Con_Insp_VAA_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10112389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Per_Exa_Con_Insp_VAA_30_49a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_20_29a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_30_39a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Per_Exa_Con_Insp_VAA_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl12812389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Detección molecular de Virus Papiloma Humano</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Detec_Molecular_VPH_30_49a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Detec_Molecular_VPH_menor_20}}</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
@@ -160,8 +161,8 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Detec_Molecular_VPH_30_49a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Detec_Molecular_VPH_menor_20}}</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
@@ -198,78 +199,78 @@ tags will be replaced.-->
   <td rowspan=2 height=40 class=xl13012389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Examen clínico de mama</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Examen_Cli_Mama_40_69a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Cli_Mama_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Examen_Cli_Mama_40_69a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Cli_Mama_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl13012389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Mujer tamizada con mamografía bilateral de
   tamizaje</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Mujer_Tamizada_MBT_50_69a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Tamizada_MBT_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Mujer_Tamizada_MBT_50_69a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Tamizada_MBT_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl13012389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Mujer con mamografía durante tratamiento o
   post tratamiento</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Mujer_Mamog_DtpT_18_75a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Mujer_Mamog_DtpT_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Mujer_Mamog_DtpT_18_75a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Mamog_DtpT_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl9012389 style='height:15.0pt;border-top:none'>&nbsp;</td>
@@ -301,26 +302,26 @@ tags will be replaced.-->
   height:30.0pt;border-top:none'>Tamizaje para detección de cáncer de colon y
   recto</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Tamizaje_Detec_CCR_50_75a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Tamizaje_Detec_CCR_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Tamizaje_Detec_CCR_50_75a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Tamizaje_Detec_CCR_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl11912389 style='height:15.0pt;border-top:none'>Tamizaje
@@ -339,88 +340,88 @@ tags will be replaced.-->
   <td rowspan=2 height=40 class=xl13212389 style='height:30.0pt'><span
   style='mso-spacerun:yes'>    </span>Examen de tacto rectal</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Examen_Tacto_Rectal_50_70a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_Tacto_Rectal_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Examen_Tacto_Rectal_50_70a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Examen_Tacto_Rectal_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl13212389 style='border-bottom:.5pt solid black;
   height:30.0pt'><span style='mso-spacerun:yes'>    </span>Examen PSA</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Normal_Examen_PSA_50_70a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Normal_Examen_PSA_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_ANormal_Examen_PSA_50_70a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ANormal_Examen_PSA_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td rowspan=2 height=40 class=xl13512389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Tamizaje para detección de cáncer de piel</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Tamizaje_Normal_Deteccion_Cancer_Piel_18_65a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Normal_Deteccion_Cancer_Piel_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Tamizaje_Anormal_Deteccion_Cancer_Piel_18_65a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Tamizaje_Anormal_Deteccion_Cancer_Piel_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl9012389 style='height:15.0pt;border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
-  <td class=xl8212389 style='border-top:none'>&nbsp;</td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
+  <td class=xl8212389 style='border-top:none'></td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10512389 style='height:15.0pt'>PERSONA ATENDIDA CON
@@ -451,32 +452,32 @@ tags will be replaced.-->
   <td rowspan=2 height=40 class=xl13312389 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>Mujer examinada con colposcopia</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>Normal</td>
-  <td class=xl10412389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-left:none'>&nbsp;</td>
+  <td class=xl10412389 style='border-left:none'>@{{ecr.Total_Normal_Mujer_Exa_Colposcopia_30_64a}}</td>
+  <td class=xl10112389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_menor_20}}</td>
+  <td class=xl10112389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_20_29a}}</td>
+  <td class=xl6512389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_30_39a}}</td>
+  <td class=xl6512389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_40_49a}}</td>
+  <td class=xl6512389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_50_59a}}</td>
+  <td class=xl6512389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_60_69a}}</td>
+  <td class=xl6512389 style='border-left:none'>@{{ecr.Normal_Mujer_Exa_Colposcopia_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl10012389 style='height:15.0pt;border-top:none;
   border-left:none'>Anormal</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Anormal_Mujer_Exa_Colposcopia_30_64a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Anormal_Mujer_Exa_Colposcopia_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7112389 style='height:15.0pt;border-top:none'>Atención
   de pacientes con lesiones premalignas de cuello uterino con ablación</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>30 a 49 años</td>
-  <td class=xl10412389 style='border-left:none'>&nbsp;</td>
+  <td class=xl10412389 style='border-left:none'>@{{ecr.Total_ATC_Pac_LPCUA_30_49a}}</td>
   <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
@@ -490,14 +491,14 @@ tags will be replaced.-->
   de pacientes con lesiones premalignas de cuello uterino con tratamiento
   escisional</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>30 a 64 años</td>
-  <td class=xl10412389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10412389 style='border-left:none'>@{{ecr.Total_ATC_Pac_LPCUTE_30_64a}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_menor_20}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.ATC_Pac_LPCUTE_70a_Mas}}</td>
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl1512389 style='height:15.0pt'></td>
@@ -528,86 +529,86 @@ tags will be replaced.-->
   <td height=20 class=xl7112389 style='height:15.0pt'>Persona atendida con
   procedimiento de biopsia de Cuello Uterino</td>
   <td class=xl7112389 style='border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
-  <td class=xl6612389 style='border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-left:none'>@{{ecr.Total_Pers_ATD_Proc_BCU}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_menor_20}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_20_29a}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_30_39a}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_40_49a}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_50_59a}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_60_69a}}</td>
+  <td class=xl6612389 style='border-left:none'>@{{ecr.Pers_ATD_Proc_BCU_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl7412389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia mamaria</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_B_Malaria}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_B_Malaria_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12112389 style='height:15.0pt'>Persona atendida con
   procedimiento de biopsia de prostata</td>
   <td class=xl12112389 style='border-top:none;border-left:none'>Todas las
   edades</td>
-  <td class=xl12212389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl12212389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Prostata}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Prostata_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de colon recto</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Colon_Recto}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Colon_Recto_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de estómago</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Estomago}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Estomago_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de piel</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Piel}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Piel_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia pulmonar</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Pulmonar}}</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
   <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
@@ -620,66 +621,66 @@ tags will be replaced.-->
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de hígado</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Higado}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Higado_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de ganglios</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Ganglios}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Ganglios_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de Aspirado de Médula ósea</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Asp_Medula_Osea}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Asp_Medula_Osea_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de biopsia de médula ósea</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Biopsia_Medula_Osea}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Biopsia_Medula_Osea_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Persona
   atendida con procedimiento de punción lumbar</td>
   <td class=xl7112389 style='border-top:none;border-left:none'>Todas las edades</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6512389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Pers_ATD_Proc_Puncion_Lumbar}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_menor_20}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_20_29a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_30_39a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_40_49a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_50_59a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_60_69a}}</td>
+  <td class=xl6512389 style='border-top:none;border-left:none'>@{{ecr.Pers_ATD_Proc_Puncion_Lumbar_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl8112389 style='height:15.0pt;border-top:none'>&nbsp;</td>
@@ -729,12 +730,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de cuello uterino</td>
-  <td class=xl10412389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl11012389 style='border-left:none'>&nbsp;</td>
-  <td class=xl10412389 style='border-left:none'>&nbsp;</td>
+  <td class=xl10412389 style='border-left:none'>@{{ecr.Total_Cancer_Cuello_Uterino}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Cuello_Uterino_Estadio_01}}</td>
+  <td class=xl10012389 style='border-left:none'>@{{ecr.Cancer_Cuello_Uterino_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Cuello_Uterino_Estadio_03}}</td>
+  <td class=xl11012389 style='border-left:none'>@{{ecr.Cancer_Cuello_Uterino_Estadio_04}}</td>
+  <td class=xl10412389 style='border-left:none'>@{{ecr.Cancer_Cuello_Uterino_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -742,12 +743,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de mama</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Mama}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Mama_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Mama_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Mama_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Mama_Estadio_04}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Mama_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -755,12 +756,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de estómago</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Estomago}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Estomago_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Estomago_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Estomago_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Estomago_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Estomago_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -768,12 +769,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de próstata</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Prostata}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Prostata_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Prostata_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Prostata_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Prostata_Estadio_04}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Prostata_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -781,12 +782,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de pulmón</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Pulmon}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Pulmon_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Pulmon_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Pulmon_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Pulmon_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Pulmon_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -794,12 +795,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de colon y recto</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Colon_Recto}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Colon_Recto_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Colon_Recto_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Colon_Recto_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Colon_Recto_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Colon_Recto_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -807,36 +808,36 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de hígado</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Higado}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Higado_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Higado_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Higado_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Higado_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Higado_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Leucemia</td>
-  <td class=xl11112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl11112389 style='border-top:none;border-left:none'>@{{ecr.Total_Leucemia}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Leucemia_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Leucemia_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Leucemia_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Leucemia_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Leucemia_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Linforma</td>
-  <td class=xl11112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl11112389 style='border-top:none;border-left:none'>@{{ecr.Total_Linforma}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Linforma_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Linforma_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Linforma_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Linforma_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Linforma_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -844,12 +845,12 @@ tags will be replaced.-->
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Cáncer
   de piel</td>
-  <td class=xl11112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl10112389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl7012389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl11112389 style='border-top:none;border-left:none'>@{{ecr.Total_Cancer_Piel}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Piel_Estadio_01}}</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Piel_Estadio_02}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Piel_Estadio_03}}</td>
+  <td class=xl10112389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Piel_Estadio_04}}</td>
+  <td class=xl7012389 style='border-top:none;border-left:none'>@{{ecr.Cancer_Piel_TRATAMIENTO}}</td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
   <td class=xl1512389></td>
@@ -895,27 +896,27 @@ tags will be replaced.-->
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Consejería
   preventiva en factores de riesgo para el cáncer</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Consejería</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6712389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_Consejeria_PFR_Cancer}}</td>
+  <td class=xl6712389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_menor_20}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_20_29a}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_30_39a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_40_49a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_50_59a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_60_69a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_PFR_Cancer_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Consejería
   para pacientes diagnosticados con cáncer</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Consejería</td>
-  <td class=xl11212389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6712389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl11212389 style='border-top:none;border-left:none'>@{{ecr.Total_Consejeria_Pacientes_DX_Cancer}}</td>
+  <td class=xl6712389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_menor_20}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_20_29a}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_30_39a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_40_49a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_50_59a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_60_69a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Consejeria_Pacientes_DX_Cancer_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl8112389 style='height:15.0pt;border-top:none'>&nbsp;</td>
@@ -945,27 +946,27 @@ tags will be replaced.-->
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Atención
   con cuidados paliativos en el establecimiento de salud</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Atención</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6712389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_ATC_Cuidados_Paliativos_EESS}}</td>
+  <td class=xl6712389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_menor_20}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_20_29a}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_30_39a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_40_49a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_50_59a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_60_69a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_EESS_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl12312389 style='height:15.0pt;border-top:none'>Atención
   con cuidados paliativos en el domicilio</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Atención</td>
-  <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6712389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10012389 style='border-top:none;border-left:none'>@{{ecr.Total_ATC_Cuidados_Paliativos_Domicilio}}</td>
+  <td class=xl6712389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_menor_20}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_20_29a}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_30_39a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_40_49a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_50_59a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_60_69a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.ATC_Cuidados_Paliativos_Domicilio_70a_Mas}}</td>
  </tr>
  <tr height=20 style='mso-height-source:userset;height:15.0pt'>
   <td height=20 class=xl8112389 style='height:15.0pt;border-top:none'>&nbsp;</td>
@@ -996,13 +997,13 @@ tags will be replaced.-->
   examinada con papanicolaou</td>
   <td class=xl7012389 style='border-top:none;border-left:none'>Atención</td>
   <td class=xl10012389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6712389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6812389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
-  <td class=xl6912389 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6712389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_menor_20}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_20_29a}}</td>
+  <td class=xl6812389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_30_39a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_40_49a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_50_59a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_60_69a}}</td>
+  <td class=xl6912389 style='border-top:none;border-left:none'>@{{ecr.Toma_PaP_70a_Mas}}</td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
