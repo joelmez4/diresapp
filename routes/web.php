@@ -66,6 +66,10 @@ Route::get('/inmunizaciones', function () {
   return view('indicadores.inmunizaciones');
 });
 
+//Indicadores: Anemia
+Route::get('anemia/{name}', 'Indicadores\AnemiaController@index');
+Route::get('anemia/{name}/get', 'Indicadores\AnemiaController@getIndicador');
+
 
 // Indicador: Permanencia Personal
 Route::get('indicadores/permanencia-personal', 'Indicadores\AdminProfilaxisAntiparasitariaController@personal');

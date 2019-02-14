@@ -122,7 +122,8 @@
                       <li>
                         <p class="menu-label">Programa Articulado Nutricional</p>
                         <ul>
-                            <li><a href="#">Comparación con el padrón nominal regional</a></li>
+                            <li><a :class="[ tab === 'anemiaSeguimiento' ? 'is-active' : '']" @click="tab='anemiaSeguimiento'" href="{{ url('/anemia/seguimiento') }}">Seguimiento Inf. HIS Anemia</a></li>
+                            <li><a :class="[ tab === 'anemiaDeficiencia' ? 'is-active' : '']" @click="tab='anemiaDeficiencia'" href="{{ url('/anemia/deficiencia') }}">Deficiencia de Hierro y Recuperado Menores 3 Años</a></li>
                         </ul>
                       </li>
                   </ul>
