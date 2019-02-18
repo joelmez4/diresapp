@@ -21,7 +21,7 @@
 
 @section('content')
 
-<div class="column is-9" id="app">
+<div class="column is-9" id="appDashboard">
 
 <section class="hero is-info welcome is-small">
     <div class="hero-body">
@@ -159,6 +159,11 @@
 <script src="{{ asset('public/highchart/js/drilldown.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" />
+
+<script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
+<script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>
+<script src="{{ asset('/public/js/indicadores/appDashboard.js') }}"></script>
+
 <script>
 Highcharts.setOptions({
   lang: {

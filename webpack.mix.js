@@ -22,6 +22,7 @@ let mix = require('laravel-mix');
   //  .sass('resources/assets/sass/app.scss', 'public/css');
 
    mix.js('resources/assets/js/app.js', 'public/js')
+       .js('resources/assets/js/indicadores/appDashboard.js', 'public/js/indicadores')
        .js('resources/assets/js/indicadores/appProfilaxis.js', 'public/js/indicadores')
        .js('resources/assets/js/indicadores/appMorbilidad.js', 'public/js/indicadores')
        .js('resources/assets/js/indicadores/appOcular.js', 'public/js/indicadores')

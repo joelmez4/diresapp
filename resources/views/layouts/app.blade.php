@@ -122,6 +122,7 @@
                       <li>
                         <p class="menu-label">Programa Articulado Nutricional</p>
                         <ul>
+                            <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Dashboard</a></li>
                             <li><a :class="[ tab === 'anemiaSeguimiento' ? 'is-active' : '']" @click="tab='anemiaSeguimiento'" href="{{ url('/anemia/seguimiento') }}">Seguimiento Inf. HIS Anemia</a></li>
                             <li><a :class="[ tab === 'anemiaDeficiencia' ? 'is-active' : '']" @click="tab='anemiaDeficiencia'" href="{{ url('/anemia/deficiencia') }}">Deficiencia de Hierro y Recuperado Menores 3 Años</a></li>
                         </ul>
