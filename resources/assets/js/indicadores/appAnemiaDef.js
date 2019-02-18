@@ -5,12 +5,12 @@ Vue.component('v-select', vSelect)
 var vm2 = new Vue({
 	el: '#vm2',
   data: {
-    tab: 'anemiaSeguimiento'
+    tab: 'anemiaDeficiencia'
   }
 });
 
 const appOcular = new Vue({
-  el: '#appAnemiaSeg',
+  el: '#appAnemiaDef',
 
   data: {
 
@@ -123,7 +123,7 @@ const appOcular = new Vue({
 
       data = JSON.stringify(data);
 
-      axios.get(base_url+'/anemia/seguimiento/get', {
+      axios.get(base_url+'/anemia/deficiencia/get', {
         params: {
           data: data
         }
@@ -253,62 +253,73 @@ var chart;
 var options;
 function drawChart(data) {
   options  = {
-		chart: {
-		        type: 'pie',
-		        renderTo: 'container',
-		        plotBackgroundColor: null,
-		        plotBorderWidth: null,
-		        plotShadow: false
-		    },
-		    title: {
-		        text: 'Seguimiento Información HIS Anemia'
-		    },
-				subtitle: {
-		        text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
-		    },
-		    credits: {
-		        enabled: false
-		    },
-		    tooltip: {
-		        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-		    },
-		    plotOptions: {
-		        pie: {
-		            allowPointSelect: true,
-		            cursor: 'pointer',
-		            dataLabels: {
-		                enabled: true,
-		                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-		                style: {
-		                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-		                }
-		            }
-		        }
-		    },
-				// colors: ["#FFFF00","#ffa500","#ff0000","#444"],
-		    series: [{
-		        name: 'Anemia',
-		        colorByPoint: true,
-		        data: [{
-		            name: 'Leve',
-		            y: data.lev,
-		            sliced: true,
-		            selected: true,
-								color: '#FFFF00'
-		        }, {
-		            name: 'Moderado',
-		            y: data.mod,
-								color: '#ffa500'
-		        }, {
-		            name: 'Severo o Grave',
-		            y: data.sev,
-								color: '#ff0000'
-		        }, {
-		            name: 'Sin especificar',
-		            y: data.null,
-								color: '#444'
-		        }]
-		    }]
+    chart: {
+        type: 'cylinder',
+        renderTo: 'container',
+        options3d: {
+            enabled: true,
+            alpha: 15,
+            beta: 15,
+            depth: 50,
+            viewDistance: 25
+        }
+    },
+    title: {
+        text: 'Deficiencia de Hierro y Recuperado Menores 3 Años'
+    },
+    subtitle: {
+        text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
+    },
+    xAxis: {
+        categories: ['', 'Diresa'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Atenciones',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    plotOptions: {
+    		bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{
+        data: [data.anemia_por_deficiencia_de_hierro_menor_3a],
+        name: 'Anemia por Deficiencia de Hierro',
+        showInLegend: true
+    },{
+        data: [data.anemia_recuperado_menor_3a],
+        name: 'Anemia Recuperado',
+        showInLegend: true
+    },{
+        data: [data.sin_anemia_menor_3A],
+        name: 'Sin Anemia',
+        showInLegend: true
+    }]
   };
   //options.series[0].name = val;
   chart = new Highcharts.Chart(options);

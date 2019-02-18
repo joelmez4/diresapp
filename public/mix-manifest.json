@@ -4,6 +4,7 @@
     "/js/indicadores/appMorbilidad.js": "/js/indicadores/appMorbilidad.js",
     "/js/indicadores/appCancer.js": "/js/indicadores/appCancer.js",
     "/js/indicadores/appAnemiaSeg.js": "/js/indicadores/appAnemiaSeg.js",
+    "/js/indicadores/appAnemiaDef.js": "/js/indicadores/appAnemiaDef.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/indicadores/appInmunizaciones.js": "/js/indicadores/appInmunizaciones.js"
