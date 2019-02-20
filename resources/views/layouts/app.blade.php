@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
       <link rel="stylesheet" type="text/css" href="{{ asset('public/css/admin.css') }}">
 
-      <!-- <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script> -->
+      <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
       <style media="screen">
         .navbar-item img {
