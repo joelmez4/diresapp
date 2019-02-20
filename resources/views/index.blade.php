@@ -11,10 +11,31 @@
 <!-- <script src="{{ asset('public/highchart/tb/responsive.js') }}"></script>
 <script src="{{ asset('public/highchart/tb/bootstrap.min.js') }}"></script> -->
 
+
 <style media="screen">
-.events-card .card-table {
+
+/* .events-card .card-table {
   max-height: none;
-}
+} */
+
+#iseqchart	{
+	border:1px solid #000;
+	border-collapse:collapse;
+	font-family:Arial, Sans-Serif;
+	font-size:12px;
+	text-align:right;
+	}
+
+#iseqchart th	{
+	border:1px solid #333;
+	padding:3px 6px;
+	}
+
+#iseqchart td	{
+	border:1px solid #999;
+	padding:3px 6px;
+	}
+
 </style>
 
 @endsection
@@ -27,113 +48,298 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Indicadores
+                Dashboard
             </h1>
             <h2 class="subtitle">
-                DIRESA
+                Anemia
             </h2>
         </div>
     </div>
 </section>
+<br>
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+
+        <form v-on:submit.prevent="getResult">
+
+        <div class="field is-horizontal">
+          <div class="field-label is-small">
+            <label class="label">
+              Redes:
+              <input type="radio" id="one" name="picked" value="red" v-model="picked" v-on:change="selectQuery">
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedRed" v-on:change="microRedes" v-bind:disabled="cmbRedes" required>
+                      <option value="" disabled selected>Selecciona Red</option>
+                      <option v-for="red in redes" v-bind:value="red.cod_red">@{{red.desc_red}}</option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedMred" v-on:change="establecByRedes" v-bind:disabled="cmbMredes">
+                      <option value="" disabled selected>Selecciona Micro Red</option>
+                      <option v-for="mred in mredes" v-bind:value="mred.cod_mic">@{{mred.desc_micro}}</option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedEstablecRed" v-bind:disabled="cmbEstablecRed">
+                      <option value="" disabled selected>Seleccionar Establecimiento</option>
+                      <option v-for="establecRed in establecRedes" v-bind:value="establecRed.cod_2000">@{{establecRed.desc_estab}}</option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-small">
+            <label class="label">
+              Provincias:
+              <input type="radio" id="two" name="picked" value="provincia" v-model="picked" v-on:change="selectQuery">
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedProvincia" v-on:change="distrito" v-bind:disabled="cmbProvincias" required>
+                      <option value="" disabled selected>Selecciona Provincia</option>
+                      <option v-for="provincia in provincias" v-bind:value="provincia.cod_prov">@{{provincia.desc_prov}}</option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedDistrito" v-on:change="establecByProvincias" v-bind:disabled="cmbDistritos">
+                    <option value="" disabled selected>Selecciona Distrito</option>
+                    <option v-for="distrito in distritos" v-bind:value="distrito.cod_dist" v-text="distrito.desc_dist"></option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <span class="select is-fullwidth is-small">
+                  <select v-model="selectedEstablecProv" v-bind:disabled="cmbEstablecProv">
+                      <option value="" disabled selected>Seleccionar Establecimiento</option>
+                      <option v-for="establecProvincia in establecProvincias" v-bind:value="establecProvincia.cod_2000">@{{establecProvincia.desc_estab}}</option>
+                  </select>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">
+              Establec:
+              <input type="radio" id="two" name="picked" value="establecimiento" v-model="picked" v-on:change="selectQuery">
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded">
+                <v-select v-model="selectedEstablec" :options="loadEstablec" v-bind:disabled="cmbEstablec">
+                  <span slot="no-options">
+                    No se encontró establecimiento.
+                  </span>
+                </v-select>
+              </p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="field is-horizontal">
+          <!-- <div class="field-label"></div> -->
+          <div class="field-label is-small">
+            <label class="label">Periodo: </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input is-small" name="startDate" type="date" v-model="startDate" placeholder="Fecha Inicio" min="2017-01-01" :max="maxDate" required>
+                <span class="icon is-small is-left">
+                  <i class="far fa-calendar-alt"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input class="input is-small" name="endDate" type="date" v-model="endDate" placeholder="Fecha Fin" min="2017-01-01" :max="maxDate" required>
+                <span class="icon is-small is-left">
+                  <i class="far fa-calendar-alt"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <!-- Left empty for spacing -->
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <button type="submit" class="button is-primary is-fullwidth is-small" v-on:click="">
+                  <span class="icon"><i class="fa fa-search"></i></span>
+                  <span>Procesar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      <br>
+        <div v-if="flag == false" class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <i class="fas fa-spinner fa-spin fa-2x"></i>
+            <span>Cargando...</span>
+          </p>
+        </div>
+
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">Pos</abbr></th>
+              <th>Red Salud</th>
+              <th><abbr title="Anemia">Anemia</abbr></th>
+              <th><abbr title="Anemia Leve">Anemia Leve</abbr></th>
+              <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
+              <th><abbr title="Anemia Severa">Anemia Severa</abbr></th>
+              <th><abbr title="Normal">Normal</abbr></th>
+              <th><abbr title="Tamizados">Tamizados</abbr></th>
+              <th><abbr title="Total Anemia">Total Anemia</abbr></th>
+              <th><abbr title="Prevalencia">Prevalencia</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">ANTABAMBA</a> <strong>(C)</strong>
+              </td>
+              <td>38</td>
+              <td>23</td>
+              <td>12</td>
+              <td>3</td>
+              <td>68</td>
+              <td>36</td>
+              <td>+32</td>
+              <td>81</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- <div v-if="flag == true" class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <a class="button is-primary" v-on:click="reporteSaludOcular">
+              Ver Reporte
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-info" href="atencionRecienNacido/exportarpdf">
+              <span>Descargar</span>
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+            </a>
+          </p>
+        </div> -->
+
+      </div>
+    </div>
+  </article>
+</div>
+
 <section class="info-tiles">
     <div class="tile is-ancestor has-text-centered">
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">439k</p>
-                <p class="subtitle">Users</p>
+                <p class="title">39k</p>
+                <p class="subtitle">Padron Nominal</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">59k</p>
-                <p class="subtitle">Products</p>
+                <p class="title">5k</p>
+                <p class="subtitle">Tamizados</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
                 <p class="title">3.4k</p>
-                <p class="subtitle">Open Orders</p>
+                <p class="subtitle">Total Anemia</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">19</p>
-                <p class="subtitle">Exceptions</p>
+                <p class="title">19%</p>
+                <p class="subtitle">Prevalencia</p>
             </article>
         </div>
     </div>
 </section>
-<div class="columns">
-    <div class="column is-7">
-        <div class="card events-card">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Mapa
-                </p>
-            </header>
-            <div class="card-table">
-                <div class="content">
-                  <!-- draw maps (Perú) -->
-                  <div id="container"></div>
-                </div>
-            </div>
-            <footer class="card-footer">
-                <a href="#" class="card-footer-item">Ver más</a>
-            </footer>
-        </div>
+
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+
+        <!-- draw maps (Perú) -->
+        <div id="container"></div>
+
+      </div>
     </div>
-    <div class="column is-5">
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Inventory Search
-                </p>
-                <a href="#" class="card-header-icon" aria-label="more options">
-                  <span class="icon">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-            </header>
-            <div class="card-content">
-                <div class="content">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-large" type="text" placeholder="">
-                        <span class="icon is-medium is-left">
-                          <i class="fa fa-search"></i>
-                        </span>
-                        <span class="icon is-medium is-right">
-                          <i class="fa fa-check"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">
-                    User Search
-                </p>
-                <a href="#" class="card-header-icon" aria-label="more options">
-                  <span class="icon">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-            </header>
-            <div class="card-content">
-                <div class="content">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-large" type="text" placeholder="">
-                        <span class="icon is-medium is-left">
-                          <i class="fa fa-search"></i>
-                        </span>
-                        <span class="icon is-medium is-right">
-                          <i class="fa fa-check"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </article>
+</div>
+
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+
+        <!-- draw maps (Perú) -->
+        <div id="container2"></div>
+
+      </div>
     </div>
+  </article>
 </div>
 
 </div>
@@ -149,16 +355,22 @@
 @endsection
 
 @section('custom-js')
+
 <script src="{{ asset('public/highchart/js/jquery-1.10.2.min.js') }}"></script>
-<script src="{{ asset('public/highchart/js/highmaps.js') }}"></script>
-<script src="{{ asset('public/highchart/js/highcharts.js') }} "></script>
-<script src="{{ asset('public/highchart/js/exporting.js') }} "></script>
-<script src="{{ asset('public/highchart/js/modulos/exporting.js') }}"></script>
+<script src="{{ asset('node_modules/highcharts/highmaps.js') }} "></script>
+
+<script src="{{ asset('node_modules/highcharts/highcharts.js') }} "></script>
+<!-- <script src="{{ asset('node_modules/highcharts/modules/series-label.js') }} "></script> -->
+<script src="{{ asset('node_modules/highcharts/modules/exporting.js') }} "></script>
+<script src="{{ asset('node_modules/highcharts/modules/export-data.js') }}"></script>
+<script src="{{ asset('node_modules/highcharts/modules/drilldown.js') }}"></script>
+
+<!-- Mapa de Apurímac -->
 <script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
 <script src="{{ asset('public/highchart/js/mapa.js') }}"></script>
-<script src="{{ asset('public/highchart/js/drilldown.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" />
+<!-- <link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" /> -->
+
 
 <script src="{{ url('/node_modules/axios/dist/axios.min.js') }}"></script>
 <script src="{{ url('/node_modules/vue/dist/vue.min.js') }}"></script>

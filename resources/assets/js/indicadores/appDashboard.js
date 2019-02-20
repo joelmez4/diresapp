@@ -33,7 +33,7 @@ const appOcular = new Vue({
     selectedEstablec: {id: null, label: null},
 
     //Form Kind of query
-    picked: 'establecimiento',
+    picked: 'red',
 
     selectedRed: null,
     selectedMred: null,
@@ -62,13 +62,13 @@ const appOcular = new Vue({
     //axios.get('redes').then(response => this.redes = response.data);
 
     // Establecimientos | default selected
-    this.cmbRedes = true;
-    this.cmbMredes = true;
-		this.cmbEstablecRed = true;
+    this.cmbRedes = false;
+    this.cmbMredes = false;
+		this.cmbEstablecRed = false;
     this.cmbProvincias = true;
     this.cmbDistritos = true;
 		this.cmbEstablecProv = true;
-    this.cmbEstablec = false;
+    this.cmbEstablec = true;
 
     // Current Date minus one month
     var currentDate = new Date(new Date().toISOString().substr(0, 10));
@@ -92,6 +92,8 @@ const appOcular = new Vue({
      axios.get(base_url+'/redes').then(response => this.redes = response.data);
 
      axios.get(base_url+'/provincias').then(response => this.provincias = response.data);
+
+		 drawChart("joe");
 
   },
 
@@ -253,15 +255,21 @@ var chart;
 var options;
 function drawChart(data) {
   options  = {
-    chart: {
-        type: 'column',
-        renderTo: 'container',
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false
+		// chart: {
+    //     type: 'column',
+    //     renderTo: 'container2',
+    //     plotBackgroundColor: null,
+    //     plotBorderWidth: null,
+    //     plotShadow: false
+    // },
+
+
+		chart: {
+        type: 'line',
+				renderTo: 'container2',
     },
-    title: {
-        text: 'Morbilidad por Consulta Externa'
+		title: {
+        text: 'NIÑOS MENORES DE 3 AÑOS CON ANEMIA'
     },
     subtitle: {
         text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
@@ -270,129 +278,40 @@ function drawChart(data) {
         enabled: false
     },
     xAxis: {
-        categories: [
-            '',
-            'Dosis B'
-            // 'Mar',
-            // 'Abr',
-            // 'May',
-            // 'Jun',
-            // 'Jul',
-            // 'Aug',
-            // 'Sep',
-            // 'Oct',
-            // 'Nov',
-            // 'Dec'
-        ],
-        crosshair: true
+        categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dec']
     },
     yAxis: {
-        min: 0,
         title: {
-            text: 'Atención'
+            text: 'Prevalencia (%)'
         }
     },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    // plotOptions: {
-    //     column: {
-    //         pointPadding: 0.2,
-    //         borderWidth: 0
-    //     }
-    // },
-
     plotOptions: {
-          series: {
-              cursor: 'pointer',
-              point: {
-                  events: {
-                      click: function () {
-                          //alert('Category: ' + this.category + ', value: ' + this.y);
-                      }
-                  }
-              },
-
-              borderWidth: 0,
-              dataLabels: {
-                  enabled: false,
-                  format: '{point.y:.1f}%'
-              }
-          }
-      },
-    // series: [{
-    //     name: 'Abancay',
-    //     data: [{ y: 40, drilldown: 'abancay' },{ y: 52, drilldown: 'abancay2' }]
-    // }, {
-    //     name: 'Andahuaylas',
-    //     data: [83.6, 78.8],
-    //
-    // }, {
-    //     name: 'Antabamba',
-    //     data: [48.9, 38.8]
-    //
-    // }, {
-    //     name: 'Aymaraes',
-    //     data: [42.4, 33.2]
-    //
-    // }, {
-    //     name: 'Cotabamba',
-    //     data: [42.4, 33.2]
-    //
-    // }, {
-    //     name: 'Chincheros',
-    //     data: [42.4, 33.2]
-    //
-    // }, {
-    //     name: 'Grau',
-    //     data: [42.4, 33.2]
-    //
-    // }],
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
     series: [{
-        name: "0-11a Niño",
-        data: [data.morb_0_11a_nino]
+        name: 'Abancay',
+        data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
     }, {
-        name: "12-17a Adolescente",
-        data: [data.morb_12_17a_adolescente]
+        name: 'Andahuaylas',
+        data: [13.9, 14.2, 15.7, 18.5, 111.9, 115.2, 117.0, 116.6, 114.2, 110.3, 16.6, 14.8]
     }, {
-        name: "18-29a Joven",
-        data: [data.morb_18_29a_joven]
+        name: 'Abancay',
+        data: [27.0, 26.9, 29.5, 214.5, 218.4, 221.5, 225.2, 226.5, 223.3, 218.3, 213.9, 29.6]
     }, {
-        name: "30-59a Adulto",
-        data: [data.morb_30_59a_adulto]
+        name: 'Andahuaylas',
+        data: [33.9, 34.2, 35.7, 38.5, 311.9, 315.2, 317.0, 316.6, 314.2, 310.3, 36.6, 34.8]
     }, {
-        name: "60a+ Adulto Mayor",
-        data: [data.morb_60a_a_mas_adulto_mayor]
+        name: 'Abancay',
+        data: [47.0, 46.9, 49.5, 414.5, 418.4, 421.5, 425.2, 426.5, 423.3, 418.3, 413.9, 49.6]
     }, {
-        name: "Materna",
-        data: [data.morb_materna]
-    }],
-
-    drilldown : {
-            series: [{
-                  name: 'Abancay',
-                  id: 'abancay',
-                  data: [
-                      [ 'data A', 24.13 ],
-                      [ 'data B', 17.2 ],
-                      [ 'data C', 8.11 ],
-                      [ 'data D', 5.33 ]
-                  ]
-              },{
-                    name: 'Test Drilldown',
-                    id: 'abancay2',
-                    data: [
-                        [ 'data A', 24.13 ],
-                        [ 'data B', 17.2 ],
-                        [ 'data C', 8.11 ]
-                    ]
-                }]
-          }
+        name: 'Andahuaylas',
+        data: [53.9, 54.2, 55.7, 58.5, 511.9, 515.2, 517.0, 516.6, 514.2, 510.3, 56.6, 54.8]
+    }]
   };
   //options.series[0].name = val;
   chart = new Highcharts.Chart(options);

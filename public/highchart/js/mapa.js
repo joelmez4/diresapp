@@ -69,18 +69,18 @@ Highcharts.setOptions({
 // mapa = $('#container').highcharts('Map', {
 mapa = new Highcharts.Map({
                 chart: {
-                    width: 520,
-                    height: 500,
-                      events: {
-
-                      },
+                    // width: 520,
+                    // height: 500,
+                    //   events: {
+                    //
+                    //   },
                     renderTo: 'container'
                 },
                   title: {
-                      text: 'Apurimac'
+                      text: 'NIÑOS MENORES DE 03 AÑOS CON ANEMIA'
                   },
                   subtitle: {
-                      text: 'Fuente: Diresa Apurímac'
+                      text: 'Fuente: "SIEN" DIRESA APURIMAC'
                   },
                   credits: {
                       enabled: false
@@ -122,7 +122,7 @@ mapa = new Highcharts.Map({
                           },
 
                           dataLabels: {
-                              enabled: false,
+                              enabled: true,
                               format: '{point.name}'
                               //format: '{point.properties.postal-code}'
                           }
@@ -204,8 +204,8 @@ mapa = new Highcharts.Map({
                       drillUpButton: {
                           relativeTo: 'spacingBox',
                           position: {
-                              x: 0,
-                              y: 460
+                              //x: 0,
+                              y: 350
                           }
                       }
                   }
