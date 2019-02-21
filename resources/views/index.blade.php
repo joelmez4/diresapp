@@ -48,10 +48,10 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Dashboard
+              Anemia Niños
             </h1>
             <h2 class="subtitle">
-                Anemia
+                Indicadores
             </h2>
         </div>
     </div>
@@ -164,6 +164,27 @@
           </div>
         </div>
 
+        <div class="field is-horizontal">
+          <div class="field-label is-small">
+            <label class="label">
+              Edad:
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <div class="select is-fullwidth is-small">
+                  <select>
+                    <option>Niños menores de 5 años con anemia</option>
+                    <option>Niños menores de 3 años con anemia</option>
+                    <option>Niños menores de 1 año con anemia</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">
@@ -216,7 +237,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <button type="submit" class="button is-primary is-fullwidth is-small" v-on:click="">
+                <button type="submit" class="button is-primary is-fullwidth is-small" v-on:click="" :disabled="flag == false ? true : false">
                   <span class="icon"><i class="fa fa-search"></i></span>
                   <span>Procesar</span>
                 </button>
