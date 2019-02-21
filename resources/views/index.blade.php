@@ -244,7 +244,7 @@
               <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
               <th><abbr title="Anemia Severa">Anemia Severa</abbr></th>
               <th><abbr title="Normal">Normal</abbr></th>
-              <th><abbr title="Tamizados">Tamizados</abbr></th>
+              <th><abbr title="Tamizados">Total Tamizados</abbr></th>
               <th><abbr title="Total Anemia">Total Anemia</abbr></th>
               <th><abbr title="Prevalencia">Prevalencia</abbr></th>
             </tr>
@@ -252,16 +252,29 @@
           <tbody>
             <tr>
               <th>1</th>
-              <td><a href="#" title="Antabamba">ANTABAMBA</a> <strong>(C)</strong>
+              <td>
+                <strong><a href="#" title="Antabamba">@{{dataAN.red_desc}}</a></strong>
               </td>
-              <td>38</td>
-              <td>23</td>
-              <td>12</td>
-              <td>3</td>
-              <td>68</td>
-              <td>36</td>
-              <td>+32</td>
-              <td>81</td>
+              <td>
+                <a class="button is-text is-small" id="anemia" @click="detalles('anemia')">@{{dataAN.sum_anemia}}</a>
+              </td>
+              <td>
+                <a class="button is-text is-small" id="leve" @click="detalles('leve')">@{{dataAN.sum_leve}}</a>
+              </td>
+              <td>
+                <a class="button is-text is-small" id="moderada" @click="detalles('moderada')">@{{dataAN.sum_moderada}}</a>
+              </td>
+              <td>
+                <a class="button is-text is-small" id="severa" @click="detalles('severa')">@{{dataAN.sum_severa}}</a>
+                <!-- <button class="button is-link is-small" id="button" @click="detalles('severa')">Ver</button> -->
+              </td>
+              <td>
+                <a class="button is-text is-small" id="normal" @click="detalles('normal')">@{{dataAN.sum_normal}}</a>
+              </td>
+
+              <td>@{{dataAN.total_tamizados}}</td>
+              <td>@{{dataAN.total_anemia}}</td>
+              <td>@{{dataAN.prevalencia}} %</td>
             </tr>
           </tbody>
         </table>
@@ -297,19 +310,19 @@
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">5k</p>
-                <p class="subtitle">Tamizados</p>
+                <p class="title">@{{dataAN.total_tamizados}}</p>
+                <p class="subtitle">Total Tamizados</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">3.4k</p>
+                <p class="title">@{{dataAN.total_anemia}}</p>
                 <p class="subtitle">Total Anemia</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">19%</p>
+                <p class="title">@{{dataAN.prevalencia}} %</p>
                 <p class="subtitle">Prevalencia</p>
             </article>
         </div>
@@ -340,6 +353,95 @@
       </div>
     </div>
   </article>
+</div>
+
+<div class="modal" id="page-modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Detalles</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+      <div v-if="idAnemia === 'anemia'">
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Número">N°</abbr></th>
+              <th><abbr title="DNI">DNI</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(dni, index) in dataAN.data_anemia">
+              <td>@{{index + 1}}</td>
+              <td>@{{dni}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div v-if="idAnemia === 'leve'">
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">DNI</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="dni in dataAN.data_leve">
+              <td>@{{dni}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div v-if="idAnemia === 'moderada'">
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">DNI</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="dni in dataAN.data_moderada">
+              <td>@{{dni}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div v-if="idAnemia === 'severa'">
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">DNI</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="dni in dataAN.data_severa">
+              <td>@{{dni}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div v-if="idAnemia === 'normal'">
+        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">DNI</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="dni in dataAN.data_normal">
+              <td>@{{dni}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <!-- <button class="button is-success cerrar">Save changes</button> -->
+      <button class="button cerrar">Cerrar</button>
+    </footer>
+  </div>
 </div>
 
 </div>

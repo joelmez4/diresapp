@@ -14,7 +14,8 @@ const appOcular = new Vue({
 
   data: {
 
-		dataOcular: [],
+		dataAN: [],
+		idAnemia: null,
 
     flag: null,
 
@@ -125,7 +126,7 @@ const appOcular = new Vue({
 
       data = JSON.stringify(data);
 
-      axios.get(base_url+'/ocular/get', {
+      axios.get(base_url+'/anemia/nino/get', {
         params: {
           data: data
         }
@@ -136,7 +137,7 @@ const appOcular = new Vue({
           }
 
           console.log(response.data);
-					this.dataOcular = response.data;
+					this.dataAN = response.data;
           // drawChart(response.data);
 
        }.bind(this))
@@ -148,12 +149,18 @@ const appOcular = new Vue({
 
     },
 
+		detalles: function (value) {
+
+			this.idAnemia = value;
+
+		},
+
 		reporteSaludOcular: function (event) {
 
-      console.log(this.dataOcular);
+      console.log(this.dataAN);
 
       var thisIsAnObject = {
-        data: this.dataOcular,
+        data: this.dataAN,
         startDate: this.startDate,
         endDate: this.endDate,
         selectedRed: this.selectedRed,
@@ -163,7 +170,7 @@ const appOcular = new Vue({
       };
 
       var w = window.open(base_url+"/ocular/reporte");
-	      w.dataOcular = thisIsAnObject;
+	      w.dataAN = thisIsAnObject;
 
 		},
 
@@ -320,3 +327,38 @@ function drawChart(data) {
 //
 //
 // });
+
+
+//modal
+var link = [
+							document.getElementById('anemia'),
+							document.getElementById('leve'),
+							document.getElementById('moderada'),
+							document.getElementById('severa'),
+							document.getElementById('normal')
+							];
+
+var modal = document.getElementById('page-modal');
+var close = document.getElementsByClassName('delete')[0];
+var closeButton = document.getElementsByClassName('cerrar')[0];
+
+link.forEach(function(value, index, array) {
+	link[index].onclick = function() {
+		modal.style.display = 'block';
+	}
+});
+
+
+close.onclick = function() {
+	modal.style.display = 'none';
+}
+
+closeButton.onclick = function() {
+	modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+	if(event.target.className == 'modal-background') {
+		modal.style.display = 'none';
+	}
+}

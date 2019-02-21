@@ -41,7 +41,74 @@ class AnemiaController extends Controller
     {
       $data = json_decode($_GET['data'], true);
 
-      if ($name == 'seguimiento') {
+      if ($name == 'nino') {
+
+        $results = DB::select('exec dbo.SP_ANEMIA_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['startDate'], $data['endDate']]);
+
+        $anemia = array(
+          "picked" => $data['picked'],
+          "red_cod" => $data['red'],
+          "mred_cod" => $data['mred'],
+          "establec_red_cod" => $data['establecRed'],
+          "provincia_cod" => $data['provincia'],
+          "distrito_cod" => $data['distrito'],
+          "establec_prov_cod" => $data['establecProv'],
+          "establecimiento_cod" => (int)$data['establecimiento'],
+          "start_date" => $data['startDate'],
+          "end_date" => $data['endDate'],
+
+          "red_desc" => null,
+          "mred_desc" => null,
+          "establec_red_desc" => null,
+          "prov_desc" => null,
+          "dist_desc" => null,
+          "establec_prov_desc" => null,
+
+          "sum_anemia" => 0,
+          "sum_leve" => 0,
+          "sum_moderada" => 0,
+          "sum_severa" => 0,
+          "sum_normal" => 0,
+
+          "data_anemia" => array(),
+          "data_leve" => array(),
+          "data_moderada" => array(),
+          "data_severa" => array(),
+          "data_normal" => array(),
+
+          "total_tamizados" => 0,
+          "total_anemia" => 0,
+          "prevalencia" => 0
+        );
+
+        //$anemia['red_desc'] = $results[0]->RED;
+
+        foreach ($results as $result) {
+          if ($result->Dx_Anemia === 'Anemia') {
+            $anemia['sum_anemia'] += 1;
+            array_push($anemia['data_anemia'], $result->DNI);
+          } elseif ($result->Dx_Anemia === 'Anemia Leve') {
+            $anemia['sum_leve'] += 1;
+            array_push($anemia['data_leve'], $result->DNI);
+          } elseif ($result->Dx_Anemia === 'Anemia Moderada') {
+            $anemia['sum_moderada'] += 1;
+            array_push($anemia['data_moderada'], $result->DNI);
+          } elseif ($result->Dx_Anemia === 'Anemia Severa') {
+            $anemia['sum_severa'] += 1;
+            array_push($anemia['data_severa'], $result->DNI);
+          } elseif ($result->Dx_Anemia === 'Normal') {
+            $anemia['sum_normal'] += 1;
+            array_push($anemia['data_normal'], $result->DNI);
+          }
+        }
+
+        $anemia['total_tamizados'] = count($results);
+        $anemia['total_anemia'] = $anemia['sum_anemia'] + $anemia['sum_leve'] + $anemia['sum_moderada'] + $anemia['sum_severa'];
+        $anemia['prevalencia'] = $anemia['total_tamizados'] != 0  ? round( ($anemia['total_anemia'] / $anemia['total_tamizados'])*100, 1) : 0;
+
+        return $anemia;
+
+      } elseif ($name == 'seguimiento') {
 
         $results = DB::select('exec dbo.SP_ANEMIA_SEGUIMIENTO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['startDate'], $data['endDate']]);
 
