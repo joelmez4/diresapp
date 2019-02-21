@@ -252,7 +252,7 @@
           <tbody>
             <tr>
               <th>1</th>
-              <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">ANTABAMBA</a> <strong>(C)</strong>
+              <td><a href="#" title="Antabamba">ANTABAMBA</a> <strong>(C)</strong>
               </td>
               <td>38</td>
               <td>23</td>
