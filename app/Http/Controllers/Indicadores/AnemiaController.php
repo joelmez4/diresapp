@@ -43,7 +43,7 @@ class AnemiaController extends Controller
 
       if ($name == 'nino') {
 
-        $results = DB::select('exec dbo.SP_ANEMIA_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['startDate'], $data['endDate']]);
+        $results = DB::select('exec dbo.SP_ANEMIA_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['edadNino'], $data['startDate'], $data['endDate']]);
 
         $anemia = array(
           "picked" => $data['picked'],
@@ -54,6 +54,7 @@ class AnemiaController extends Controller
           "distrito_cod" => $data['distrito'],
           "establec_prov_cod" => $data['establecProv'],
           "establecimiento_cod" => (int)$data['establecimiento'],
+          "edad_nino" => $data['edadNino'],
           "start_date" => $data['startDate'],
           "end_date" => $data['endDate'],
 
@@ -78,7 +79,8 @@ class AnemiaController extends Controller
 
           "total_tamizados" => 0,
           "total_anemia" => 0,
-          "prevalencia" => 0
+          "prevalencia" => 0,
+          "prevalencia_color" => null
         );
 
         //$anemia['red_desc'] = $results[0]->RED;
@@ -105,6 +107,17 @@ class AnemiaController extends Controller
         $anemia['total_tamizados'] = count($results);
         $anemia['total_anemia'] = $anemia['sum_anemia'] + $anemia['sum_leve'] + $anemia['sum_moderada'] + $anemia['sum_severa'];
         $anemia['prevalencia'] = $anemia['total_tamizados'] != 0  ? round( ($anemia['total_anemia'] / $anemia['total_tamizados'])*100, 1) : 0;
+
+
+        if ($anemia['prevalencia'] <= 4.9) {
+  				$anemia['prevalencia_color'] = 'green';
+  			} else if ($anemia['prevalencia'] >= 5.0 && $anemia['prevalencia'] <= 19.9) {
+  				$anemia['prevalencia_color'] = 'yellow';
+  			} else if ($anemia['prevalencia'] >= 20.0 && $anemia['prevalencia'] <= 39.9) {
+  				$anemia['prevalencia_color'] = '#FF6600';
+  			} else if ($anemia['prevalencia'] >= 40) {
+  				$anemia['prevalencia_color'] = 'red';
+  			}
 
         return $anemia;
 

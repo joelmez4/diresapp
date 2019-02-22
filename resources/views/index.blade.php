@@ -174,17 +174,16 @@
             <div class="field">
               <div class="control">
                 <div class="select is-fullwidth is-small">
-                  <select>
-                    <option>Niños menores de 5 años con anemia</option>
-                    <option>Niños menores de 3 años con anemia</option>
-                    <option>Niños menores de 1 año con anemia</option>
+                  <select v-model="edadNino" required>
+                    <option value="60">Niños menores de 5 años con anemia</option>
+                    <option value="36">Niños menores de 3 años con anemia</option>
+                    <option value="12">Niños menores de 1 año con anemia</option>
                   </select>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <!-- <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">
@@ -271,31 +270,31 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr v-for="da in dataAN">
               <th>1</th>
               <td>
-                <strong><a href="#" title="Antabamba">@{{dataAN.red_desc}}</a></strong>
+                <strong><a href="#" title="Antabamba">@{{da.red_desc}}</a></strong>
               </td>
               <td>
-                <a class="button is-text is-small" id="anemia" @click="detalles('anemia')">@{{dataAN.sum_anemia}}</a>
+                <a class="button is-text is-small" id="link-modal" @click="detalles('anemia')">@{{da.sum_anemia}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="leve" @click="detalles('leve')">@{{dataAN.sum_leve}}</a>
+                <a class="button is-text is-small" id="link-modal" @click="detalles('leve')">@{{da.sum_leve}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="moderada" @click="detalles('moderada')">@{{dataAN.sum_moderada}}</a>
+                <a class="button is-text is-small" id="link-modal" @click="detalles('moderada')">@{{da.sum_moderada}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="severa" @click="detalles('severa')">@{{dataAN.sum_severa}}</a>
+                <a class="button is-text is-small" id="link-modal" @click="detalles('severa')">@{{da.sum_severa}}</a>
                 <!-- <button class="button is-link is-small" id="button" @click="detalles('severa')">Ver</button> -->
               </td>
               <td>
-                <a class="button is-text is-small" id="normal" @click="detalles('normal')">@{{dataAN.sum_normal}}</a>
+                <a class="button is-text is-small" id="link-modal" @click="detalles('normal')">@{{da.sum_normal}}</a>
               </td>
 
-              <td>@{{dataAN.total_tamizados}}</td>
-              <td>@{{dataAN.total_anemia}}</td>
-              <td>@{{dataAN.prevalencia}} %</td>
+              <td>@{{da.total_tamizados}}</td>
+              <td>@{{da.total_anemia}}</td>
+              <td v-bind:style="{background: da.prevalencia_color}">@{{da.prevalencia}} %</td>
             </tr>
           </tbody>
         </table>

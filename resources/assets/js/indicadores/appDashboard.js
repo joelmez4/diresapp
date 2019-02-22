@@ -16,7 +16,8 @@ const appOcular = new Vue({
 
 		dataAN: [],
 		idAnemia: null,
-
+		edadNino: null,
+		
     flag: null,
 
     //Date
@@ -120,6 +121,7 @@ const appOcular = new Vue({
 
         establecimiento: this.selectedEstablec.id,
 
+				edadNino: this.edadNino,
         startDate: this.startDate,
         endDate: this.endDate
       };
@@ -136,8 +138,9 @@ const appOcular = new Vue({
             this.flag = true;
           }
 
-          console.log(response.data);
-					this.dataAN = response.data;
+          //console.log(response.data);
+					this.dataAN.push(response.data);
+					console.log(this.dataAN);
           // drawChart(response.data);
 
        }.bind(this))
@@ -330,24 +333,16 @@ function drawChart(data) {
 
 
 //modal
-var link = [
-							document.getElementById('anemia'),
-							document.getElementById('leve'),
-							document.getElementById('moderada'),
-							document.getElementById('severa'),
-							document.getElementById('normal')
-							];
+var link = document.getElementById('link-modal');
 
 var modal = document.getElementById('page-modal');
 var close = document.getElementsByClassName('delete')[0];
 var closeButton = document.getElementsByClassName('cerrar')[0];
 
-link.forEach(function(value, index, array) {
-	link[index].onclick = function() {
-		modal.style.display = 'block';
-	}
-});
 
+link.onclick = function() {
+	modal.style.display = 'block';
+}
 
 close.onclick = function() {
 	modal.style.display = 'none';
