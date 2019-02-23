@@ -11689,7 +11689,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         edadNino: null,
 
         flag: null,
-
+        isActive: false,
         //Date
         startDate: null,
         endDate: null,
@@ -11728,6 +11728,53 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         cmbDistritos: null,
         cmbEstablecProv: null,
         cmbEstablec: null
+    },
+
+    computed: {
+        totalAnemia: function totalAnemia() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_anemia;
+            }, 0);
+        },
+        totalLeve: function totalLeve() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_leve;
+            }, 0);
+        },
+        totalModerada: function totalModerada() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_moderada;
+            }, 0);
+        },
+        totalSevera: function totalSevera() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_severa;
+            }, 0);
+        },
+        totalNormal: function totalNormal() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_normal;
+            }, 0);
+        },
+        totalTamizados: function totalTamizados() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.total_tamizados;
+            }, 0);
+        },
+        allAnemia: function allAnemia() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.total_anemia;
+            }, 0);
+        },
+        totalPrevalencia: function totalPrevalencia() {
+
+            // this.dataAN.forEach(function(element) {
+            // 	console.log(element.prevalencia);
+            // 	element.prevalencia
+            // });
+
+            return (this.allAnemia / this.totalTamizados * 100).toFixed(1);
+        }
     },
 
     mounted: function mounted() {
@@ -11823,9 +11870,17 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         },
 
 
-        detalles: function detalles(value) {
+        detalles: function detalles(val) {
+            console.log(val);
+            this.idAnemia = val;
+        },
 
-            this.idAnemia = value;
+        launch: function launch(val) {
+            this.isActive = true;
+            this.detalles(val);
+        },
+        close: function close() {
+            this.isActive = false;
         },
 
         reporteSaludOcular: function reporteSaludOcular(event) {
@@ -12005,30 +12060,45 @@ function drawChart(data) {
 // });
 
 
-//modal
-var link = document.getElementById('link-modal');
+//Statics modals for bulma css ((byID))
 
-var modal = document.getElementById('page-modal');
-var close = document.getElementsByClassName('delete')[0];
-var closeButton = document.getElementsByClassName('cerrar')[0];
+// var link = document.getElementById('link-modal');
+//
+// var modal = document.getElementById('page-modal');
+// var close = document.getElementsByClassName('delete')[0];
+// var closeButton = document.getElementsByClassName('cerrar')[0];
+//
+//
+// link.onclick = function() {
+// 	modal.style.display = 'block';
+// }
+//
+// close.onclick = function() {
+// 	modal.style.display = 'none';
+// }
+//
+// closeButton.onclick = function() {
+// 	modal.style.display = 'none';
+// }
+//
+// window.onclick = function(event) {
+// 	if(event.target.className == 'modal-background') {
+// 		modal.style.display = 'none';
+// 	}
+// }
 
-link.onclick = function () {
-    modal.style.display = 'block';
-};
 
-close.onclick = function () {
-    modal.style.display = 'none';
-};
-
-closeButton.onclick = function () {
-    modal.style.display = 'none';
-};
-
-window.onclick = function (event) {
-    if (event.target.className == 'modal-background') {
-        modal.style.display = 'none';
-    }
-};
+//Dynamic modals for bulma css
+// var buttons = Array.from(document.getElementsByClassName('modal-button'));
+//
+// for (var i = 0; i < buttons.length; i++) {
+//   var button = buttons[i];
+//   var target = document.querySelector(button.dataset.target);
+//
+//   button.addEventListener("click", function(e) {
+//     target.classList.toggle('is-active');
+//   }, false);
+// }
 
 /***/ })
 /******/ ]);

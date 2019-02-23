@@ -17,9 +17,9 @@ const appOcular = new Vue({
 		dataAN: [],
 		idAnemia: null,
 		edadNino: null,
-		
-    flag: null,
 
+    flag: null,
+		isActive: false,
     //Date
     startDate: null,
     endDate: null,
@@ -58,6 +58,53 @@ const appOcular = new Vue({
     cmbDistritos: null,
 		cmbEstablecProv: null,
     cmbEstablec: null
+  },
+
+	computed: {
+		totalAnemia: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_anemia
+	    }, 0)
+		},
+		totalLeve: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_leve
+	    }, 0)
+		},
+		totalModerada: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_moderada
+	    }, 0)
+		},
+		totalSevera: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_severa
+	    }, 0)
+		},
+		totalNormal: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_normal
+	    }, 0)
+		},
+		totalTamizados: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.total_tamizados
+	    }, 0)
+		},
+		allAnemia: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.total_anemia
+	    }, 0)
+		},
+    totalPrevalencia: function () {
+
+			// this.dataAN.forEach(function(element) {
+			// 	console.log(element.prevalencia);
+			// 	element.prevalencia
+			// });
+
+			return ((this.allAnemia / this.totalTamizados) * 100).toFixed(1);
+    }
   },
 
   mounted () {
@@ -152,11 +199,19 @@ const appOcular = new Vue({
 
     },
 
-		detalles: function (value) {
-
-			this.idAnemia = value;
+		detalles: function (val) {
+			console.log(val);
+			this.idAnemia = val;
 
 		},
+
+		launch: function(val) {
+      this.isActive = true;
+			this.detalles(val)
+    },
+    close: function() {
+      this.isActive = false;
+    },
 
 		reporteSaludOcular: function (event) {
 
@@ -332,28 +387,42 @@ function drawChart(data) {
 // });
 
 
-//modal
-var link = document.getElementById('link-modal');
+//Statics modals for bulma css ((byID))
 
-var modal = document.getElementById('page-modal');
-var close = document.getElementsByClassName('delete')[0];
-var closeButton = document.getElementsByClassName('cerrar')[0];
+// var link = document.getElementById('link-modal');
+//
+// var modal = document.getElementById('page-modal');
+// var close = document.getElementsByClassName('delete')[0];
+// var closeButton = document.getElementsByClassName('cerrar')[0];
+//
+//
+// link.onclick = function() {
+// 	modal.style.display = 'block';
+// }
+//
+// close.onclick = function() {
+// 	modal.style.display = 'none';
+// }
+//
+// closeButton.onclick = function() {
+// 	modal.style.display = 'none';
+// }
+//
+// window.onclick = function(event) {
+// 	if(event.target.className == 'modal-background') {
+// 		modal.style.display = 'none';
+// 	}
+// }
 
 
-link.onclick = function() {
-	modal.style.display = 'block';
-}
-
-close.onclick = function() {
-	modal.style.display = 'none';
-}
-
-closeButton.onclick = function() {
-	modal.style.display = 'none';
-}
-
-window.onclick = function(event) {
-	if(event.target.className == 'modal-background') {
-		modal.style.display = 'none';
-	}
-}
+//Dynamic modals for bulma css
+// var buttons = Array.from(document.getElementsByClassName('modal-button'));
+//
+// for (var i = 0; i < buttons.length; i++) {
+//   var button = buttons[i];
+//   var target = document.querySelector(button.dataset.target);
+//
+//   button.addEventListener("click", function(e) {
+//     target.classList.toggle('is-active');
+//   }, false);
+// }

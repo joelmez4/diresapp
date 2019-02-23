@@ -11,7 +11,6 @@
 <!-- <script src="{{ asset('public/highchart/tb/responsive.js') }}"></script>
 <script src="{{ asset('public/highchart/tb/bootstrap.min.js') }}"></script> -->
 
-
 <style media="screen">
 
 /* .events-card .card-table {
@@ -257,8 +256,8 @@
         <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
           <thead>
             <tr>
-              <th><abbr title="Position">Pos</abbr></th>
-              <th>Red Salud</th>
+              <th><abbr title="Número">N°</abbr></th>
+              <th><abbr title="Selección">Red</abbr></th>
               <th><abbr title="Anemia">Anemia</abbr></th>
               <th><abbr title="Anemia Leve">Anemia Leve</abbr></th>
               <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
@@ -267,34 +266,67 @@
               <th><abbr title="Tamizados">Total Tamizados</abbr></th>
               <th><abbr title="Total Anemia">Total Anemia</abbr></th>
               <th><abbr title="Prevalencia">Prevalencia</abbr></th>
+              <th><abbr title="Edad">Edad</abbr></th>
+              <th><abbr title="Fecha">Fecha</abbr></th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="da in dataAN">
-              <th>1</th>
+            <tr v-for="(da,index) in dataAN">
+              <th>@{{index + 1}}</th>
               <td>
                 <strong><a href="#" title="Antabamba">@{{da.red_desc}}</a></strong>
               </td>
               <td>
-                <a class="button is-text is-small" id="link-modal" @click="detalles('anemia')">@{{da.sum_anemia}}</a>
+                <a class="button is-outlined is-small" @click="launch('anemia')">@{{da.sum_anemia}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="link-modal" @click="detalles('leve')">@{{da.sum_leve}}</a>
+                <a class="button is-outlined is-small" @click="launch('leve')">@{{da.sum_leve}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="link-modal" @click="detalles('moderada')">@{{da.sum_moderada}}</a>
+                <a class="button is-outlined is-small" @click="launch('moderada')">@{{da.sum_moderada}}</a>
               </td>
               <td>
-                <a class="button is-text is-small" id="link-modal" @click="detalles('severa')">@{{da.sum_severa}}</a>
+                <a class="button is-outlined is-small" @click="launch('severa')">@{{da.sum_severa}}</a>
                 <!-- <button class="button is-link is-small" id="button" @click="detalles('severa')">Ver</button> -->
               </td>
               <td>
-                <a class="button is-text is-small" id="link-modal" @click="detalles('normal')">@{{da.sum_normal}}</a>
+                <a class="button is-outlined is-small" @click="launch('normal')">@{{da.sum_normal}}</a>
               </td>
 
               <td>@{{da.total_tamizados}}</td>
               <td>@{{da.total_anemia}}</td>
               <td v-bind:style="{background: da.prevalencia_color}">@{{da.prevalencia}} %</td>
+              <td v-if="da.edad_nino == 60">< 5 años</td>
+              <td v-else-if="da.edad_nino == 36">< 3 años</td>
+              <td v-else-if="da.edad_nino == 12">< 1 año</td>
+              <td>@{{da.start_date}} <br> @{{da.end_date}}</td>
+            </tr>
+            <tr>
+              <th>#</th>
+              <td>
+                <strong><a href="#" title="Antabamba"></a></strong>
+              </td>
+              <td>
+                @{{totalAnemia}}
+              </td>
+              <td>
+                @{{totalLeve}}
+              </td>
+              <td>
+                @{{totalModerada}}
+              </td>
+              <td>
+                @{{totalSevera}}
+              </td>
+              <td>
+                @{{totalNormal}}
+              </td>
+
+              <td>@{{totalTamizados}}</td>
+              <td>@{{allAnemia}}</td>
+              <td>@{{totalPrevalencia}} % </td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -330,19 +362,19 @@
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">@{{dataAN.total_tamizados}}</p>
+                <p class="title">@{{totalTamizados}}</p>
                 <p class="subtitle">Total Tamizados</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">@{{dataAN.total_anemia}}</p>
+                <p class="title">@{{allAnemia}}</p>
                 <p class="subtitle">Total Anemia</p>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">@{{dataAN.prevalencia}} %</p>
+                <p class="title">@{{totalPrevalencia}} %</p>
                 <p class="subtitle">Prevalencia</p>
             </article>
         </div>
@@ -375,94 +407,113 @@
   </article>
 </div>
 
-<div class="modal" id="page-modal">
-  <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Detalles</p>
-      <button class="delete" aria-label="close"></button>
-    </header>
-    <section class="modal-card-body">
-      <!-- Content ... -->
-      <div v-if="idAnemia === 'anemia'">
-        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th><abbr title="Número">N°</abbr></th>
-              <th><abbr title="DNI">DNI</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(dni, index) in dataAN.data_anemia">
-              <td>@{{index + 1}}</td>
-              <td>@{{dni}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div v-if="idAnemia === 'leve'">
-        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th><abbr title="Position">DNI</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="dni in dataAN.data_leve">
-              <td>@{{dni}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div v-if="idAnemia === 'moderada'">
-        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th><abbr title="Position">DNI</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="dni in dataAN.data_moderada">
-              <td>@{{dni}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div v-if="idAnemia === 'severa'">
-        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th><abbr title="Position">DNI</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="dni in dataAN.data_severa">
-              <td>@{{dni}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div v-if="idAnemia === 'normal'">
-        <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th><abbr title="Position">DNI</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="dni in dataAN.data_normal">
-              <td>@{{dni}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <footer class="modal-card-foot">
-      <!-- <button class="button is-success cerrar">Save changes</button> -->
-      <button class="button cerrar">Cerrar</button>
-    </footer>
-  </div>
-</div>
+<div class="modal" v-bind:class="{'is-active':isActive}">
+      <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Detalles</p>
+            <button @click="close" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div v-if="idAnemia === 'anemia'">
+              <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th><abbr title="Número">N°</abbr></th>
+                    <th><abbr title="DNI">DNI</abbr></th>
+                  </tr>
+                </thead>
+                <tbody v-for="(da, index) in dataAN">
+                  <tr v-for="(dni,index) in da.data_anemia">
+                    <td>@{{index + 1}}</td>
+                    <td>@{{dni}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div v-if="idAnemia === 'leve'">
+              <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th><abbr title="Número">N°</abbr></th>
+                    <th><abbr title="Position">DNI</abbr></th>
+                  </tr>
+                </thead>
+                <tbody v-for="(da, index) in dataAN">
+                  <tr v-for="(dni,index) in da.data_leve">
+                    <td>@{{index + 1}}</td>
+                    <td>@{{dni}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div v-if="idAnemia === 'moderada'">
+              <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th><abbr title="Número">N°</abbr></th>
+                    <th><abbr title="Position">DNI</abbr></th>
+                  </tr>
+                </thead>
+                <tbody v-for="(da, index) in dataAN">
+                  <tr v-for="(dni,index) in da.data_moderada">
+                    <td>@{{index + 1}}</td>
+                    <td>@{{dni}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div v-if="idAnemia === 'severa'">
+              <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th><abbr title="Número">N°</abbr></th>
+                    <th><abbr title="Position">DNI</abbr></th>
+                  </tr>
+                </thead>
+                <tbody v-for="(da, index) in dataAN">
+                  <tr v-for="(dni,index) in da.data_severa">
+                    <td>@{{index + 1}}</td>
+                    <td>@{{dni}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div v-if="idAnemia === 'normal'">
+              <table id="iseqchart" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th><abbr title="Número">N°</abbr></th>
+                    <th><abbr title="Position">DNI</abbr></th>
+                  </tr>
+                </thead>
+                <tbody v-for="(da, index) in dataAN">
+                  <tr v-for="(dni,index) in da.data_normal">
+                    <td>@{{index + 1}}</td>
+                    <td>@{{dni}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <!-- <button class="button is-success cerrar">Save changes</button> -->
+            <button @click="close" class="button cerrar">Cerrar</button>
+          </footer>
+        </div>
+        <!-- <div class="modal-content">
+          <div class="box">
+            <div class="content has-text-centered">
+              <p class="control">
+                <h3>HI</h3>
+              </p>
+              <span>&nbsp;</span>
+            </div>
+          </div>
+        </div> -->
+        <button @click="close" class="modal-close"></button>
+    </div>
 
 </div>
 <!-- <section class="section">
