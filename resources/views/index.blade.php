@@ -50,9 +50,14 @@
               Anemia Niños
             </h1>
             <h2 class="subtitle">
-                Indicadores
+              <div class="tags has-addons">
+                <span class="tag is-dark"><i class="fas fa-database"></i></span>
+                <span class="tag is-info">&nbsp;@{{updatedDB}} </span>
+              </div>
             </h2>
         </div>
+        <!-- Right side -->
+
     </div>
 </section>
 <br>
@@ -277,20 +282,20 @@
                 <strong><a href="#" title="Antabamba">@{{da.red_desc}}</a></strong>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('anemia')">@{{da.sum_anemia}}</a>
+                <a class="button is-outlined is-small" @click="launch('anemia', index)">@{{da.sum_anemia}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('leve')">@{{da.sum_leve}}</a>
+                <a class="button is-outlined is-small" @click="launch('leve', index)">@{{da.sum_leve}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('moderada')">@{{da.sum_moderada}}</a>
+                <a class="button is-outlined is-small" @click="launch('moderada', index)">@{{da.sum_moderada}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('severa')">@{{da.sum_severa}}</a>
+                <a class="button is-outlined is-small" @click="launch('severa', index)">@{{da.sum_severa}}</a>
                 <!-- <button class="button is-link is-small" id="button" @click="detalles('severa')">Ver</button> -->
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('normal')">@{{da.sum_normal}}</a>
+                <a class="button is-outlined is-small" @click="launch('normal', index)">@{{da.sum_normal}}</a>
               </td>
 
               <td>@{{da.total_tamizados}}</td>
@@ -301,7 +306,7 @@
               <td v-else-if="da.edad_nino == 12">< 1 año</td>
               <td>@{{da.start_date}} <br> @{{da.end_date}}</td>
             </tr>
-            <tr>
+            <tr style="background: #50A87D">
               <th>#</th>
               <td>
                 <strong><a href="#" title="Antabamba"></a></strong>
@@ -324,7 +329,7 @@
 
               <td>@{{totalTamizados}}</td>
               <td>@{{allAnemia}}</td>
-              <td>@{{totalPrevalencia}} % </td>
+              <td v-bind:style="{background: totalPrevalenciaColor}">@{{totalPrevalencia}} % </td>
               <td></td>
               <td></td>
             </tr>
@@ -373,7 +378,7 @@
             </article>
         </div>
         <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child box" v-bind:style="{background: totalPrevalenciaColor}">
                 <p class="title">@{{totalPrevalencia}} %</p>
                 <p class="subtitle">Prevalencia</p>
             </article>
@@ -411,7 +416,7 @@
       <div class="modal-background"></div>
         <div class="modal-card">
           <header class="modal-card-head">
-            <p class="modal-card-title">Detalles</p>
+            <p class="modal-card-title">Detalles @{{idAnemia}}</p>
             <button @click="close" class="delete" aria-label="close"></button>
           </header>
           <section class="modal-card-body">
@@ -424,10 +429,10 @@
                     <th><abbr title="DNI">DNI</abbr></th>
                   </tr>
                 </thead>
-                <tbody v-for="(da, index) in dataAN">
-                  <tr v-for="(dni,index) in da.data_anemia">
+                <tbody>
+                  <tr v-for="(da,index) in detalleAnemia.data_anemia">
                     <td>@{{index + 1}}</td>
-                    <td>@{{dni}}</td>
+                    <td>@{{da}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -440,10 +445,10 @@
                     <th><abbr title="Position">DNI</abbr></th>
                   </tr>
                 </thead>
-                <tbody v-for="(da, index) in dataAN">
-                  <tr v-for="(dni,index) in da.data_leve">
+                <tbody>
+                  <tr v-for="(da,index) in detalleAnemia.data_leve">
                     <td>@{{index + 1}}</td>
-                    <td>@{{dni}}</td>
+                    <td>@{{da}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -456,10 +461,10 @@
                     <th><abbr title="Position">DNI</abbr></th>
                   </tr>
                 </thead>
-                <tbody v-for="(da, index) in dataAN">
-                  <tr v-for="(dni,index) in da.data_moderada">
+                <tbody>
+                  <tr v-for="(da,index) in detalleAnemia.data_moderada">
                     <td>@{{index + 1}}</td>
-                    <td>@{{dni}}</td>
+                    <td>@{{da}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -472,10 +477,10 @@
                     <th><abbr title="Position">DNI</abbr></th>
                   </tr>
                 </thead>
-                <tbody v-for="(da, index) in dataAN">
-                  <tr v-for="(dni,index) in da.data_severa">
+                <tbody>
+                  <tr v-for="(da,index) in detalleAnemia.data_severa">
                     <td>@{{index + 1}}</td>
-                    <td>@{{dni}}</td>
+                    <td>@{{da}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -488,10 +493,10 @@
                     <th><abbr title="Position">DNI</abbr></th>
                   </tr>
                 </thead>
-                <tbody v-for="(da, index) in dataAN">
-                  <tr v-for="(dni,index) in da.data_normal">
+                <tbody>
+                  <tr v-for="(da,index) in detalleAnemia.data_normal">
                     <td>@{{index + 1}}</td>
-                    <td>@{{dni}}</td>
+                    <td>@{{da}}</td>
                   </tr>
                 </tbody>
               </table>

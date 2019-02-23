@@ -41,6 +41,11 @@ class AnemiaController extends Controller
     {
       $data = json_decode($_GET['data'], true);
 
+      if ($name == 'datedb') {
+        $result = DB::select('select top 1 fecha from anemia_nino order by fecha desc');
+        return $result;
+      }
+
       if ($name == 'nino') {
 
         $results = DB::select('exec dbo.SP_ANEMIA_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['edadNino'], $data['startDate'], $data['endDate']]);
@@ -108,7 +113,7 @@ class AnemiaController extends Controller
         $anemia['total_anemia'] = $anemia['sum_anemia'] + $anemia['sum_leve'] + $anemia['sum_moderada'] + $anemia['sum_severa'];
         $anemia['prevalencia'] = $anemia['total_tamizados'] != 0  ? round( ($anemia['total_anemia'] / $anemia['total_tamizados'])*100, 1) : 0;
 
-
+        //color prevalencia
         if ($anemia['prevalencia'] <= 4.9) {
   				$anemia['prevalencia_color'] = 'green';
   			} else if ($anemia['prevalencia'] >= 5.0 && $anemia['prevalencia'] <= 19.9) {

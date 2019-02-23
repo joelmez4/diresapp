@@ -15,8 +15,12 @@ const appOcular = new Vue({
   data: {
 
 		dataAN: [],
+
 		idAnemia: null,
 		edadNino: null,
+		detalleAnemia: null,
+		totalPrevalenciaColor: null,
+		updatedDB: null,
 
     flag: null,
 		isActive: false,
@@ -102,13 +106,37 @@ const appOcular = new Vue({
 			// 	console.log(element.prevalencia);
 			// 	element.prevalencia
 			// });
+			var tp = ((this.allAnemia / this.totalTamizados) * 100).toFixed(1);
+			//color prevalencia
+			if (tp <= 4.9) {
+				this.totalPrevalenciaColor = 'green';
+			} else if (tp >= 5.0 && tp <= 19.9) {
+				this.totalPrevalenciaColor = 'yellow';
+			} else if (tp >= 20.0 && tp <= 39.9) {
+				this.totalPrevalenciaColor = '#FF6600';
+			} else if (tp >= 40) {
+				this.totalPrevalenciaColor = 'red';
+			}
 
-			return ((this.allAnemia / this.totalTamizados) * 100).toFixed(1);
+			return tp;
     }
   },
 
   mounted () {
     //axios.get('redes').then(response => this.redes = response.data);
+		/* DateTime: Last update Database SQL */
+		axios.get(base_url+'/anemia/datedb/get', {
+			params: {
+				data: 'foo'
+			}
+		}).then(function (response) {
+				this.updatedDB = response.data[0].fecha;
+		 }.bind(this))
+		 .catch(function (error) {
+				// handle error
+				alert("Error en el servidor: "+error);
+			}.bind(this));
+
 
     // Establecimientos | default selected
     this.cmbRedes = false;
@@ -199,15 +227,16 @@ const appOcular = new Vue({
 
     },
 
-		detalles: function (val) {
-			console.log(val);
+		detalles: function (val, index) {
+			console.log(val+" - "+index);
 			this.idAnemia = val;
-
+			this.detalleAnemia = this.dataAN[index];
+			console.log(this.detalleAnemia);
 		},
 
-		launch: function(val) {
+		launch: function(val,index) {
       this.isActive = true;
-			this.detalles(val)
+			this.detalles(val, index);
     },
     close: function() {
       this.isActive = false;
