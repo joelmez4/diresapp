@@ -35,6 +35,13 @@
 	padding:3px 6px;
 	}
 
+  /* image header : hero */
+  .hero.welcome.is-info {
+    background-image: url("https://source.unsplash.com/1080x720/?baby");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 </style>
 
 @endsection
@@ -276,7 +283,7 @@
           <thead>
             <tr>
               <th><abbr title="Número">N°</abbr></th>
-              <th><abbr title="Selección">Provincia</abbr></th>
+              <th><abbr title="Selección"></abbr></th>
               <th><abbr title="Anemia">Anemia</abbr></th>
               <th><abbr title="Anemia Leve">Anemia Leve</abbr></th>
               <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
@@ -287,6 +294,7 @@
               <th><abbr title="Prevalencia">Prevalencia</abbr></th>
               <th><abbr title="Edad">Edad</abbr></th>
               <th><abbr title="Fecha">Fecha</abbr></th>
+              <th>Remover</th>
             </tr>
           </thead>
           <tbody>
@@ -322,6 +330,7 @@
               <td v-else-if="da.edad_nino == 36">< 3 años</td>
               <td v-else-if="da.edad_nino == 12">< 1 año</td>
               <td>@{{da.start_date}} <br> @{{da.end_date}}</td>
+              <td><button @click="removeDataAN(index)" class="delete" aria-label="close"></button></td>
             </tr>
             <tr style="background: #50A87D">
               <th>#</th>
@@ -405,11 +414,11 @@
     </div>
 </section>
 
-<div class="modal" v-bind:class="{'is-active':isActive}">
+    <div class="modal" v-bind:class="{'is-active':isActive}">
       <div class="modal-background"></div>
         <div class="modal-card">
           <header class="modal-card-head">
-            <p class="modal-card-title">Detalles @{{idAnemia}}</p>
+            <p class="modal-card-title">Detalles Anemia: @{{idAnemia}}</p>
             <button @click="close" class="delete" aria-label="close"></button>
           </header>
           <section class="modal-card-body">
@@ -425,7 +434,7 @@
                 <tbody>
                   <tr v-for="(da,index) in detalleAnemia.data_anemia">
                     <td>@{{index + 1}}</td>
-                    <td>@{{da}}</td>
+                    <td><a class="button is-outlined is-small" @click="verDetalleDNI(da)">@{{da}}</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -441,7 +450,7 @@
                 <tbody>
                   <tr v-for="(da,index) in detalleAnemia.data_leve">
                     <td>@{{index + 1}}</td>
-                    <td>@{{da}}</td>
+                    <td><a class="button is-outlined is-small" @click="verDetalleDNI(da)">@{{da}}</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -457,7 +466,7 @@
                 <tbody>
                   <tr v-for="(da,index) in detalleAnemia.data_moderada">
                     <td>@{{index + 1}}</td>
-                    <td>@{{da}}</td>
+                    <td><a class="button is-outlined is-small" @click="verDetalleDNI(da)">@{{da}}</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -473,7 +482,9 @@
                 <tbody>
                   <tr v-for="(da,index) in detalleAnemia.data_severa">
                     <td>@{{index + 1}}</td>
-                    <td>@{{da}}</td>
+                    <td>
+                      <a class="button is-outlined is-small" @click="verDetalleDNI(da)">@{{da}}</a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -489,7 +500,7 @@
                 <tbody>
                   <tr v-for="(da,index) in detalleAnemia.data_normal">
                     <td>@{{index + 1}}</td>
-                    <td>@{{da}}</td>
+                    <td><a class="button is-outlined is-small" @click="verDetalleDNI(da)">@{{da}}</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -511,6 +522,68 @@
           </div>
         </div> -->
         <button @click="close" class="modal-close"></button>
+    </div>
+
+    <div class="modal" v-bind:class="{'is-active':isActive2}">
+      <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Detalles DNI: Anemia @{{idAnemia}}</p>
+            <button @click="close2" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="card" v-if="person != null">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="https://source.unsplash.com/96x96/?children" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">@{{person.NOMBRES}} @{{person.APATERNO}} @{{person.AMATERNO}}</p>
+                    <p class="subtitle is-6">DNI: @{{person.DNI}}</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <strong>Feha de Nacimiento:</strong><p>@{{person.FNAC}}</p>
+                  <strong>Edad:</strong><p>@{{person.EDAD}}</p>
+                  <strong>Departamento:</strong><p>@{{person.departamento}}</p>
+                  <strong>Provincia:</strong><p>@{{person.Provincia}}</p>
+                  <strong>Distrito:</strong><p>@{{person.Distrito}}</p>
+                  <strong>Dirección:</strong><p>@{{person.DESCRIPCION}}</p>
+                  <strong>Referencia:</strong><p>@{{person.REF}}</p>
+                  <br>
+                  <time datetime="2019-01-30">Fuente: Padron Nominal</time>
+                </div>
+              </div>
+            </div>
+            <div class="card" v-else>
+              <div class="card-content">
+                <div class="notification is-danger">
+                  <strong>No esta registrado en el Padron Nominal.</strong>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <!-- <button class="button is-success cerrar">Save changes</button> -->
+            <button @click="close2" class="button cerrar">Cerrar</button>
+          </footer>
+        </div>
+        <!-- <div class="modal-content">
+          <div class="box">
+            <div class="content has-text-centered">
+              <p class="control">
+                <h3>HI</h3>
+              </p>
+              <span>&nbsp;</span>
+            </div>
+          </div>
+        </div> -->
+        <button @click="close2" class="modal-close"></button>
     </div>
 
 </div>

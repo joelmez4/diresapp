@@ -11692,9 +11692,12 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         totalPrevalenciaColor: null,
         updatedDB: null,
         countRowsPadronNominal: null,
+        person: [],
 
         flag: null,
+        //modals bulma css
         isActive: false,
+        isActive2: false,
         //Date
         startDate: null,
         endDate: null,
@@ -11923,6 +11926,35 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
             this.isActive = false;
         },
 
+        close2: function close2() {
+            this.isActive2 = false;
+        },
+
+        verDetalleDNI: function verDetalleDNI(dni) {
+            this.isActive2 = true;
+
+            /* get details by DNI from Padron Nominal */
+            axios.get(base_url + '/padronnominal/person/get', {
+                params: {
+                    data: dni
+                }
+            }).then(function (response) {
+                this.person = response.data[0];
+                console.log(this.person);
+            }.bind(this)).catch(function (error) {
+                // handle error
+                alert("Error en el servidor: " + error);
+            }.bind(this));
+        },
+
+        removeDataAN: function removeDataAN(index) {
+            if (index > -1) {
+                this.dataAN.splice(index, 1);
+            }
+            drawChart(this.dataAN);
+            console.log(this.dataAN);
+        },
+
         reporteSaludOcular: function reporteSaludOcular(event) {
 
             console.log(this.dataAN);
@@ -12069,7 +12101,8 @@ function drawChart(data) {
             text: 'NIÑOS CON ANEMIA'
         },
         subtitle: {
-            text: 'Fuente: Diresa Apurímac | fecha: ' + data.startDate + ' hasta ' + data.endDate
+            text: 'Fuente: Diresa Apurímac - SIEN'
+            // text: 'Fuente: Diresa Apurímac | fecha: '+data.startDate+' hasta '+data.endDate
         },
         credits: {
             enabled: false

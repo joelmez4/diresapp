@@ -46,6 +46,11 @@ class PadronNominalController extends Controller
         return $result;
       }
 
+      if ($name == 'person') {
+        $result = DB::select('select * from padron_nominal where dni = ? ', [$data]);
+        return $result;
+      }
+
     }
 
     public function reporte()
