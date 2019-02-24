@@ -70,6 +70,10 @@ Route::get('/inmunizaciones', function () {
 Route::get('anemia/{name}', 'Indicadores\AnemiaController@index');
 Route::get('anemia/{name}/get', 'Indicadores\AnemiaController@getIndicador');
 
+//Indicadores: Padron Nominal
+Route::get('padronnominal/{name}', 'Indicadores\PadronNominalController@index');
+Route::get('padronnominal/{name}/get', 'Indicadores\PadronNominalController@getIndicador');
+
 
 // Indicador: Permanencia Personal
 Route::get('indicadores/permanencia-personal', 'Indicadores\AdminProfilaxisAntiparasitariaController@personal');

@@ -11691,6 +11691,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         detalleAnemia: null,
         totalPrevalenciaColor: null,
         updatedDB: null,
+        countRowsPadronNominal: null,
 
         flag: null,
         isActive: false,
@@ -11796,6 +11797,19 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         var _this = this;
 
         //axios.get('redes').then(response => this.redes = response.data);
+
+        /* get all from Padron Nominal */
+        axios.get(base_url + '/padronnominal/countrows/get', {
+            params: {
+                data: 'foo'
+            }
+        }).then(function (response) {
+            this.countRowsPadronNominal = response.data[0].rows;
+        }.bind(this)).catch(function (error) {
+            // handle error
+            alert("Error en el servidor: " + error);
+        }.bind(this));
+
         /* DateTime: Last update Database SQL */
         axios.get(base_url + '/anemia/datedb/get', {
             params: {
@@ -11841,8 +11855,6 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         axios.get(base_url + '/provincias').then(function (response) {
             return _this.provincias = response.data;
         });
-
-        drawChart("joe");
     },
 
 
@@ -11887,7 +11899,7 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
                 //console.log(response.data);
                 this.dataAN.push(response.data);
                 console.log(this.dataAN);
-                // drawChart(response.data);
+                drawChart(this.dataAN);
             }.bind(this)).catch(function (error) {
                 // handle error
                 this.flag = true;
@@ -12020,22 +12032,41 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 var chart;
 var options;
 function drawChart(data) {
-    options = {
-        // chart: {
-        //     type: 'column',
-        //     renderTo: 'container2',
-        //     plotBackgroundColor: null,
-        //     plotBorderWidth: null,
-        //     plotShadow: false
-        // },
 
+    var dataElement = [];
+
+    data.forEach(function (element) {
+
+        if (element.prov_desc != null) {
+            dataElement.push({
+                "name": element.prov_desc,
+                "y": element.prevalencia,
+                "drilldown": "Chrome"
+                // "color": "red"
+            });
+        }
+
+        if (element.red_desc != null) {
+            dataElement.push({
+                "name": element.red_desc,
+                "y": element.prevalencia,
+                "drilldown": "Chrome"
+                // "color": "red"
+            });
+        }
+
+        console.log('Hi from drawChart');
+        console.log(dataElement);
+    });
+
+    options = {
 
         chart: {
-            type: 'line',
+            type: 'column',
             renderTo: 'container2'
         },
         title: {
-            text: 'NIÑOS MENORES DE 3 AÑOS CON ANEMIA'
+            text: 'NIÑOS CON ANEMIA'
         },
         subtitle: {
             text: 'Fuente: Diresa Apurímac | fecha: ' + data.startDate + ' hasta ' + data.endDate
@@ -12044,40 +12075,64 @@ function drawChart(data) {
             enabled: false
         },
         xAxis: {
-            categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dec']
+            type: 'category'
         },
         yAxis: {
             title: {
-                text: 'Prevalencia (%)'
+                text: 'Total de Prevalencia (%)'
             }
+
+        },
+        legend: {
+            enabled: false
         },
         plotOptions: {
-            line: {
+            series: {
+                borderWidth: 0,
                 dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: true
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
             }
         },
-        series: [{
-            name: 'Abancay',
-            data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-        }, {
-            name: 'Andahuaylas',
-            data: [13.9, 14.2, 15.7, 18.5, 111.9, 115.2, 117.0, 116.6, 114.2, 110.3, 16.6, 14.8]
-        }, {
-            name: 'Abancay',
-            data: [27.0, 26.9, 29.5, 214.5, 218.4, 221.5, 225.2, 226.5, 223.3, 218.3, 213.9, 29.6]
-        }, {
-            name: 'Andahuaylas',
-            data: [33.9, 34.2, 35.7, 38.5, 311.9, 315.2, 317.0, 316.6, 314.2, 310.3, 36.6, 34.8]
-        }, {
-            name: 'Abancay',
-            data: [47.0, 46.9, 49.5, 414.5, 418.4, 421.5, 425.2, 426.5, 423.3, 418.3, 413.9, 49.6]
-        }, {
-            name: 'Andahuaylas',
-            data: [53.9, 54.2, 55.7, 58.5, 511.9, 515.2, 517.0, 516.6, 514.2, 510.3, 56.6, 54.8]
-        }]
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> de prevalencia<br/>'
+        },
+
+        "series": [{
+            "name": "Anemia Niños",
+            "colorByPoint": true,
+            "data": dataElement
+        }],
+        "drilldown": {
+            "series": [{
+                "name": "Chrome",
+                "id": "Chrome",
+                "data": [["v65.0", 0.1], ["v64.0", 1.3], ["v63.0", 53.02], ["v62.0", 1.4], ["v61.0", 0.88], ["v60.0", 0.56], ["v59.0", 0.45], ["v58.0", 0.49], ["v57.0", 0.32], ["v56.0", 0.29], ["v55.0", 0.79], ["v54.0", 0.18], ["v51.0", 0.13], ["v49.0", 2.16], ["v48.0", 0.13], ["v47.0", 0.11], ["v43.0", 0.17], ["v29.0", 0.26]]
+            }, {
+                "name": "Firefox",
+                "id": "Firefox",
+                "data": [["v58.0", 1.02], ["v57.0", 7.36], ["v56.0", 0.35], ["v55.0", 0.11], ["v54.0", 0.1], ["v52.0", 0.95], ["v51.0", 0.15], ["v50.0", 0.1], ["v48.0", 0.31], ["v47.0", 0.12]]
+            }, {
+                "name": "Internet Explorer",
+                "id": "Internet Explorer",
+                "data": [["v11.0", 6.2], ["v10.0", 0.29], ["v9.0", 0.27], ["v8.0", 0.47]]
+            }, {
+                "name": "Safari",
+                "id": "Safari",
+                "data": [["v11.0", 3.39], ["v10.1", 0.96], ["v10.0", 0.36], ["v9.1", 0.54], ["v9.0", 0.13], ["v5.1", 0.2]]
+            }, {
+                "name": "Edge",
+                "id": "Edge",
+                "data": [["v16", 2.6], ["v15", 0.92], ["v14", 0.4], ["v13", 0.1]]
+            }, {
+                "name": "Opera",
+                "id": "Opera",
+                "data": [["v50.0", 0.96], ["v49.0", 0.82], ["v12.1", 0.14]]
+            }]
+        }
     };
     //options.series[0].name = val;
     chart = new Highcharts.Chart(options);

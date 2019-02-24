@@ -61,6 +61,20 @@
     </div>
 </section>
 <br>
+
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+
+        <!-- draw maps (Perú) -->
+        <div id="container"></div>
+
+      </div>
+    </div>
+  </article>
+</div>
+
 <div class="box">
   <article class="media">
     <div class="media-content">
@@ -339,6 +353,8 @@
           </tbody>
         </table>
 
+        <div id="container2"></div>
+
         <!-- <div v-if="flag == true" class="field is-grouped is-grouped-centered">
           <p class="control">
             <a class="button is-primary" v-on:click="reporteSaludOcular">
@@ -364,7 +380,7 @@
     <div class="tile is-ancestor has-text-centered">
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">39k</p>
+                <p class="title">@{{countRowsPadronNominal}}</p>
                 <p class="subtitle">Padron Nominal</p>
             </article>
         </div>
@@ -388,32 +404,6 @@
         </div>
     </div>
 </section>
-
-<div class="box">
-  <article class="media">
-    <div class="media-content">
-      <div class="content">
-
-        <!-- draw maps (Perú) -->
-        <div id="container"></div>
-
-      </div>
-    </div>
-  </article>
-</div>
-
-<div class="box">
-  <article class="media">
-    <div class="media-content">
-      <div class="content">
-
-        <!-- draw maps (Perú) -->
-        <div id="container2"></div>
-
-      </div>
-    </div>
-  </article>
-</div>
 
 <div class="modal" v-bind:class="{'is-active':isActive}">
       <div class="modal-background"></div>
