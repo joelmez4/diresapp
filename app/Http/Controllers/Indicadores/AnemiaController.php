@@ -50,6 +50,14 @@ class AnemiaController extends Controller
 
         $results = DB::select('exec dbo.SP_ANEMIA_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['edadNino'], $data['startDate'], $data['endDate']]);
 
+        $red = DB::select('select desc_red from red where cod_red = ?', [$data['red']]);
+        $mred = DB::select('select desc_micro from mred where cod_mic = ?', [$data['mred']]);
+        $establec_red = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecRed']]);
+
+        $prov = DB::select('select desc_prov from provincia where cod_prov = ?', [$data['provincia']]);
+        $dist = DB::select('select desc_dist from distrito where cod_dist = ?', [$data['distrito']]);
+        $establec_prov = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecProv']]);
+
         $anemia = array(
           "picked" => $data['picked'],
           "red_cod" => $data['red'],
@@ -63,12 +71,12 @@ class AnemiaController extends Controller
           "start_date" => $data['startDate'],
           "end_date" => $data['endDate'],
 
-          "red_desc" => null,
-          "mred_desc" => null,
-          "establec_red_desc" => null,
-          "prov_desc" => null,
-          "dist_desc" => null,
-          "establec_prov_desc" => null,
+          "red_desc" => isset($red[0]) ? $red[0]->desc_red : null,
+          "mred_desc" => isset($mred[0]) ? $mred[0]->desc_micro : null,
+          "establec_red_desc" => isset($establec_red[0]) ? $establec_red[0]->desc_estab : null,
+          "prov_desc" => isset($prov[0]) ? $prov[0]->desc_prov : null,
+          "dist_desc" => isset($dist[0]) ? $dist[0]->desc_dist : null,
+          "establec_prov_desc" => isset($establec_prov[0]) ? $establec_prov[0]->desc_estab : null,
 
           "sum_anemia" => 0,
           "sum_leve" => 0,

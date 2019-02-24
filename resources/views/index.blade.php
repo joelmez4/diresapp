@@ -262,7 +262,7 @@
           <thead>
             <tr>
               <th><abbr title="Número">N°</abbr></th>
-              <th><abbr title="Selección">Red</abbr></th>
+              <th><abbr title="Selección">Provincia</abbr></th>
               <th><abbr title="Anemia">Anemia</abbr></th>
               <th><abbr title="Anemia Leve">Anemia Leve</abbr></th>
               <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
@@ -278,8 +278,11 @@
           <tbody>
             <tr v-for="(da,index) in dataAN">
               <th>@{{index + 1}}</th>
-              <td>
-                <strong><a href="#" title="Antabamba">@{{da.red_desc}}</a></strong>
+              <td v-if="da.picked === 'red'">
+                <abbr title="Red">@{{da.red_desc}} @{{da.mred_desc}} @{{da.establec_red_desc}}</abbr>
+              </td>
+              <td v-else-if="da.picked === 'provincia'">
+                <abbr title="Provincia">@{{da.prov_desc}} @{{da.dist_desc}} @{{da.establec_prov_desc}}</abbr>
               </td>
               <td>
                 <a class="button is-outlined is-small" @click="launch('anemia', index)">@{{da.sum_anemia}}</a>
