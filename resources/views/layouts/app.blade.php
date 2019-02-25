@@ -122,9 +122,10 @@
                       <li>
                         <p class="menu-label">Programa Articulado Nutricional</p>
                         <ul>
-                            <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Dashboard</a></li>
-                            <li><a :class="[ tab === 'anemiaSeguimiento' ? 'is-active' : '']" @click="tab='anemiaSeguimiento'" href="{{ url('/anemia/seguimiento') }}">Seguimiento Inf. HIS Anemia</a></li>
-                            <li><a :class="[ tab === 'anemiaDeficiencia' ? 'is-active' : '']" @click="tab='anemiaDeficiencia'" href="{{ url('/anemia/deficiencia') }}">Deficiencia de Hierro y Recuperado Menores 3 Años</a></li>
+                            <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Anemia Niño</a></li>
+                            <li><a :class="[ tab === 'anemiagestantes' ? 'is-active' : '']" @click="tab='anemiagestantes'" href="{{ url('/anemia/gestantes') }}">Anemia Gestantes</a></li>
+                            <li><a :class="[ tab === 'dcninos' ? 'is-active' : '']" @click="tab='dcninos'" href="{{ url('/desnutricioncronica/nino') }}">Desnutrición Cronica Niños</a></li>
+                            <li><a :class="[ tab === 'dcgestantes' ? 'is-active' : '']" @click="tab='dcgestantes'" href="{{ url('/desnutricioncronica/gestantes') }}">Desnutrición Cronica Gestantes</a></li>
                         </ul>
                       </li>
                   </ul>
@@ -138,6 +139,9 @@
                               <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
                               <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('/ocular') }}">Salud Ocular</a></li>
                               <li><a :class="[ tab === 'cancer' ? 'is-active' : '']" @click="tab='cancer'" href="{{ url('/cancer') }}">Estrategia Cáncer</a></li>
+
+                              <li><a :class="[ tab === 'anemiaSeguimiento' ? 'is-active' : '']" @click="tab='anemiaSeguimiento'" href="{{ url('/anemia/seguimiento') }}">Seguimiento Inf. HIS Anemia</a></li>
+                              <li><a :class="[ tab === 'anemiaDeficiencia' ? 'is-active' : '']" @click="tab='anemiaDeficiencia'" href="{{ url('/anemia/deficiencia') }}">Deficiencia de Hierro y Recuperado Menores 3 Años</a></li>
                           </ul>
                       </li>
                   </ul>
@@ -145,7 +149,7 @@
                       <li>
                           <p class="menu-label">Padrón Nominal Regional</p>
                           <ul>
-                              <li><a href="{{ url('#') }}">Detalle de seguimiento y monitoreo del registro de padrón nominal</a></li>
+                              <li><a href="{{ url('#') }}">Padrón Nominal</a></li>
                               <li>
                                 <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
                               </li>
