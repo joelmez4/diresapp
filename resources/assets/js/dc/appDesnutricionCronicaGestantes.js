@@ -10,7 +10,7 @@ var vm2 = new Vue({
 });
 
 const appOcular = new Vue({
-  el: '#appDashboard',
+  el: '#appDesnutricionCronicaGestantes',
 
   data: {
 
@@ -19,7 +19,8 @@ const appOcular = new Vue({
 		idAnemia: null,
 		edadNino: null,
 		detalleAnemia: null,
-		totalPrevalenciaColor: null,
+		prevalenciaSobrePeso_color: null,
+		prevalenciaDeficit_color: null,
 		updatedDB: null,
 		countRowsPadronNominal: null,
 		person: [],
@@ -69,24 +70,14 @@ const appOcular = new Vue({
   },
 
 	computed: {
-		totalAnemia: function () {
+		totalDeficit: function () {
 			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.sum_anemia
+      	return acc += crypt.sum_deficit
 	    }, 0)
 		},
-		totalLeve: function () {
+		totalNoEvaluado: function () {
 			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.sum_leve
-	    }, 0)
-		},
-		totalModerada: function () {
-			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.sum_moderada
-	    }, 0)
-		},
-		totalSevera: function () {
-			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.sum_severa
+      	return acc += crypt.sum_noevaluado
 	    }, 0)
 		},
 		totalNormal: function () {
@@ -94,32 +85,51 @@ const appOcular = new Vue({
       	return acc += crypt.sum_normal
 	    }, 0)
 		},
+		totalSobrePeso: function () {
+			return this.dataAN.reduce( (acc, crypt) => {
+      	return acc += crypt.sum_sobrepeso
+	    }, 0)
+		},
 		totalTamizados: function () {
 			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.total_tamizados
+      	return acc += crypt.tamizados
 	    }, 0)
 		},
-		allAnemia: function () {
+		totalEvaluados: function () {
 			return this.dataAN.reduce( (acc, crypt) => {
-      	return acc += crypt.total_anemia
+      	return acc += crypt.evaluados
 	    }, 0)
 		},
-    totalPrevalencia: function () {
 
-			// this.dataAN.forEach(function(element) {
-			// 	console.log(element.prevalencia);
-			// 	element.prevalencia
-			// });
-			var tp = ((this.allAnemia / this.totalTamizados) * 100).toFixed(1);
-			//color prevalencia
-			if (tp <= 4.9) {
-				this.totalPrevalenciaColor = 'green';
-			} else if (tp >= 5.0 && tp <= 19.9) {
-				this.totalPrevalenciaColor = 'yellow';
+    prevalenciaSobrePeso: function () {
+
+			var tp = ((this.totalSobrePeso / this.totalTamizados) * 100).toFixed(1);
+			//color prevalencia Sobre Peso, dc gestante
+			if (tp >= 5.0 && tp <= 9.9	) {
+				this.prevalenciaSobrePeso_color = 'green';
+			} else if (tp >= 10.0 && tp <= 19.9) {
+				this.prevalenciaSobrePeso_color = 'yellow';
 			} else if (tp >= 20.0 && tp <= 39.9) {
-				this.totalPrevalenciaColor = '#FF6600';
+				this.prevalenciaSobrePeso_color = '#FF6600';
 			} else if (tp >= 40) {
-				this.totalPrevalenciaColor = 'red';
+				this.prevalenciaSobrePeso_color = 'red';
+			}
+
+			return tp;
+    },
+
+		prevalenciaDeficit: function () {
+
+			var tp = ((this.totalDeficit / this.totalTamizados) * 100).toFixed(1);
+			//color prevalencia Deficit, dc gestante
+			if (tp < 5.0) {
+				this.prevalenciaDeficit_color = 'green';
+			} else if (tp >= 5.0 && tp <= 9.9) {
+				this.prevalenciaDeficit_color = 'yellow';
+			} else if (tp >= 10.0 && tp <= 14.9) {
+				this.prevalenciaDeficit_color = '#FF6600';
+			} else if (tp >= 15) {
+				this.prevalenciaDeficit_color = 'red';
 			}
 
 			return tp;
@@ -212,14 +222,13 @@ const appOcular = new Vue({
 
         establecimiento: this.selectedEstablec.id,
 
-				edadNino: this.edadNino,
         startDate: this.startDate,
         endDate: this.endDate
       };
 
       data = JSON.stringify(data);
 
-      axios.get(base_url+'/anemia/nino/get', {
+      axios.get(base_url+'/desnutricioncronica/gestantes/get', {
         params: {
           data: data
         }
@@ -404,7 +413,7 @@ function drawChart(data) {
 			dataElement.push(
 				{
 					"name": element.prov_desc,
-					"y": element.prevalencia,
+					"y": element.sobrepeso,
 					"drilldown": "Chrome",
 					// "color": "red"
 				}
@@ -415,7 +424,7 @@ function drawChart(data) {
 			dataElement.push(
 				{
 					"name": element.red_desc,
-					"y": element.prevalencia,
+					"y": element.sobrepeso,
 					"drilldown": "Chrome",
 					// "color": "red"
 				}
@@ -433,7 +442,7 @@ function drawChart(data) {
 				renderTo: 'container2',
     },
 		title: {
-        text: 'NIÑOS CON ANEMIA'
+        text: 'Desnutrición Crónica Gestantes'
     },
     subtitle: {
 			text: 'Fuente: Diresa Apurímac - SIEN'

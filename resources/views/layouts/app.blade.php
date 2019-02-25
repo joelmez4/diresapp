@@ -124,8 +124,8 @@
                         <ul>
                             <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Anemia Niño</a></li>
                             <li><a :class="[ tab === 'anemiagestantes' ? 'is-active' : '']" @click="tab='anemiagestantes'" href="{{ url('/anemia/gestantes') }}">Anemia Gestantes</a></li>
-                            <li><a :class="[ tab === 'dcninos' ? 'is-active' : '']" @click="tab='dcninos'" href="{{ url('/desnutricioncronica/ninos') }}">Desnutrición Cronica Niños</a></li>
-                            <li><a :class="[ tab === 'dcgestantes' ? 'is-active' : '']" @click="tab='dcgestantes'" href="{{ url('/desnutricioncronica/gestantes') }}">Desnutrición Cronica Gestantes</a></li>
+                            <li><a :class="[ tab === 'dcninos' ? 'is-active' : '']" @click="tab='dcninos'" href="{{ url('/desnutricioncronica/ninos') }}">Desnutrición Crónica Niños</a></li>
+                            <li><a :class="[ tab === 'dcgestantes' ? 'is-active' : '']" @click="tab='dcgestantes'" href="{{ url('/desnutricioncronica/gestantes') }}">Desnutrición Crónica Gestantes</a></li>
                         </ul>
                       </li>
                   </ul>

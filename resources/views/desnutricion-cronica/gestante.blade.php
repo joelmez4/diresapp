@@ -37,7 +37,7 @@
 
   /* image header : hero */
   .hero.welcome.is-info {
-    background-image: url("https://source.unsplash.com/1080x720/?baby");
+    background-image: url("https://source.unsplash.com/1080x720/?pregnant");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -48,13 +48,13 @@
 
 @section('content')
 
-<div class="column is-9" id="appDashboard">
+<div class="column is-9" id="appDesnutricionCronicaGestantes">
 
 <section class="hero is-info welcome is-small">
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-              Desnutrición crónica
+							Desnutrición Crónica Gestantes
             </h1>
             <h2 class="subtitle">
               <div class="tags has-addons">
@@ -69,18 +69,17 @@
 </section>
 <br>
 
-<div class="box">
+<!-- <div class="box">
   <article class="media">
     <div class="media-content">
       <div class="content">
 
-        <!-- draw maps (Perú) -->
         <div id="container"></div>
 
       </div>
     </div>
   </article>
-</div>
+</div> -->
 
 <div class="box">
   <article class="media">
@@ -189,26 +188,6 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-small">
-            <label class="label">
-              Edad:
-            </label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <div class="select is-fullwidth is-small">
-                  <select v-model="edadNino" required>
-                    <option value="60">Niños menores de 5 años con anemia</option>
-                    <option value="36">Niños menores de 3 años con anemia</option>
-                    <option value="12">Niños menores de 1 año con anemia</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">
@@ -284,15 +263,14 @@
             <tr>
               <th><abbr title="Número">N°</abbr></th>
               <th><abbr title="Selección"></abbr></th>
-              <th><abbr title="Anemia">Anemia</abbr></th>
-              <th><abbr title="Anemia Leve">Anemia Leve</abbr></th>
-              <th><abbr title="Anemia Moderada">Anemia Moderada</abbr></th>
-              <th><abbr title="Anemia Severa">Anemia Severa</abbr></th>
+              <th><abbr title="Deficit">Deficit</abbr></th>
+              <th><abbr title="No elavaluado">No Evaluado</abbr></th>
               <th><abbr title="Normal">Normal</abbr></th>
-              <th><abbr title="Tamizados">Total Tamizados</abbr></th>
-              <th><abbr title="Total Anemia">Total Anemia</abbr></th>
-              <th><abbr title="Prevalencia">Prevalencia</abbr></th>
-              <th><abbr title="Edad">Edad</abbr></th>
+              <th><abbr title="Sobre Peso">Sobre Peso</abbr></th>
+              <th><abbr title="Tamizados">Tamizados</abbr></th>
+              <th><abbr title="Tamizados">Evaluados</abbr></th>
+              <th><abbr title="Sobre Peso">% Sobre Peso</abbr></th>
+              <th><abbr title="Deficit">% Deficit</abbr></th>
               <th><abbr title="Fecha">Fecha</abbr></th>
               <th>Remover</th>
             </tr>
@@ -307,57 +285,49 @@
                 <abbr title="Provincia">@{{da.prov_desc}} @{{da.dist_desc}} @{{da.establec_prov_desc}}</abbr>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('anemia', index)">@{{da.sum_anemia}}</a>
+                <a class="button is-outlined is-small" @click="launch('anemia', index)">@{{da.sum_deficit}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('leve', index)">@{{da.sum_leve}}</a>
+                <a class="button is-outlined is-small" @click="launch('leve', index)">@{{da.sum_noevaluado}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('moderada', index)">@{{da.sum_moderada}}</a>
+                <a class="button is-outlined is-small" @click="launch('moderada', index)">@{{da.sum_normal}}</a>
               </td>
               <td>
-                <a class="button is-outlined is-small" @click="launch('severa', index)">@{{da.sum_severa}}</a>
+                <a class="button is-outlined is-small" @click="launch('severa', index)">@{{da.sum_sobrepeso}}</a>
                 <!-- <button class="button is-link is-small" id="button" @click="detalles('severa')">Ver</button> -->
               </td>
-              <td>
-                <a class="button is-outlined is-small" @click="launch('normal', index)">@{{da.sum_normal}}</a>
-              </td>
 
-              <td>@{{da.total_tamizados}}</td>
-              <td>@{{da.total_anemia}}</td>
-              <td v-bind:style="{background: da.prevalencia_color}">@{{da.prevalencia}} %</td>
-              <td v-if="da.edad_nino == 60">< 5 años</td>
-              <td v-else-if="da.edad_nino == 36">< 3 años</td>
-              <td v-else-if="da.edad_nino == 12">< 1 año</td>
+              <td>@{{da.tamizados}}</td>
+              <td>@{{da.evaluados}}</td>
+              <td v-bind:style="{background: da.sobrepeso_color}">@{{da.sobrepeso}} %</td>
+							<td v-bind:style="{background: da.deficit_color}">@{{da.deficit}} %</td>
+
               <td>@{{da.start_date}} <br> @{{da.end_date}}</td>
               <td><button @click="removeDataAN(index)" class="delete" aria-label="close"></button></td>
             </tr>
             <tr style="background: #50A87D">
               <th>#</th>
               <td>
-                <strong><a href="#" title="Antabamba"></a></strong>
+                <strong><a href="#" title=""></a></strong>
               </td>
               <td>
-                @{{totalAnemia}}
+                @{{totalDeficit}}
               </td>
               <td>
-                @{{totalLeve}}
-              </td>
-              <td>
-                @{{totalModerada}}
-              </td>
-              <td>
-                @{{totalSevera}}
+                @{{totalNoEvaluado}}
               </td>
               <td>
                 @{{totalNormal}}
               </td>
+              <td>
+                @{{totalSobrePeso}}
+              </td>
 
               <td>@{{totalTamizados}}</td>
-              <td>@{{allAnemia}}</td>
-              <td v-bind:style="{background: totalPrevalenciaColor}">@{{totalPrevalencia}} % </td>
-              <td></td>
-              <td></td>
+              <td>@{{totalEvaluados}}</td>
+              <td v-bind:style="{background: prevalenciaSobrePeso_color}">@{{prevalenciaSobrePeso}} % </td>
+              <td v-bind:style="{background: prevalenciaDeficit_color}">@{{prevalenciaDeficit}} % </td>
             </tr>
           </tbody>
         </table>
@@ -387,12 +357,12 @@
 
 <section class="info-tiles">
     <div class="tile is-ancestor has-text-centered">
-        <div class="tile is-parent">
+        <!-- <div class="tile is-parent">
             <article class="tile is-child box">
                 <p class="title">@{{countRowsPadronNominal}}</p>
                 <p class="subtitle">Padron Nominal</p>
             </article>
-        </div>
+        </div> -->
         <div class="tile is-parent">
             <article class="tile is-child box">
                 <p class="title">@{{totalTamizados}}</p>
@@ -401,13 +371,13 @@
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">@{{allAnemia}}</p>
-                <p class="subtitle">Total Anemia</p>
+                <p class="title">@{{totalEvaluados}}</p>
+                <p class="subtitle">Total Evaluados</p>
             </article>
         </div>
         <div class="tile is-parent">
-            <article class="tile is-child box" v-bind:style="{background: totalPrevalenciaColor}">
-                <p class="title">@{{totalPrevalencia}} %</p>
+            <article class="tile is-child box" v-bind:style="{background: prevalenciaSobrePeso_color}">
+                <p class="title">@{{prevalenciaSobrePeso}} %</p>
                 <p class="subtitle">Prevalencia</p>
             </article>
         </div>
@@ -601,7 +571,7 @@
 @section('custom-js')
 
 <script src="{{ asset('public/highchart/js/jquery-1.10.2.min.js') }}"></script>
-<script src="{{ asset('node_modules/highcharts/highmaps.js') }} "></script>
+<!-- <script src="{{ asset('node_modules/highcharts/highmaps.js') }} "></script> -->
 
 <script src="{{ asset('node_modules/highcharts/highcharts.js') }} "></script>
 <!-- <script src="{{ asset('node_modules/highcharts/modules/series-label.js') }} "></script> -->
@@ -610,8 +580,8 @@
 <script src="{{ asset('node_modules/highcharts/modules/drilldown.js') }}"></script>
 
 <!-- Mapa de Apurímac -->
-<script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
-<script src="{{ asset('public/highchart/js/mapa.js') }}"></script>
+<!-- <script src="{{ asset('public/highchart/js/pe-all.js') }}"></script>
+<script src="{{ asset('public/highchart/js/mapa.js') }}"></script> -->
 <!-- <link rel="stylesheet" href="{{ asset('public/highchart/css/estilo.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('public/highchart/css/font-awesome.css') }}" type="text/css" /> -->
 

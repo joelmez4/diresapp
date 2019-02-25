@@ -11686,7 +11686,7 @@ var vm2 = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: '#appDashboard',
+    el: '#appDesnutricionCronicaGestantes',
 
     data: {
 
@@ -11695,7 +11695,8 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
         idAnemia: null,
         edadNino: null,
         detalleAnemia: null,
-        totalPrevalenciaColor: null,
+        prevalenciaSobrePeso_color: null,
+        prevalenciaDeficit_color: null,
         updatedDB: null,
         countRowsPadronNominal: null,
         person: [],
@@ -11745,24 +11746,14 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     },
 
     computed: {
-        totalAnemia: function totalAnemia() {
+        totalDeficit: function totalDeficit() {
             return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.sum_anemia;
+                return acc += crypt.sum_deficit;
             }, 0);
         },
-        totalLeve: function totalLeve() {
+        totalNoEvaluado: function totalNoEvaluado() {
             return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.sum_leve;
-            }, 0);
-        },
-        totalModerada: function totalModerada() {
-            return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.sum_moderada;
-            }, 0);
-        },
-        totalSevera: function totalSevera() {
-            return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.sum_severa;
+                return acc += crypt.sum_noevaluado;
             }, 0);
         },
         totalNormal: function totalNormal() {
@@ -11770,32 +11761,51 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
                 return acc += crypt.sum_normal;
             }, 0);
         },
+        totalSobrePeso: function totalSobrePeso() {
+            return this.dataAN.reduce(function (acc, crypt) {
+                return acc += crypt.sum_sobrepeso;
+            }, 0);
+        },
         totalTamizados: function totalTamizados() {
             return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.total_tamizados;
+                return acc += crypt.tamizados;
             }, 0);
         },
-        allAnemia: function allAnemia() {
+        totalEvaluados: function totalEvaluados() {
             return this.dataAN.reduce(function (acc, crypt) {
-                return acc += crypt.total_anemia;
+                return acc += crypt.evaluados;
             }, 0);
         },
-        totalPrevalencia: function totalPrevalencia() {
 
-            // this.dataAN.forEach(function(element) {
-            // 	console.log(element.prevalencia);
-            // 	element.prevalencia
-            // });
-            var tp = (this.allAnemia / this.totalTamizados * 100).toFixed(1);
-            //color prevalencia
-            if (tp <= 4.9) {
-                this.totalPrevalenciaColor = 'green';
-            } else if (tp >= 5.0 && tp <= 19.9) {
-                this.totalPrevalenciaColor = 'yellow';
+        prevalenciaSobrePeso: function prevalenciaSobrePeso() {
+
+            var tp = (this.totalSobrePeso / this.totalTamizados * 100).toFixed(1);
+            //color prevalencia Sobre Peso, dc gestante
+            if (tp >= 5.0 && tp <= 9.9) {
+                this.prevalenciaSobrePeso_color = 'green';
+            } else if (tp >= 10.0 && tp <= 19.9) {
+                this.prevalenciaSobrePeso_color = 'yellow';
             } else if (tp >= 20.0 && tp <= 39.9) {
-                this.totalPrevalenciaColor = '#FF6600';
+                this.prevalenciaSobrePeso_color = '#FF6600';
             } else if (tp >= 40) {
-                this.totalPrevalenciaColor = 'red';
+                this.prevalenciaSobrePeso_color = 'red';
+            }
+
+            return tp;
+        },
+
+        prevalenciaDeficit: function prevalenciaDeficit() {
+
+            var tp = (this.totalDeficit / this.totalTamizados * 100).toFixed(1);
+            //color prevalencia Deficit, dc gestante
+            if (tp < 5.0) {
+                this.prevalenciaDeficit_color = 'green';
+            } else if (tp >= 5.0 && tp <= 9.9) {
+                this.prevalenciaDeficit_color = 'yellow';
+            } else if (tp >= 10.0 && tp <= 14.9) {
+                this.prevalenciaDeficit_color = '#FF6600';
+            } else if (tp >= 15) {
+                this.prevalenciaDeficit_color = 'red';
             }
 
             return tp;
@@ -11888,14 +11898,13 @@ var appOcular = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
                 establecimiento: this.selectedEstablec.id,
 
-                edadNino: this.edadNino,
                 startDate: this.startDate,
                 endDate: this.endDate
             };
 
             data = JSON.stringify(data);
 
-            axios.get(base_url + '/anemia/nino/get', {
+            axios.get(base_url + '/desnutricioncronica/gestantes/get', {
                 params: {
                     data: data
                 }
@@ -12078,7 +12087,7 @@ function drawChart(data) {
         if (element.prov_desc != null) {
             dataElement.push({
                 "name": element.prov_desc,
-                "y": element.prevalencia,
+                "y": element.sobrepeso,
                 "drilldown": "Chrome"
                 // "color": "red"
             });
@@ -12087,7 +12096,7 @@ function drawChart(data) {
         if (element.red_desc != null) {
             dataElement.push({
                 "name": element.red_desc,
-                "y": element.prevalencia,
+                "y": element.sobrepeso,
                 "drilldown": "Chrome"
                 // "color": "red"
             });
@@ -12104,7 +12113,7 @@ function drawChart(data) {
             renderTo: 'container2'
         },
         title: {
-            text: 'NIÑOS CON ANEMIA'
+            text: 'Desnutrición Crónica Gestantes'
         },
         subtitle: {
             text: 'Fuente: Diresa Apurímac - SIEN'
