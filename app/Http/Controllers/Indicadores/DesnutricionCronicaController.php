@@ -58,12 +58,12 @@ class DesnutricionCronicaController extends Controller
         $results = DB::select('exec dbo.SP_DC_NINO ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['edadNino'], $data['startDate'], $data['endDate']]);
 
         $red = DB::select('select desc_red from red where cod_red = ?', [$data['red']]);
-        $mred = DB::select('select desc_micro from mred where cod_mic = ?', [$data['mred']]);
-        $establec_red = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecRed']]);
+        $mred = DB::select('select desc_micro from mred where cod_mic = ? and cod_red = ?', [$data['mred'], $data['red']]);
+        $establec_red = DB::select('select desc_estab from establec where cod_2000 = ? and cod_mic = ? and cod_red = ?', [$data['establecRed'], $data['mred'], $data['red']]);
 
         $prov = DB::select('select desc_prov from provincia where cod_prov = ?', [$data['provincia']]);
-        $dist = DB::select('select desc_dist from distrito where cod_dist = ?', [$data['distrito']]);
-        $establec_prov = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecProv']]);
+        $dist = DB::select('select desc_dist from distrito where cod_dist = ? and cod_prov = ?', [$data['distrito'], $data['provincia']]);
+        $establec_prov = DB::select('select desc_estab from establec where cod_2000 = ? and cod_dist = ? and cod_prov = ?', [$data['establecProv'], $data['distrito'], $data['provincia']]);
 
         $dcronica = array(
           "picked" => $data['picked'],
@@ -137,12 +137,12 @@ class DesnutricionCronicaController extends Controller
         $results = DB::select('exec dbo.SP_DC_GESTANTE ?, ?, ?, ?, ?, ?, ?, ?, ?, ?', [$data['picked'], $data['red'], $data['mred'], $data['establecRed'], $data['provincia'], $data['distrito'], $data['establecProv'], $data['establecimiento'], $data['startDate'], $data['endDate']]);
 
         $red = DB::select('select desc_red from red where cod_red = ?', [$data['red']]);
-        $mred = DB::select('select desc_micro from mred where cod_mic = ?', [$data['mred']]);
-        $establec_red = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecRed']]);
+        $mred = DB::select('select desc_micro from mred where cod_mic = ? and cod_red = ?', [$data['mred'], $data['red']]);
+        $establec_red = DB::select('select desc_estab from establec where cod_2000 = ? and cod_mic = ? and cod_red = ?', [$data['establecRed'], $data['mred'], $data['red']]);
 
         $prov = DB::select('select desc_prov from provincia where cod_prov = ?', [$data['provincia']]);
-        $dist = DB::select('select desc_dist from distrito where cod_dist = ?', [$data['distrito']]);
-        $establec_prov = DB::select('select desc_estab from establec where cod_2000 = ?', [$data['establecProv']]);
+        $dist = DB::select('select desc_dist from distrito where cod_dist = ? and cod_prov = ?', [$data['distrito'], $data['provincia']]);
+        $establec_prov = DB::select('select desc_estab from establec where cod_2000 = ? and cod_dist = ? and cod_prov = ?', [$data['establecProv'], $data['distrito'], $data['provincia']]);
 
         $dcronica = array(
           "picked" => $data['picked'],
