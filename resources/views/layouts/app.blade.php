@@ -149,7 +149,7 @@
                       <li>
                           <p class="menu-label">Padrón Nominal Regional</p>
                           <ul>
-                              <li><a href="{{ url('#') }}">Padrón Nominal</a></li>
+                              <!-- <li><a href="{{ url('#') }}">Padrón Nominal</a></li> -->
                               <li>
                                 <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
                               </li>
