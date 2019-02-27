@@ -66,6 +66,10 @@ Route::get('/inmunizaciones', function () {
   return view('indicadores.inmunizaciones');
 });
 
+Route::get('/repositorio', function () {
+  return view('repositorio.elfinder');
+});
+
 //Indicadores: Anemia
 Route::get('anemia/{name}', 'Indicadores\AnemiaController@index');
 Route::get('anemia/{name}/get', 'Indicadores\AnemiaController@getIndicador');

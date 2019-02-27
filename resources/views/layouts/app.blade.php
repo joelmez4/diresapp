@@ -163,6 +163,9 @@
                               <li>
                                 <a :class="[ tab === 'inmunizaciones' ? 'is-active' : '']" @click="tab='inmunizaciones'" href="{{ url('/inmunizaciones') }}">Inmunizaciones</a>
                               </li>
+                              <li>
+                                <a :class="[ tab === 'repositorio' ? 'is-active' : '']" @click="tab='repositorio'" href="{{ url('/repositorio') }}">Repositorio</a>
+                              </li>
                           </ul>
                       </li>
                   </ul>
