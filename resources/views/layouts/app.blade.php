@@ -134,12 +134,12 @@
                           <p class="menu-label">Estrategias de Salud</p>
                           <ul>
                               <li><a :class="[ tab === 'saludnino' ? 'is-active' : '']" @click="tab='saludnino'" href="{{ url('atencion-integral-salud-nino') }}">Atención Integral de Salud del Niño</a></li>
+                              <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
+                              <li><a :class="[ tab === 'cancer' ? 'is-active' : '']" @click="tab='cancer'" href="{{ url('/cancer') }}">Estrategia Cáncer</a></li>
+                              <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('/ocular') }}">Salud Ocular</a></li>
+
                               <li><a :class="[ tab === 'profilaxis' ? 'is-active' : '']" href="{{ url('/indicadores/admin-profix-antiparasitaria') }}">Administración de Profilaxis Antiparasitaria</a></li>
                               <!-- <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" @click="tab='morbilidad'" href="{{ url('#') }}">Programa Etapa Vida Niño</a></li> -->
-                              <li><a :class="[ tab === 'morbilidad' ? 'is-active' : '']" href="{{ url('/morbilidad') }}">Morbilidad por Consulta Externa</a></li>
-                              <li><a :class="[ tab === 'ocular' ? 'is-active' : '']" @click="tab='ocular'" href="{{ url('/ocular') }}">Salud Ocular</a></li>
-                              <li><a :class="[ tab === 'cancer' ? 'is-active' : '']" @click="tab='cancer'" href="{{ url('/cancer') }}">Estrategia Cáncer</a></li>
-
                               <li><a :class="[ tab === 'anemiaSeguimiento' ? 'is-active' : '']" @click="tab='anemiaSeguimiento'" href="{{ url('/anemia/seguimiento') }}">Seguimiento Inf. HIS Anemia</a></li>
                               <li><a :class="[ tab === 'anemiaDeficiencia' ? 'is-active' : '']" @click="tab='anemiaDeficiencia'" href="{{ url('/anemia/deficiencia') }}">Deficiencia de Hierro y Recuperado Menores 3 Años</a></li>
                           </ul>
@@ -151,7 +151,7 @@
                           <ul>
                               <!-- <li><a href="{{ url('#') }}">Padrón Nominal</a></li> -->
                               <li>
-                                <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
+                                <a :class="[ tab === 'repositorio' ? 'is-active' : '']" @click="tab='repositorio'" href="{{ url('/repositorio') }}">Repositorio</a>
                               </li>
                           </ul>
                       </li>
@@ -164,7 +164,7 @@
                                 <a :class="[ tab === 'inmunizaciones' ? 'is-active' : '']" @click="tab='inmunizaciones'" href="{{ url('/inmunizaciones') }}">Inmunizaciones</a>
                               </li>
                               <li>
-                                <a :class="[ tab === 'repositorio' ? 'is-active' : '']" @click="tab='repositorio'" href="{{ url('/repositorio') }}">Repositorio</a>
+                                <a href="{{ url('/indicadores/permanencia-personal') }}">Permanencia Personal</a>
                               </li>
                           </ul>
                       </li>
