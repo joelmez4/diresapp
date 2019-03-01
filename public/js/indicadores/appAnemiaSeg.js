@@ -11783,7 +11783,7 @@ function drawChart(data) {
         y: data.sev,
         color: '#ff0000'
       }, {
-        name: 'Sin especificar',
+        name: 'Vacío',
         y: data.null,
         color: '#444'
       }]
