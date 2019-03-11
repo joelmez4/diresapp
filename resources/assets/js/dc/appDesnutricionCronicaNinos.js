@@ -385,24 +385,60 @@ function drawChart(data) {
 
 	data.forEach(function (element) {
 
-		if (element.prov_desc != null) {
+		if (element.prov_desc != null && element.dist_desc != null && element.establec_prov_desc != null) {
+			dataElement.push(
+				{
+					"name": element.establec_prov_desc,
+					"y": element.dc,
+					//"drilldown": "Chrome",
+					"color": element.dc_color
+				}
+			);
+		} else if (element.prov_desc != null && element.dist_desc != null) {
+			dataElement.push(
+				{
+					"name": element.dist_desc,
+					"y": element.dc,
+					//"drilldown": "Chrome",
+					"color": element.dc_color
+				}
+			);
+		} else if (element.prov_desc != null) {
 			dataElement.push(
 				{
 					"name": element.prov_desc,
 					"y": element.dc,
-					"drilldown": "Chrome",
-					// "color": "red"
+					//"drilldown": "Chrome",
+					"color": element.dc_color
 				}
 			);
 		}
 
-		if (element.red_desc != null) {
+		if (element.red_desc != null && element.mred_desc != null && element.establec_red_desc != null) {
+			dataElement.push(
+				{
+					"name": element.establec_red_desc,
+					"y": element.dc,
+					//"drilldown": "Chrome",
+					"color": element.dc_color
+				}
+			);
+		} else if (element.red_desc != null && element.mred_desc != null) {
+			dataElement.push(
+				{
+					"name": element.mred_desc,
+					"y": element.dc,
+					//"drilldown": "Chrome",
+					"color": element.dc_color
+				}
+			);
+		} else if (element.red_desc != null) {
 			dataElement.push(
 				{
 					"name": element.red_desc,
 					"y": element.dc,
-					"drilldown": "Chrome",
-					// "color": "red"
+					//"drilldown": "Chrome",
+					"color": element.dc_color
 				}
 			);
 		}
