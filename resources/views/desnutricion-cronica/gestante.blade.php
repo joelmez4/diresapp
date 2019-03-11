@@ -54,7 +54,7 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-							Desnutrición Crónica Gestantes
+							Estado Nutricional de la Gestante
             </h1>
             <h2 class="subtitle">
               <div class="tags has-addons">
