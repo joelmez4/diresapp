@@ -122,10 +122,10 @@
                       <li>
                         <p class="menu-label">Programa Articulado Nutricional</p>
                         <ul>
-                            <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Anemia Niño</a></li>
-                            <li><a :class="[ tab === 'anemiagestantes' ? 'is-active' : '']" @click="tab='anemiagestantes'" href="{{ url('/anemia/gestantes') }}">Anemia Gestantes</a></li>
-                            <li><a :class="[ tab === 'dcninos' ? 'is-active' : '']" @click="tab='dcninos'" href="{{ url('/desnutricioncronica/ninos') }}">Desnutrición Crónica Niños</a></li>
-                            <li><a :class="[ tab === 'dcgestantes' ? 'is-active' : '']" @click="tab='dcgestantes'" href="{{ url('/desnutricioncronica/gestantes') }}">Desnutrición Crónica Gestantes</a></li>
+                            <li><a :class="[ tab === 'inicio' ? 'is-active' : '']" @click="tab='inicio'" href="{{ url('/') }}">Anemia Infantil</a></li>
+                            <li><a :class="[ tab === 'anemiagestantes' ? 'is-active' : '']" @click="tab='anemiagestantes'" href="{{ url('/anemia/gestantes') }}">Anemia de la Gestante</a></li>
+                            <li><a :class="[ tab === 'dcninos' ? 'is-active' : '']" @click="tab='dcninos'" href="{{ url('/desnutricioncronica/ninos') }}">Desnutrición Crónica Infantil</a></li>
+                            <li><a :class="[ tab === 'dcgestantes' ? 'is-active' : '']" @click="tab='dcgestantes'" href="{{ url('/desnutricioncronica/gestantes') }}">Estado Nutricional de la Gestante</a></li>
                         </ul>
                       </li>
                   </ul>
