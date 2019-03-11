@@ -11976,7 +11976,7 @@ function drawChart(data) {
         // }],
         series: [{
             name: "0-11a Niño",
-            data: [data.morb_0_11a_nino]
+            data: [{ "y": data.morb_0_11a_nino, drilldown: 'nino' }]
         }, {
             name: "12-17a Adolescente",
             data: [data.morb_12_17a_adolescente]
@@ -11996,8 +11996,8 @@ function drawChart(data) {
 
         drilldown: {
             series: [{
-                name: 'Abancay',
-                id: 'abancay',
+                name: '0 a 11 años Niños',
+                id: 'nino',
                 data: [['data A', 24.13], ['data B', 17.2], ['data C', 8.11], ['data D', 5.33]]
             }, {
                 name: 'Test Drilldown',

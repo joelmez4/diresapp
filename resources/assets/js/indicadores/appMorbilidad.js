@@ -1,4 +1,4 @@
-import Vue from 'vue'
+ import Vue from 'vue'
 import vSelect from 'vue-select'
 Vue.component('v-select', vSelect)
 
@@ -299,7 +299,7 @@ function drawChart(data) {
     // }],
     series: [{
         name: "0-11a Niño",
-        data: [data.morb_0_11a_nino]
+        data: [{"y": data.morb_0_11a_nino, drilldown: 'nino'}]
     }, {
         name: "12-17a Adolescente",
         data: [data.morb_12_17a_adolescente]
@@ -319,8 +319,8 @@ function drawChart(data) {
 
     drilldown : {
             series: [{
-                  name: 'Abancay',
-                  id: 'abancay',
+                  name: '0 a 11 años Niños',
+                  id: 'nino',
                   data: [
                       [ 'data A', 24.13 ],
                       [ 'data B', 17.2 ],
