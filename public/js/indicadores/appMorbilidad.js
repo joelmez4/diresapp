@@ -11903,7 +11903,7 @@ function drawChart(data) {
         },
         yAxis: {
             title: {
-                text: 'Atención'
+                text: 'Atenciones'
             }
         },
         legend: {
