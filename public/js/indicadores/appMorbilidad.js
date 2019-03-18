@@ -11876,6 +11876,11 @@ var appMorbilidad = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 var chart;
 var options;
 function drawChart(data) {
+
+    console.log("tnt,tech");
+
+    console.log(data.data_unique);
+
     options = {
         chart: {
             type: 'column',
@@ -11894,58 +11899,60 @@ function drawChart(data) {
             enabled: false
         },
         xAxis: {
-            categories: ['', 'Dosis B'
-            // 'Mar',
-            // 'Abr',
-            // 'May',
-            // 'Jun',
-            // 'Jul',
-            // 'Aug',
-            // 'Sep',
-            // 'Oct',
-            // 'Nov',
-            // 'Dec'
-            ],
-            crosshair: true
+            type: 'category'
         },
         yAxis: {
-            min: 0,
             title: {
                 text: 'Atención'
             }
         },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+        legend: {
+            enabled: false
         },
-        // plotOptions: {
-        //     column: {
-        //         pointPadding: 0.2,
-        //         borderWidth: 0
-        //     }
+
+        // tooltip: {
+        //     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        //     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+        //         '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
+        //     footerFormat: '</table>',
+        //     shared: true,
+        //     useHTML: true
         // },
+
+        // plotOptions: {
+        //       series: {
+        //           cursor: 'pointer',
+        //           point: {
+        //               events: {
+        //                   click: function () {
+        //                       //alert('Category: ' + this.category + ', value: ' + this.y);
+        //                   }
+        //               }
+        //           },
+        //
+        //           borderWidth: 0,
+        //           dataLabels: {
+        //               enabled: false,
+        //               format: '{point.y:.1f}%'
+        //           }
+        //       }
+        //   },
 
         plotOptions: {
             series: {
-                cursor: 'pointer',
-                point: {
-                    events: {
-                        click: function click() {
-                            //alert('Category: ' + this.category + ', value: ' + this.y);
-                        }
-                    }
-                },
-
                 borderWidth: 0,
                 dataLabels: {
-                    enabled: false,
-                    format: '{point.y:.1f}%'
+                    enabled: true,
+                    format: '{point.y:.0f}'
                 }
             }
         },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b><br/>'
+        },
+
         // series: [{
         //     name: 'Abancay',
         //     data: [{ y: 40, drilldown: 'abancay' },{ y: 52, drilldown: 'abancay2' }]
@@ -11974,35 +11981,57 @@ function drawChart(data) {
         //     data: [42.4, 33.2]
         //
         // }],
+
+        // series: [{
+        //     name: "0-11a Niño",
+        //     data: [{"y": data.morb_0_11a_nino, drilldown: 'nino'}]
+        // }, {
+        //     name: "12-17a Adolescente",
+        //     data: [data.morb_12_17a_adolescente]
+        // }, {
+        //     name: "18-29a Joven",
+        //     data: [data.morb_18_29a_joven]
+        // }, {
+        //     name: "30-59a Adulto",
+        //     data: [data.morb_30_59a_adulto]
+        // }, {
+        //     name: "60a+ Adulto Mayor",
+        //     data: [data.morb_60a_a_mas_adulto_mayor]
+        // }, {
+        //     name: "Materna",
+        //     data: [data.morb_materna]
+        // }],
+
         series: [{
-            name: "0-11a Niño",
-            data: [{ "y": data.morb_0_11a_nino, drilldown: 'nino' }]
-        }, {
-            name: "12-17a Adolescente",
-            data: [data.morb_12_17a_adolescente]
-        }, {
-            name: "18-29a Joven",
-            data: [data.morb_18_29a_joven]
-        }, {
-            name: "30-59a Adulto",
-            data: [data.morb_30_59a_adulto]
-        }, {
-            name: "60a+ Adulto Mayor",
-            data: [data.morb_60a_a_mas_adulto_mayor]
-        }, {
-            name: "Materna",
-            data: [data.morb_materna]
+            name: "Morbilidad por Consulta Externa",
+            colorByPoint: true,
+            data: [{
+                "name": "0-11a Niño",
+                "y": data.morb_0_11a_nino,
+                "drilldown": "nino"
+            }, {
+                "name": "12-17a Adolescente",
+                "y": data.morb_12_17a_adolescente
+            }, {
+                "name": "18-29a Joven",
+                "y": data.morb_18_29a_joven
+            }, {
+                "name": "30-59a Adulto",
+                "y": data.morb_30_59a_adulto
+            }, {
+                "name": "60a+ Adulto Mayor",
+                "y": data.morb_60a_a_mas_adulto_mayor
+            }, {
+                "name": "Materna",
+                "y": data.morb_materna
+            }]
         }],
 
         drilldown: {
             series: [{
                 name: '0 a 11 años Niños',
                 id: 'nino',
-                data: [['data A', 24.13], ['data B', 17.2], ['data C', 8.11], ['data D', 5.33]]
-            }, {
-                name: 'Test Drilldown',
-                id: 'abancay2',
-                data: [['data A', 24.13], ['data B', 17.2], ['data C', 8.11]]
+                data: [[data.data_unique[0].desc_gru, data.data_unique[0].morb_0_11a_nino], [data.data_unique[1].desc_gru, data.data_unique[1].morb_0_11a_nino], [data.data_unique[2].desc_gru, data.data_unique[2].morb_0_11a_nino], [data.data_unique[3].desc_gru, data.data_unique[3].morb_0_11a_nino], [data.data_unique[4].desc_gru, data.data_unique[4].morb_0_11a_nino], [data.data_unique[5].desc_gru, data.data_unique[5].morb_0_11a_nino], [data.data_unique[6].desc_gru, data.data_unique[6].morb_0_11a_nino], [data.data_unique[7].desc_gru, data.data_unique[7].morb_0_11a_nino], [data.data_unique[8].desc_gru, data.data_unique[8].morb_0_11a_nino], [data.data_unique[9].desc_gru, data.data_unique[9].morb_0_11a_nino]]
             }]
         }
     };
