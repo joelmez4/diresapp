@@ -112,7 +112,7 @@ class MorbilidadController extends Controller
           };
       }
 
-      usort($morb["data_unique"], build_sorter("count"));
+      usort($morb["data_unique"], build_sorter("morb_0_11a_nino"));
 
       // return array($morb, $foo2, $morb["data_unique"]);
       return $morb;
