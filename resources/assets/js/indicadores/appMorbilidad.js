@@ -199,7 +199,7 @@ function drawChart(data) {
 
   console.log("tnt,tech");
 
-  console.log(data.data_unique);
+  console.log(data.data_morb_0_11a_nino);
 
   options  = {
     chart: {
@@ -334,23 +334,28 @@ function drawChart(data) {
                 },
                 {
                     "name": "12-17a Adolescente",
-                    "y": data.morb_12_17a_adolescente
+                    "y": data.morb_12_17a_adolescente,
+                    "drilldown": "adolescente"
                 },
                 {
                     "name": "18-29a Joven",
-                    "y": data.morb_18_29a_joven
+                    "y": data.morb_18_29a_joven,
+                    "drilldown": "joven"
                 },
                 {
                     "name": "30-59a Adulto",
-                    "y": data.morb_30_59a_adulto
+                    "y": data.morb_30_59a_adulto,
+                    "drilldown": "adulto"
                 },
                 {
                     "name": "60a+ Adulto Mayor",
-                    "y": data.morb_60a_a_mas_adulto_mayor
+                    "y": data.morb_60a_a_mas_adulto_mayor,
+                    "drilldown": "adulto_mayor"
                 },
                 {
                     "name": "Materna",
-                    "y": data.morb_materna
+                    "y": data.morb_materna,
+                    "drilldown": "materna"
                 }
             ]
         }
@@ -361,16 +366,91 @@ function drawChart(data) {
         		name: '0 a 11 años Niños',
             id: 'nino',
             data: [
-                [data.data_unique[0].desc_gru, data.data_unique[0].morb_0_11a_nino],
-                [data.data_unique[1].desc_gru, data.data_unique[1].morb_0_11a_nino],
-                [data.data_unique[2].desc_gru, data.data_unique[2].morb_0_11a_nino],
-                [data.data_unique[3].desc_gru, data.data_unique[3].morb_0_11a_nino],
-                [data.data_unique[4].desc_gru, data.data_unique[4].morb_0_11a_nino],
-                [data.data_unique[5].desc_gru, data.data_unique[5].morb_0_11a_nino],
-                [data.data_unique[6].desc_gru, data.data_unique[6].morb_0_11a_nino],
-                [data.data_unique[7].desc_gru, data.data_unique[7].morb_0_11a_nino],
-                [data.data_unique[8].desc_gru, data.data_unique[8].morb_0_11a_nino],
-                [data.data_unique[9].desc_gru, data.data_unique[9].morb_0_11a_nino]
+                [data.data_morb_0_11a_nino[0].desc_gru, data.data_morb_0_11a_nino[0].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[1].desc_gru, data.data_morb_0_11a_nino[1].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[2].desc_gru, data.data_morb_0_11a_nino[2].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[3].desc_gru, data.data_morb_0_11a_nino[3].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[4].desc_gru, data.data_morb_0_11a_nino[4].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[5].desc_gru, data.data_morb_0_11a_nino[5].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[6].desc_gru, data.data_morb_0_11a_nino[6].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[7].desc_gru, data.data_morb_0_11a_nino[7].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[8].desc_gru, data.data_morb_0_11a_nino[8].morb_0_11a_nino],
+                [data.data_morb_0_11a_nino[9].desc_gru, data.data_morb_0_11a_nino[9].morb_0_11a_nino]
+            ]
+        }, {
+        		name: '12-17a Adolescente',
+            id: 'adolescente',
+            data: [
+                [data.data_morb_12_17a_adolescente[0].desc_gru, data.data_morb_12_17a_adolescente[0].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[1].desc_gru, data.data_morb_12_17a_adolescente[1].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[2].desc_gru, data.data_morb_12_17a_adolescente[2].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[3].desc_gru, data.data_morb_12_17a_adolescente[3].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[4].desc_gru, data.data_morb_12_17a_adolescente[4].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[5].desc_gru, data.data_morb_12_17a_adolescente[5].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[6].desc_gru, data.data_morb_12_17a_adolescente[6].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[7].desc_gru, data.data_morb_12_17a_adolescente[7].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[8].desc_gru, data.data_morb_12_17a_adolescente[8].morb_12_17a_adolescente],
+                [data.data_morb_12_17a_adolescente[9].desc_gru, data.data_morb_12_17a_adolescente[9].morb_12_17a_adolescente]
+            ]
+        }, {
+        		name: '18-29a Joven',
+            id: 'joven',
+            data: [
+                [data.data_morb_18_29a_joven[0].desc_gru, data.data_morb_18_29a_joven[0].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[1].desc_gru, data.data_morb_18_29a_joven[1].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[2].desc_gru, data.data_morb_18_29a_joven[2].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[3].desc_gru, data.data_morb_18_29a_joven[3].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[4].desc_gru, data.data_morb_18_29a_joven[4].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[5].desc_gru, data.data_morb_18_29a_joven[5].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[6].desc_gru, data.data_morb_18_29a_joven[6].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[7].desc_gru, data.data_morb_18_29a_joven[7].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[8].desc_gru, data.data_morb_18_29a_joven[8].morb_18_29a_joven],
+                [data.data_morb_18_29a_joven[9].desc_gru, data.data_morb_18_29a_joven[9].morb_18_29a_joven]
+            ]
+        }, {
+        		name: '30-59a Adulto',
+            id: 'adulto',
+            data: [
+                [data.data_morb_30_59a_adulto[0].desc_gru, data.data_morb_30_59a_adulto[0].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[1].desc_gru, data.data_morb_30_59a_adulto[1].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[2].desc_gru, data.data_morb_30_59a_adulto[2].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[3].desc_gru, data.data_morb_30_59a_adulto[3].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[4].desc_gru, data.data_morb_30_59a_adulto[4].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[5].desc_gru, data.data_morb_30_59a_adulto[5].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[6].desc_gru, data.data_morb_30_59a_adulto[6].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[7].desc_gru, data.data_morb_30_59a_adulto[7].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[8].desc_gru, data.data_morb_30_59a_adulto[8].morb_30_59a_adulto],
+                [data.data_morb_30_59a_adulto[9].desc_gru, data.data_morb_30_59a_adulto[9].morb_30_59a_adulto]
+            ]
+        }, {
+        		name: '60a+ Adulto Mayor',
+            id: 'adulto_mayor',
+            data: [
+                [data.data_morb_60a_a_mas_adulto_mayor[0].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[0].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[1].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[1].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[2].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[2].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[3].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[3].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[4].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[4].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[5].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[5].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[6].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[6].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[7].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[7].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[8].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[8].morb_60a_a_mas_adulto_mayor],
+                [data.data_morb_60a_a_mas_adulto_mayor[9].desc_gru, data.data_morb_60a_a_mas_adulto_mayor[9].morb_60a_a_mas_adulto_mayor]
+            ]
+        }, {
+        		name: 'Materna',
+            id: 'materna',
+            data: [
+                [data.data_morb_materna[0].desc_gru, data.data_morb_materna[0].morb_materna],
+                [data.data_morb_materna[1].desc_gru, data.data_morb_materna[1].morb_materna],
+                [data.data_morb_materna[2].desc_gru, data.data_morb_materna[2].morb_materna],
+                [data.data_morb_materna[3].desc_gru, data.data_morb_materna[3].morb_materna],
+                [data.data_morb_materna[4].desc_gru, data.data_morb_materna[4].morb_materna]
+                // [data.data_morb_materna[5].desc_gru, data.data_morb_materna[5].morb_materna],
+                // [data.data_morb_materna[6].desc_gru, data.data_morb_materna[6].morb_materna],
+                // [data.data_morb_materna[7].desc_gru, data.data_morb_materna[7].morb_materna],
+                // [data.data_morb_materna[8].desc_gru, data.data_morb_materna[8].morb_materna],
+                // [data.data_morb_materna[9].desc_gru, data.data_morb_materna[9].morb_materna]
             ]
         }]
     }
