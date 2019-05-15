@@ -26,7 +26,11 @@
                         <figure class="avatar">
                             <img src="{{asset('public/images/diresa.png')}}" width="128">
                         </figure>
-
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
                         <form method="POST" action="{{ route('password.email') }}" aria-label="{{ __('Reset Password') }}">
                             @csrf
 
